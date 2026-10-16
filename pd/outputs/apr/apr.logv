@@ -1,0 +1,219 @@
+[10/11 20:19:49      0s] 
+[10/11 20:19:49      0s] Cadence Innovus(TM) Implementation System.
+[10/11 20:19:49      0s] Copyright 2025 Cadence Design Systems, Inc. All rights reserved worldwide.
+[10/11 20:19:49      0s] 
+[10/11 20:19:49      0s] Version:	v25.11-s102_1, built Wed Aug 27 13:03:08 PDT 2025
+[10/11 20:19:49      0s] Options:	-log apr.log -init /nethome/sgupta943/physical-design-onboarding-F26/scripts/apr/apr.tcl -legacy_ui -nowin 
+[10/11 20:19:49      0s] Date:		Sun Oct 11 20:19:49 2026
+[10/11 20:19:49      0s] Host:		ece-rhelsrv (x86_64 w/Linux 5.14.0-687.45.1.el9_8.x86_64) (14cores*112cpus*Intel(R) Xeon(R) Gold 5117 CPU @ 2.00GHz 19712KB)
+[10/11 20:19:49      0s] OS:		Red Hat Enterprise Linux 9.8 (Plow)
+[10/11 20:19:49      0s] 
+[10/11 20:19:49      0s] License:
+[10/11 20:19:49      0s] 		[20:19:49.254922] Configured Lic search path (25.01-s002): 5280@ece-winlic.ece.gatech.edu:1055@ansyslic.ecs.gatech.edu
+
+[10/11 20:19:49      0s] 		invs	Innovus Implementation System	25.1	checkout succeeded
+[10/11 20:19:49      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[10/11 20:20:09     20s] Memory management switch to non-aggressive memory release mode.
+[10/11 20:20:09     20s] 
+[10/11 20:20:09     20s] OS Mmap count monitoring thread starts. Limit of OS Mmap count is 65530
+[10/11 20:20:09     20s] 
+[10/11 20:20:15     24s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v25.11-s102_1 (64bit) 08/27/2025 13:03 (Linux 4.18.0-305.el8.x86_64)
+[10/11 20:20:21     31s] @(#)CDS: NanoRoute 25.11-s102_1 NR250730-0928/25_11-UB (database version 18.20.674) {superthreading v2.20}
+[10/11 20:20:21     31s] @(#)CDS: AAE 25.11-s028 (64bit) 08/27/2025 (Linux 4.18.0-305.el8.x86_64)
+[10/11 20:20:21     31s] @(#)CDS: CTE 25.11-s034_1 () Aug 18 2025 08:55:47 ( )
+[10/11 20:20:21     31s] @(#)CDS: SYNTECH 25.11-s013_1 () Jul 30 2025 05:18:51 ( )
+[10/11 20:20:21     31s] @(#)CDS: CPE v25.11-s029
+[10/11 20:20:21     31s] @(#)CDS: IQuantus/TQuantus 24.1.0-s290 (64bit) Sun Jul 20 21:40:56 PDT 2025 (Linux 4.18.0-305.el8.x86_64)
+[10/11 20:20:21     31s] @(#)CDS: OA 22.62-p010 Tue Jun 10 08:32:29 2025
+[10/11 20:20:21     31s] @(#)CDS: SGN 23.10-d005 (03-Oct-2023) (64 bit executable, TkQt5.15.9)
+[10/11 20:20:21     31s] @(#)CDS: RCDB 11.15.0
+[10/11 20:20:21     31s] @(#)CDS: STYLUS 25.10-b003_1 (03/20/2025 14:55 PDT)
+[10/11 20:20:21     31s] @(#)CDS: IntegrityPlanner-25.11-186 (25.11) (2025-07-16 18:29:01+0800)
+[10/11 20:20:21     31s] @(#)CDS: SYNTHESIS_ENGINE 25.11-s095
+[10/11 20:20:21     31s] @(#)CDS: TCDB v25.10-b001
+[10/11 20:20:21     31s] Create and set the environment variable TMPDIR to /nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/innovus_temp_945206_f5c455ed-f5d3-4eb6-9d67-d61d227b5eae_ece-rhelsrv_sgupta943_bJs9bw.
+
+[10/11 20:20:21     31s] Change the soft stacksize limit to 0.2%RAM (769 mbytes). Set global soft_stack_size_limit to change the value.
+[10/11 20:20:24     33s] Info: Process UID = 945206 / f5c455ed-f5d3-4eb6-9d67-d61d227b5eae / TMvShxz8hN
+[10/11 20:20:28     37s] 
+[10/11 20:20:28     37s] **INFO:  MMMC transition support version v31-84 
+[10/11 20:20:28     37s] 
+[10/11 20:20:28     37s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[10/11 20:20:28     37s] <CMD> suppressMessage ENCEXT-2799
+[10/11 20:20:29     38s] <CMD> getVersion
+[10/11 20:20:29     38s] [INFO] In-Design tarkit is loading p023 version ... 
+[10/11 20:20:30     38s] [INFO] Loading Pegasus 25.13 fill procedures
+[10/11 20:20:30     38s] **WARN: Tk package not loaded. The Pegasus fill DRC monitor is disabled.
+[10/11 20:20:31     39s] [INFO] In-Design tarkit is loaded. 
+[10/11 20:20:31     39s] Sourcing file "/nethome/sgupta943/physical-design-onboarding-F26/scripts/apr/apr.tcl" ...
+[10/11 20:20:31     39s] source /nethome/sgupta943/physical-design-onboarding-F26/scripts/apr/apr.tcl
+[10/11 20:20:31     39s] <CMD> redirect -tee /nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/LOG/step_init_apr.log {source /nethome/sgupta943/physical-design-onboarding-F26/scripts/apr/steps/step_init_apr.tcl}
+[10/11 20:20:40     47s] <CMD> redirect -tee /nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/LOG/step_floorplan.log {source /nethome/sgupta943/physical-design-onboarding-F26/scripts/apr/steps/step_floorplan.tcl}
+[10/11 20:20:42     49s] <CMD> redirect -tee /nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/LOG/step_place_std_cells.log {source /nethome/sgupta943/physical-design-onboarding-F26/scripts/apr/steps/step_place_std_cells.tcl}
+[10/11 20:22:36    431s] <CMD> redirect -tee /nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/LOG/step_place_ties.log {source /nethome/sgupta943/physical-design-onboarding-F26/scripts/apr/steps/step_place_ties.tcl}
+[10/11 20:22:38    432s] <CMD> redirect -tee /nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/LOG/step_pre_cts_opt.log {source /nethome/sgupta943/physical-design-onboarding-F26/scripts/apr/steps/step_pre_cts_opt.tcl}
+[10/11 20:28:39   1582s] **INFO: Starting Blocking QThread with 8 CPU
+[10/11 20:28:39   1582s]  
+   ____________________________________________________________________
+__/ message from Blocking QThread
+[10/11 20:28:39   1582s] Multi-CPU acceleration using 8 CPU(s).
+[10/11 20:28:39      0s] *** QThread MetricCollect [begin] (IncrReplace #1 / place_opt_design #1) : mem = 2.7M
+[10/11 20:28:39      0s] Multithreaded Timing Analysis is initialized with 8 threads
+[10/11 20:28:39      0s] 
+[10/11 20:28:39      0s] Ending "set_metric_timing_analysis_summary" (total cpu=0:00:00.4, real=0:00:00.0, peak res=3562.0M, current mem=2626.6M)
+[10/11 20:28:40      0s] Ending "get_summary_setup_timing" (total cpu=0:00:00.7, real=0:00:01.0, peak res=3562.0M, current mem=2627.6M)
+[10/11 20:28:40      0s] *** QThread MetricCollect [finish] (IncrReplace #1 / place_opt_design #1) : cpu/real = 0:00:00.9/0:00:00.9 (1.0), mem = 0.0M
+[10/11 20:28:40      0s] 
+[10/11 20:28:40      0s] =============================================================================================
+[10/11 20:28:40      0s]  Step TAT Report : QThreadWorker #1 / IncrReplace #1 / place_opt_design #1
+[10/11 20:28:40      0s]                                                                                 25.11-s102_1
+[10/11 20:28:40      0s] =============================================================================================
+[10/11 20:28:40      0s]  Step Name                  Count        Real  (       % )      Step Total Real / CPU  Scale
+[10/11 20:28:40      0s] ---------------------------------------------------------------------------------------------
+[10/11 20:28:40      0s] [ MISC                   ]          0:00:00.9  ( 100.0 % )     0:00:00.9 /  0:00:00.9    1.0
+[10/11 20:28:40      0s] ---------------------------------------------------------------------------------------------
+[10/11 20:28:40      0s]  QThreadWorker #1 TOTAL             0:00:00.9  ( 100.0 % )     0:00:00.9 /  0:00:00.9    1.0
+[10/11 20:28:40      0s] ---------------------------------------------------------------------------------------------
+
+[10/11 20:28:40   1582s]  
+_______________________________________________________________________
+[10/11 20:35:08   3179s] **INFO: Starting Blocking QThread with 8 CPU
+[10/11 20:35:08   3179s]  
+   ____________________________________________________________________
+__/ message from Blocking QThread
+[10/11 20:35:08   3179s] Multi-CPU acceleration using 8 CPU(s).
+[10/11 20:35:08      0s] *** QThread MetricCollect [begin] (place_opt_design #1) : mem = 2.2M
+[10/11 20:35:08      0s] Multithreaded Timing Analysis is initialized with 8 threads
+[10/11 20:35:08      0s] 
+[10/11 20:35:09      0s] Ending "set_metric_additional_insts" (total cpu=0:00:00.3, real=0:00:01.0, peak res=3751.8M, current mem=2916.6M)
+[10/11 20:35:09      0s] Ending "set_metric_inst_count_area" (total cpu=0:00:00.4, real=0:00:00.0, peak res=2985.9M, current mem=2922.8M)
+[10/11 20:35:09      0s] *** QThread MetricCollect [finish] (place_opt_design #1) : cpu/real = 0:00:00.9/0:00:00.9 (1.0), mem = 43.2M
+[10/11 20:35:09      0s] 
+[10/11 20:35:09      0s] =============================================================================================
+[10/11 20:35:09      0s]  Step TAT Report : QThreadWorker #1 / place_opt_design #1                       25.11-s102_1
+[10/11 20:35:09      0s] =============================================================================================
+[10/11 20:35:09      0s]  Step Name                  Count        Real  (       % )      Step Total Real / CPU  Scale
+[10/11 20:35:09      0s] ---------------------------------------------------------------------------------------------
+[10/11 20:35:09      0s] [ MISC                   ]          0:00:00.9  ( 100.0 % )     0:00:00.9 /  0:00:00.9    1.0
+[10/11 20:35:09      0s] ---------------------------------------------------------------------------------------------
+[10/11 20:35:09      0s]  QThreadWorker #1 TOTAL             0:00:00.9  ( 100.0 % )     0:00:00.9 /  0:00:00.9    1.0
+[10/11 20:35:09      0s] ---------------------------------------------------------------------------------------------
+
+[10/11 20:35:09   3179s]  
+_______________________________________________________________________
+[10/11 20:35:14   3181s] <CMD> redirect -tee /nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/LOG/step_cts.log {source /nethome/sgupta943/physical-design-onboarding-F26/scripts/apr/steps/step_cts.tcl}
+[10/11 20:38:12   3754s] <CMD> redirect -tee /nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/LOG/step_post_cts_opt.log {source /nethome/sgupta943/physical-design-onboarding-F26/scripts/apr/steps/step_post_cts_opt.tcl}
+[10/11 20:38:35   3792s] **INFO: Starting Blocking QThread with 8 CPU
+[10/11 20:38:35   3792s]  
+   ____________________________________________________________________
+__/ message from Blocking QThread
+[10/11 20:38:35   3792s] Multi-CPU acceleration using 8 CPU(s).
+[10/11 20:38:35      0s] *** QThread MetricCollect [begin] (optDesign #1) : mem = 2.5M
+[10/11 20:38:35      0s] Multithreaded Timing Analysis is initialized with 8 threads
+[10/11 20:38:35      0s] 
+[10/11 20:38:35      0s] Ending "set_metric_additional_insts" (total cpu=0:00:00.3, real=0:00:00.0, peak res=3643.0M, current mem=2935.2M)
+[10/11 20:38:36      0s] Ending "set_metric_inst_count_area" (total cpu=0:00:00.4, real=0:00:01.0, peak res=3005.7M, current mem=2940.8M)
+[10/11 20:38:36      1s] *** QThread MetricCollect [finish] (optDesign #1) : cpu/real = 0:00:01.0/0:00:01.1 (1.0), mem = 36.5M
+[10/11 20:38:36      1s] 
+[10/11 20:38:36      1s] =============================================================================================
+[10/11 20:38:36      1s]  Step TAT Report : QThreadWorker #1 / optDesign #1                              25.11-s102_1
+[10/11 20:38:36      1s] =============================================================================================
+[10/11 20:38:36      1s]  Step Name                  Count        Real  (       % )      Step Total Real / CPU  Scale
+[10/11 20:38:36      1s] ---------------------------------------------------------------------------------------------
+[10/11 20:38:36      1s] [ MISC                   ]          0:00:01.1  ( 100.0 % )     0:00:01.1 /  0:00:01.0    1.0
+[10/11 20:38:36      1s] ---------------------------------------------------------------------------------------------
+[10/11 20:38:36      1s]  QThreadWorker #1 TOTAL             0:00:01.1  ( 100.0 % )     0:00:01.1 /  0:00:01.0    1.0
+[10/11 20:38:36      1s] ---------------------------------------------------------------------------------------------
+
+[10/11 20:38:36   3793s]  
+_______________________________________________________________________
+[10/11 20:38:50   3807s] <CMD> redirect -tee /nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/LOG/step_route.log {source /nethome/sgupta943/physical-design-onboarding-F26/scripts/apr/steps/step_route.tcl}
+[10/11 20:42:18   4421s] **INFO: Starting Blocking QThread with 8 CPU
+[10/11 20:42:18   4421s]  
+   ____________________________________________________________________
+__/ message from Blocking QThread
+[10/11 20:42:18   4421s] Multi-CPU acceleration using 8 CPU(s).
+[10/11 20:42:18      0s] *** QThread MetricCollect [begin] (optDesign #2) : mem = 2.8M
+[10/11 20:42:18      0s] Multithreaded Timing Analysis is initialized with 8 threads
+[10/11 20:42:18      0s] 
+[10/11 20:42:19      0s] Ending "set_metric_additional_insts" (total cpu=0:00:00.4, real=0:00:01.0, peak res=3921.2M, current mem=3213.3M)
+[10/11 20:42:19      0s] Ending "set_metric_inst_count_area" (total cpu=0:00:00.5, real=0:00:00.0, peak res=3290.0M, current mem=3219.5M)
+[10/11 20:42:20      1s] *** QThread MetricCollect [finish] (optDesign #2) : cpu/real = 0:00:01.3/0:00:01.3 (1.0), mem = 38.4M
+[10/11 20:42:20      1s] 
+[10/11 20:42:20      1s] =============================================================================================
+[10/11 20:42:20      1s]  Step TAT Report : QThreadWorker #1 / optDesign #2                              25.11-s102_1
+[10/11 20:42:20      1s] =============================================================================================
+[10/11 20:42:20      1s]  Step Name                  Count        Real  (       % )      Step Total Real / CPU  Scale
+[10/11 20:42:20      1s] ---------------------------------------------------------------------------------------------
+[10/11 20:42:20      1s] [ MISC                   ]          0:00:01.3  ( 100.0 % )     0:00:01.3 /  0:00:01.3    1.0
+[10/11 20:42:20      1s] ---------------------------------------------------------------------------------------------
+[10/11 20:42:20      1s]  QThreadWorker #1 TOTAL             0:00:01.3  ( 100.0 % )     0:00:01.3 /  0:00:01.3    1.0
+[10/11 20:42:20      1s] ---------------------------------------------------------------------------------------------
+
+[10/11 20:42:20   4421s]  
+_______________________________________________________________________
+[10/11 20:42:27   4437s] <CMD> redirect -tee /nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/LOG/step_fill.log {source /nethome/sgupta943/physical-design-onboarding-F26/scripts/apr/steps/step_fill.tcl}
+[10/11 20:42:29   4439s] <CMD> redirect -tee /nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/LOG/step_physical_verify.log {source /nethome/sgupta943/physical-design-onboarding-F26/scripts/apr/steps/step_physical_verify.tcl}
+[10/11 20:42:31   4443s] <CMD> redirect -tee /nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/LOG/step_extract.log {source /nethome/sgupta943/physical-design-onboarding-F26/scripts/apr/steps/step_extract.tcl}
+[10/11 20:43:36   4756s] 
+[10/11 20:43:36   4756s] *** Summary of all messages that are not suppressed in this session:
+[10/11 20:43:36   4756s] Severity  ID               Count  Summary                                  
+[10/11 20:43:36   4756s] WARNING   IMPDF-1008           1  The routing has wire-patches (that requi...
+[10/11 20:43:36   4756s] WARNING   IMPLF-200           87  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[10/11 20:43:36   4756s] WARNING   IMPLF-201           33  Pin '%s' in macro '%s' has no ANTENNADIF...
+[10/11 20:43:36   4756s] WARNING   IMPFP-7235           1  DIE's corner: %s is NOT on %s,  Please u...
+[10/11 20:43:36   4756s] WARNING   IMPFP-10013          4  Halo should be created around block %s a...
+[10/11 20:43:36   4756s] WARNING   IMPFP-325            1  Floorplan of the design is resized. All ...
+[10/11 20:43:36   4756s] WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+[10/11 20:43:36   4756s] WARNING   IMPFP-4026           4  Adjusting core to '%s' to %f due to trac...
+[10/11 20:43:36   4756s] WARNING   IMPMSMV-1799         2  Power switch '%s', primary_%s pg_pin '%s...
+[10/11 20:43:36   4756s] WARNING   IMPOGDS-217        122  Master cell: %s not found in merged file...
+[10/11 20:43:36   4756s] WARNING   IMPOGDS-218          1  Number of master cells not found after m...
+[10/11 20:43:36   4756s] WARNING   IMPVL-515            1  Found only one pg fterm in top module (%...
+[10/11 20:43:36   4756s] WARNING   IMPDB-6501           1  "Option '-process' in setDesignMode" wil...
+[10/11 20:43:36   4756s] WARNING   IMPDC-1629           2  The default delay limit was set to %d. T...
+[10/11 20:43:36   4756s] WARNING   IMPVFG-257           1  setVerifyGeometryMode/verifyGeometry com...
+[10/11 20:43:36   4756s] WARNING   IMPVFG-173           1  Verify Geometry does not write any warni...
+[10/11 20:43:36   4756s] WARNING   IMPMF-5054           2  fill_setting_save command is obsolete an...
+[10/11 20:43:36   4756s] WARNING   IMPPP-531            2  ViaGen Warning: Due to %s, viaGen fail t...
+[10/11 20:43:36   4756s] WARNING   IMPPP-532          135  ViaGen Warning: The top layer and bottom...
+[10/11 20:43:36   4756s] WARNING   IMPPP-610            2  The power planner failed to find a match...
+[10/11 20:43:36   4756s] WARNING   IMPPP-354            3  The power planner did not generate the %...
+[10/11 20:43:36   4756s] WARNING   IMPPP-612            8  The intersection area is insufficient to...
+[10/11 20:43:36   4756s] WARNING   IMPPP-4022           2  Option "-%s" is obsolete and has been re...
+[10/11 20:43:36   4756s] ERROR     IMPPP-4029           1  Unexpected value for the option '%s'. "%...
+[10/11 20:43:36   4756s] WARNING   IMPSR-4302           1  Cap-table/qrcTechFile is found in the de...
+[10/11 20:43:36   4756s] WARNING   IMPSR-4053           1  Option %s is obsolete and has been repla...
+[10/11 20:43:36   4756s] WARNING   IMPSR-4058           1  Sroute option: %s should be used in conj...
+[10/11 20:43:36   4756s] WARNING   IMPSR-1256           2  Unable to find any CORE class pad pin of...
+[10/11 20:43:36   4756s] WARNING   IMPSP-5217           1  addFiller command is running on a postRo...
+[10/11 20:43:36   4756s] WARNING   IMPSP-9042           1  Scan chains were not defined, -place_glo...
+[10/11 20:43:36   4756s] WARNING   IMPSP-362            1  Site '%s' has %s std.Cell height, so ign...
+[10/11 20:43:36   4756s] WARNING   IMPOPT-3195          2  Analysis mode has changed.               
+[10/11 20:43:36   4756s] WARNING   IMPOPT-7320          1  Glitch fixing has been disabled since gl...
+[10/11 20:43:36   4756s] WARNING   IMPOPT-7329          1  Skipping refinePlace due to user configu...
+[10/11 20:43:36   4756s] WARNING   IMPOPT-2908          1  Maximum transition %.3f is too small com...
+[10/11 20:43:36   4756s] ERROR     IMPOPT-7109          2  The "-opt_leakage_power_effort" & "-opt_...
+[10/11 20:43:36   4756s] WARNING   IMPCCOPT-2237        1  More than half the existing clock gates ...
+[10/11 20:43:36   4756s] ERROR     IMPCCOPT-2382        1  Unable to perform CTS checks because no ...
+[10/11 20:43:36   4756s] WARNING   IMPCCOPT-1007        1  Did not meet the max transition constrai...
+[10/11 20:43:36   4756s] WARNING   IMPCCOPT-1023        1  Did not meet the skew target of %s       
+[10/11 20:43:36   4756s] WARNING   NREX-102           609  Net %s is not extracted due to %s. The r...
+[10/11 20:43:36   4756s] WARNING   NRIG-1303            1  The congestion map does not match the GC...
+[10/11 20:43:36   4756s] WARNING   NRIF-38              1  Option %s%s is not a Boolean option.     
+[10/11 20:43:36   4756s] WARNING   NRIF-82              1  When route_detail_post_route_swap_via is...
+[10/11 20:43:36   4756s] WARNING   IMPCTE-285        2424  Could not locate cell %s in library %s.  
+[10/11 20:43:36   4756s] WARNING   IMPCTE-289        1008  set_driving_cell : %s Use the cell in li...
+[10/11 20:43:36   4756s] WARNING   IMPCTE-290        1008  Could not locate cell %s in any library ...
+[10/11 20:43:36   4756s] WARNING   IMPTCM-70            1  Option "%s" for command %s is obsolete a...
+[10/11 20:43:36   4756s] WARNING   TCLCMD-578           1  '%s' option may significantly degrade mo...
+[10/11 20:43:36   4756s] WARNING   TCLCMD-579           1  '%s' option is obsolete. Use '%s' option 
+[10/11 20:43:36   4756s] WARNING   TCLCMD-1013          2  The SDC set_operating_conditions asserti...
+[10/11 20:43:36   4756s] WARNING   TCLCMD-1403          1  '%s'                                     
+[10/11 20:43:36   4756s] WARNING   TCLCMD-1461          2  Skipped unsupported command: %s          
+[10/11 20:43:36   4756s] WARNING   TECHLIB-302          1  No function defined for cell '%s'. The c...
+[10/11 20:43:36   4756s] *** Message Summary: 5497 warning(s), 4 error(s)
+[10/11 20:43:36   4756s] 
+[10/11 20:43:36   4756s] 
+[10/11 20:43:36   4756s] *** Memory Usage v#1 (Current mem = 3701.504M, initial mem = 915.879M) ***
+[10/11 20:43:36   4756s] --- Ending "Innovus" (totcpu=1:19:17, real=0:23:47, mem=3701.5M) ---

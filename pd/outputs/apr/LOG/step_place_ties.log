@@ -1,0 +1,9 @@
+Options: Max Distance = 2000.000 microns, No Fan-out constraint.
+Updating RC Grid density data for preRoute extraction ...
+Initializing multi-corner resistance tables ...
+	CornerforLayerOpt timing analysis view typical_analysis_view has been selected for calibration 
+	CornerforLayerOpt timing analysis view typical_analysis_view has been selected for calibration 
+Re-routed 3 nets
+INFO: Total Number of Tie Cells (TIEHI) placed: 3  
+Re-routed 34 nets
+INFO: Total Number of Tie Cells (TIELO) placed: 34  

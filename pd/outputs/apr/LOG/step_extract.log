@@ -1,0 +1,552 @@
+#Start Design Signature (0)
+#Finish Inst Signature in MT(10992776)
+#Finish Net Signature in MT(77448121)
+#Finish SNet Signature in MT (126522137)
+#Run time and memory report for RC extraction:
+#RC extraction running on  Xeon 2.30GHz 19712KB Cache 112CPU.
+#Run Statistics for snet signature:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 , scale factor =  2.56/8, scale score = 0.32.
+#    Increased memory =     0.00 (MB), total memory =  3656.83 (MB), peak memory =  4362.74 (MB)
+#Run Statistics for Net Final Signature:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 .
+#   Increased memory =     0.00 (MB), total memory =  3656.83 (MB), peak memory =  4362.74 (MB)
+#Run Statistics for Net launch:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 , scale factor =  7.19/8, scale score = 0.90.
+#    Increased memory =     0.00 (MB), total memory =  3656.83 (MB), peak memory =  4362.74 (MB)
+#Run Statistics for Net init_dbsNet_slist:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 .
+#   Increased memory =     0.05 (MB), total memory =  3656.83 (MB), peak memory =  4362.74 (MB)
+#Run Statistics for net signature:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 , scale factor =  6.51/8, scale score = 0.81.
+#    Increased memory =     0.05 (MB), total memory =  3656.83 (MB), peak memory =  4362.74 (MB)
+#Run Statistics for inst signature:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 , scale factor =  3.85/8, scale score = 0.48.
+#    Increased memory =   -12.91 (MB), total memory =  3656.77 (MB), peak memory =  4362.74 (MB)
+#Extract in post route mode
+#Finish check_net_pin_list step Enter extract_rc_in_nr_cmd
+#Fast data preparation for tQuantus.
+#Start routing data preparation on Sun Oct 11 20:42:32 2026
+#
+# met1         H   Track-Pitch = 0.4600    Line-2-Via Pitch = 0.3400
+# met2         V   Track-Pitch = 0.4600    Line-2-Via Pitch = 0.3400
+# met3         H   Track-Pitch = 0.6100    Line-2-Via Pitch = 0.6100
+# met4         V   Track-Pitch = 0.6150    Line-2-Via Pitch = 0.6150
+# met5         H   Track-Pitch = 3.6600    Line-2-Via Pitch = 3.2000
+#Regenerating Ggrids automatically.
+#Auto generating G-grids with size=15 tracks, using layer met3's pitch = 0.6150.
+#Using automatically generated G-grids.
+#Done routing data preparation.
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 3668.33 (MB), peak = 4362.74 (MB)
+#Start routing data preparation on Sun Oct 11 20:42:32 2026
+#
+#Bottom routing layer index=1(met1), bottom routing layer for shielding=1(met1), bottom shield layer=1(met1) top shield layer=5(met5)
+#shield_bottom_stripe_layer=1(met1), shield_top_stripe_layer=5(met5)
+#pin_access_rlayer=2(met2) num_routing_layer=5 top_routing_layer=5 top_ripin_layer=5
+#shield_top_dpt_rlayer=-1 top_rlayer=5 top_trim_metal_rlayer=-1 rlayer_lowest=1 bottom_rlayer=1
+#enable_trim_layer_shield=F enable_dpt_layer_shield=F has_line_end_grid=F
+#Regenerating Ggrids automatically.
+#Auto generating G-grids with size=15 tracks, using layer met3's pitch = 0.6150.
+#Using automatically generated G-grids.
+#Done routing data preparation.
+#cpu time = 00:00:01, elapsed time = 00:00:00, memory = 3681.80 (MB), peak = 4362.74 (MB)
+#
+#Start tQuantus RC extraction...
+#Start building rc corner(s)...
+#Number of RC Corner = 1
+#Corner typical_rc /nethome/sgupta943/physical-design-onboarding-F26/resources/cadence_sky130/sky130_release_0.1.0/quantus/extraction/typical/qrcTechFile 25.000000 (real) 
+#(i=5, n=5 1000)
+#metal1 -> met1 (1)
+#metal2 -> met2 (2)
+#metal3 -> met3 (3)
+#metal4 -> met4 (4)
+#metal5 -> met5 (5)
+#SADV-On
+# Corner(s) : 
+#typical_rc [25.00]
+# Corner id: 0
+# Layout Scale: 1.000000
+# Has Metal Fill model: yes
+# Temperature was set
+# Temperature : 25.000000
+# Ref. Temp   : 25.000000
+#SADV-Off
+#
+#layer[5] tech width 1600 != ict width 800.0
+#
+#layer[5] tech spc 1600 != ict spc 800.0
+#total pattern=35 [5, 90]
+#Reading previously stored rc_model file ( rc_model.bin ) ...
+#found CAPMODEL /nethome/sgupta943/physical-design-onboarding-F26/resources/cadence_sky130/sky130_release_0.1.0/quantus/extraction/typical/qrcTechFile
+#found RESMODEL /nethome/sgupta943/physical-design-onboarding-F26/resources/cadence_sky130/sky130_release_0.1.0/quantus/extraction/typical/qrcTechFile 25.000000 
+#CCE Version read = IQuantus/TQuantus 24.1.0-s290
+#number model r/c [1,1] [5,90] read
+#0 rcmodel(s) requires rebuild
+#Build RC corners: cpu time = 00:00:00, elapsed time = 00:00:01, memory = 3683.09 (MB), peak = 4362.74 (MB)
+#Finish check_net_pin_list step Enter extract
+#Start init net ripin tree building
+#Finish init net ripin tree building
+#Cpu time = 00:00:00
+#Elapsed time = 00:00:00
+#Increased memory = 0.00 (MB)
+#Total memory = 3683.09 (MB)
+#Peak memory = 4362.74 (MB)
+#Using multithreading with 8 threads.
+#begin processing metal fill model file
+#end processing metal fill model file
+#Length limit = 200 pitches
+#opt mode = 2
+#Finish check_net_pin_list step Fix net pin list
+#Start generate extraction boxes.
+#
+#Extract using 30 x 30 Hboxes
+#6x4 initial hboxes
+#Use area based hbox pruning.
+#0/0 hboxes pruned.
+#Complete generating extraction boxes.
+#Extract 15 hboxes with 8 threads on machine with  Xeon 2.00GHz 19712KB Cache 112CPU...
+#Process 0 special clock nets for rc extraction
+#Total 7120 nets were built. 1326 nodes added to break long wires. 0 net(s) have incomplete routes.
+#Start inst blockage merging.
+#Run Statistics for Extraction:
+#   Cpu time = 00:00:15, elapsed time = 00:00:05 .
+#   Increased memory =   308.70 (MB), total memory =  3991.75 (MB), peak memory =  4362.74 (MB)
+#Register nets and terms for rcdb /nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/innovus_temp_945206_f5c455ed-f5d3-4eb6-9d67-d61d227b5eae_ece-rhelsrv_sgupta943_bJs9bw/nr0_945206_f5c455ed-f5d3-4eb6-9d67-d61d227b5eael5hJ5L.rcdb.d
+#Finish registering nets and terms for rcdb.
+#Simplify RC tree: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 3745.36 (MB), peak = 4362.74 (MB)
+#RC Statistics: 53600 Res, 37127 Ground Cap, 45501 XCap (Edge to Edge)
+#WARNING (NREX-102) Net addr_i[1] is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+#WARNING (NREX-102) Net addr_i[0] is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+#WARNING (NREX-102) Net SYNOPSYS_UNCONNECTED_1 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+#WARNING (NREX-102) Net SYNOPSYS_UNCONNECTED_10 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+#WARNING (NREX-102) Net SYNOPSYS_UNCONNECTED_11 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+#WARNING (NREX-102) Net SYNOPSYS_UNCONNECTED_12 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+#WARNING (NREX-102) Net SYNOPSYS_UNCONNECTED_13 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+#WARNING (NREX-102) Net SYNOPSYS_UNCONNECTED_14 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+#WARNING (NREX-102) Net SYNOPSYS_UNCONNECTED_15 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+#WARNING (NREX-102) Net SYNOPSYS_UNCONNECTED_16 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+#WARNING (NREX-102) Net SYNOPSYS_UNCONNECTED_17 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+#WARNING (NREX-102) Net SYNOPSYS_UNCONNECTED_18 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+#WARNING (NREX-102) Net SYNOPSYS_UNCONNECTED_19 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+#WARNING (NREX-102) Net SYNOPSYS_UNCONNECTED_2 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+#WARNING (NREX-102) Net SYNOPSYS_UNCONNECTED_20 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+#WARNING (NREX-102) Net SYNOPSYS_UNCONNECTED_21 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+#WARNING (NREX-102) Net SYNOPSYS_UNCONNECTED_22 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+#WARNING (NREX-102) Net SYNOPSYS_UNCONNECTED_23 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+#WARNING (NREX-102) Net SYNOPSYS_UNCONNECTED_24 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+#WARNING (NREX-102) Net SYNOPSYS_UNCONNECTED_25 is not extracted due to Has no routing. The result of timing analysis involving such net is inaccurate.
+#WARNING (EMS-27) Message (NREX-102) has exceeded the current message display limit of 20.
+#To increase the message display limit, refer to the product command reference manual.
+#RC V/H edge ratio: 0.53, Avg V/H Edge Length: 12527.07 (32203), Avg L-Edge Length: 18467.70 (19176)
+#Nets and terms are pre-registered for rcdb /nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/innovus_temp_945206_f5c455ed-f5d3-4eb6-9d67-d61d227b5eae_ece-rhelsrv_sgupta943_bJs9bw/nr0_945206_f5c455ed-f5d3-4eb6-9d67-d61d227b5eael5hJ5L.rcdb.d.
+#Start writing RC data.
+#Finish writing RC data
+#Finish writing rcdb with 61132 nodes, 54012 edges, and 118748 xcaps
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 3741.83 (MB), peak = 4362.74 (MB)
+Restoring parasitic data from file '/nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/innovus_temp_945206_f5c455ed-f5d3-4eb6-9d67-d61d227b5eae_ece-rhelsrv_sgupta943_bJs9bw/nr0_945206_f5c455ed-f5d3-4eb6-9d67-d61d227b5eael5hJ5L.rcdb.d' ...
+Reading RCDB with compressed RC data.
+Reading RCDB with compressed RC data.
+Begin read_parasitics... (cpu: 0:00:00.0 real: 0:00:00.0 mem: 3741.840M)
+Following multi-corner parasitics specified:
+	/nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/innovus_temp_945206_f5c455ed-f5d3-4eb6-9d67-d61d227b5eae_ece-rhelsrv_sgupta943_bJs9bw/nr0_945206_f5c455ed-f5d3-4eb6-9d67-d61d227b5eael5hJ5L.rcdb.d (rcdb)
+Reading RCDB with compressed RC data.
+		Cell chip_top has rcdb /nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/innovus_temp_945206_f5c455ed-f5d3-4eb6-9d67-d61d227b5eae_ece-rhelsrv_sgupta943_bJs9bw/nr0_945206_f5c455ed-f5d3-4eb6-9d67-d61d227b5eael5hJ5L.rcdb.d specified
+Cell chip_top, hinst 
+Reading RCDB with compressed RC data.
+Done read_parasitics... (cpu: 0:00:00.2 real: 0:00:01.0 mem: 3741.922M)
+#
+#Restore RCDB.
+#
+#Complete tQuantus RC extraction.
+#Cpu time = 00:00:17
+#Elapsed time = 00:00:06
+#Increased memory = 60.11 (MB)
+#Total memory = 3741.92 (MB)
+#Peak memory = 4362.74 (MB)
+#
+#1326 inserted nodes are removed
+#Restored 0 tie nets, 0 tie snets, 0 partial nets
+#Start Design Signature (0)
+#Finish Inst Signature in MT(10992776)
+#Finish Net Signature in MT(77448121)
+#Finish SNet Signature in MT (126522137)
+#Run time and memory report for RC extraction:
+#RC extraction running on  Xeon 2.00GHz 19712KB Cache 112CPU.
+#Run Statistics for snet signature:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 , scale factor =  2.52/8, scale score = 0.32.
+#    Increased memory =     0.00 (MB), total memory =  3692.09 (MB), peak memory =  4362.74 (MB)
+#Run Statistics for Net Final Signature:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 .
+#   Increased memory =     0.00 (MB), total memory =  3692.09 (MB), peak memory =  4362.74 (MB)
+#Run Statistics for Net launch:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 , scale factor =  7.26/8, scale score = 0.91.
+#    Increased memory =     0.00 (MB), total memory =  3692.09 (MB), peak memory =  4362.74 (MB)
+#Run Statistics for Net init_dbsNet_slist:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 .
+#   Increased memory =     0.01 (MB), total memory =  3692.09 (MB), peak memory =  4362.74 (MB)
+#Run Statistics for net signature:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 , scale factor =  6.58/8, scale score = 0.82.
+#    Increased memory =     0.01 (MB), total memory =  3692.09 (MB), peak memory =  4362.74 (MB)
+#Run Statistics for inst signature:
+#   Cpu time = 00:00:00, elapsed time = 00:00:00 , scale factor =  3.88/8, scale score = 0.48.
+#    Increased memory =    -6.43 (MB), total memory =  3692.08 (MB), peak memory =  4362.74 (MB)
+Reading RCDB with compressed RC data.
+RC Out has the following PVT Info:
+   RC:typical_rc
+Dumping Spef file.....
+Printing D_NET...
+rcOut completed:: 9 % rcOut completed:: 19 % rcOut completed:: 29 % rcOut completed:: 39 % rcOut completed:: 49 % rcOut completed:: 59 % rcOut completed:: 69 % rcOut completed:: 79 % rcOut completed:: 89 % rcOut completed:: 100 % 
+RC Out from RCDB Completed (CPU Time= 0:00:00.8  MEM= 3706.7M)
+AAE_INFO: opIsDesignInPostRouteState() is 1
+AAE_INFO: resetNetProps viewIdx 0 
+Starting SI iteration 1 using Infinite Timing Windows
+Total CPU(s) requested: 8
+Total CPU(s) enabled with current License(s): 8
+Current free CPU(s): 1
+Additional license(s) checked out: 1 Innovus_CPU_Opt license(s) for 8 CPU(s)
+[20:42:40.031195] Periodic Lic check successful
+[20:42:40.031242] Feature usage summary:
+[20:42:40.031243] Innovus_Impl_System  
+[20:42:40.031243] Innovus_CPU_Opt  
+Total CPU(s) now enabled: 16
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: chip_top
+# Design Mode: 130nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Start delay calculation (fullDC) (8 T). (MEM=3790.6)
+Reading RCDB with compressed RC data.
+Total number of fetched objects 8150
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 7323,  100.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=3831.93 CPU=0:00:06.4 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=3831.93 CPU=0:00:06.7 REAL=0:00:01.0)
+Save waveform /nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/innovus_temp_945206_f5c455ed-f5d3-4eb6-9d67-d61d227b5eae_ece-rhelsrv_sgupta943_bJs9bw/.AAE_UOVGWP/.AAE_945206_f5c455ed-f5d3-4eb6-9d67-d61d227b5eae/waveform.data...
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 3836.6M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Loading CTE timing window is completed (CPU = 0:00:00.2, REAL = 0:00:00.0, MEM = 3836.6M)
+Starting SI iteration 2
+Start delay calculation (fullDC) (8 T). (MEM=3787.85)
+Glitch Analysis: View typical_analysis_view -- Total Number of Nets Skipped = 311. 
+Glitch Analysis: View typical_analysis_view -- Total Number of Nets Analyzed = 8150. 
+Total number of fetched objects 8150
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 7323,  19.9 percent of the nets selected for SI analysis
+End delay calculation. (MEM=3828.8 CPU=0:00:03.6 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=3828.8 CPU=0:00:03.6 REAL=0:00:00.0)
+Net "VDD" has power-stripes on layers that
+could be written as LEF pins, but they will not become pins
+because there is no external terminal for this net on this
+design. You should add a power-terminal for this net to the
+design using the createPGPin/ command if you want these power-stripes
+to become LEF pins.
+Writing DEF file '/nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/DBS/chip_top.def', current time is Sun Oct 11 20:42:43 2026 ...
+unitPerMicron=1000, dbgMicronPerDBU=0.001000, unitPerDBU=1.000000
+**WARN: (IMPDF-1008):	The routing has wire-patches (that requires DEF 5.8 NETS RECT statements) in the signal routing that cannot be represented correctly in DEF 5.6 or 5.7. They will be converted to SPECIALNETS routing RECT shapes instead. This output is suitable for RC extraction tools, but this DEF should not be read back into Innovus as the routing data will not be correct. You should use DEF 5.8 to represent this routing data correctly by using "set dbgLefDefOutVersion 5.8".
+Type 'man IMPDF-1008' for more detail.
+DEF file '/nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/DBS/chip_top.def' is written, current time is Sun Oct 11 20:42:43 2026 ...
+AAE_INFO: opIsDesignInPostRouteState() is 1
+AAE_INFO: resetNetProps viewIdx 0 
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: chip_top
+# Design Mode: 130nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Start delay calculation (fullDC) (8 T). (MEM=3802.36)
+Total number of fetched objects 8150
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 7323,  100.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=3851.53 CPU=0:00:06.0 REAL=0:00:01.0)
+End delay calculation (fullDC). (MEM=3851.53 CPU=0:00:06.3 REAL=0:00:01.0)
+Save waveform /nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/innovus_temp_945206_f5c455ed-f5d3-4eb6-9d67-d61d227b5eae_ece-rhelsrv_sgupta943_bJs9bw/.AAE_UOVGWP/.AAE_945206_f5c455ed-f5d3-4eb6-9d67-d61d227b5eae/waveform.data...
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 3854.3M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Loading CTE timing window is completed (CPU = 0:00:00.2, REAL = 0:00:00.0, MEM = 3854.3M)
+Starting SI iteration 2
+Start delay calculation (fullDC) (8 T). (MEM=3810.5)
+Glitch Analysis: View typical_analysis_view -- Total Number of Nets Skipped = 311. 
+Glitch Analysis: View typical_analysis_view -- Total Number of Nets Analyzed = 8150. 
+Total number of fetched objects 8150
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 7323,  19.9 percent of the nets selected for SI analysis
+End delay calculation. (MEM=3844.88 CPU=0:00:03.4 REAL=0:00:01.0)
+End delay calculation (fullDC). (MEM=3844.88 CPU=0:00:03.5 REAL=0:00:01.0)
+MultiThreaded Model extraction started with 8 threads
+TAMODEL Cpu User Time =  235.8 sec
+TAMODEL Memory Usage  =    0.0 MB
+Ending "etm_extraction" (total cpu=0:04:11, real=0:00:37.0, peak res=3896.0M, current mem=3811.3M)
+Ending "etm_generation" (total cpu=0:04:29, real=0:00:43.0, peak res=3896.0M, current mem=3689.7M)
+Parse flat map file '/nethome/sgupta943/physical-design-onboarding-F26/resources/cadence_sky130/sky130_scl_9T_0.1.2/sky130_scl_9T/gds/sky130_stream.mapFile'
+ Writing GDSII file ...
+	****** db unit per micron = 1000 ******
+	****** output gds2 file unit per micron = 1000 ******
+	****** unit scaling factor = 1 ******
+Output for physical terminals
+Output for special nets and metal fills
+Output for regular nets
+Output for instance
+Output for logical terminals
+Output for bump
+Convert 0 swires and 0 svias from compressed groups
+Convert 0 swires and 0 svias from compressed groups
+Output for via structure generation total number 147
+Statistics for GDS generated (version 3)
+----------------------------------------
+Stream Out Layer Mapping Information:
+GDS Layer Number          GDS Layer Name
+----------------------------------------
+    72                              met5
+    69                              via2
+    68                               via
+    69                              met2
+    70                              met3
+    68                              met1
+    71                              via4
+    70                              via3
+    71                              met4
+
+
+Stream Out Information Processed for GDS version 3:
+Units: 1000 DBU
+
+Object                             Count
+----------------------------------------
+Instances                          39208
+
+Ports/Pins                           132
+    metal layer met3                  86
+    metal layer met4                  31
+    metal layer met5                  15
+
+Nets                              180382
+    metal layer met1               40367
+    metal layer met2               82962
+    metal layer met3               38782
+    metal layer met4               17202
+    metal layer met5                1069
+
+    Via Instances                  56157
+
+Special Nets                         687
+    metal layer met1                 482
+    metal layer met2                 104
+    metal layer met4                  67
+    metal layer met5                  34
+
+    Via Instances                  13782
+
+Metal Fills                            0
+
+    Via Instances                      0
+
+Metal FillOPCs                         0
+
+    Via Instances                      0
+
+Metal FillDRCs                         0
+
+    Via Instances                      0
+
+Text                                 132
+    metal layer met3                  86
+    metal layer met4                  31
+    metal layer met5                  15
+
+
+Blockages                              0
+
+
+Custom Text                            0
+
+
+Custom Box                             0
+
+Trim Metal                             0
+
+######Streamout is finished!
+Parse flat map file '/nethome/sgupta943/physical-design-onboarding-F26/resources/cadence_sky130/sky130_scl_9T_0.1.2/sky130_scl_9T/gds/sky130_stream.mapFile'
+ Merge file: /nethome/sgupta943/physical-design-onboarding-F26/inputs/CF_SRAM_1024x32/gds/CF_SRAM_1024x32.gds has version number: 600
+Writing GDSII file ...
+	****** db unit per micron = 1000 ******
+	****** output gds2 file unit per micron = 1000 ******
+	****** unit scaling factor = 1 ******
+Output for physical terminals
+Output for special nets and metal fills
+Output for regular nets
+Output for instance
+Output for logical terminals
+Output for bump
+Convert 0 swires and 0 svias from compressed groups
+Convert 0 swires and 0 svias from compressed groups
+Scanning GDS file /nethome/sgupta943/physical-design-onboarding-F26/inputs/CF_SRAM_1024x32/gds/CF_SRAM_1024x32.gds to register cell name ......
+Output for via structure generation total number 147
+Statistics for GDS generated (version 600)
+----------------------------------------
+Stream Out Layer Mapping Information:
+GDS Layer Number          GDS Layer Name
+----------------------------------------
+    72                              met5
+    69                              via2
+    68                               via
+    69                              met2
+    70                              met3
+    68                              met1
+    71                              via4
+    70                              via3
+    71                              met4
+
+
+Stream Out Information Processed for GDS version 600:
+Units: 1000 DBU
+
+Object                             Count
+----------------------------------------
+Instances                          39208
+
+Ports/Pins                           132
+    metal layer met3                  86
+    metal layer met4                  31
+    metal layer met5                  15
+
+Nets                              180382
+    metal layer met1               40367
+    metal layer met2               82962
+    metal layer met3               38782
+    metal layer met4               17202
+    metal layer met5                1069
+
+    Via Instances                  56157
+
+Special Nets                         687
+    metal layer met1                 482
+    metal layer met2                 104
+    metal layer met4                  67
+    metal layer met5                  34
+
+    Via Instances                  13782
+
+Metal Fills                            0
+
+    Via Instances                      0
+
+Metal FillOPCs                         0
+
+    Via Instances                      0
+
+Metal FillDRCs                         0
+
+    Via Instances                      0
+
+Text                                 132
+    metal layer met3                  86
+    metal layer met4                  31
+    metal layer met5                  15
+
+
+Blockages                              0
+
+
+Custom Text                            0
+
+
+Custom Box                             0
+
+Trim Metal                             0
+
+Merging GDS file /nethome/sgupta943/physical-design-onboarding-F26/inputs/CF_SRAM_1024x32/gds/CF_SRAM_1024x32.gds ......
+	****** Merge file: /nethome/sgupta943/physical-design-onboarding-F26/inputs/CF_SRAM_1024x32/gds/CF_SRAM_1024x32.gds has version number: 600.
+	****** Merge file: /nethome/sgupta943/physical-design-onboarding-F26/inputs/CF_SRAM_1024x32/gds/CF_SRAM_1024x32.gds has units: 1000 per micron.
+	****** unit scaling factor = 1 ******
+**WARN: (IMPOGDS-217):	Master cell: AOI22X2_HS not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
+**WARN: (IMPOGDS-217):	Master cell: FILL1 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
+**WARN: (IMPOGDS-217):	Master cell: FILL2 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
+**WARN: (IMPOGDS-217):	Master cell: FILL4 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
+**WARN: (IMPOGDS-217):	Master cell: XNOR2X2 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
+**WARN: (IMPOGDS-217):	Master cell: FILL8 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
+**WARN: (IMPOGDS-217):	Master cell: OAI21X1_HS not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
+**WARN: (IMPOGDS-217):	Master cell: NOR3X1_HS not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
+**WARN: (IMPOGDS-217):	Master cell: OAI22X1_HS not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
+**WARN: (IMPOGDS-217):	Master cell: NAND2X1 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
+**WARN: (IMPOGDS-217):	Master cell: NOR2X1 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
+**WARN: (IMPOGDS-217):	Master cell: NOR4X1 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
+**WARN: (IMPOGDS-217):	Master cell: NAND3X1 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
+**WARN: (IMPOGDS-217):	Master cell: NAND4X1 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
+**WARN: (IMPOGDS-217):	Master cell: NAND2X2_HS not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
+**WARN: (IMPOGDS-217):	Master cell: NAND3X2_HS not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
+**WARN: (IMPOGDS-217):	Master cell: NAND4X2_HS not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
+**WARN: (IMPOGDS-217):	Master cell: AOI21X1_HS not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
+**WARN: (IMPOGDS-217):	Master cell: NOR3X2_HS not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
+**WARN: (IMPOGDS-217):	Master cell: AOI22X1_HS not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
+**WARN: (EMS-27):	Message (IMPOGDS-217) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPOGDS-218):	Number of master cells not found after merging: 122
+
+######Streamout is finished!
+Writing Netlist "/nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/DBS/chip_top_pnr.v" ...
+Writing Netlist "/nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/DBS/chip_top.phy.v" ...
+**WARN: (IMPVL-515):	Found only one pg fterm in top module (chip_top).
+Pwr name (VDD).
+Gnd name (VSS).
+1 Pwr names and 1 Gnd names.
+The in-memory database contained RC information but was not saved. To save 
+the RC information, use saveDesign's -rc option. Note: Saving RC information can be quite large, 
+so it should only be saved when it is really desired.
+#% Begin save design ... (date=10/11 20:43:29, mem=3699.5M)
+% Begin Save ccopt configuration ... (date=10/11 20:43:30, mem=3699.5M)
+% End Save ccopt configuration ... (date=10/11 20:43:30, total cpu=0:00:00.2, real=0:00:00.0, peak res=3699.5M, current mem=3698.5M)
+% Begin Save netlist data ... (date=10/11 20:43:30, mem=3698.5M)
+Writing Binary DB to /nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/DBS/chip_top.enc.dat/vbin/chip_top.v.bin in multi-threaded mode...
+% End Save netlist data ... (date=10/11 20:43:30, total cpu=0:00:00.2, real=0:00:00.0, peak res=3698.5M, current mem=3698.5M)
+Saving symbol-table file in separate thread ...
+Saving congestion map file in separate thread ...
+Saving congestion map file /nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/DBS/chip_top.enc.dat/chip_top.route.congmap.gz ...
+% Begin Save AAE data ... (date=10/11 20:43:30, mem=3699.1M)
+Saving AAE Data ...
+% End Save AAE data ... (date=10/11 20:43:30, total cpu=0:00:00.1, real=0:00:00.0, peak res=3699.1M, current mem=3699.1M)
+Saving mode setting ...
+**WARN: (IMPMF-5054):	fill_setting_save command is obsolete and should not be used any more. It still works in this release but will be removed in future release. Recommend to use Pegasus metal fill flow which is the replacement.
+Saving global file ...
+*info - save blackBox cells to lef file /nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/DBS/chip_top.enc.dat/chip_top.bbox.lef
+Saving Drc markers ...
+... 30 markers are saved ...
+... 11 geometry drc markers are saved ...
+... 11 antenna drc markers are saved ...
+Saving special route data file in separate thread ...
+Saving PG file in separate thread ...
+Saving placement file in separate thread ...
+Saving route file in separate thread ...
+Saving property file in separate thread ...
+Saving PG file /nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/DBS/chip_top.enc.dat/chip_top.pg.gz, version#2, (Created by Innovus v25.11-s102_1 on Sun Oct 11 20:43:32 2026)
+Saving property file /nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/DBS/chip_top.enc.dat/chip_top.prop
+** Saving stdCellPlacement_binary (version# 2) ...
+Save Adaptive View Pruning View Names to Binary file
+TAT_INFO: ::saveSpecialRoute REAL = 0 : CPU = 0 : MEM = 0.
+*** Completed saveProperty (cpu=0:00:00.2 real=0:00:00.0 mem=3744.8M) ***
+*** Completed savePGFile (cpu=0:00:00.2 real=0:00:01.0 mem=3744.8M) ***
+TAT_INFO: ::savePGFile REAL = 1 : CPU = 0 : MEM = 0.
+TAT_INFO: ::savePlace REAL = 0 : CPU = 0 : MEM = 0.
+*** Completed saveRoute (cpu=0:00:00.4 real=0:00:01.0 mem=3743.4M) ***
+TAT_INFO: ::saveRoute REAL = 1 : CPU = 0 : MEM = 0.
+TAT_INFO: ::db::saveAnnotationAndProp REAL = 0 : CPU = 0 : MEM = 0.
+#Saving pin access data to file /nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/DBS/chip_top.enc.dat/chip_top.apa ...
+#
+Saving preRoute extracted patterns in file '/nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/DBS/chip_top.enc.dat/chip_top.techData.gz' ...
+Saving preRoute extraction data in directory '/nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/DBS/chip_top.enc.dat/extraction/' ...
+TAT_INFO: ::db::saveSymbolTable REAL = 1 : CPU = 0 : MEM = 0.
+TAT_INFO: ::saveCongMap REAL = 1 : CPU = 0 : MEM = 0.
+% Begin Save power constraints data ... (date=10/11 20:43:34, mem=3701.5M)
+% End Save power constraints data ... (date=10/11 20:43:34, total cpu=0:00:00.1, real=0:00:00.0, peak res=3701.5M, current mem=3701.5M)
+Generated self-contained design chip_top.enc.dat
+#% End save design ... (date=10/11 20:43:35, total cpu=0:00:03.7, real=0:00:06.0, peak res=3702.2M, current mem=3702.2M)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPMF-5054           1  fill_setting_save command is obsolete an...
+*** Message Summary: 1 warning(s), 0 error(s)
+

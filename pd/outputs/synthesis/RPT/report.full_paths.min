@@ -1,0 +1,221 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -nworst 2
+        -max_paths 5
+Design : chip_top
+Version: X-2025.06-SP3
+Date   : Sun Oct 11 20:19:44 2026
+****************************************
+
+Operating Conditions: ff_1.98_0   Library: sky130_ff_1.98_0
+Wire Load Model Mode: top
+
+  Startpoint: cpu/u_reg_file/registers_reg[30][12]
+              (rising edge-triggered flip-flop clocked by coreClk)
+  Endpoint: data_memory/u_sram
+            (rising edge-triggered flip-flop clocked by coreClk)
+  Path Group: coreClk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock coreClk (rise edge)                               2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  cpu/u_reg_file/registers_reg[30][12]/CK (DFFX1)         0.00       2.50 r
+  cpu/u_reg_file/registers_reg[30][12]/Q (DFFX1)          0.23       2.73 r
+  cpu/u_reg_file/U1331/Y (AOI22X1)                        0.05       2.78 f
+  cpu/u_reg_file/U1332/Y (NAND4X1)                        0.04       2.82 r
+  cpu/u_reg_file/U1333/Y (OR4X1_HS)                       0.09       2.91 r
+  cpu/u_reg_file/rs2_data_o[12] (reg_file)                0.00       2.91 r
+  cpu/u_mem_access/rs2_data_i[12] (mem_access)            0.00       2.91 r
+  cpu/u_mem_access/U20/Y (CLKBUFX2)                       0.08       3.00 r
+  cpu/u_mem_access/dsram_wdata_o[12] (mem_access)         0.00       3.00 r
+  cpu/dsram_wdata_o[12] (cpu_top)                         0.00       3.00 r
+  mem_ctrl/core_dsram_wdata_i[12] (memory_controller)     0.00       3.00 r
+  mem_ctrl/U100/Y (AOI22X1)                               0.05       3.04 f
+  mem_ctrl/U101/Y (INVX1)                                 0.12       3.16 r
+  mem_ctrl/dsram_wdata_o[12] (memory_controller)          0.00       3.16 r
+  data_memory/wdata_i[12] (sram_wrapper_1)                0.00       3.16 r
+  data_memory/u_sram/DI[12] (CF_SRAM_1024x32)             0.00       3.16 r
+  data arrival time                                                  3.16
+
+  clock coreClk (rise edge)                               2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  data_memory/u_sram/CLKin (CF_SRAM_1024x32)              0.00       2.50 r
+  library hold time                                       0.58       3.08
+  data required time                                                 3.08
+  --------------------------------------------------------------------------
+  data required time                                                 3.08
+  data arrival time                                                 -3.16
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.09
+
+
+  Startpoint: cpu/u_reg_file/registers_reg[30][15]
+              (rising edge-triggered flip-flop clocked by coreClk)
+  Endpoint: data_memory/u_sram
+            (rising edge-triggered flip-flop clocked by coreClk)
+  Path Group: coreClk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock coreClk (rise edge)                               2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  cpu/u_reg_file/registers_reg[30][15]/CK (DFFX1)         0.00       2.50 r
+  cpu/u_reg_file/registers_reg[30][15]/Q (DFFX1)          0.23       2.73 r
+  cpu/u_reg_file/U1457/Y (AOI22X1)                        0.05       2.78 f
+  cpu/u_reg_file/U1458/Y (NAND4X1)                        0.04       2.82 r
+  cpu/u_reg_file/U1459/Y (OR4X1_HS)                       0.09       2.91 r
+  cpu/u_reg_file/rs2_data_o[15] (reg_file)                0.00       2.91 r
+  cpu/u_mem_access/rs2_data_i[15] (mem_access)            0.00       2.91 r
+  cpu/u_mem_access/U17/Y (CLKBUFX2)                       0.08       3.00 r
+  cpu/u_mem_access/dsram_wdata_o[15] (mem_access)         0.00       3.00 r
+  cpu/dsram_wdata_o[15] (cpu_top)                         0.00       3.00 r
+  mem_ctrl/core_dsram_wdata_i[15] (memory_controller)     0.00       3.00 r
+  mem_ctrl/U132/Y (AOI22X1)                               0.05       3.04 f
+  mem_ctrl/U133/Y (INVX1)                                 0.12       3.16 r
+  mem_ctrl/dsram_wdata_o[15] (memory_controller)          0.00       3.16 r
+  data_memory/wdata_i[15] (sram_wrapper_1)                0.00       3.16 r
+  data_memory/u_sram/DI[15] (CF_SRAM_1024x32)             0.00       3.16 r
+  data arrival time                                                  3.16
+
+  clock coreClk (rise edge)                               2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  data_memory/u_sram/CLKin (CF_SRAM_1024x32)              0.00       2.50 r
+  library hold time                                       0.58       3.08
+  data required time                                                 3.08
+  --------------------------------------------------------------------------
+  data required time                                                 3.08
+  data arrival time                                                 -3.16
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.09
+
+
+  Startpoint: cpu/u_reg_file/registers_reg[30][16]
+              (rising edge-triggered flip-flop clocked by coreClk)
+  Endpoint: data_memory/u_sram
+            (rising edge-triggered flip-flop clocked by coreClk)
+  Path Group: coreClk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock coreClk (rise edge)                               2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  cpu/u_reg_file/registers_reg[30][16]/CK (DFFX1)         0.00       2.50 r
+  cpu/u_reg_file/registers_reg[30][16]/Q (DFFX1)          0.23       2.73 r
+  cpu/u_reg_file/U1125/Y (AOI22X1)                        0.05       2.78 f
+  cpu/u_reg_file/U1126/Y (NAND4X1)                        0.04       2.82 r
+  cpu/u_reg_file/U1127/Y (OR4X1_HS)                       0.09       2.91 r
+  cpu/u_reg_file/rs2_data_o[16] (reg_file)                0.00       2.91 r
+  cpu/u_mem_access/rs2_data_i[16] (mem_access)            0.00       2.91 r
+  cpu/u_mem_access/U16/Y (CLKBUFX2)                       0.08       3.00 r
+  cpu/u_mem_access/dsram_wdata_o[16] (mem_access)         0.00       3.00 r
+  cpu/dsram_wdata_o[16] (cpu_top)                         0.00       3.00 r
+  mem_ctrl/core_dsram_wdata_i[16] (memory_controller)     0.00       3.00 r
+  mem_ctrl/U96/Y (AOI22X1)                                0.05       3.04 f
+  mem_ctrl/U97/Y (INVX1)                                  0.12       3.16 r
+  mem_ctrl/dsram_wdata_o[16] (memory_controller)          0.00       3.16 r
+  data_memory/wdata_i[16] (sram_wrapper_1)                0.00       3.16 r
+  data_memory/u_sram/DI[16] (CF_SRAM_1024x32)             0.00       3.16 r
+  data arrival time                                                  3.16
+
+  clock coreClk (rise edge)                               2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  data_memory/u_sram/CLKin (CF_SRAM_1024x32)              0.00       2.50 r
+  library hold time                                       0.58       3.08
+  data required time                                                 3.08
+  --------------------------------------------------------------------------
+  data required time                                                 3.08
+  data arrival time                                                 -3.16
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.09
+
+
+  Startpoint: cpu/u_reg_file/registers_reg[30][17]
+              (rising edge-triggered flip-flop clocked by coreClk)
+  Endpoint: data_memory/u_sram
+            (rising edge-triggered flip-flop clocked by coreClk)
+  Path Group: coreClk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock coreClk (rise edge)                               2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  cpu/u_reg_file/registers_reg[30][17]/CK (DFFX1)         0.00       2.50 r
+  cpu/u_reg_file/registers_reg[30][17]/Q (DFFX1)          0.23       2.73 r
+  cpu/u_reg_file/U1146/Y (AOI22X1)                        0.05       2.78 f
+  cpu/u_reg_file/U1147/Y (NAND4X1)                        0.04       2.82 r
+  cpu/u_reg_file/U1148/Y (OR4X1_HS)                       0.09       2.91 r
+  cpu/u_reg_file/rs2_data_o[17] (reg_file)                0.00       2.91 r
+  cpu/u_mem_access/rs2_data_i[17] (mem_access)            0.00       2.91 r
+  cpu/u_mem_access/U15/Y (CLKBUFX2)                       0.08       3.00 r
+  cpu/u_mem_access/dsram_wdata_o[17] (mem_access)         0.00       3.00 r
+  cpu/dsram_wdata_o[17] (cpu_top)                         0.00       3.00 r
+  mem_ctrl/core_dsram_wdata_i[17] (memory_controller)     0.00       3.00 r
+  mem_ctrl/U130/Y (AOI22X1)                               0.05       3.04 f
+  mem_ctrl/U131/Y (INVX1)                                 0.12       3.16 r
+  mem_ctrl/dsram_wdata_o[17] (memory_controller)          0.00       3.16 r
+  data_memory/wdata_i[17] (sram_wrapper_1)                0.00       3.16 r
+  data_memory/u_sram/DI[17] (CF_SRAM_1024x32)             0.00       3.16 r
+  data arrival time                                                  3.16
+
+  clock coreClk (rise edge)                               2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  data_memory/u_sram/CLKin (CF_SRAM_1024x32)              0.00       2.50 r
+  library hold time                                       0.58       3.08
+  data required time                                                 3.08
+  --------------------------------------------------------------------------
+  data required time                                                 3.08
+  data arrival time                                                 -3.16
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.09
+
+
+  Startpoint: cpu/u_reg_file/registers_reg[30][18]
+              (rising edge-triggered flip-flop clocked by coreClk)
+  Endpoint: data_memory/u_sram
+            (rising edge-triggered flip-flop clocked by coreClk)
+  Path Group: coreClk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock coreClk (rise edge)                               2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  cpu/u_reg_file/registers_reg[30][18]/CK (DFFX1)         0.00       2.50 r
+  cpu/u_reg_file/registers_reg[30][18]/Q (DFFX1)          0.23       2.73 r
+  cpu/u_reg_file/U1167/Y (AOI22X1)                        0.05       2.78 f
+  cpu/u_reg_file/U1168/Y (NAND4X1)                        0.04       2.82 r
+  cpu/u_reg_file/U1169/Y (OR4X1_HS)                       0.09       2.91 r
+  cpu/u_reg_file/rs2_data_o[18] (reg_file)                0.00       2.91 r
+  cpu/u_mem_access/rs2_data_i[18] (mem_access)            0.00       2.91 r
+  cpu/u_mem_access/U14/Y (CLKBUFX2)                       0.08       3.00 r
+  cpu/u_mem_access/dsram_wdata_o[18] (mem_access)         0.00       3.00 r
+  cpu/dsram_wdata_o[18] (cpu_top)                         0.00       3.00 r
+  mem_ctrl/core_dsram_wdata_i[18] (memory_controller)     0.00       3.00 r
+  mem_ctrl/U128/Y (AOI22X1)                               0.05       3.04 f
+  mem_ctrl/U129/Y (INVX1)                                 0.12       3.16 r
+  mem_ctrl/dsram_wdata_o[18] (memory_controller)          0.00       3.16 r
+  data_memory/wdata_i[18] (sram_wrapper_1)                0.00       3.16 r
+  data_memory/u_sram/DI[18] (CF_SRAM_1024x32)             0.00       3.16 r
+  data arrival time                                                  3.16
+
+  clock coreClk (rise edge)                               2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  data_memory/u_sram/CLKin (CF_SRAM_1024x32)              0.00       2.50 r
+  library hold time                                       0.58       3.08
+  data required time                                                 3.08
+  --------------------------------------------------------------------------
+  data required time                                                 3.08
+  data arrival time                                                 -3.16
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.09
+
+
+1

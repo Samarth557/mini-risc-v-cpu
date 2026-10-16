@@ -1,0 +1,113 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2025 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v25.11-s102_1, built Wed Aug 27 13:03:08 PDT 2025
+Options:	-log apr.log -init /nethome/sgupta943/physical-design-onboarding-F26/scripts/apr/apr.tcl -legacy_ui -nowin 
+Date:		Sun Oct 11 20:19:49 2026
+Host:		ece-rhelsrv (x86_64 w/Linux 5.14.0-687.45.1.el9_8.x86_64) (14cores*112cpus*Intel(R) Xeon(R) Gold 5117 CPU @ 2.00GHz 19712KB)
+OS:		Red Hat Enterprise Linux 9.8 (Plow)
+
+License:
+		[20:19:49.254922] Configured Lic search path (25.01-s002): 5280@ece-winlic.ece.gatech.edu:1055@ansyslic.ecs.gatech.edu
+
+		invs	Innovus Implementation System	25.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (769 mbytes). Set global soft_stack_size_limit to change the value.
+Info: Process UID = 945206 / f5c455ed-f5d3-4eb6-9d67-d61d227b5eae / TMvShxz8hN
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getVersion
+[INFO] In-Design tarkit is loading p023 version ... 
+[INFO] Loading Pegasus 25.13 fill procedures
+**WARN: Tk package not loaded. The Pegasus fill DRC monitor is disabled.
+[INFO] In-Design tarkit is loaded. 
+Sourcing file "/nethome/sgupta943/physical-design-onboarding-F26/scripts/apr/apr.tcl" ...
+source /nethome/sgupta943/physical-design-onboarding-F26/scripts/apr/apr.tcl
+<CMD> redirect -tee /nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/LOG/step_init_apr.log {source /nethome/sgupta943/physical-design-onboarding-F26/scripts/apr/steps/step_init_apr.tcl}
+typical_rc
+------------------------------------------------------------------------------------
+CONSTRAINT READING SUMMARY                                                          
+------------------------------------------------------------------------------------
+Constraint                                        | Success        | Fail           
+------------------------------------------------------------------------------------
+create_clock                                      | 1              | 0              
+set_driving_cell                                  | 51             | 0              
+get_ports                                         | 86             | 0              
+set_wire_load_mode                                | 1              | 0              
+set_load                                          | 34             | 0              
+set_units                                         | 1              | 0              
+------------------------------------------------------------------------------------
+<CMD> redirect -tee /nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/LOG/step_floorplan.log {source /nethome/sgupta943/physical-design-onboarding-F26/scripts/apr/steps/step_floorplan.tcl}
+<CMD> redirect -tee /nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/LOG/step_place_std_cells.log {source /nethome/sgupta943/physical-design-onboarding-F26/scripts/apr/steps/step_place_std_cells.tcl}
+<CMD> redirect -tee /nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/LOG/step_place_ties.log {source /nethome/sgupta943/physical-design-onboarding-F26/scripts/apr/steps/step_place_ties.tcl}
+<CMD> redirect -tee /nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/LOG/step_pre_cts_opt.log {source /nethome/sgupta943/physical-design-onboarding-F26/scripts/apr/steps/step_pre_cts_opt.tcl}
+typical_libs
+<CMD> redirect -tee /nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/LOG/step_cts.log {source /nethome/sgupta943/physical-design-onboarding-F26/scripts/apr/steps/step_cts.tcl}
+------------------------------------------------------------------------------------
+CONSTRAINT READING SUMMARY                                                          
+------------------------------------------------------------------------------------
+Constraint                                        | Success        | Fail           
+------------------------------------------------------------------------------------
+create_clock                                      | 1              | 0              
+set_driving_cell                                  | 51             | 0              
+get_ports                                         | 86             | 0              
+set_wire_load_mode                                | 1              | 0              
+set_load                                          | 34             | 0              
+set_units                                         | 1              | 0              
+------------------------------------------------------------------------------------
+	Clock: coreClk, View: typical_analysis_view, Ideal Latency: 0, Propagated Latency: 1.1367
+	 Executing: set_clock_latency -source -early -min -rise -1.1367 [get_pins clk_i]
+	Clock: coreClk, View: typical_analysis_view, Ideal Latency: 0, Propagated Latency: 1.1367
+	 Executing: set_clock_latency -source -late -min -rise -1.1367 [get_pins clk_i]
+	Clock: coreClk, View: typical_analysis_view, Ideal Latency: 0, Propagated Latency: 1.01097
+	 Executing: set_clock_latency -source -early -min -fall -1.01097 [get_pins clk_i]
+	Clock: coreClk, View: typical_analysis_view, Ideal Latency: 0, Propagated Latency: 1.01097
+	 Executing: set_clock_latency -source -late -min -fall -1.01097 [get_pins clk_i]
+	Clock: coreClk, View: typical_analysis_view, Ideal Latency: 0, Propagated Latency: 1.1367
+	 Executing: set_clock_latency -source -early -max -rise -1.1367 [get_pins clk_i]
+	Clock: coreClk, View: typical_analysis_view, Ideal Latency: 0, Propagated Latency: 1.1367
+	 Executing: set_clock_latency -source -late -max -rise -1.1367 [get_pins clk_i]
+	Clock: coreClk, View: typical_analysis_view, Ideal Latency: 0, Propagated Latency: 1.01097
+	 Executing: set_clock_latency -source -early -max -fall -1.01097 [get_pins clk_i]
+	Clock: coreClk, View: typical_analysis_view, Ideal Latency: 0, Propagated Latency: 1.01097
+	 Executing: set_clock_latency -source -late -max -fall -1.01097 [get_pins clk_i]
+<CMD> redirect -tee /nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/LOG/step_post_cts_opt.log {source /nethome/sgupta943/physical-design-onboarding-F26/scripts/apr/steps/step_post_cts_opt.tcl}
+typical_libs
+typical_rc
+typical_rc
+typical_rc
+typical_rc
+<CMD> redirect -tee /nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/LOG/step_route.log {source /nethome/sgupta943/physical-design-onboarding-F26/scripts/apr/steps/step_route.tcl}
+chip_top
+------------------------------------------------------------------------------------
+CONSTRAINT READING SUMMARY                                                          
+------------------------------------------------------------------------------------
+Constraint                                        | Success        | Fail           
+------------------------------------------------------------------------------------
+set_wire_load_mode                                | 1              | 0              
+set_load                                          | 68             | 0              
+set_propagated_clock                              | 1              | 0              
+set_driving_cell                                  | 204            | 0              
+create_clock                                      | 1              | 0              
+get_ports                                         | 274            | 0              
+current_design                                    | 1              | 0              
+------------------------------------------------------------------------------------
+<CMD> redirect -tee /nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/LOG/step_fill.log {source /nethome/sgupta943/physical-design-onboarding-F26/scripts/apr/steps/step_fill.tcl}
+<CMD> redirect -tee /nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/LOG/step_physical_verify.log {source /nethome/sgupta943/physical-design-onboarding-F26/scripts/apr/steps/step_physical_verify.tcl}
+<CMD> redirect -tee /nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/LOG/step_extract.log {source /nethome/sgupta943/physical-design-onboarding-F26/scripts/apr/steps/step_extract.tcl}
+TAMODEL Cpu User Time =  235.8 sec
+TAMODEL Memory Usage  =    0.0 MB
+typical_libs
+typical_rc
+typical_rc
+typical_rc
+typical_rc
+*** Message Summary: 5497 warning(s), 4 error(s)
+
+
+*** Memory Usage v#1 (Current mem = 3701.504M, initial mem = 915.879M) ***
+--- Ending "Innovus" (totcpu=1:19:17, real=0:23:47, mem=3701.5M) ---

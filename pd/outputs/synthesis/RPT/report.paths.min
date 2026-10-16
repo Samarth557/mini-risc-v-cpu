@@ -1,0 +1,413 @@
+ 
+****************************************
+Report : timing
+        -path end
+        -delay min
+        -nworst 2
+        -max_paths 200
+Design : chip_top
+Version: X-2025.06-SP3
+Date   : Sun Oct 11 20:19:39 2026
+****************************************
+
+Operating Conditions: ff_1.98_0   Library: sky130_ff_1.98_0
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+data_memory/u_sram/DI[12] (CF_SRAM_1024x32)
+                                    3.16 r            3.08         0.09
+data_memory/u_sram/DI[15] (CF_SRAM_1024x32)
+                                    3.16 r            3.08         0.09
+data_memory/u_sram/DI[16] (CF_SRAM_1024x32)
+                                    3.16 r            3.08         0.09
+data_memory/u_sram/DI[17] (CF_SRAM_1024x32)
+                                    3.16 r            3.08         0.09
+data_memory/u_sram/DI[18] (CF_SRAM_1024x32)
+                                    3.16 r            3.08         0.09
+data_memory/u_sram/DI[19] (CF_SRAM_1024x32)
+                                    3.16 r            3.08         0.09
+data_memory/u_sram/DI[20] (CF_SRAM_1024x32)
+                                    3.16 r            3.08         0.09
+data_memory/u_sram/DI[21] (CF_SRAM_1024x32)
+                                    3.16 r            3.08         0.09
+data_memory/u_sram/DI[22] (CF_SRAM_1024x32)
+                                    3.16 r            3.08         0.09
+data_memory/u_sram/DI[23] (CF_SRAM_1024x32)
+                                    3.16 r            3.08         0.09
+data_memory/u_sram/DI[24] (CF_SRAM_1024x32)
+                                    3.16 r            3.08         0.09
+data_memory/u_sram/DI[26] (CF_SRAM_1024x32)
+                                    3.16 r            3.08         0.09
+data_memory/u_sram/DI[12] (CF_SRAM_1024x32)
+                                    3.16 r            3.08         0.09
+data_memory/u_sram/DI[15] (CF_SRAM_1024x32)
+                                    3.16 r            3.08         0.09
+data_memory/u_sram/DI[16] (CF_SRAM_1024x32)
+                                    3.16 r            3.08         0.09
+data_memory/u_sram/DI[17] (CF_SRAM_1024x32)
+                                    3.16 r            3.08         0.09
+data_memory/u_sram/DI[18] (CF_SRAM_1024x32)
+                                    3.16 r            3.08         0.09
+data_memory/u_sram/DI[19] (CF_SRAM_1024x32)
+                                    3.16 r            3.08         0.09
+data_memory/u_sram/DI[20] (CF_SRAM_1024x32)
+                                    3.16 r            3.08         0.09
+data_memory/u_sram/DI[21] (CF_SRAM_1024x32)
+                                    3.16 r            3.08         0.09
+data_memory/u_sram/DI[22] (CF_SRAM_1024x32)
+                                    3.16 r            3.08         0.09
+data_memory/u_sram/DI[23] (CF_SRAM_1024x32)
+                                    3.16 r            3.08         0.09
+data_memory/u_sram/DI[24] (CF_SRAM_1024x32)
+                                    3.16 r            3.08         0.09
+data_memory/u_sram/DI[26] (CF_SRAM_1024x32)
+                                    3.16 r            3.08         0.09
+data_memory/u_sram/DI[10] (CF_SRAM_1024x32)
+                                    3.16 r            3.08         0.09
+data_memory/u_sram/DI[11] (CF_SRAM_1024x32)
+                                    3.16 r            3.08         0.09
+data_memory/u_sram/DI[5] (CF_SRAM_1024x32)
+                                    3.16 r            3.08         0.09
+data_memory/u_sram/DI[6] (CF_SRAM_1024x32)
+                                    3.16 r            3.08         0.09
+data_memory/u_sram/DI[7] (CF_SRAM_1024x32)
+                                    3.16 r            3.08         0.09
+data_memory/u_sram/DI[8] (CF_SRAM_1024x32)
+                                    3.16 r            3.08         0.09
+data_memory/u_sram/DI[10] (CF_SRAM_1024x32)
+                                    3.16 r            3.08         0.09
+data_memory/u_sram/DI[11] (CF_SRAM_1024x32)
+                                    3.16 r            3.08         0.09
+data_memory/u_sram/DI[5] (CF_SRAM_1024x32)
+                                    3.16 r            3.08         0.09
+data_memory/u_sram/DI[6] (CF_SRAM_1024x32)
+                                    3.16 r            3.08         0.09
+data_memory/u_sram/DI[7] (CF_SRAM_1024x32)
+                                    3.16 r            3.08         0.09
+data_memory/u_sram/DI[8] (CF_SRAM_1024x32)
+                                    3.16 r            3.08         0.09
+data_memory/u_sram/DI[27] (CF_SRAM_1024x32)
+                                    3.17 r            3.08         0.10
+data_memory/u_sram/DI[27] (CF_SRAM_1024x32)
+                                    3.17 r            3.08         0.10
+data_memory/u_sram/DI[13] (CF_SRAM_1024x32)
+                                    3.18 r            3.08         0.11
+data_memory/u_sram/DI[14] (CF_SRAM_1024x32)
+                                    3.18 r            3.08         0.11
+data_memory/u_sram/DI[25] (CF_SRAM_1024x32)
+                                    3.18 r            3.08         0.11
+data_memory/u_sram/DI[28] (CF_SRAM_1024x32)
+                                    3.18 r            3.08         0.11
+data_memory/u_sram/DI[29] (CF_SRAM_1024x32)
+                                    3.18 r            3.08         0.11
+data_memory/u_sram/DI[30] (CF_SRAM_1024x32)
+                                    3.18 r            3.08         0.11
+data_memory/u_sram/DI[31] (CF_SRAM_1024x32)
+                                    3.18 r            3.08         0.11
+data_memory/u_sram/DI[13] (CF_SRAM_1024x32)
+                                    3.18 r            3.08         0.11
+data_memory/u_sram/DI[14] (CF_SRAM_1024x32)
+                                    3.18 r            3.08         0.11
+data_memory/u_sram/DI[25] (CF_SRAM_1024x32)
+                                    3.18 r            3.08         0.11
+data_memory/u_sram/DI[28] (CF_SRAM_1024x32)
+                                    3.18 r            3.08         0.11
+data_memory/u_sram/DI[29] (CF_SRAM_1024x32)
+                                    3.18 r            3.08         0.11
+data_memory/u_sram/DI[30] (CF_SRAM_1024x32)
+                                    3.18 r            3.08         0.11
+data_memory/u_sram/DI[31] (CF_SRAM_1024x32)
+                                    3.18 r            3.08         0.11
+data_memory/u_sram/DI[9] (CF_SRAM_1024x32)
+                                    3.18 r            3.08         0.11
+data_memory/u_sram/DI[9] (CF_SRAM_1024x32)
+                                    3.18 r            3.08         0.11
+instruction_memory/u_sram/EN (CF_SRAM_1024x32)
+                                    2.93 r            2.80         0.13
+data_memory/u_sram/DI[3] (CF_SRAM_1024x32)
+                                    3.21 r            3.08         0.13
+data_memory/u_sram/DI[3] (CF_SRAM_1024x32)
+                                    3.21 r            3.08         0.13
+data_memory/u_sram/DI[2] (CF_SRAM_1024x32)
+                                    3.22 r            3.08         0.14
+data_memory/u_sram/DI[1] (CF_SRAM_1024x32)
+                                    3.22 r            3.08         0.14
+data_memory/u_sram/DI[2] (CF_SRAM_1024x32)
+                                    3.22 r            3.08         0.14
+data_memory/u_sram/DI[1] (CF_SRAM_1024x32)
+                                    3.22 r            3.08         0.14
+data_memory/u_sram/DI[0] (CF_SRAM_1024x32)
+                                    3.22 r            3.08         0.15
+data_memory/u_sram/DI[0] (CF_SRAM_1024x32)
+                                    3.22 r            3.08         0.15
+data_memory/u_sram/DI[4] (CF_SRAM_1024x32)
+                                    3.27 r            3.08         0.20
+data_memory/u_sram/DI[4] (CF_SRAM_1024x32)
+                                    3.27 r            3.08         0.20
+instruction_memory/u_sram/EN (CF_SRAM_1024x32)
+                                    3.01 f            2.80         0.21
+instruction_memory/u_sram/AD[3] (CF_SRAM_1024x32)
+                                    2.99 f            2.77         0.21
+instruction_memory/u_sram/AD[7] (CF_SRAM_1024x32)
+                                    2.99 f            2.77         0.21
+instruction_memory/u_sram/AD[3] (CF_SRAM_1024x32)
+                                    3.00 f            2.77         0.23
+instruction_memory/u_sram/AD[7] (CF_SRAM_1024x32)
+                                    3.00 f            2.77         0.23
+instruction_memory/u_sram/AD[9] (CF_SRAM_1024x32)
+                                    3.01 f            2.77         0.23
+instruction_memory/u_sram/AD[1] (CF_SRAM_1024x32)
+                                    3.01 f            2.78         0.24
+instruction_memory/u_sram/AD[5] (CF_SRAM_1024x32)
+                                    3.01 f            2.77         0.24
+instruction_memory/u_sram/AD[1] (CF_SRAM_1024x32)
+                                    3.01 f            2.78         0.24
+instruction_memory/u_sram/AD[5] (CF_SRAM_1024x32)
+                                    3.01 f            2.77         0.24
+instruction_memory/u_sram/AD[9] (CF_SRAM_1024x32)
+                                    3.02 f            2.77         0.24
+instruction_memory/u_sram/AD[2] (CF_SRAM_1024x32)
+                                    3.02 f            2.77         0.24
+instruction_memory/u_sram/AD[4] (CF_SRAM_1024x32)
+                                    3.02 f            2.77         0.24
+instruction_memory/u_sram/AD[8] (CF_SRAM_1024x32)
+                                    3.02 f            2.77         0.24
+instruction_memory/u_sram/AD[6] (CF_SRAM_1024x32)
+                                    3.02 f            2.77         0.24
+instruction_memory/u_sram/AD[4] (CF_SRAM_1024x32)
+                                    3.03 r            2.78         0.25
+instruction_memory/u_sram/AD[2] (CF_SRAM_1024x32)
+                                    3.03 r            2.78         0.25
+instruction_memory/u_sram/AD[8] (CF_SRAM_1024x32)
+                                    3.03 r            2.78         0.25
+instruction_memory/u_sram/AD[6] (CF_SRAM_1024x32)
+                                    3.03 r            2.78         0.25
+instruction_memory/u_sram/AD[0] (CF_SRAM_1024x32)
+                                    3.05 r            2.78         0.28
+instruction_memory/u_sram/AD[0] (CF_SRAM_1024x32)
+                                    3.05 r            2.78         0.28
+instruction_memory/u_sram/DI[12] (CF_SRAM_1024x32)
+                                    3.40 f            3.08         0.32
+instruction_memory/u_sram/DI[13] (CF_SRAM_1024x32)
+                                    3.40 f            3.08         0.32
+instruction_memory/u_sram/DI[15] (CF_SRAM_1024x32)
+                                    3.40 f            3.08         0.32
+instruction_memory/u_sram/DI[16] (CF_SRAM_1024x32)
+                                    3.40 f            3.08         0.32
+instruction_memory/u_sram/DI[18] (CF_SRAM_1024x32)
+                                    3.40 f            3.08         0.32
+instruction_memory/u_sram/DI[1] (CF_SRAM_1024x32)
+                                    3.40 f            3.08         0.32
+instruction_memory/u_sram/DI[20] (CF_SRAM_1024x32)
+                                    3.40 f            3.08         0.32
+instruction_memory/u_sram/DI[23] (CF_SRAM_1024x32)
+                                    3.40 f            3.08         0.32
+instruction_memory/u_sram/DI[24] (CF_SRAM_1024x32)
+                                    3.40 f            3.08         0.32
+instruction_memory/u_sram/DI[26] (CF_SRAM_1024x32)
+                                    3.40 f            3.08         0.32
+instruction_memory/u_sram/DI[27] (CF_SRAM_1024x32)
+                                    3.40 f            3.08         0.32
+instruction_memory/u_sram/DI[28] (CF_SRAM_1024x32)
+                                    3.40 f            3.08         0.32
+instruction_memory/u_sram/DI[29] (CF_SRAM_1024x32)
+                                    3.40 f            3.08         0.32
+instruction_memory/u_sram/DI[2] (CF_SRAM_1024x32)
+                                    3.40 f            3.08         0.32
+instruction_memory/u_sram/DI[30] (CF_SRAM_1024x32)
+                                    3.40 f            3.08         0.32
+instruction_memory/u_sram/DI[31] (CF_SRAM_1024x32)
+                                    3.40 f            3.08         0.32
+instruction_memory/u_sram/DI[4] (CF_SRAM_1024x32)
+                                    3.40 f            3.08         0.32
+cpu_enable_q_reg/D (DFFX1)          2.81 f            2.49         0.32
+cpu_enable_q_reg/D (DFFX1)          2.80 r            2.44         0.36
+cpu/halted_o_reg/D (DFFX1)          2.85 f            2.48         0.36
+cpu_enable_reg/D (DFFX1)            2.86 f            2.49         0.37
+cpu_enable_reg/D (DFFX1)            2.86 f            2.49         0.37
+data_memory/u_sram/EN (CF_SRAM_1024x32)
+                                    3.19 f            2.80         0.39
+cpu/halted_o_reg/D (DFFX1)          2.85 r            2.44         0.40
+data_memory/u_sram/EN (CF_SRAM_1024x32)
+                                    3.21 f            2.80         0.41
+data_memory/u_sram/AD[2] (CF_SRAM_1024x32)
+                                    3.20 f            2.78         0.42
+data_memory/u_sram/AD[3] (CF_SRAM_1024x32)
+                                    3.20 f            2.78         0.42
+data_memory/u_sram/AD[4] (CF_SRAM_1024x32)
+                                    3.20 f            2.78         0.42
+data_memory/u_sram/AD[5] (CF_SRAM_1024x32)
+                                    3.20 f            2.78         0.42
+data_memory/u_sram/AD[6] (CF_SRAM_1024x32)
+                                    3.20 f            2.78         0.42
+data_memory/u_sram/AD[7] (CF_SRAM_1024x32)
+                                    3.20 f            2.78         0.42
+data_memory/u_sram/AD[8] (CF_SRAM_1024x32)
+                                    3.20 f            2.78         0.42
+data_memory/u_sram/AD[9] (CF_SRAM_1024x32)
+                                    3.20 f            2.78         0.42
+data_memory/u_sram/AD[3] (CF_SRAM_1024x32)
+                                    3.21 f            2.78         0.43
+data_memory/u_sram/AD[4] (CF_SRAM_1024x32)
+                                    3.21 f            2.78         0.43
+data_memory/u_sram/AD[5] (CF_SRAM_1024x32)
+                                    3.21 f            2.78         0.43
+data_memory/u_sram/AD[6] (CF_SRAM_1024x32)
+                                    3.21 f            2.78         0.43
+data_memory/u_sram/AD[7] (CF_SRAM_1024x32)
+                                    3.21 f            2.78         0.43
+data_memory/u_sram/AD[9] (CF_SRAM_1024x32)
+                                    3.21 f            2.78         0.43
+data_memory/u_sram/AD[8] (CF_SRAM_1024x32)
+                                    3.21 f            2.78         0.43
+data_memory/u_sram/AD[2] (CF_SRAM_1024x32)
+                                    3.21 f            2.78         0.43
+cpu/u_fetch/pc_o_reg[9]/D (DFFX1)
+                                    2.93 f            2.49         0.44
+cpu/u_fetch/pc_o_reg[5]/D (DFFX1)
+                                    2.93 f            2.49         0.44
+data_memory/u_sram/AD[0] (CF_SRAM_1024x32)
+                                    3.23 f            2.77         0.45
+data_memory/u_sram/AD[1] (CF_SRAM_1024x32)
+                                    3.23 f            2.77         0.45
+cpu/u_fetch/pc_o_reg[11]/D (DFFX1)
+                                    2.94 f            2.49         0.46
+cpu/u_fetch/pc_o_reg[7]/D (DFFX1)
+                                    2.95 f            2.49         0.46
+cpu/u_fetch/pc_o_reg[3]/D (DFFX1)
+                                    2.95 f            2.49         0.46
+cpu/u_fetch/pc_o_reg[7]/D (DFFX1)
+                                    2.95 f            2.49         0.47
+cpu/u_fetch/pc_o_reg[3]/D (DFFX1)
+                                    2.95 f            2.49         0.47
+cpu/u_fetch/pc_o_reg[11]/D (DFFX1)
+                                    2.95 f            2.49         0.47
+cpu/u_fetch/pc_o_reg[4]/D (DFFX1)
+                                    2.96 f            2.49         0.47
+cpu/u_fetch/pc_o_reg[10]/D (DFFX1)
+                                    2.96 f            2.49         0.47
+cpu/u_fetch/pc_o_reg[8]/D (DFFX1)
+                                    2.96 f            2.49         0.47
+cpu/u_fetch/pc_o_reg[6]/D (DFFX1)
+                                    2.96 f            2.49         0.47
+data_memory/u_sram/AD[0] (CF_SRAM_1024x32)
+                                    3.25 f            2.77         0.47
+data_memory/u_sram/AD[1] (CF_SRAM_1024x32)
+                                    3.25 f            2.77         0.47
+data_memory/u_sram/R_WB (CF_SRAM_1024x32)
+                                    3.27 r            2.78         0.50
+cpu/u_fetch/pc_o_reg[9]/D (DFFX1)
+                                    2.95 r            2.45         0.50
+cpu/u_fetch/pc_o_reg[5]/D (DFFX1)
+                                    2.95 r            2.45         0.50
+cpu/u_fetch/pc_o_reg[8]/D (DFFX1)
+                                    2.99 f            2.49         0.50
+data_memory/u_sram/R_WB (CF_SRAM_1024x32)
+                                    3.28 r            2.78         0.51
+cpu/u_fetch/pc_o_reg[2]/D (DFFX1)
+                                    3.00 f            2.49         0.51
+cpu/u_fetch/pc_o_reg[6]/D (DFFX1)
+                                    2.96 r            2.45         0.51
+cpu/u_fetch/pc_o_reg[4]/D (DFFX1)
+                                    2.96 r            2.45         0.51
+cpu/u_fetch/pc_o_reg[10]/D (DFFX1)
+                                    2.96 r            2.45         0.51
+cpu/u_fetch/pc_o_reg[2]/D (DFFX1)
+                                    3.01 f            2.49         0.53
+cpu/u_mem_access/load_req_active_reg/D (DFFX1)
+                                    3.03 f            2.49         0.54
+instruction_memory/u_sram/DI[0] (CF_SRAM_1024x32)
+                                    3.64 f            3.08         0.56
+instruction_memory/u_sram/DI[10] (CF_SRAM_1024x32)
+                                    3.64 f            3.08         0.56
+instruction_memory/u_sram/DI[11] (CF_SRAM_1024x32)
+                                    3.64 f            3.08         0.56
+instruction_memory/u_sram/DI[14] (CF_SRAM_1024x32)
+                                    3.64 f            3.08         0.56
+instruction_memory/u_sram/DI[17] (CF_SRAM_1024x32)
+                                    3.64 f            3.08         0.56
+instruction_memory/u_sram/DI[19] (CF_SRAM_1024x32)
+                                    3.64 f            3.08         0.56
+instruction_memory/u_sram/DI[21] (CF_SRAM_1024x32)
+                                    3.64 f            3.08         0.56
+instruction_memory/u_sram/DI[22] (CF_SRAM_1024x32)
+                                    3.64 f            3.08         0.56
+instruction_memory/u_sram/DI[25] (CF_SRAM_1024x32)
+                                    3.64 f            3.08         0.56
+instruction_memory/u_sram/DI[3] (CF_SRAM_1024x32)
+                                    3.64 f            3.08         0.56
+instruction_memory/u_sram/DI[5] (CF_SRAM_1024x32)
+                                    3.64 f            3.08         0.56
+instruction_memory/u_sram/DI[6] (CF_SRAM_1024x32)
+                                    3.64 f            3.08         0.56
+instruction_memory/u_sram/DI[7] (CF_SRAM_1024x32)
+                                    3.64 f            3.08         0.56
+instruction_memory/u_sram/DI[8] (CF_SRAM_1024x32)
+                                    3.64 f            3.08         0.56
+instruction_memory/u_sram/DI[9] (CF_SRAM_1024x32)
+                                    3.64 f            3.08         0.56
+cpu/u_mem_access/load_req_active_reg/D (DFFX1)
+                                    3.08 f            2.49         0.59
+instruction_memory/rdata_valid_reg/D (DFFX1)
+                                    3.04 r            2.44         0.59
+instruction_memory/rdata_valid_reg/D (DFFX1)
+                                    3.11 f            2.49         0.62
+instruction_memory/u_sram/R_WB (CF_SRAM_1024x32)
+                                    3.46 r            2.78         0.68
+instruction_memory/u_sram/DI[12] (CF_SRAM_1024x32)
+                                    3.82 f            3.08         0.74
+instruction_memory/u_sram/DI[13] (CF_SRAM_1024x32)
+                                    3.82 f            3.08         0.74
+instruction_memory/u_sram/DI[15] (CF_SRAM_1024x32)
+                                    3.82 f            3.08         0.74
+instruction_memory/u_sram/DI[16] (CF_SRAM_1024x32)
+                                    3.82 f            3.08         0.74
+instruction_memory/u_sram/DI[18] (CF_SRAM_1024x32)
+                                    3.82 f            3.08         0.74
+instruction_memory/u_sram/DI[1] (CF_SRAM_1024x32)
+                                    3.82 f            3.08         0.74
+instruction_memory/u_sram/DI[20] (CF_SRAM_1024x32)
+                                    3.82 f            3.08         0.74
+instruction_memory/u_sram/DI[23] (CF_SRAM_1024x32)
+                                    3.82 f            3.08         0.74
+instruction_memory/u_sram/DI[24] (CF_SRAM_1024x32)
+                                    3.82 f            3.08         0.74
+instruction_memory/u_sram/DI[26] (CF_SRAM_1024x32)
+                                    3.82 f            3.08         0.74
+instruction_memory/u_sram/DI[27] (CF_SRAM_1024x32)
+                                    3.82 f            3.08         0.74
+instruction_memory/u_sram/DI[28] (CF_SRAM_1024x32)
+                                    3.82 f            3.08         0.74
+instruction_memory/u_sram/DI[29] (CF_SRAM_1024x32)
+                                    3.82 f            3.08         0.74
+instruction_memory/u_sram/DI[2] (CF_SRAM_1024x32)
+                                    3.82 f            3.08         0.74
+instruction_memory/u_sram/DI[30] (CF_SRAM_1024x32)
+                                    3.82 f            3.08         0.74
+instruction_memory/u_sram/DI[31] (CF_SRAM_1024x32)
+                                    3.82 f            3.08         0.74
+instruction_memory/u_sram/DI[4] (CF_SRAM_1024x32)
+                                    3.82 f            3.08         0.74
+data_memory/rdata_valid_reg/D (DFFX1)
+                                    3.28 f            2.49         0.79
+data_memory/rdata_valid_reg/D (DFFX1)
+                                    3.30 f            2.49         0.81
+instruction_memory/u_sram/DI[0] (CF_SRAM_1024x32)
+                                    4.06 f            3.08         0.98
+instruction_memory/u_sram/DI[10] (CF_SRAM_1024x32)
+                                    4.06 f            3.08         0.98
+instruction_memory/u_sram/DI[11] (CF_SRAM_1024x32)
+                                    4.06 f            3.08         0.98
+instruction_memory/u_sram/DI[14] (CF_SRAM_1024x32)
+                                    4.06 f            3.08         0.98
+instruction_memory/u_sram/DI[17] (CF_SRAM_1024x32)
+                                    4.06 f            3.08         0.98
+instruction_memory/u_sram/DI[19] (CF_SRAM_1024x32)
+                                    4.06 f            3.08         0.98
+instruction_memory/u_sram/DI[21] (CF_SRAM_1024x32)
+                                    4.06 f            3.08         0.98
+instruction_memory/u_sram/DI[22] (CF_SRAM_1024x32)
+                                    4.06 f            3.08         0.98
+
+1

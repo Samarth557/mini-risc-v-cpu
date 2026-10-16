@@ -1,0 +1,13 @@
+**WARN: (IMPSP-5217):	addFiller command is running on a postRoute database. It is recommended to be followed by ecoRoute -target command to make the DRC clean.
+Type 'man IMPSP-5217' for more detail.
+**Info: (IMPSP-2055): Transparent Filler Flow is OFF !
+
+INFO: No filler could be restored
+*INFO: Adding fillers to top-module.
+*INFO:   Added 21899 filler insts (cell FILL8 / prefix FILL).
+*INFO:   Added 3396 filler insts (cell FILL4 / prefix FILL).
+*INFO:   Added 3453 filler insts (cell FILL2 / prefix FILL).
+*INFO:   Added 3464 filler insts (cell FILL1 / prefix FILL).
+*INFO: Total 32212 filler insts added - prefix FILL (CPU: 0:00:02.1).
+For 32212 new insts, 
+Finished addFiller (CPU: 0:00:02.3 REAL: 0:00:01.0 MEM: 3638.9MB)

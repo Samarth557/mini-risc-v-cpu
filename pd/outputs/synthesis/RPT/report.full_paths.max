@@ -1,0 +1,328 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 2
+        -max_paths 5
+Design : chip_top
+Version: X-2025.06-SP3
+Date   : Sun Oct 11 20:19:39 2026
+****************************************
+
+Operating Conditions: ss_1.62_125   Library: sky130_ss_1.62_125
+Wire Load Model Mode: top
+
+  Startpoint: instruction_memory/u_sram
+              (rising edge-triggered flip-flop clocked by coreClk)
+  Endpoint: cpu/u_reg_file/clk_gate_registers_reg[3]/latch
+            (gating element for clock coreClk)
+  Path Group: coreClk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock coreClk (rise edge)                               2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  instruction_memory/u_sram/CLKin (CF_SRAM_1024x32)       0.00       2.50 r
+  instruction_memory/u_sram/DO[0] (CF_SRAM_1024x32)       2.31       4.81 r
+  instruction_memory/rdata_o[0] (sram_wrapper_0)          0.00       4.81 r
+  mem_ctrl/isram_rdata_i[0] (memory_controller)           0.00       4.81 r
+  mem_ctrl/U48/Y (NAND2X2_HS)                             0.03       4.84 f
+  mem_ctrl/U49/Y (INVX1_HS)                               0.04       4.88 r
+  mem_ctrl/core_isram_rdata_o[0] (memory_controller)      0.00       4.88 r
+  cpu/isram_rdata_i[0] (cpu_top)                          0.00       4.88 r
+  cpu/u_fetch/isram_rdata_i[0] (fetch)                    0.00       4.88 r
+  cpu/u_fetch/U10/Y (NAND2X1_HS)                          0.03       4.91 f
+  cpu/u_fetch/U9/Y (INVX1_HS)                             0.05       4.96 r
+  cpu/u_fetch/instr_o[0] (fetch)                          0.00       4.96 r
+  cpu/u_decode/instr_i[0] (decode)                        0.00       4.96 r
+  cpu/u_decode/U60/Y (NAND2X2_HS)                         0.07       5.04 f
+  cpu/u_decode/U40/Y (NOR2X2_HS)                          0.09       5.13 r
+  cpu/u_decode/U55/Y (NAND3X1)                            0.06       5.19 f
+  cpu/u_decode/U25/Y (INVX1)                              0.07       5.25 r
+  cpu/u_decode/U44/Y (NAND2X2_HS)                         0.06       5.31 f
+  cpu/u_decode/U30/Y (NAND2X4_HS)                         0.06       5.37 r
+  cpu/u_decode/instr_type_o[0] (decode)                   0.00       5.37 r
+  cpu/u_mem_access/instr_type_i[0] (mem_access)           0.00       5.37 r
+  cpu/u_mem_access/U4/Y (INVX2_HS)                        0.02       5.39 f
+  cpu/u_mem_access/U3/Y (NAND2X1_HS)                      0.04       5.44 r
+  cpu/u_mem_access/U8/Y (NOR2X2_HS)                       0.04       5.48 f
+  cpu/u_mem_access/mem_wait_o (mem_access)                0.00       5.48 f
+  cpu/U10/Y (NOR2X2_HS)                                   0.06       5.53 r
+  cpu/u_writeback/commit_i (writeback)                    0.00       5.53 r
+  cpu/u_writeback/U11/Y (NAND3X2_HS)                      0.07       5.61 f
+  cpu/u_writeback/U9/Y (INVX4_HS)                         0.06       5.67 r
+  cpu/u_writeback/rd_write_en_o (writeback)               0.00       5.67 r
+  cpu/u_reg_file/rd_write_en_i (reg_file)                 0.00       5.67 r
+  cpu/u_reg_file/U1698/Y (NAND2X1_HS)                     0.05       5.72 f
+  cpu/u_reg_file/U101/Y (CLKBUFX2_HS)                     0.11       5.83 f
+  cpu/u_reg_file/U1699/Y (OAI21X1)                        0.08       5.91 r
+  cpu/u_reg_file/clk_gate_registers_reg[3]/EN (SNPS_CLOCK_GATE_HIGH_reg_file_29)
+                                                          0.00       5.91 r
+  cpu/u_reg_file/clk_gate_registers_reg[3]/latch/E (ICGPRECX1)
+                                                          0.00       5.91 r
+  data arrival time                                                  5.91
+
+  clock coreClk (fall edge)                               5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  cpu/u_reg_file/clk_gate_registers_reg[3]/latch/CK (ICGPRECX1)
+                                                          0.00       5.00 f
+  clock gating setup time                                -0.11       4.89
+  data required time                                                 4.89
+  --------------------------------------------------------------------------
+  data required time                                                 4.89
+  data arrival time                                                 -5.91
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -1.01
+
+
+  Startpoint: instruction_memory/u_sram
+              (rising edge-triggered flip-flop clocked by coreClk)
+  Endpoint: cpu/u_reg_file/clk_gate_registers_reg[8]/latch
+            (gating element for clock coreClk)
+  Path Group: coreClk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock coreClk (rise edge)                               2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  instruction_memory/u_sram/CLKin (CF_SRAM_1024x32)       0.00       2.50 r
+  instruction_memory/u_sram/DO[3] (CF_SRAM_1024x32)       2.31       4.81 f
+  instruction_memory/rdata_o[3] (sram_wrapper_0)          0.00       4.81 f
+  mem_ctrl/isram_rdata_i[3] (memory_controller)           0.00       4.81 f
+  mem_ctrl/U28/Y (NAND2X4_HS)                             0.03       4.84 r
+  mem_ctrl/U31/Y (INVX2_HS)                               0.03       4.87 f
+  mem_ctrl/core_isram_rdata_o[3] (memory_controller)      0.00       4.87 f
+  cpu/isram_rdata_i[3] (cpu_top)                          0.00       4.87 f
+  cpu/u_fetch/isram_rdata_i[3] (fetch)                    0.00       4.87 f
+  cpu/u_fetch/U21/Y (INVX2_HS)                            0.03       4.90 r
+  cpu/u_fetch/U22/Y (NOR2X2_HS)                           0.03       4.92 f
+  cpu/u_fetch/instr_o[3] (fetch)                          0.00       4.92 f
+  cpu/u_decode/instr_i[3] (decode)                        0.00       4.92 f
+  cpu/u_decode/U59/Y (NOR2X2_HS)                          0.08       5.00 r
+  cpu/u_decode/U58/Y (NAND2X2_HS)                         0.06       5.06 f
+  cpu/u_decode/U54/Y (NOR2X4_HS)                          0.06       5.12 r
+  cpu/u_decode/U71/Y (NAND3X1_HS)                         0.07       5.19 f
+  cpu/u_decode/U72/Y (OAI22X2_HS)                         0.11       5.30 r
+  cpu/u_decode/instr_type_o[1] (decode)                   0.00       5.30 r
+  cpu/u_mem_access/instr_type_i[1] (mem_access)           0.00       5.30 r
+  cpu/u_mem_access/U9/Y (NAND2X2_HS)                      0.06       5.37 f
+  cpu/u_mem_access/U8/Y (NOR2X2_HS)                       0.10       5.47 r
+  cpu/u_mem_access/mem_wait_o (mem_access)                0.00       5.47 r
+  cpu/U10/Y (NOR2X2_HS)                                   0.03       5.50 f
+  cpu/u_writeback/commit_i (writeback)                    0.00       5.50 f
+  cpu/u_writeback/U11/Y (NAND3X2_HS)                      0.05       5.55 r
+  cpu/u_writeback/U9/Y (INVX4_HS)                         0.04       5.59 f
+  cpu/u_writeback/rd_write_en_o (writeback)               0.00       5.59 f
+  cpu/u_reg_file/rd_write_en_i (reg_file)                 0.00       5.59 f
+  cpu/u_reg_file/U103/Y (NAND2X1_HS)                      0.05       5.64 r
+  cpu/u_reg_file/U105/Y (CLKBUFX2_HS)                     0.08       5.71 r
+  cpu/u_reg_file/U1697/Y (OAI21X1)                        0.04       5.75 f
+  cpu/u_reg_file/clk_gate_registers_reg[8]/EN (SNPS_CLOCK_GATE_HIGH_reg_file_24)
+                                                          0.00       5.75 f
+  cpu/u_reg_file/clk_gate_registers_reg[8]/latch/E (ICGPRECX1)
+                                                          0.00       5.75 f
+  data arrival time                                                  5.75
+
+  clock coreClk (fall edge)                               5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  cpu/u_reg_file/clk_gate_registers_reg[8]/latch/CK (ICGPRECX1)
+                                                          0.00       5.00 f
+  clock gating setup time                                -0.26       4.74
+  data required time                                                 4.74
+  --------------------------------------------------------------------------
+  data required time                                                 4.74
+  data arrival time                                                 -5.75
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -1.01
+
+
+  Startpoint: instruction_memory/u_sram
+              (rising edge-triggered flip-flop clocked by coreClk)
+  Endpoint: cpu/u_reg_file/clk_gate_registers_reg[9]/latch
+            (gating element for clock coreClk)
+  Path Group: coreClk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock coreClk (rise edge)                               2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  instruction_memory/u_sram/CLKin (CF_SRAM_1024x32)       0.00       2.50 r
+  instruction_memory/u_sram/DO[3] (CF_SRAM_1024x32)       2.31       4.81 f
+  instruction_memory/rdata_o[3] (sram_wrapper_0)          0.00       4.81 f
+  mem_ctrl/isram_rdata_i[3] (memory_controller)           0.00       4.81 f
+  mem_ctrl/U28/Y (NAND2X4_HS)                             0.03       4.84 r
+  mem_ctrl/U31/Y (INVX2_HS)                               0.03       4.87 f
+  mem_ctrl/core_isram_rdata_o[3] (memory_controller)      0.00       4.87 f
+  cpu/isram_rdata_i[3] (cpu_top)                          0.00       4.87 f
+  cpu/u_fetch/isram_rdata_i[3] (fetch)                    0.00       4.87 f
+  cpu/u_fetch/U21/Y (INVX2_HS)                            0.03       4.90 r
+  cpu/u_fetch/U22/Y (NOR2X2_HS)                           0.03       4.92 f
+  cpu/u_fetch/instr_o[3] (fetch)                          0.00       4.92 f
+  cpu/u_decode/instr_i[3] (decode)                        0.00       4.92 f
+  cpu/u_decode/U59/Y (NOR2X2_HS)                          0.08       5.00 r
+  cpu/u_decode/U58/Y (NAND2X2_HS)                         0.06       5.06 f
+  cpu/u_decode/U54/Y (NOR2X4_HS)                          0.06       5.12 r
+  cpu/u_decode/U71/Y (NAND3X1_HS)                         0.07       5.19 f
+  cpu/u_decode/U72/Y (OAI22X2_HS)                         0.11       5.30 r
+  cpu/u_decode/instr_type_o[1] (decode)                   0.00       5.30 r
+  cpu/u_mem_access/instr_type_i[1] (mem_access)           0.00       5.30 r
+  cpu/u_mem_access/U9/Y (NAND2X2_HS)                      0.06       5.37 f
+  cpu/u_mem_access/U8/Y (NOR2X2_HS)                       0.10       5.47 r
+  cpu/u_mem_access/mem_wait_o (mem_access)                0.00       5.47 r
+  cpu/U10/Y (NOR2X2_HS)                                   0.03       5.50 f
+  cpu/u_writeback/commit_i (writeback)                    0.00       5.50 f
+  cpu/u_writeback/U11/Y (NAND3X2_HS)                      0.05       5.55 r
+  cpu/u_writeback/U9/Y (INVX4_HS)                         0.04       5.59 f
+  cpu/u_writeback/rd_write_en_o (writeback)               0.00       5.59 f
+  cpu/u_reg_file/rd_write_en_i (reg_file)                 0.00       5.59 f
+  cpu/u_reg_file/U103/Y (NAND2X1_HS)                      0.05       5.64 r
+  cpu/u_reg_file/U1689/Y (CLKBUFX2_HS)                    0.08       5.71 r
+  cpu/u_reg_file/U1696/Y (OAI21X1)                        0.04       5.75 f
+  cpu/u_reg_file/clk_gate_registers_reg[9]/EN (SNPS_CLOCK_GATE_HIGH_reg_file_23)
+                                                          0.00       5.75 f
+  cpu/u_reg_file/clk_gate_registers_reg[9]/latch/E (ICGPRECX1)
+                                                          0.00       5.75 f
+  data arrival time                                                  5.75
+
+  clock coreClk (fall edge)                               5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  cpu/u_reg_file/clk_gate_registers_reg[9]/latch/CK (ICGPRECX1)
+                                                          0.00       5.00 f
+  clock gating setup time                                -0.26       4.74
+  data required time                                                 4.74
+  --------------------------------------------------------------------------
+  data required time                                                 4.74
+  data arrival time                                                 -5.75
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -1.01
+
+
+  Startpoint: instruction_memory/u_sram
+              (rising edge-triggered flip-flop clocked by coreClk)
+  Endpoint: cpu/u_reg_file/clk_gate_registers_reg[10]/latch
+            (gating element for clock coreClk)
+  Path Group: coreClk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock coreClk (rise edge)                               2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  instruction_memory/u_sram/CLKin (CF_SRAM_1024x32)       0.00       2.50 r
+  instruction_memory/u_sram/DO[3] (CF_SRAM_1024x32)       2.31       4.81 f
+  instruction_memory/rdata_o[3] (sram_wrapper_0)          0.00       4.81 f
+  mem_ctrl/isram_rdata_i[3] (memory_controller)           0.00       4.81 f
+  mem_ctrl/U28/Y (NAND2X4_HS)                             0.03       4.84 r
+  mem_ctrl/U31/Y (INVX2_HS)                               0.03       4.87 f
+  mem_ctrl/core_isram_rdata_o[3] (memory_controller)      0.00       4.87 f
+  cpu/isram_rdata_i[3] (cpu_top)                          0.00       4.87 f
+  cpu/u_fetch/isram_rdata_i[3] (fetch)                    0.00       4.87 f
+  cpu/u_fetch/U21/Y (INVX2_HS)                            0.03       4.90 r
+  cpu/u_fetch/U22/Y (NOR2X2_HS)                           0.03       4.92 f
+  cpu/u_fetch/instr_o[3] (fetch)                          0.00       4.92 f
+  cpu/u_decode/instr_i[3] (decode)                        0.00       4.92 f
+  cpu/u_decode/U59/Y (NOR2X2_HS)                          0.08       5.00 r
+  cpu/u_decode/U58/Y (NAND2X2_HS)                         0.06       5.06 f
+  cpu/u_decode/U54/Y (NOR2X4_HS)                          0.06       5.12 r
+  cpu/u_decode/U71/Y (NAND3X1_HS)                         0.07       5.19 f
+  cpu/u_decode/U72/Y (OAI22X2_HS)                         0.11       5.30 r
+  cpu/u_decode/instr_type_o[1] (decode)                   0.00       5.30 r
+  cpu/u_mem_access/instr_type_i[1] (mem_access)           0.00       5.30 r
+  cpu/u_mem_access/U9/Y (NAND2X2_HS)                      0.06       5.37 f
+  cpu/u_mem_access/U8/Y (NOR2X2_HS)                       0.10       5.47 r
+  cpu/u_mem_access/mem_wait_o (mem_access)                0.00       5.47 r
+  cpu/U10/Y (NOR2X2_HS)                                   0.03       5.50 f
+  cpu/u_writeback/commit_i (writeback)                    0.00       5.50 f
+  cpu/u_writeback/U11/Y (NAND3X2_HS)                      0.05       5.55 r
+  cpu/u_writeback/U9/Y (INVX4_HS)                         0.04       5.59 f
+  cpu/u_writeback/rd_write_en_o (writeback)               0.00       5.59 f
+  cpu/u_reg_file/rd_write_en_i (reg_file)                 0.00       5.59 f
+  cpu/u_reg_file/U103/Y (NAND2X1_HS)                      0.05       5.64 r
+  cpu/u_reg_file/U105/Y (CLKBUFX2_HS)                     0.08       5.71 r
+  cpu/u_reg_file/U1695/Y (OAI21X1)                        0.04       5.75 f
+  cpu/u_reg_file/clk_gate_registers_reg[10]/EN (SNPS_CLOCK_GATE_HIGH_reg_file_22)
+                                                          0.00       5.75 f
+  cpu/u_reg_file/clk_gate_registers_reg[10]/latch/E (ICGPRECX1)
+                                                          0.00       5.75 f
+  data arrival time                                                  5.75
+
+  clock coreClk (fall edge)                               5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  cpu/u_reg_file/clk_gate_registers_reg[10]/latch/CK (ICGPRECX1)
+                                                          0.00       5.00 f
+  clock gating setup time                                -0.26       4.74
+  data required time                                                 4.74
+  --------------------------------------------------------------------------
+  data required time                                                 4.74
+  data arrival time                                                 -5.75
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -1.01
+
+
+  Startpoint: instruction_memory/u_sram
+              (rising edge-triggered flip-flop clocked by coreClk)
+  Endpoint: cpu/u_reg_file/clk_gate_registers_reg[11]/latch
+            (gating element for clock coreClk)
+  Path Group: coreClk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock coreClk (rise edge)                               2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  instruction_memory/u_sram/CLKin (CF_SRAM_1024x32)       0.00       2.50 r
+  instruction_memory/u_sram/DO[3] (CF_SRAM_1024x32)       2.31       4.81 f
+  instruction_memory/rdata_o[3] (sram_wrapper_0)          0.00       4.81 f
+  mem_ctrl/isram_rdata_i[3] (memory_controller)           0.00       4.81 f
+  mem_ctrl/U28/Y (NAND2X4_HS)                             0.03       4.84 r
+  mem_ctrl/U31/Y (INVX2_HS)                               0.03       4.87 f
+  mem_ctrl/core_isram_rdata_o[3] (memory_controller)      0.00       4.87 f
+  cpu/isram_rdata_i[3] (cpu_top)                          0.00       4.87 f
+  cpu/u_fetch/isram_rdata_i[3] (fetch)                    0.00       4.87 f
+  cpu/u_fetch/U21/Y (INVX2_HS)                            0.03       4.90 r
+  cpu/u_fetch/U22/Y (NOR2X2_HS)                           0.03       4.92 f
+  cpu/u_fetch/instr_o[3] (fetch)                          0.00       4.92 f
+  cpu/u_decode/instr_i[3] (decode)                        0.00       4.92 f
+  cpu/u_decode/U59/Y (NOR2X2_HS)                          0.08       5.00 r
+  cpu/u_decode/U58/Y (NAND2X2_HS)                         0.06       5.06 f
+  cpu/u_decode/U54/Y (NOR2X4_HS)                          0.06       5.12 r
+  cpu/u_decode/U71/Y (NAND3X1_HS)                         0.07       5.19 f
+  cpu/u_decode/U72/Y (OAI22X2_HS)                         0.11       5.30 r
+  cpu/u_decode/instr_type_o[1] (decode)                   0.00       5.30 r
+  cpu/u_mem_access/instr_type_i[1] (mem_access)           0.00       5.30 r
+  cpu/u_mem_access/U9/Y (NAND2X2_HS)                      0.06       5.37 f
+  cpu/u_mem_access/U8/Y (NOR2X2_HS)                       0.10       5.47 r
+  cpu/u_mem_access/mem_wait_o (mem_access)                0.00       5.47 r
+  cpu/U10/Y (NOR2X2_HS)                                   0.03       5.50 f
+  cpu/u_writeback/commit_i (writeback)                    0.00       5.50 f
+  cpu/u_writeback/U11/Y (NAND3X2_HS)                      0.05       5.55 r
+  cpu/u_writeback/U9/Y (INVX4_HS)                         0.04       5.59 f
+  cpu/u_writeback/rd_write_en_o (writeback)               0.00       5.59 f
+  cpu/u_reg_file/rd_write_en_i (reg_file)                 0.00       5.59 f
+  cpu/u_reg_file/U103/Y (NAND2X1_HS)                      0.05       5.64 r
+  cpu/u_reg_file/U1689/Y (CLKBUFX2_HS)                    0.08       5.71 r
+  cpu/u_reg_file/U1694/Y (OAI21X1)                        0.04       5.75 f
+  cpu/u_reg_file/clk_gate_registers_reg[11]/EN (SNPS_CLOCK_GATE_HIGH_reg_file_21)
+                                                          0.00       5.75 f
+  cpu/u_reg_file/clk_gate_registers_reg[11]/latch/E (ICGPRECX1)
+                                                          0.00       5.75 f
+  data arrival time                                                  5.75
+
+  clock coreClk (fall edge)                               5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  cpu/u_reg_file/clk_gate_registers_reg[11]/latch/CK (ICGPRECX1)
+                                                          0.00       5.00 f
+  clock gating setup time                                -0.26       4.74
+  data required time                                                 4.74
+  --------------------------------------------------------------------------
+  data required time                                                 4.74
+  data arrival time                                                 -5.75
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -1.01
+
+
+1

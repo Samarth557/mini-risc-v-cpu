@@ -1,0 +1,641 @@
+**optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 3527.7M, totSessionCpu=1:02:35 **
+*** optDesign #1 [begin] () : totSession cpu/real = 1:02:35.5/0:18:22.2 (3.4), mem = 3527.7M
+GigaOpt running with 8 threads.
+*** InitOpt #1 [begin] (optDesign #1) : totSession cpu/real = 1:02:35.5/0:18:22.2 (3.4), mem = 3527.7M
+**INFO: User settings:
+setDesignMode -process                                         130
+setDesignMode -topRoutingLayer                                 5
+setExtractRCMode -coupling_c_th                                0.4
+setExtractRCMode -engine                                       preRoute
+setExtractRCMode -relative_c_th                                1
+setExtractRCMode -total_c_th                                   0
+setDelayCalMode -enable_high_fanout                            true
+setDelayCalMode -enable_ideal_seq_async_pins                   false
+setDelayCalMode -eng_enablePrePlacedFlow                       false
+setDelayCalMode -engine                                        aae
+setDelayCalMode -ignoreNetLoad                                 false
+setDelayCalMode -socv_accuracy_mode                            low
+setOptMode -opt_view_pruning_hold_views_active_list            { typical_analysis_view }
+setOptMode -opt_view_pruning_setup_views_active_list           { typical_analysis_view }
+setOptMode -opt_add_ports                                      false
+setOptMode -opt_all_end_points                                 false
+setOptMode -opt_view_pruning_setup_views_persistent_list       { typical_analysis_view}
+setOptMode -opt_view_pruning_tdgr_setup_views_persistent_list  { typical_analysis_view}
+setOptMode -opt_drv_margin                                     0
+setOptMode -opt_dynamic_power_effort                           none
+setOptMode -opt_effort                                         high
+setOptMode -opt_drv_fix_max_cap                                true
+setOptMode -opt_drv                                            true
+setOptMode -opt_fix_fanout_load                                false
+setOptMode -opt_drv_fix_max_tran                               true
+setOptMode -opt_hold_target_slack                              0
+setOptMode -opt_leakage_power_effort                           none
+setOptMode -opt_max_density                                    0.95
+setOptMode -opt_resize_flip_flops                              true
+setOptMode -opt_preserve_all_sequential                        false
+setOptMode -opt_area_recovery                                  true
+setOptMode -opt_setup_target_slack                             0
+setOptMode -opt_remove_redundant_insts                         false
+setOptMode -opt_skew                                           false
+setPlaceMode -macroPlaceMode                                   0
+setPlaceMode -place_detail_check_route                         false
+setPlaceMode -place_detail_preserve_routing                    false
+setPlaceMode -place_detail_remove_affected_routing             false
+setPlaceMode -place_detail_swap_eeq_cells                      false
+setPlaceMode -place_global_clock_gate_aware                    true
+setPlaceMode -place_global_clock_power_driven                  false
+setPlaceMode -place_global_clock_power_driven_effort           low
+setPlaceMode -place_global_cong_effort                         auto
+setPlaceMode -place_global_ignore_scan                         true
+setPlaceMode -place_global_ignore_spare                        true
+setPlaceMode -place_global_module_aware_spare                  false
+setPlaceMode -place_global_place_io_pins                       false
+setPlaceMode -place_global_reorder_scan                        false
+setPlaceMode -place_global_timing_effort                       high
+setAnalysisMode -analysisType                                  onChipVariation
+setAnalysisMode -checkType                                     setup
+setAnalysisMode -clkSrcPath                                    true
+setAnalysisMode -clockPropagation                              sdcControl
+setAnalysisMode -virtualIPO                                    false
+setRouteMode -earlyGlobalExpDoNotInvalidateRCGrid              false
+
+Need call spDPlaceInit before registerPrioInstLoc.
+	CornerforLayerOpt timing analysis view typical_analysis_view has been selected for calibration 
+	CornerforLayerOpt timing analysis view typical_analysis_view has been selected for calibration 
+**optDesign ... cpu = 0:00:02, real = 0:00:01, mem = 3530.7M, totSessionCpu=1:02:37 **
+#optDebug: { P: 130 W: 7195 FE: standard PE: none LDR: 1}
+*** optDesign -postCTS ***
+DRC Margin: user margin 0.0
+Hold Target Slack: user slack 0
+Setup Target Slack: user slack 0;
+**INFO: Using Advanced Metric Collection system.
+Start to check current routing status for nets...
+All nets are already routed correctly.
+End to check current routing status for nets (mem=3526.8M)
+Compute RC Scale Done ...
+*** InitOpt #1 [finish] (optDesign #1) : cpu/real = 0:00:02.8/0:00:02.7 (1.0), totSession cpu/real = 1:02:38.3/0:18:25.0 (3.4), mem = 3531.3M
+
+=============================================================================================
+ Step TAT Report : InitOpt #1 / optDesign #1                                    25.11-s102_1
+=============================================================================================
+ Step Name                  Count        Real  (       % )      Step Total Real / CPU  Scale
+---------------------------------------------------------------------------------------------
+[ CellServerInit         ]      2   0:00:00.0  (   0.7 % )     0:00:00.0 /  0:00:00.0    1.0
+[ LibAnalyzerInit        ]      2   0:00:01.3  (  46.2 % )     0:00:01.3 /  0:00:01.3    1.0
+[ PowerInterfaceInit     ]      1   0:00:00.0  (   1.5 % )     0:00:00.0 /  0:00:00.0    1.0
+[ SteinerInterfaceInit   ]      2   0:00:00.0  (   0.1 % )     0:00:00.5 /  0:00:00.5    1.0
+[ ChannelGraphInit       ]      1   0:00:00.5  (  19.5 % )     0:00:00.5 /  0:00:00.5    1.0
+[ MetricInit             ]      1   0:00:00.0  (   0.2 % )     0:00:00.0 /  0:00:00.0    0.0
+[ DetailPlaceInit        ]      1   0:00:00.1  (   4.5 % )     0:00:00.1 /  0:00:00.2    1.3
+[ MISC                   ]          0:00:00.7  (  27.3 % )     0:00:00.7 /  0:00:00.8    1.1
+---------------------------------------------------------------------------------------------
+ InitOpt #1 TOTAL                   0:00:02.7  ( 100.0 % )     0:00:02.7 /  0:00:02.8    1.0
+---------------------------------------------------------------------------------------------
+HoldOpt: Enabling setup slack weighting
+GigaOpt Hold Optimizer is used
+GigaOpt Checkpoint: Internal optHold -postCts -maxLocalDensity 1.0 -numThreads 8 -nativePathGroupFlow -viewPruneEffortLevel 1
+Starting initialization (fixHold) cpu=0:00:00.0 real=0:00:00.0 totSessionCpu=1:02:39 mem=3531.4M ***
+*** BuildHoldData #1 [begin] (optDesign #1) : totSession cpu/real = 1:02:39.1/0:18:25.7 (3.4), mem = 3531.4M
+Saving timing graph ...
+**INFO: TG backup dir: /nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/innovus_temp_945206_f5c455ed-f5d3-4eb6-9d67-d61d227b5eae_ece-rhelsrv_sgupta943_bJs9bw/opt_timing_graph_OqUnhY
+**INFO: Disk Usage:
+Filesystem                                       1K-blocks       Used Available Use% Mounted on
+ecelinfile6:/export/array122/students/sgupta943 3904343040 3251804160 652538880  84% /nethome/sgupta943
+Done save timing graph
+**INFO: Disk Usage:
+Filesystem                                       1K-blocks       Used Available Use% Mounted on
+ecelinfile6:/export/array122/students/sgupta943 3904343040 3251824640 652518400  84% /nethome/sgupta943
+Starting delay calculation for Hold views
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: chip_top
+# Design Mode: 130nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (8 T). (MEM=3865.44)
+Total number of fetched objects 8150
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+End delay calculation. (MEM=3906.18 CPU=0:00:03.2 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=3906.18 CPU=0:00:04.0 REAL=0:00:00.0)
+*** Done Building Timing Graph (cpu=0:00:04.9 real=0:00:02.0 totSessionCpu=1:02:50 mem=3907.9M)
+
+Active hold views:
+ typical_analysis_view
+  Dominating endpoints: 0
+  Dominating TNS: -0.000
+
+Done building cte hold timing graph (fixHold) cpu=0:00:11.3 real=0:00:04.0 totSessionCpu=1:02:50 mem=3908.5M ***
+Done building hold timer [4 node(s), 3 edge(s), 1 view(s)] (fixHold) cpu=0:00:12.5 real=0:00:05.0 totSessionCpu=1:02:52 mem=3961.8M ***
+Restoring timing graph ...
+**WARN: (IMPCTE-285):	Could not locate cell BUFX2 in library sky130_tt_1.8_25.
+**WARN: (IMPCTE-285):	Could not locate cell BUFX2 in library sky130_tt_1.8_25.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view typical_analysis_view.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-285):	Could not locate cell BUFX2 in library sky130_tt_1.8_25.
+**WARN: (IMPCTE-289):	set_driving_cell :  Use the cell in library sky130_tt_1.8_25.
+**WARN: (IMPCTE-285):	Could not locate cell BUFX2 in library sky130_tt_1.8_25.
+**WARN: (IMPCTE-285):	Could not locate cell BUFX2 in library sky130_tt_1.8_25.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view typical_analysis_view.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-285):	Could not locate cell BUFX2 in library sky130_tt_1.8_25.
+**WARN: (IMPCTE-289):	set_driving_cell :  Use the cell in library sky130_tt_1.8_25.
+**WARN: (IMPCTE-285):	Could not locate cell BUFX2 in library sky130_tt_1.8_25.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view typical_analysis_view.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-285):	Could not locate cell BUFX2 in library sky130_tt_1.8_25.
+**WARN: (IMPCTE-289):	set_driving_cell :  Use the cell in library sky130_tt_1.8_25.
+**WARN: (IMPCTE-285):	Could not locate cell BUFX2 in library sky130_tt_1.8_25.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view typical_analysis_view.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-285):	Could not locate cell BUFX2 in library sky130_tt_1.8_25.
+**WARN: (IMPCTE-289):	set_driving_cell :  Use the cell in library sky130_tt_1.8_25.
+**WARN: (IMPCTE-285):	Could not locate cell BUFX2 in library sky130_tt_1.8_25.
+**WARN: (IMPCTE-285):	Could not locate cell BUFX2 in library sky130_tt_1.8_25.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view typical_analysis_view.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-285):	Could not locate cell BUFX2 in library sky130_tt_1.8_25.
+**WARN: (IMPCTE-289):	set_driving_cell :  Use the cell in library sky130_tt_1.8_25.
+**WARN: (IMPCTE-285):	Could not locate cell BUFX2 in library sky130_tt_1.8_25.
+**WARN: (IMPCTE-285):	Could not locate cell BUFX2 in library sky130_tt_1.8_25.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view typical_analysis_view.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-285):	Could not locate cell BUFX2 in library sky130_tt_1.8_25.
+**WARN: (IMPCTE-289):	set_driving_cell :  Use the cell in library sky130_tt_1.8_25.
+**WARN: (IMPCTE-285):	Could not locate cell BUFX2 in library sky130_tt_1.8_25.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view typical_analysis_view.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-285):	Could not locate cell BUFX2 in library sky130_tt_1.8_25.
+**WARN: (IMPCTE-289):	set_driving_cell :  Use the cell in library sky130_tt_1.8_25.
+**WARN: (IMPCTE-285):	Could not locate cell BUFX2 in library sky130_tt_1.8_25.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view typical_analysis_view.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-285):	Could not locate cell BUFX2 in library sky130_tt_1.8_25.
+**WARN: (IMPCTE-289):	set_driving_cell :  Use the cell in library sky130_tt_1.8_25.
+**WARN: (EMS-27):	Message (IMPCTE-285) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view typical_analysis_view.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-289):	set_driving_cell :  Use the cell in library sky130_tt_1.8_25.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view typical_analysis_view.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-289):	set_driving_cell :  Use the cell in library sky130_tt_1.8_25.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view typical_analysis_view.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-289):	set_driving_cell :  Use the cell in library sky130_tt_1.8_25.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view typical_analysis_view.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-289):	set_driving_cell :  Use the cell in library sky130_tt_1.8_25.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view typical_analysis_view.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-289):	set_driving_cell :  Use the cell in library sky130_tt_1.8_25.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view typical_analysis_view.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-289):	set_driving_cell :  Use the cell in library sky130_tt_1.8_25.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view typical_analysis_view.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-289):	set_driving_cell :  Use the cell in library sky130_tt_1.8_25.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view typical_analysis_view.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-289):	set_driving_cell :  Use the cell in library sky130_tt_1.8_25.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view typical_analysis_view.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-289):	set_driving_cell :  Use the cell in library sky130_tt_1.8_25.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view typical_analysis_view.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-289):	set_driving_cell :  Use the cell in library sky130_tt_1.8_25.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view typical_analysis_view.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-289):	set_driving_cell :  Use the cell in library sky130_tt_1.8_25.
+**WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view typical_analysis_view.
+Type 'man IMPCTE-290' for more detail.
+**WARN: (IMPCTE-289):	set_driving_cell :  Use the cell in library sky130_tt_1.8_25.
+**WARN: (EMS-27):	Message (IMPCTE-290) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (EMS-27):	Message (IMPCTE-289) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+AAE_INFO: Resetting and re-constructing cache for AAE clocks ...
+Done restore timing graph
+Done building cte setup timing graph (fixHold) cpu=0:00:14.8 real=0:00:07.0 totSessionCpu=1:02:54 mem=4100.9M ***
+OPTC: m4 20.0 50.0 [ 250.0 20.0 50.0 ]
+OPTC: view 50.0:250.0 [ 0.0500 ]
+
+*Info: minBufDelay = 62.3 ps, libStdDelay = 38.6 ps, minBufSize = 9522000 (5.0)
+*Info: worst delay setup view: typical_analysis_view
+
+OptSummary:
+
+------------------------------------------------------------------
+     Hold Opt Initial Summary
+------------------------------------------------------------------
+
+Setup views included:
+ typical_analysis_view
+Hold views included:
+ typical_analysis_view
+
++--------------------+---------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg |reg2cgate| default |
++--------------------+---------+---------+---------+---------+
+|           WNS (ns):| -2.530  | -1.534  | -2.530  | -0.015  |
+|           TNS (ns):| -1353.4 | -1278.4 | -74.968 | -0.015  |
+|    Violating Paths:|  1088   |  1055   |   32    |    1    |
+|          All Paths:|  1128   |  1096   |   32    |  1128   |
++--------------------+---------+---------+---------+---------+
+
++--------------------+---------+---------+---------+---------+
+|     Hold mode      |   all   | reg2reg |reg2cgate| default |
++--------------------+---------+---------+---------+---------+
+|           WNS (ns):|  0.258  |  0.258  |  3.609  |  1.255  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |    0    |
+|          All Paths:|  1128   |  1096   |   32    |  1128   |
++--------------------+---------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      1 (10)      |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 26.638%
+------------------------------------------------------------------
+**INFO: Optimization is fixing the slack violation with the following view based weighting factors
+slack weights for setup views:
+    typical_analysis_view: 1.000
+**optDesign ... cpu = 0:00:22, real = 0:00:11, mem = 3637.7M, totSessionCpu=1:02:57 **
+*** BuildHoldData #1 [finish] (optDesign #1) : cpu/real = 0:00:18.6/0:00:08.9 (2.1), totSession cpu/real = 1:02:57.6/0:18:34.6 (3.4), mem = 3636.7M
+
+=============================================================================================
+ Step TAT Report : BuildHoldData #1 / optDesign #1                              25.11-s102_1
+=============================================================================================
+ Step Name                  Count        Real  (       % )      Step Total Real / CPU  Scale
+---------------------------------------------------------------------------------------------
+[ ViewPruning            ]      5   0:00:00.3  (   3.1 % )     0:00:00.5 /  0:00:01.9    3.5
+[ OptSummaryReport       ]      1   0:00:00.1  (   1.0 % )     0:00:00.2 /  0:00:00.4    1.9
+[ MetricReport           ]      1   0:00:00.5  (   5.3 % )     0:00:00.5 /  0:00:00.5    1.0
+[ DrvReport              ]      1   0:00:00.1  (   1.3 % )     0:00:00.1 /  0:00:00.3    2.5
+[ SlackTraversorInit     ]      3   0:00:00.1  (   0.9 % )     0:00:00.2 /  0:00:00.6    2.8
+[ CellServerInit         ]      3   0:00:00.0  (   0.3 % )     0:00:00.0 /  0:00:00.0    1.1
+[ LibAnalyzerInit        ]      2   0:00:01.3  (  14.5 % )     0:00:01.3 /  0:00:01.3    1.0
+[ PowerInterfaceInit     ]      1   0:00:00.0  (   0.4 % )     0:00:00.0 /  0:00:00.0    1.1
+[ HoldTimerInit          ]      1   0:00:00.0  (   0.2 % )     0:00:00.8 /  0:00:00.9    1.0
+[ HoldInitFootPrintList  ]      1   0:00:00.0  (   0.0 % )     0:00:00.0 /  0:00:00.0    0.0
+[ ReportTranViolation    ]      1   0:00:00.1  (   1.1 % )     0:00:00.1 /  0:00:00.1    1.0
+[ ReportCapViolation     ]      1   0:00:00.1  (   0.8 % )     0:00:00.1 /  0:00:00.1    1.0
+[ HoldTimerNodeList      ]      1   0:00:00.1  (   1.2 % )     0:00:00.1 /  0:00:00.1    1.0
+[ UpdateTimingGraph      ]      5   0:00:00.5  (   5.8 % )     0:00:01.7 /  0:00:06.5    3.8
+[ FullDelayCalc          ]      1   0:00:00.8  (   8.6 % )     0:00:00.8 /  0:00:04.1    5.4
+[ TimingUpdate           ]     11   0:00:00.8  (   8.7 % )     0:00:00.8 /  0:00:04.0    5.1
+[ TimingReport           ]      2   0:00:00.2  (   2.0 % )     0:00:00.2 /  0:00:00.4    2.4
+[ IncrTimingUpdate       ]      4   0:00:00.1  (   1.4 % )     0:00:00.1 /  0:00:00.5    3.9
+[ SaveTimingGraph        ]      1   0:00:00.7  (   7.9 % )     0:00:00.7 /  0:00:01.0    1.4
+[ RestoreTimingGraph     ]      1   0:00:01.0  (  11.0 % )     0:00:01.0 /  0:00:01.3    1.3
+[ MISC                   ]          0:00:02.2  (  24.4 % )     0:00:02.2 /  0:00:03.6    1.6
+---------------------------------------------------------------------------------------------
+ BuildHoldData #1 TOTAL             0:00:08.9  ( 100.0 % )     0:00:08.9 /  0:00:18.6    2.1
+---------------------------------------------------------------------------------------------
+*** HoldOpt #1 [begin] (optDesign #1) : totSession cpu/real = 1:02:57.6/0:18:34.6 (3.4), mem = 3636.7M
+*info: Run optDesign holdfix with 8 threads.
+Info: 301 nets with fixed/cover wires excluded.
+Info: 301 clock nets excluded from IPO operation.
+*** Hold timing is met. Hold fixing is not needed 
+**INFO: total 0 insts, 0 nets marked don't touch
+**INFO: total 0 insts, 0 nets marked don't touch DB property
+**INFO: total 0 insts, 0 nets unmarked don't touch
+**INFO:    Hold Timing Snapshot:
+**INFO:              All PG WNS: 0.000
+**INFO:              All PG TNS: 0.000
+*** HoldOpt #1 [finish] (optDesign #1) : cpu/real = 0:00:01.2/0:00:01.0 (1.1), totSession cpu/real = 1:02:58.8/0:18:35.6 (3.4), mem = 3638.9M
+
+=============================================================================================
+ Step TAT Report : HoldOpt #1 / optDesign #1                                    25.11-s102_1
+=============================================================================================
+ Step Name                  Count        Real  (       % )      Step Total Real / CPU  Scale
+---------------------------------------------------------------------------------------------
+[ MetricReport           ]      1   0:00:00.4  (  39.2 % )     0:00:00.4 /  0:00:00.4    1.0
+[ PowerInterfaceInit     ]      1   0:00:00.1  (   5.0 % )     0:00:00.1 /  0:00:00.1    1.2
+[ SteinerInterfaceInit   ]      1   0:00:00.0  (   0.0 % )     0:00:00.0 /  0:00:00.0    0.0
+[ TimingUpdate           ]      3   0:00:00.0  (   0.0 % )     0:00:00.0 /  0:00:00.0    0.0
+[ MISC                   ]          0:00:00.6  (  55.8 % )     0:00:00.6 /  0:00:00.7    1.3
+---------------------------------------------------------------------------------------------
+ HoldOpt #1 TOTAL                   0:00:01.0  ( 100.0 % )     0:00:01.0 /  0:00:01.2    1.1
+---------------------------------------------------------------------------------------------
+
+Active setup views:
+ typical_analysis_view
+  Dominating endpoints: 0
+  Dominating TNS: -0.000
+
+OPTC: user 20.0 (reset)
+OPTC: user 20.0
+Reported timing to dir /nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/RPT/timingReports
+**optDesign ... cpu = 0:00:27, real = 0:00:14, mem = 3712.2M, totSessionCpu=1:03:03 **
+Saving timing graph ...
+**INFO: TG backup dir: /nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/innovus_temp_945206_f5c455ed-f5d3-4eb6-9d67-d61d227b5eae_ece-rhelsrv_sgupta943_bJs9bw/opt_timing_graph_LJy3oJ
+**INFO: Disk Usage:
+Filesystem                                       1K-blocks       Used Available Use% Mounted on
+ecelinfile6:/export/array122/students/sgupta943 3904343040 3251805184 652537856  84% /nethome/sgupta943
+Done save timing graph
+**INFO: Disk Usage:
+Filesystem                                       1K-blocks       Used Available Use% Mounted on
+ecelinfile6:/export/array122/students/sgupta943 3904343040 3251825664 652517376  84% /nethome/sgupta943
+Starting delay calculation for Hold views
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: chip_top
+# Design Mode: 130nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (8 T). (MEM=3938.33)
+Total number of fetched objects 8150
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+End delay calculation. (MEM=3974.58 CPU=0:00:03.1 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=3974.58 CPU=0:00:03.8 REAL=0:00:01.0)
+*** Done Building Timing Graph (cpu=0:00:04.6 real=0:00:01.0 totSessionCpu=1:03:09 mem=3975.5M)
+Restoring timing graph ...
+AAE_INFO: Resetting and re-constructing cache for AAE clocks ...
+Done restore timing graph
+
+OptSummary:
+
+------------------------------------------------------------------
+     optDesign Final Summary
+------------------------------------------------------------------
+
+Setup views included:
+ typical_analysis_view 
+Hold views included:
+ typical_analysis_view
+
++--------------------+---------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg |reg2cgate| default |
++--------------------+---------+---------+---------+---------+
+|           WNS (ns):| -2.530  | -1.534  | -2.530  | -0.015  |
+|           TNS (ns):| -1353.4 | -1278.4 | -74.968 | -0.015  |
+|    Violating Paths:|  1088   |  1055   |   32    |    1    |
+|          All Paths:|  1128   |  1096   |   32    |  1128   |
++--------------------+---------+---------+---------+---------+
+
++--------------------+---------+---------+---------+---------+
+|     Hold mode      |   all   | reg2reg |reg2cgate| default |
++--------------------+---------+---------+---------+---------+
+|           WNS (ns):|  0.258  |  0.258  |  3.609  |  1.255  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |    0    |
+|          All Paths:|  1128   |  1096   |   32    |  1128   |
++--------------------+---------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      1 (10)      |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 26.638%
+Routing Overflow: 15.22% H and 0.89% V
+------------------------------------------------------------------
+Begin: Collecting metrics
+ -------------------------------------------------------------------------------------------------- 
+| Snapshot        | WNS                | TNS   | Density (%) | Resource               | DRVs       |
+|                 | HEPG (ns) | ALL (ns)       |             | Real (s) | Memory (MB) | Tran | Cap |
+|-----------------+-----------+--------+-------+-------------+----------+-------------+------+-----|
+| initial_summary |    -2.530 | -2.530 | -1353 |       26.64 | 0:00:09  |        3638 |    0 |   0 |
+| hold_fixing     |           |        |       |             | 0:00:01  |        3643 |      |     |
+| final_summary   |    -2.530 | -2.530 | -1353 |       26.64 | 0:00:10  |        3604 |    0 |   0 |
+ -------------------------------------------------------------------------------------------------- 
+End: Collecting metrics
+**optDesign ... cpu = 0:00:39, real = 0:00:24, mem = 3603.5M, totSessionCpu=1:03:14 **
+*** Finished optDesign ***
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   final
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   opt_design_postcts_hold
+Info: Summary of CRR changes:
+      - Timing transform commits:       0
+Info: Destroy the CCOpt slew target map.
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPCTE-285        1424  Could not locate cell %s in library %s.  
+WARNING   IMPCTE-289         608  set_driving_cell : %s Use the cell in li...
+WARNING   IMPCTE-290         608  Could not locate cell %s in any library ...
+*** Message Summary: 2640 warning(s), 0 error(s)
+
+*** optDesign #1 [finish] () : cpu/real = 0:00:39.6/0:00:24.7 (1.6), totSession cpu/real = 1:03:15.1/0:18:46.9 (3.4), mem = 3603.8M
+
+=============================================================================================
+ Final TAT Report : optDesign #1                                                25.11-s102_1
+=============================================================================================
+ Step Name                  Count        Real  (       % )      Step Total Real / CPU  Scale
+---------------------------------------------------------------------------------------------
+[ InitOpt                ]      1   0:00:02.7  (  11.0 % )     0:00:02.7 /  0:00:02.8    1.0
+[ HoldOpt                ]      1   0:00:00.6  (   2.6 % )     0:00:01.0 /  0:00:01.2    1.1
+[ ViewPruning            ]      8   0:00:00.3  (   1.4 % )     0:00:00.6 /  0:00:01.9    3.3
+[ BuildHoldData          ]      1   0:00:05.7  (  23.0 % )     0:00:08.9 /  0:00:18.6    2.1
+[ OptSummaryReport       ]      2   0:00:03.1  (  12.7 % )     0:00:08.1 /  0:00:11.8    1.4
+[ MetricReport           ]      3   0:00:02.6  (  10.6 % )     0:00:02.6 /  0:00:01.4    0.5
+[ DrvReport              ]      2   0:00:03.0  (  12.1 % )     0:00:03.0 /  0:00:00.9    0.3
+[ CellServerInit         ]      1   0:00:00.0  (   0.0 % )     0:00:00.0 /  0:00:00.0    1.6
+[ LibAnalyzerInit        ]      1   0:00:00.6  (   2.4 % )     0:00:00.6 /  0:00:00.6    1.0
+[ DetailPlaceInit        ]      1   0:00:00.1  (   0.3 % )     0:00:00.1 /  0:00:00.1    1.2
+[ UpdateTimingGraph      ]      9   0:00:00.8  (   3.1 % )     0:00:02.8 /  0:00:11.1    4.0
+[ FullDelayCalc          ]      2   0:00:01.5  (   6.1 % )     0:00:01.5 /  0:00:08.0    5.3
+[ TimingUpdate           ]     23   0:00:01.5  (   6.1 % )     0:00:01.5 /  0:00:07.3    4.8
+[ TimingReport           ]      4   0:00:00.4  (   1.7 % )     0:00:00.4 /  0:00:00.9    2.2
+[ GenerateReports        ]      2   0:00:00.7  (   2.9 % )     0:00:00.7 /  0:00:00.7    1.0
+[ MISC                   ]          0:00:01.0  (   3.9 % )     0:00:01.0 /  0:00:01.4    1.5
+---------------------------------------------------------------------------------------------
+ optDesign #1 TOTAL                 0:00:24.7  ( 100.0 % )     0:00:24.7 /  0:00:39.6    1.6
+---------------------------------------------------------------------------------------------
+*** timeDesign #1 [begin] () : totSession cpu/real = 1:03:15.1/0:18:46.9 (3.4), mem = 3603.8M
+Start to check current routing status for nets...
+All nets are already routed correctly.
+End to check current routing status for nets (mem=3549.7M)
+
+OptSummary:
+
+------------------------------------------------------------------
+          timeDesign Summary
+------------------------------------------------------------------
+
+Setup views included:
+ typical_analysis_view 
+
++--------------------+---------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg |reg2cgate| default |
++--------------------+---------+---------+---------+---------+
+|           WNS (ns):| -2.530  | -1.534  | -2.530  | -0.015  |
+|           TNS (ns):| -1353.4 | -1278.4 | -74.968 | -0.015  |
+|    Violating Paths:|  1088   |  1055   |   32    |    1    |
+|          All Paths:|  1128   |  1096   |   32    |  1128   |
++--------------------+---------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      1 (10)      |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 26.638%
+Routing Overflow: 15.22% H and 0.89% V
+------------------------------------------------------------------
+Reported timing to dir ./timingReports
+Total CPU time: 3.05 sec
+Total Real time: 4.0 sec
+Total Memory Usage: 3635.992188 Mbytes
+*** timeDesign #1 [finish] () : cpu/real = 0:00:03.0/0:00:04.0 (0.8), totSession cpu/real = 1:03:18.1/0:18:50.9 (3.4), mem = 3636.0M
+
+=============================================================================================
+ Final TAT Report : timeDesign #1                                               25.11-s102_1
+=============================================================================================
+ Step Name                  Count        Real  (       % )      Step Total Real / CPU  Scale
+---------------------------------------------------------------------------------------------
+[ ViewPruning            ]      1   0:00:00.0  (   0.0 % )     0:00:00.0 /  0:00:00.0    0.0
+[ OptSummaryReport       ]      1   0:00:00.1  (   2.8 % )     0:00:03.7 /  0:00:02.4    0.6
+[ DrvReport              ]      1   0:00:02.9  (  72.0 % )     0:00:02.9 /  0:00:00.6    0.2
+[ UpdateTimingGraph      ]      1   0:00:00.0  (   0.0 % )     0:00:00.2 /  0:00:01.0    4.8
+[ TimingUpdate           ]      1   0:00:00.2  (   5.0 % )     0:00:00.2 /  0:00:01.0    4.8
+[ TimingReport           ]      1   0:00:00.1  (   2.4 % )     0:00:00.1 /  0:00:00.2    2.3
+[ GenerateReports        ]      1   0:00:00.4  (   9.7 % )     0:00:00.4 /  0:00:00.4    1.0
+[ MISC                   ]          0:00:00.3  (   8.0 % )     0:00:00.3 /  0:00:00.7    2.1
+---------------------------------------------------------------------------------------------
+ timeDesign #1 TOTAL                0:00:04.0  ( 100.0 % )     0:00:04.0 /  0:00:03.0    0.8
+---------------------------------------------------------------------------------------------
+*** timeDesign #2 [begin] () : totSession cpu/real = 1:03:18.1/0:18:50.9 (3.4), mem = 3636.0M
+Start to check current routing status for nets...
+All nets are already routed correctly.
+End to check current routing status for nets (mem=3515.4M)
+Starting delay calculation for Hold views
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: chip_top
+# Design Mode: 130nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (8 T). (MEM=3591.94)
+Total number of fetched objects 8150
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+End delay calculation. (MEM=3640.15 CPU=0:00:02.8 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=3640.15 CPU=0:00:03.5 REAL=0:00:01.0)
+*** Done Building Timing Graph (cpu=0:00:05.0 real=0:00:01.0 totSessionCpu=1:03:24 mem=3642.0M)
+
+OptSummary:
+
+------------------------------------------------------------------
+          timeDesign Summary
+------------------------------------------------------------------
+
+Hold views included:
+ typical_analysis_view 
+
++--------------------+---------+---------+---------+---------+
+|     Hold mode      |   all   | reg2reg |reg2cgate| default |
++--------------------+---------+---------+---------+---------+
+|           WNS (ns):|  0.258  |  0.258  |  3.609  |  1.255  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |    0    |
+|          All Paths:|  1128   |  1096   |   32    |  1128   |
++--------------------+---------+---------+---------+---------+
+
+Density: 26.638%
+Routing Overflow: 15.22% H and 0.89% V
+------------------------------------------------------------------
+Reported timing to dir ./timingReports
+Total CPU time: 7.08 sec
+Total Real time: 3.0 sec
+Total Memory Usage: 3466.046875 Mbytes
+*** timeDesign #2 [finish] () : cpu/real = 0:00:07.1/0:00:02.6 (2.7), totSession cpu/real = 1:03:25.2/0:18:53.5 (3.4), mem = 3466.0M
+
+=============================================================================================
+ Final TAT Report : timeDesign #2                                               25.11-s102_1
+=============================================================================================
+ Step Name                  Count        Real  (       % )      Step Total Real / CPU  Scale
+---------------------------------------------------------------------------------------------
+[ ViewPruning            ]      2   0:00:00.0  (   0.0 % )     0:00:00.0 /  0:00:00.0    0.0
+[ OptSummaryReport       ]      1   0:00:00.1  (   3.8 % )     0:00:01.9 /  0:00:05.7    3.1
+[ UpdateTimingGraph      ]      1   0:00:00.4  (  17.4 % )     0:00:01.4 /  0:00:05.0    3.7
+[ FullDelayCalc          ]      1   0:00:00.8  (  32.8 % )     0:00:00.8 /  0:00:04.1    4.9
+[ TimingUpdate           ]      1   0:00:00.1  (   2.8 % )     0:00:00.1 /  0:00:00.5    6.4
+[ TimingReport           ]      1   0:00:00.1  (   4.4 % )     0:00:00.1 /  0:00:00.3    2.5
+[ GenerateReports        ]      1   0:00:00.3  (  11.8 % )     0:00:00.3 /  0:00:00.3    1.1
+[ MISC                   ]          0:00:00.7  (  27.1 % )     0:00:00.7 /  0:00:01.3    1.9
+---------------------------------------------------------------------------------------------
+ timeDesign #2 TOTAL                0:00:02.6  ( 100.0 % )     0:00:02.6 /  0:00:07.1    2.7
+---------------------------------------------------------------------------------------------
+#% Begin save design ... (date=10/11 20:38:44, mem=3469.2M)
+% Begin Save ccopt configuration ... (date=10/11 20:38:44, mem=3469.2M)
+% End Save ccopt configuration ... (date=10/11 20:38:44, total cpu=0:00:00.2, real=0:00:00.0, peak res=3469.7M, current mem=3469.7M)
+% Begin Save netlist data ... (date=10/11 20:38:44, mem=3469.7M)
+Writing Binary DB to chip_top.postCts.dat.dat/vbin/chip_top.v.bin in multi-threaded mode...
+% End Save netlist data ... (date=10/11 20:38:44, total cpu=0:00:00.2, real=0:00:01.0, peak res=3471.9M, current mem=3471.9M)
+Saving symbol-table file in separate thread ...
+Saving congestion map file in separate thread ...
+Saving congestion map file chip_top.postCts.dat.dat/chip_top.route.congmap.gz ...
+% Begin Save AAE data ... (date=10/11 20:38:45, mem=3472.7M)
+Saving AAE Data ...
+% End Save AAE data ... (date=10/11 20:38:45, total cpu=0:00:00.2, real=0:00:00.0, peak res=3473.8M, current mem=3473.8M)
+Saving mode setting ...
+**WARN: (IMPMF-5054):	fill_setting_save command is obsolete and should not be used any more. It still works in this release but will be removed in future release. Recommend to use Pegasus metal fill flow which is the replacement.
+Saving global file ...
+*info - save blackBox cells to lef file chip_top.postCts.dat.dat/chip_top.bbox.lef
+Saving Drc markers ...
+... 1 markers are saved ...
+... 0 geometry drc markers are saved ...
+... 0 antenna drc markers are saved ...
+Saving special route data file in separate thread ...
+Saving PG file in separate thread ...
+Saving placement file in separate thread ...
+Saving route file in separate thread ...
+Saving property file in separate thread ...
+Saving PG file chip_top.postCts.dat.dat/chip_top.pg.gz, version#2, (Created by Innovus v25.11-s102_1 on Sun Oct 11 20:38:46 2026)
+** Saving stdCellPlacement_binary (version# 2) ...
+Saving property file chip_top.postCts.dat.dat/chip_top.prop
+Save Adaptive View Pruning View Names to Binary file
+TAT_INFO: ::saveSpecialRoute REAL = 0 : CPU = 0 : MEM = 0.
+*** Completed saveProperty (cpu=0:00:00.1 real=0:00:00.0 mem=3519.8M) ***
+*** Completed savePGFile (cpu=0:00:00.1 real=0:00:01.0 mem=3519.8M) ***
+TAT_INFO: ::savePGFile REAL = 1 : CPU = 0 : MEM = 0.
+TAT_INFO: ::savePlace REAL = 0 : CPU = 0 : MEM = 0.
+*** Completed saveRoute (cpu=0:00:00.2 real=0:00:01.0 mem=3518.4M) ***
+TAT_INFO: ::saveRoute REAL = 1 : CPU = 0 : MEM = 0.
+TAT_INFO: ::db::saveAnnotationAndProp REAL = 0 : CPU = 0 : MEM = 0.
+#Saving pin access data to file chip_top.postCts.dat.dat/chip_top.apa ...
+#
+Saving preRoute extracted patterns in file 'chip_top.postCts.dat.dat/chip_top.techData.gz' ...
+Saving preRoute extraction data in directory 'chip_top.postCts.dat.dat/extraction/' ...
+TAT_INFO: ::db::saveSymbolTable REAL = 0 : CPU = 0 : MEM = 0.
+TAT_INFO: ::saveCongMap REAL = 0 : CPU = 0 : MEM = 0.
+% Begin Save power constraints data ... (date=10/11 20:38:48, mem=3479.8M)
+% End Save power constraints data ... (date=10/11 20:38:48, total cpu=0:00:00.1, real=0:00:00.0, peak res=3479.8M, current mem=3479.8M)
+Generated self-contained design chip_top.postCts.dat.dat
+#% End save design ... (date=10/11 20:38:49, total cpu=0:00:03.4, real=0:00:06.0, peak res=3480.6M, current mem=3480.6M)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPMF-5054           1  fill_setting_save command is obsolete an...
+*** Message Summary: 1 warning(s), 0 error(s)
+

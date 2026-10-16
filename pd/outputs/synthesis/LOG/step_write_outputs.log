@@ -1,0 +1,8 @@
+Current design is 'chip_top'.
+Warning: The specified replacement character (_) is conflicting with the specified allowed or restricted character.   (UCN-4)
+Writing verilog file '/nethome/sgupta943/physical-design-onboarding-F26/outputs/synthesis/chip_top.gate.v'.
+Writing ddc file '/nethome/sgupta943/physical-design-onboarding-F26/outputs/synthesis/chip_top.ddc'.
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/nethome/sgupta943/physical-design-onboarding-F26/outputs/synthesis/chip_top.sdf'. (WT-3)
+Information: Writing parasitics to file '/nethome/sgupta943/physical-design-onboarding-F26/outputs/synthesis/chip_top.spef'. (WP-3)
+1

@@ -1,0 +1,8 @@
+step_init_synthesis          OK         0s
+step_define_library          OK         2s
+step_read_rtl                OK         2s
+step_environment             OK         0s
+step_constraints             OK         0s
+step_compile                 OK        99s
+step_report                  OK        22s
+step_write_outputs           OK         1s

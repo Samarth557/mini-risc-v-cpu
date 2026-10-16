@@ -1,0 +1,455 @@
+Current design is 'chip_top'.
+Warning: The value of variable 'compile_preserve_subdesign_interfaces' has been changed to true because '-no_boundary_optimization' is used. (OPT-133)
+Information: Starting from 2013.12 release, constant propagation is enabled even when boundary optimization is disabled. (OPT-1318)
+Warning: Can't read link_library file '/nethome/sgupta943/physical-design-onboarding-F26/inputs/CF_SRAM_8192x32/CF_SRAM_8192x32__min_tt_025C_1v80.db'. (UID-3)
+Loading db file '/tools/software/synopsys/syn/latest/libraries/syn/dw_foundation.sldb'
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Warning: Can't read link_library file '/nethome/sgupta943/physical-design-onboarding-F26/inputs/CF_SRAM_8192x32/CF_SRAM_8192x32__min_tt_025C_1v80.db'. (UID-3)
+Information: Performing leakage power optimization. (PWR-850)
+CPU Load: 49%, Ram Free: 5 GB, Swap Free: 23 GB, Work Disk Free: 622 GB, Tmp Disk Free: 703 GB
+Alib files are up-to-date.
+Warning: Can't read link_library file '/nethome/sgupta943/physical-design-onboarding-F26/inputs/CF_SRAM_8192x32/CF_SRAM_8192x32__min_tt_025C_1v80.db'. (UID-3)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | X-2025.06-DWBB_202506.3 |     *     |
+| Licensed DW Building Blocks        | X-2025.06-DWBB_202506.3 |     *     |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler WLM                                                               |
+| Command Line | compile_ultra -no_autoungroup -no_boundary_optimization -gate_clock               |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 1516                                   |
+| Number of User Hierarchies                              | 10                                     |
+| Sequential Cell Count                                   | 1064                                   |
+| Macro Count                                             | 0                                      |
+| Pad Count                                               | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT Class                                      | 0                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch Cells                              | 147                                    |
+| Number of Dont Touch Nets                               | 0                                      |
+| Number of Size Only Cells                               | 0                                      |
+| Design with Target Library Subset (with clock_path)     | false  (false )                        |
+| Design with UPF Data                                    | false                                  |
+----------------------------------------------------------------------------------------------------
+| Variables                                               | Value                                  |
+----------------------------------------------------------------------------------------------------
+| set_fix_multiple_port_nets                              | -all -buffer_constants                 |
+====================================================================================================
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 173 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+Information: Uniquified 2 instances of design 'sram_wrapper'. (OPT-1056)
+  Simplifying Design 'chip_top'
+Information: Performing clock-gating with positive edge logic: 'integrated' and negative edge logic: 'or'. (PWR-1047)
+
+Warning: Can't read link_library file '/nethome/sgupta943/physical-design-onboarding-F26/inputs/CF_SRAM_8192x32/CF_SRAM_8192x32__min_tt_025C_1v80.db'. (UID-3)
+Loaded alib file '/nethome/sgupta943/physical-design-onboarding-F26/resources/synopsys_libs/alib-52/sky130_tt_1.8_25.db.alib'
+Loaded alib file '/nethome/sgupta943/physical-design-onboarding-F26/resources/synopsys_libs/alib-52/HS_sky130_tt_1.8_25.db.alib'
+Warning: Operating condition ss_1.62_125 set on design chip_top has different process,
+voltage and temperatures parameters than the parameters at which target library 
+sky130_tt_1.8_25 is characterized. Delays may be inaccurate as a result. (OPT-998)
+CPU Load: 48%, Ram Free: 5 GB, Swap Free: 23 GB, Work Disk Free: 622 GB, Tmp Disk Free: 703 GB
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'reg_file'
+Information: The register 'registers_reg[0][31]' will be removed. (OPT-1207)
+Information: The register 'registers_reg[0][30]' will be removed. (OPT-1207)
+Information: The register 'registers_reg[0][29]' will be removed. (OPT-1207)
+Information: The register 'registers_reg[0][28]' will be removed. (OPT-1207)
+Information: The register 'registers_reg[0][27]' will be removed. (OPT-1207)
+Information: The register 'registers_reg[0][26]' will be removed. (OPT-1207)
+Information: The register 'registers_reg[0][25]' will be removed. (OPT-1207)
+Information: The register 'registers_reg[0][24]' will be removed. (OPT-1207)
+Information: The register 'registers_reg[0][23]' will be removed. (OPT-1207)
+Information: The register 'registers_reg[0][22]' will be removed. (OPT-1207)
+Information: The register 'registers_reg[0][21]' will be removed. (OPT-1207)
+Information: The register 'registers_reg[0][20]' will be removed. (OPT-1207)
+Information: The register 'registers_reg[0][19]' will be removed. (OPT-1207)
+Information: The register 'registers_reg[0][18]' will be removed. (OPT-1207)
+Information: The register 'registers_reg[0][17]' will be removed. (OPT-1207)
+Information: The register 'registers_reg[0][16]' will be removed. (OPT-1207)
+Information: The register 'registers_reg[0][15]' will be removed. (OPT-1207)
+Information: The register 'registers_reg[0][14]' will be removed. (OPT-1207)
+Information: The register 'registers_reg[0][13]' will be removed. (OPT-1207)
+Information: The register 'registers_reg[0][12]' will be removed. (OPT-1207)
+Information: The register 'registers_reg[0][11]' will be removed. (OPT-1207)
+Information: The register 'registers_reg[0][10]' will be removed. (OPT-1207)
+Information: The register 'registers_reg[0][9]' will be removed. (OPT-1207)
+Information: The register 'registers_reg[0][8]' will be removed. (OPT-1207)
+Information: The register 'registers_reg[0][7]' will be removed. (OPT-1207)
+Information: The register 'registers_reg[0][6]' will be removed. (OPT-1207)
+Information: The register 'registers_reg[0][5]' will be removed. (OPT-1207)
+Information: The register 'registers_reg[0][4]' will be removed. (OPT-1207)
+Information: The register 'registers_reg[0][3]' will be removed. (OPT-1207)
+Information: The register 'registers_reg[0][2]' will be removed. (OPT-1207)
+Information: The register 'registers_reg[0][1]' will be removed. (OPT-1207)
+Information: The register 'registers_reg[0][0]' will be removed. (OPT-1207)
+  Processing 'memory_controller'
+  Processing 'cpu_top'
+  Processing 'decode'
+  Processing 'mem_access'
+  Processing 'SNPS_CLOCK_GATE_HIGH_fetch'
+  Mapping integrated clock gating circuitry
+  Processing 'chip_top'
+  Processing 'execute'
+Warning: Can't read link_library file '/nethome/sgupta943/physical-design-onboarding-F26/inputs/CF_SRAM_8192x32/CF_SRAM_8192x32__min_tt_025C_1v80.db'. (UID-3)
+Information: Added key list 'DesignWare' to design 'execute'. (DDB-72)
+ Implement Synthetic for 'execute'.
+Warning: Can't read link_library file '/nethome/sgupta943/physical-design-onboarding-F26/inputs/CF_SRAM_8192x32/CF_SRAM_8192x32__min_tt_025C_1v80.db'. (UID-3)
+Warning: Can't read link_library file '/nethome/sgupta943/physical-design-onboarding-F26/inputs/CF_SRAM_8192x32/CF_SRAM_8192x32__min_tt_025C_1v80.db'. (UID-3)
+Warning: Can't read link_library file '/nethome/sgupta943/physical-design-onboarding-F26/inputs/CF_SRAM_8192x32/CF_SRAM_8192x32__min_tt_025C_1v80.db'. (UID-3)
+Warning: Can't read link_library file '/nethome/sgupta943/physical-design-onboarding-F26/inputs/CF_SRAM_8192x32/CF_SRAM_8192x32__min_tt_025C_1v80.db'. (UID-3)
+Warning: Can't read link_library file '/nethome/sgupta943/physical-design-onboarding-F26/inputs/CF_SRAM_8192x32/CF_SRAM_8192x32__min_tt_025C_1v80.db'. (UID-3)
+Warning: Can't read link_library file '/nethome/sgupta943/physical-design-onboarding-F26/inputs/CF_SRAM_8192x32/CF_SRAM_8192x32__min_tt_025C_1v80.db'. (UID-3)
+Warning: Can't read link_library file '/nethome/sgupta943/physical-design-onboarding-F26/inputs/CF_SRAM_8192x32/CF_SRAM_8192x32__min_tt_025C_1v80.db'. (UID-3)
+  Processing 'fetch'
+ Implement Synthetic for 'fetch'.
+Warning: Can't read link_library file '/nethome/sgupta943/physical-design-onboarding-F26/inputs/CF_SRAM_8192x32/CF_SRAM_8192x32__min_tt_025C_1v80.db'. (UID-3)
+  Processing 'writeback'
+  Processing 'sram_wrapper_0'
+  Processing 'SNPS_CLOCK_GATE_HIGH_reg_file_0'
+  Mapping integrated clock gating circuitry
+Warning: Can't read link_library file '/nethome/sgupta943/physical-design-onboarding-F26/inputs/CF_SRAM_8192x32/CF_SRAM_8192x32__min_tt_025C_1v80.db'. (UID-3)
+CPU Load: 44%, Ram Free: 5 GB, Swap Free: 23 GB, Work Disk Free: 622 GB, Tmp Disk Free: 703 GB
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: Skipping clock gating on design memory_controller, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design decode, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design execute, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design writeback, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_fetch, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design fetch_DW01_add_J3_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design execute_RSOP_24, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design execute_DW01_add_J3_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design execute_DP_OP_31J3_122_4338_J3_0, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_1, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_2, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_3, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_4, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_5, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_6, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_7, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_8, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_9, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_10, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_11, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_12, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_13, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_14, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_15, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_16, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_17, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_18, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_19, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_20, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_21, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_22, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_23, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_24, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_25, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_26, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_27, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_28, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_29, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_30, since there are no registers. (PWR-806)
+Information: Skipping clock gating on design SNPS_CLOCK_GATE_HIGH_reg_file_31, since there are no registers. (PWR-806)
+Information: Performing clock-gating on design chip_top. (PWR-730)
+Information: Performing clock-gating on design cpu_top. (PWR-730)
+Information: Performing clock-gating on design sram_wrapper_1. (PWR-730)
+Information: Performing clock-gating on design mem_access. (PWR-730)
+Information: Performing clock-gating on design sram_wrapper_0. (PWR-730)
+Information: Performing clock-gating on design fetch. (PWR-730)
+Information: Performing clock-gating on design reg_file. (PWR-730)
+Warning: Can't read link_library file '/nethome/sgupta943/physical-design-onboarding-F26/inputs/CF_SRAM_8192x32/CF_SRAM_8192x32__min_tt_025C_1v80.db'. (UID-3)
+Information: The register 'cpu/u_fetch/pc_o_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'cpu/u_fetch/pc_o_reg[0]' is a constant and will be removed. (OPT-1206)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: Added key list 'DesignWare' to design 'fetch'. (DDB-72)
+Warning: Can't read link_library file '/nethome/sgupta943/physical-design-onboarding-F26/inputs/CF_SRAM_8192x32/CF_SRAM_8192x32__min_tt_025C_1v80.db'. (UID-3)
+Warning: Can't read link_library file '/nethome/sgupta943/physical-design-onboarding-F26/inputs/CF_SRAM_8192x32/CF_SRAM_8192x32__min_tt_025C_1v80.db'. (UID-3)
+  Mapping Optimization (Phase 1)
+  Mapping Optimization (Phase 2)
+Warning: Can't read link_library file '/nethome/sgupta943/physical-design-onboarding-F26/inputs/CF_SRAM_8192x32/CF_SRAM_8192x32__min_tt_025C_1v80.db'. (UID-3)
+Warning: Can't read link_library file '/nethome/sgupta943/physical-design-onboarding-F26/inputs/CF_SRAM_8192x32/CF_SRAM_8192x32__min_tt_025C_1v80.db'. (UID-3)
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:41  330037.2      1.14     427.1       0.0                           4475.6470      0.00  
+    0:00:41  329332.6      1.14     508.7       0.0                           4447.3608      0.00  
+
+  Beginning Constant Register Removal
+  -----------------------------------
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:47  316277.1      1.42     507.4       1.9                           3056.6899      0.00  
+    0:00:49  316637.1      1.13     498.3       1.9                           3062.8459      0.00  
+    0:00:49  316637.1      1.13     498.3       1.9                           3062.8459      0.00  
+    0:00:50  316652.3      1.13     498.2       1.9                           3063.9680      0.00  
+    0:00:51  316652.3      1.13     498.2       1.9                           3063.9680      0.00  
+    0:00:51  316652.3      1.13     498.2       1.9                           3063.9680      0.00  
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:00:53  316387.6      1.13     495.9       1.9                           3053.3823      0.00  
+    0:00:53  316393.3      1.12     495.6       1.9                           3053.1670      0.00  
+    0:00:53  316393.3      1.12     495.6       1.9                           3053.1670      0.00  
+    0:00:53  316393.3      1.12     495.6       1.9                           3053.1670      0.00  
+    0:00:53  316393.3      1.12     495.6       1.9                           3053.1670      0.00  
+    0:00:54  316113.3      1.12     332.5       1.9                           3041.1956      0.00  
+    0:00:54  316113.3      1.12     332.5       1.9                           3041.1956      0.00  
+    0:00:56  316252.3      1.11     332.2       1.9                           3040.0657      0.00  
+    0:00:56  316252.3      1.11     332.2       1.9                           3040.0657      0.00  
+    0:00:56  316252.3      1.11     332.2       1.9                           3040.0657      0.00  
+    0:00:56  316269.5      1.09     331.6       1.9                           3040.4333      0.00  
+    0:00:56  316294.2      1.09     331.7       1.9                           3041.2305      0.00  
+    0:00:56  316299.9      1.08     331.6       1.9                           3041.4290      0.00  
+    0:00:57  316347.5      1.08     331.6       1.9                           3043.3601      0.00  
+    0:00:57  316349.4      1.08     331.6       1.9                           3043.5393      0.00  
+    0:00:57  316349.4      1.08     331.6       1.9                           3043.5393      0.00  
+    0:00:57  316343.7      1.08     331.6       1.9                           3044.1665      0.00  
+    0:00:57  316343.7      1.08     331.6       1.9                           3044.1665      0.00  
+    0:00:58  316343.7      1.08     331.6       1.9                           3044.1665      0.00  
+
+
+  Beginning Design Rule Fixing  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:58  316343.7      1.08     331.6       1.9                           3044.1665      0.00  
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+    0:00:59  316517.0      1.04     330.3       0.0                           3050.2317      0.00  
+    0:01:00  316602.7      1.04     328.9       0.0                           3031.5955      0.00  
+    0:01:00  316602.7      1.04     328.9       0.0                           3031.5955      0.00  
+    0:01:01  316614.2      1.04     328.4       0.0                           3031.3245      0.00  
+    0:01:01  316614.2      1.04     328.4       0.0                           3031.3245      0.00  
+    0:01:01  316614.2      1.04     328.4       0.0                           3031.3245      0.00  
+    0:01:02  316652.3      1.03     328.1       0.0                           3032.9031      0.00  
+    0:01:02  316722.7      1.03     328.2       0.0                           3034.4187      0.00  
+    0:01:02  316764.6      1.03     328.3       0.0                           3035.6819      0.00  
+    0:01:02  316764.6      1.03     328.3       0.0                           3035.6819      0.00  
+    0:01:03  316764.6      1.03     328.3       0.0                           3035.6819      0.00  
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:01:03  316764.6      1.03     328.3       0.0                           3035.6819      0.00  
+    0:01:05  316732.2      1.03     340.0       0.0                           3021.7415      0.00  
+    0:01:05  316732.2      1.03     340.0       0.0                           3021.7415      0.00  
+    0:01:06  316741.7      1.03     340.0       0.0                           3021.3596      0.00  
+    0:01:07  316549.4      1.03     357.2       0.0                           3016.7866      0.00  
+    0:01:07  316549.4      1.03     357.2       0.0                           3016.7866      0.00  
+    0:01:07  316576.1      1.03     357.3       0.0                           3017.6843      0.00  
+    0:01:07  316576.1      1.03     357.3       0.0                           3017.6843      0.00  
+    0:01:08  316576.1      1.03     357.3       0.0                           3017.6843      0.00  
+    0:01:08  316576.1      1.03     357.3       0.0                           3017.6843      0.00  
+    0:01:08  316576.1      1.03     357.3       0.0                           3017.6843      0.00  
+    0:01:08  316583.7      1.03     356.3       0.0                           3017.9512      0.00  
+    0:01:08  316589.4      1.03     356.3       0.0                           3017.5376      0.00  
+    0:01:08  316593.2      1.03     356.3       0.0                           3017.6377      0.00  
+    0:01:08  316593.2      1.03     356.3       0.0                           3017.6377      0.00  
+    0:01:09  316627.5      1.02     355.4       0.0                           3018.4224      0.00  
+    0:01:09  316631.3      1.02     355.4       0.0                           3018.5227      0.00  
+    0:01:09  316631.3      1.02     355.4       0.0                           3018.5227      0.00  
+    0:01:09  316644.6      1.01     355.4       0.0                           3019.2102      0.00  
+    0:01:10  316656.0      1.01     355.4       0.0                           3018.7249      0.00  
+    0:01:10  316656.0      1.01     355.4       0.0                           3018.7249      0.00  
+    0:01:10  316663.7      1.01     355.4       0.0                           3018.5212      0.00  
+    0:01:10  316663.7      1.01     355.4       0.0                           3018.5212      0.00  
+    0:01:11  316663.7      1.01     355.4       0.0                           3018.5212      0.00  
+    0:01:11  316663.7      1.01     355.4       0.0                           3018.5212      0.00  
+    0:01:11  316663.7      1.01     355.4       0.0                           3018.5212      0.00  
+    0:01:11  316663.7      1.01     355.4       0.0                           3018.5212      0.00  
+    0:01:11  316663.7      1.01     355.4       0.0                           3018.5212      0.00  
+    0:01:11  316663.7      1.01     355.4       0.0                           3018.5212      0.00  
+    0:01:11  316663.7      1.01     355.4       0.0                           3018.5212      0.00  
+    0:01:11  316663.7      1.01     355.4       0.0                           3018.5212      0.00  
+    0:01:11  316663.7      1.01     355.4       0.0                           3018.5212      0.00  
+    0:01:12  316663.7      1.01     355.4       0.0                           3018.5212      0.00  
+    0:01:12  316663.7      1.01     355.4       0.0                           3018.5212      0.00  
+    0:01:15  316151.4      1.01     339.9       0.0                           3010.6084      0.00  
+CPU Load: 35%, Ram Free: 12 GB, Swap Free: 23 GB, Work Disk Free: 622 GB, Tmp Disk Free: 705 GB
+Loading db file '/nethome/sgupta943/physical-design-onboarding-F26/resources/synopsys_libs/sky130_tt_1.8_25.db'
+Loading db file '/nethome/sgupta943/physical-design-onboarding-F26/resources/synopsys_libs/sky130_ss_1.62_125.db'
+Loading db file '/nethome/sgupta943/physical-design-onboarding-F26/resources/synopsys_libs/sky130_ff_1.98_0.db'
+Loading db file '/nethome/sgupta943/physical-design-onboarding-F26/resources/synopsys_libs/HS_sky130_tt_1.8_25.db'
+Loading db file '/nethome/sgupta943/physical-design-onboarding-F26/resources/synopsys_libs/HS_sky130_ss_1.62_125.db'
+Loading db file '/nethome/sgupta943/physical-design-onboarding-F26/resources/synopsys_libs/HS_sky130_ff_1.98_0.db'
+Loading db file '/nethome/sgupta943/physical-design-onboarding-F26/inputs/CF_SRAM_1024x32/db/CF_SRAM_1024x32_tt_180V_25C.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Can't read link_library file '/nethome/sgupta943/physical-design-onboarding-F26/inputs/CF_SRAM_8192x32/CF_SRAM_8192x32__min_tt_025C_1v80.db'. (UID-3)
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated black box outputs. (PWR-428)
+CPU Load: 34%, Ram Free: 11 GB, Swap Free: 23 GB, Work Disk Free: 622 GB, Tmp Disk Free: 705 GB
+Information: Total number of MV cells in the design.
+----------------------------------------------------------------------------------------------------
+ MV Cells                                           Total Number                                   
+----------------------------------------------------------------------------------------------------
+ Level Shifter:                                     0                                             
+ Enable Level Shifter:                              0                                             
+ Isolation Cell:                                    0                                             
+ Retention Cell:                                    0                                             
+ Retention Clamp Cell:                              0                                             
+ Switch Cell:                                       2                                             
+ Always-On Cell:                                    0                                             
+ Repeater Cell:                                     0                                             
+
+----------------------------------------------------------------------------------------------------
+Unmapped MV Cells 
+----------------------------------------------------------------------------------------------------
+0 Isolation Cells are unmapped 
+0 Retention Clamp Cells are unmapped 
+----------------------------------------------------------------------------------------------------
+Warning: Can't read link_library file '/nethome/sgupta943/physical-design-onboarding-F26/inputs/CF_SRAM_8192x32/CF_SRAM_8192x32__min_tt_025C_1v80.db'. (UID-3)
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Warning: Can't read link_library file '/nethome/sgupta943/physical-design-onboarding-F26/inputs/CF_SRAM_8192x32/CF_SRAM_8192x32__min_tt_025C_1v80.db'. (UID-3)
+Information: Performing leakage power optimization. (PWR-850)
+CPU Load: 34%, Ram Free: 11 GB, Swap Free: 23 GB, Work Disk Free: 622 GB, Tmp Disk Free: 705 GB
+Alib files are up-to-date.
+Warning: Can't read link_library file '/nethome/sgupta943/physical-design-onboarding-F26/inputs/CF_SRAM_8192x32/CF_SRAM_8192x32__min_tt_025C_1v80.db'. (UID-3)
+
+Information: There are 220 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+Warning: Operating condition ss_1.62_125 set on design chip_top has different process,
+voltage and temperatures parameters than the parameters at which target library 
+sky130_tt_1.8_25 is characterized. Delays may be inaccurate as a result. (OPT-998)
+
+  Updating timing information
+
+
+  Beginning Area Optimization
+  -----------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:03  316151.4      1.01     339.9       0.0                           2950.0464      0.00  
+    0:00:16  315494.4      1.01     313.3       0.0                           2916.0918      0.00  
+Loading db file '/nethome/sgupta943/physical-design-onboarding-F26/resources/synopsys_libs/sky130_tt_1.8_25.db'
+Loading db file '/nethome/sgupta943/physical-design-onboarding-F26/resources/synopsys_libs/sky130_ss_1.62_125.db'
+Loading db file '/nethome/sgupta943/physical-design-onboarding-F26/resources/synopsys_libs/sky130_ff_1.98_0.db'
+Loading db file '/nethome/sgupta943/physical-design-onboarding-F26/resources/synopsys_libs/HS_sky130_tt_1.8_25.db'
+Loading db file '/nethome/sgupta943/physical-design-onboarding-F26/resources/synopsys_libs/HS_sky130_ss_1.62_125.db'
+Loading db file '/nethome/sgupta943/physical-design-onboarding-F26/resources/synopsys_libs/HS_sky130_ff_1.98_0.db'
+Loading db file '/nethome/sgupta943/physical-design-onboarding-F26/inputs/CF_SRAM_1024x32/db/CF_SRAM_1024x32_tt_180V_25C.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: The register 'cpu/u_fetch/pc_o_reg[12]' will be removed. (OPT-1207)
+Information: The register 'cpu/u_fetch/pc_o_reg[13]' will be removed. (OPT-1207)
+Information: The register 'cpu/u_fetch/pc_o_reg[14]' will be removed. (OPT-1207)
+Information: The register 'cpu/u_fetch/pc_o_reg[15]' will be removed. (OPT-1207)
+Information: The register 'cpu/u_fetch/pc_o_reg[16]' will be removed. (OPT-1207)
+Information: The register 'cpu/u_fetch/pc_o_reg[17]' will be removed. (OPT-1207)
+Information: The register 'cpu/u_fetch/pc_o_reg[18]' will be removed. (OPT-1207)
+Information: The register 'cpu/u_fetch/pc_o_reg[19]' will be removed. (OPT-1207)
+Information: The register 'cpu/u_fetch/pc_o_reg[20]' will be removed. (OPT-1207)
+Information: The register 'cpu/u_fetch/pc_o_reg[21]' will be removed. (OPT-1207)
+Information: The register 'cpu/u_fetch/pc_o_reg[22]' will be removed. (OPT-1207)
+Information: The register 'cpu/u_fetch/pc_o_reg[23]' will be removed. (OPT-1207)
+Information: The register 'cpu/u_fetch/pc_o_reg[24]' will be removed. (OPT-1207)
+Information: The register 'cpu/u_fetch/pc_o_reg[25]' will be removed. (OPT-1207)
+Information: The register 'cpu/u_fetch/pc_o_reg[26]' will be removed. (OPT-1207)
+Information: The register 'cpu/u_fetch/pc_o_reg[27]' will be removed. (OPT-1207)
+Information: The register 'cpu/u_fetch/pc_o_reg[28]' will be removed. (OPT-1207)
+Information: The register 'cpu/u_fetch/pc_o_reg[29]' will be removed. (OPT-1207)
+Information: The register 'cpu/u_fetch/pc_o_reg[30]' will be removed. (OPT-1207)
+Information: The register 'cpu/u_fetch/pc_o_reg[31]' will be removed. (OPT-1207)
+CPU Load: 33%, Ram Free: 11 GB, Swap Free: 23 GB, Work Disk Free: 622 GB, Tmp Disk Free: 705 GB
+Information: Total number of MV cells in the design.
+----------------------------------------------------------------------------------------------------
+ MV Cells                                           Total Number                                   
+----------------------------------------------------------------------------------------------------
+ Level Shifter:                                     0                                             
+ Enable Level Shifter:                              0                                             
+ Isolation Cell:                                    0                                             
+ Retention Cell:                                    0                                             
+ Retention Clamp Cell:                              0                                             
+ Switch Cell:                                       2                                             
+ Always-On Cell:                                    0                                             
+ Repeater Cell:                                     0                                             
+
+----------------------------------------------------------------------------------------------------
+Unmapped MV Cells 
+----------------------------------------------------------------------------------------------------
+0 Isolation Cells are unmapped 
+0 Retention Clamp Cells are unmapped 
+----------------------------------------------------------------------------------------------------
+1

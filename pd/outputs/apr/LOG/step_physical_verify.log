@@ -1,0 +1,131 @@
+**WARN: (IMPVFG-173):	Verify Geometry does not write any warning markers, so the -warning option does not change the output of the tool. The option will be removed from future releases.
+ *** Starting Verify Geometry (MEM: 3639.3) ***
+
+**WARN: (IMPVFG-257):	setVerifyGeometryMode/verifyGeometry command is obsolete and should not be used any more. It still works in this release but will be removed in future release. You should change to use set_verify_drc_mode/verify_drc which is the replacement tool for verifyGeometry.
+  VERIFY GEOMETRY ...... Starting Verification
+  VERIFY GEOMETRY ...... Initializing
+  VERIFY GEOMETRY ...... Deleting Existing Violations
+  VERIFY GEOMETRY ...... Creating Sub-Areas
+                  ...... bin size: 2240
+Multi-CPU acceleration using 8 CPU(s).
+Saving Drc markers ...
+... 17 markers are saved ...
+... 5 geometry drc markers are saved ...
+... 11 antenna drc markers are saved ...
+  VERIFY GEOMETRY ...... SubArea : 1 of 15  Thread : 0
+  VERIFY GEOMETRY ...... SubArea : 2 of 15  Thread : 1
+  VERIFY GEOMETRY ...... SubArea : 3 of 15  Thread : 2
+  VERIFY GEOMETRY ...... SubArea : 4 of 15  Thread : 3
+  VERIFY GEOMETRY ...... SubArea : 5 of 15  Thread : 4
+  VERIFY GEOMETRY ...... SubArea : 6 of 15  Thread : 5
+  VERIFY GEOMETRY ...... SubArea : 7 of 15  Thread : 6
+  VERIFY GEOMETRY ...... SubArea : 8 of 15  Thread : 7
+  VERIFY GEOMETRY ...... Cells          :  0 Viols.
+  VERIFY GEOMETRY ...... SameNet        :  0 Viols.
+  VERIFY GEOMETRY ...... Wiring         :  0 Viols.
+  VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+  VERIFY GEOMETRY ...... Cells          :  0 Viols.
+  VERIFY GEOMETRY ...... SameNet        :  0 Viols.
+  VERIFY GEOMETRY ...... Wiring         :  0 Viols.
+  VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+  VERIFY GEOMETRY ...... SubArea : 10 of 15  Thread : 1
+  VERIFY GEOMETRY ...... Cells          :  0 Viols.
+  VERIFY GEOMETRY ...... SameNet        :  0 Viols.
+  VERIFY GEOMETRY ...... Wiring         :  1 Viols.
+  VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+  VERIFY GEOMETRY ...... SubArea : 15 of 15  Thread : 6
+  VERIFY GEOMETRY ...... Cells          :  2 Viols.
+  VERIFY GEOMETRY ...... SameNet        :  0 Viols.
+  VERIFY GEOMETRY ...... Wiring         :  2 Viols.
+  VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+  VERIFY GEOMETRY ...... SubArea : 12 of 15  Thread : 3
+  VERIFY GEOMETRY ...... SubArea : 11 of 15  Thread : 2
+  VERIFY GEOMETRY ...... Cells          :  0 Viols.
+  VERIFY GEOMETRY ...... SameNet        :  0 Viols.
+  VERIFY GEOMETRY ...... Wiring         :  1 Viols.
+  VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+  VERIFY GEOMETRY ...... Cells          :  0 Viols.
+  VERIFY GEOMETRY ...... SameNet        :  0 Viols.
+  VERIFY GEOMETRY ...... Wiring         :  0 Viols.
+  VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+  VERIFY GEOMETRY ...... SubArea : 9 of 15  Thread : 0
+  VERIFY GEOMETRY ...... Cells          :  0 Viols.
+  VERIFY GEOMETRY ...... SameNet        :  0 Viols.
+  VERIFY GEOMETRY ...... Wiring         :  0 Viols.
+  VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+  VERIFY GEOMETRY ...... Cells          :  0 Viols.
+  VERIFY GEOMETRY ...... SameNet        :  0 Viols.
+  VERIFY GEOMETRY ...... Wiring         :  0 Viols.
+  VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+  VERIFY GEOMETRY ...... SubArea : 13 of 15  Thread : 4
+  VERIFY GEOMETRY ...... Cells          :  0 Viols.
+  VERIFY GEOMETRY ...... SameNet        :  0 Viols.
+  VERIFY GEOMETRY ...... Wiring         :  0 Viols.
+  VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+  VERIFY GEOMETRY ...... Cells          :  0 Viols.
+  VERIFY GEOMETRY ...... SameNet        :  0 Viols.
+  VERIFY GEOMETRY ...... Wiring         :  0 Viols.
+  VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+  VERIFY GEOMETRY ...... SubArea : 14 of 15  Thread : 5
+  VERIFY GEOMETRY ...... Cells          :  0 Viols.
+  VERIFY GEOMETRY ...... SameNet        :  0 Viols.
+  VERIFY GEOMETRY ...... Wiring         :  0 Viols.
+  VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+  VERIFY GEOMETRY ...... Cells          :  0 Viols.
+  VERIFY GEOMETRY ...... SameNet        :  0 Viols.
+  VERIFY GEOMETRY ...... Wiring         :  0 Viols.
+  VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+  VERIFY GEOMETRY ...... Cells          :  0 Viols.
+  VERIFY GEOMETRY ...... SameNet        :  0 Viols.
+  VERIFY GEOMETRY ...... Wiring         :  0 Viols.
+  VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+  VERIFY GEOMETRY ...... Cells          :  0 Viols.
+  VERIFY GEOMETRY ...... SameNet        :  0 Viols.
+  VERIFY GEOMETRY ...... Wiring         :  0 Viols.
+  VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+  VERIFY GEOMETRY ...... Cells          :  0 Viols.
+  VERIFY GEOMETRY ...... SameNet        :  0 Viols.
+  VERIFY GEOMETRY ...... Wiring         :  0 Viols.
+  VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+VG: elapsed time: 2.00
+Begin Summary ...
+  Cells       : 0
+  SameNet     : 0
+  Wiring      : 1
+  Antenna     : 0
+  Short       : 5
+  Overlap     : 0
+End Summary
+
+  Verification Complete : 6 Viols.  0 Wrngs.
+
+**********End: VERIFY GEOMETRY**********
+ *** verify geometry (CPU: 0:00:02.7  MEM: 755.7M)
+
+VERIFY_CONNECTIVITY use new engine.
+
+******** Start: VERIFY CONNECTIVITY ********
+Start Time: Sun Oct 11 20:42:31 2026
+
+Design Name: chip_top
+Database Units: 1000
+Design Boundary: (0.0000, 0.0000) (1290.0000, 655.0000)
+Error Limit = 10000; Warning Limit = 500
+Check all nets
+Use 8 pthreads
+Net VSS: has special routes with opens, has regular routing with opens.
+Net VDD: has special routes with opens, has regular routing with opens.
+
+Begin Summary 
+    2 Problem(s) (IMPVFC-200): Special Wires: Pieces of the net are not connected together.
+    5 Problem(s) (IMPVFC-92): Pieces of the net are not connected together.
+    7 total info(s) created.
+End Summary
+
+End Time: Sun Oct 11 20:42:31 2026
+Time Elapsed: 0:00:00.0
+
+******** End: VERIFY CONNECTIVITY ********
+  Verification Complete : 7 Viols.  0 Wrngs.
+  (CPU Time: 0:00:01.3  MEM: 21.906M)
+

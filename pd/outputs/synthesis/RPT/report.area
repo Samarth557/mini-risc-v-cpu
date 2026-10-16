@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : area
+Design : chip_top
+Version: X-2025.06-SP3
+Date   : Sun Oct 11 20:19:44 2026
+****************************************
+
+Library(s) Used:
+
+    sky130_tt_1.8_25 (File: /nethome/sgupta943/physical-design-onboarding-F26/resources/synopsys_libs/sky130_tt_1.8_25.db)
+    sky130_tt_1.8_25 (File: /nethome/sgupta943/physical-design-onboarding-F26/resources/synopsys_libs/HS_sky130_tt_1.8_25.db)
+    CF_SRAM_1024x32_tt_180V_25C (File: /nethome/sgupta943/physical-design-onboarding-F26/inputs/CF_SRAM_1024x32/db/CF_SRAM_1024x32_tt_180V_25C.db)
+
+Number of ports:                         4648
+Number of nets:                          9744
+Number of cells:                         5271
+Number of combinational cells:           4177
+Number of sequential cells:              1040
+Number of macros/black boxes:               2
+Number of buf/inv:                        597
+Number of references:                       8
+
+Combinational area:              43329.894684
+Buf/Inv area:                     4522.942372
+Noncombinational area:           35726.342575
+Macro/Black Box area:           235293.578125
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                314349.815384
+Total area:                 undefined
+1

@@ -1,0 +1,248 @@
+Snap width to manufacture grid: 1270.7350.
+Snap height to manufacture grid: 635.3700.
+The core width changes from 1270.735000 to 1270.520000 when snapping to grid "PlacementGrid".
+The core height changes from 635.370000 to 635.260000 when snapping to grid "PlacementGrid".
+**WARN: (IMPFP-4026):	Adjusting core to 'Left' to 9.660000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+**WARN: (IMPFP-4026):	Adjusting core to 'Bottom' to 9.660000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+**WARN: (IMPFP-4026):	Adjusting core to 'Right' to 9.660000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+**WARN: (IMPFP-4026):	Adjusting core to 'Top' to 9.660000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Start create_tracks
+Generated pitch 3.66 in met5 is different from 3.22 defined in technology file in preferred direction.
+Generated pitch 0.615 in met4 is different from 0.69 defined in technology file in preferred direction.
+Generated pitch 0.61 in met3 is different from 0.69 defined in technology file in preferred direction.
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+**WARN: (IMPDB-6501):	"Option '-process' in setDesignMode" will be obsoleted in future release. Remove it from the script to avoid the interruption of running the script in future.
+##  Process: 130           (User Set)               
+##     Node: (not set)                           
+
+##  Check design process and node:  
+##  Design tech node is not set.
+
+Applying the recommended capacitance filtering threshold values for 130nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.4.
+	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+	Capacitance filtering mode(-capFilterMode option of the setExtractRCMode) is 'relAndCoup' for all engines.
+	The accuracy mode for postRoute effortLevel low extraction will be set to 'standard'.
+	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode is 'low'.
+
+
+viaInitial starts at Sun Oct 11 20:20:40 2026
+viaInitial ends at Sun Oct 11 20:20:40 2026
+The power planner will calculate offsets from I/O rows.
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2487.6M)
+Ring generation is complete.
+vias are now being generated.
+addRing created 8 wires.
+ViaGen created 8 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|  met4  |        4       |       NA       |
+|  via4  |        8       |        0       |
+|  met5  |        4       |       NA       |
++--------+----------------+----------------+
+innovus 2> **ERROR: (IMPPP-4029):	Unexpected value for the option '-layer'. "-layer {value | {top value bottom value left value right value}}"
+**WARN: (IMPSR-4053):	Option -stripeSCpinTarget is obsolete and has been replaced by -corePinTarget and/or -floatingStripeTarget. The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update the script to use -corePinTarget and/or -floatingStripeTarget.
+**WARN: (IMPSR-4058):	Sroute option: blockPin should be used in conjunction with option: -connect blockPin. 
+*** Begin SPECIAL ROUTE on Sun Oct 11 20:20:40 2026 ***
+SPECIAL ROUTE ran on directory: /nethome/sgupta943/physical-design-onboarding-F26/outputs/apr
+SPECIAL ROUTE ran on machine: ece-rhelsrv (Linux 5.14.0-687.45.1.el9_8.x86_64 Xeon 1.80Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "VDD VSS"
+routeSpecial set to true
+srouteBlockPin set to "useLef"
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteConnectBlockPin set to false
+srouteConnectConverterPin set to false
+srouteCorePinTarget set to "stripe blockring padring ring ringpin blockpin"
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 5
+srouteFloatingStripeTarget set to "stripe blockring padring ring ringpin blockpin"
+srouteFollowCorePinEnd set to 3
+srouteJogControl set to "preferWithChanges differentLayer"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteTopLayerLimit set to 5
+srouteTopTargetLayerLimit set to 5
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 302.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+**WARN: (IMPSR-4302):	Cap-table/qrcTechFile is found in the design, so the same information from the technology file will be ignored.
+Read in 11 layers, 5 routing layers, 1 overlap layer
+Read in 231 macros, 78 used
+Read in 78 components
+  76 core components: 76 unplaced, 0 placed, 0 fixed
+  2 block/ring components: 0 unplaced, 0 placed, 2 fixed
+Read in 86 logical pins
+Read in 3 blockages
+Read in 86 nets
+Read in 2 special nets, 2 routed
+Read in 164 terminals
+2 nets selected.
+
+Begin power routing ...
+**WARN: (IMPSR-1256):	Unable to find any CORE class pad pin of the VDD net due to unavailability of the pin or check netlist in the routing area or layer. Change routing area or layer to include the expected pin or check netlist. Alternatively, change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net VDD. Check net list, or change port class in the technology file, or change option to include pin in given range.
+**WARN: (IMPSR-1256):	Unable to find any CORE class pad pin of the VSS net due to unavailability of the pin or check netlist in the routing area or layer. Change routing area or layer to include the expected pin or check netlist. Alternatively, change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net VSS. Check net list, or change port class in the technology file, or change option to include pin in given range.
+CPU time for VDD FollowPin 0 seconds
+CPU time for VSS FollowPin 0 seconds
+  Number of IO ports routed: 0
+  Number of Stripe ports routed: 0
+  Number of Core ports routed: 228  open: 94
+  Number of Pad ports routed: 0
+  Number of Followpin connections: 238
+End power routing: cpu: 0:00:01, real: 0:00:01, peak: 454.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 1 via definition ...Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+
+
+sroute post-processing starts at Sun Oct 11 20:20:41 2026
+The viaGen is rebuilding shadow vias for net VSS.
+sroute post-processing ends at Sun Oct 11 20:20:41 2026
+
+sroute post-processing starts at Sun Oct 11 20:20:41 2026
+The viaGen is rebuilding shadow vias for net VDD.
+sroute post-processing ends at Sun Oct 11 20:20:41 2026
+sroute created 632 wires.
+ViaGen created 1004 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|  met1  |       488      |       NA       |
+|   via  |       388      |        0       |
+|  met2  |       144      |       NA       |
+|  via2  |       308      |        0       |
+|  via3  |       308      |        0       |
++--------+----------------+----------------+
+innovus 2> addStripe will allow jog to connect padcore ring and block ring.
+
+**WARN: (IMPPP-4022):	Option "-xleft_offset" is obsolete and has been replaced by "-start_offset". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "-start_offset"..
+
+Initialize fgc environment(mem: 2541.6M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2541.6M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2541.6M)
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2541.6M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2541.6M)
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+**WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 9.660000 9.600000 9.660000 639.000000 with width 6.400000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, the stripe net is not contained by the power doamin, or the stripe would break the design rule.
+Type 'man IMPPP-354' for more detail.
+Completing 10% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2542.4M)
+Completing 20% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2542.4M)
+Completing 30% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2542.4M)
+Completing 40% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2542.4M)
+Completing 50% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2542.4M)
+Completing 60% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2542.4M)
+Completing 70% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2542.4M)
+Completing 80% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2542.4M)
+Completing 90% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2542.4M)
+Completing 100% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2542.4M)
+Stripe generation is complete.
+vias are now being generated.
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer met4 & met2 at (256.48, 179.40) (256.88, 182.82).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer met4 & met2 at (256.48, 436.08) (256.88, 478.60).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer met4 & met2 at (256.48, 444.36) (256.88, 478.60).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer met4 & met2 at (256.48, 452.64) (256.88, 478.60).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer met4 & met2 at (256.48, 460.92) (256.88, 478.60).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer met4 & met2 at (256.48, 469.20) (256.88, 478.60).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer met4 & met2 at (256.48, 477.48) (256.88, 478.60).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer met4 & met2 at (256.48, 479.77) (256.88, 485.76).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer met4 & met2 at (256.48, 479.77) (256.88, 494.04).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer met2 & met4 at (257.05, 477.95) (257.33, 480.21).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer met2 & met4 at (257.05, 218.96) (258.01, 222.74).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer met2 & met4 at (257.05, 203.21) (258.01, 204.79).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer met2 & met4 at (257.05, 182.26) (258.01, 183.84).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer met2 & met4 at (257.05, 187.26) (258.01, 188.84).
+addStripe created 63 wires.
+ViaGen created 11751 vias, deleted 13 vias to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|   via  |      3095      |       13       |
+|  via2  |      4320      |        0       |
+|  via3  |      4211      |        0       |
+|  met4  |       63       |       NA       |
+|  via4  |       125      |        0       |
++--------+----------------+----------------+
+innovus 2> addStripe will not allow jog to connect padcore ring and block ring.
+
+**WARN: (IMPPP-4022):	Option "-ybottom_offset" is obsolete and has been replaced by "-start_offset". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "-start_offset"..
+
+Initialize fgc environment(mem: 2542.8M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2542.8M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2542.8M)
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2542.8M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2542.8M)
+Starting stripe generation ...
+Non-Default Mode Option Settings :
+  NONE
+**WARN: (IMPPP-354):	The power planner did not generate the horizontal stripe at 9.600000 9.660000 1274.000000 9.660000 with width 6.400000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, the stripe net is not contained by the power doamin, or the stripe would break the design rule.
+Type 'man IMPPP-354' for more detail.
+**WARN: (IMPPP-354):	The power planner did not generate the horizontal stripe at 0.000000 19.260000 1283.599976 19.260000 with width 6.400000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, the stripe net is not contained by the power doamin, or the stripe would break the design rule.
+Type 'man IMPPP-354' for more detail.
+Completing 10% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2542.8M)
+Completing 20% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2542.8M)
+Completing 30% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2542.8M)
+Completing 40% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2542.8M)
+Completing 50% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2542.8M)
+Completing 60% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2542.8M)
+Completing 70% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2542.8M)
+Completing 80% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2542.8M)
+Completing 90% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2542.8M)
+Completing 100% stripe generation(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 2542.8M)
+Stripe generation is complete.
+vias are now being generated.
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer met5 & met1 at (9.66, 50.86) (1280.18, 51.26).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer met5 & met1 at (9.66, 92.26) (1280.18, 92.66).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer met5 & met1 at (9.66, 166.78) (235.98, 167.18).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer met5 & met1 at (235.98, 166.78) (256.68, 167.18).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer met5 & met1 at (1033.16, 166.78) (1053.86, 167.18).
+**WARN: (IMPPP-532):	ViaGen Warning: The top layer and bottom layer have same direction but only orthogonal via is allowed between layer met5 & met1 at (1053.86, 166.78) (1280.18, 167.18).
+**WARN: (EMS-27):	Message (IMPPP-532) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPPP-612):	The intersection area is insufficient to satisfy MINIMUMCUT rule, so no via was created between layer: met4 & met5, size: 0.96 x 6.40 at (257.53, 209.11).
+**WARN: (IMPPP-612):	The intersection area is insufficient to satisfy MINIMUMCUT rule, so no via was created between layer: met4 & met5, size: 0.96 x 6.40 at (644.44, 209.11).
+**WARN: (IMPPP-612):	The intersection area is insufficient to satisfy MINIMUMCUT rule, so no via was created between layer: met4 & met5, size: 0.96 x 6.40 at (645.40, 209.11).
+**WARN: (IMPPP-612):	The intersection area is insufficient to satisfy MINIMUMCUT rule, so no via was created between layer: met4 & met5, size: 0.96 x 6.40 at (1032.31, 209.11).
+**WARN: (IMPPP-612):	The intersection area is insufficient to satisfy MINIMUMCUT rule, so no via was created between layer: met3 & met4, size: 0.96 x 6.40 at (257.53, 182.36).
+**WARN: (IMPPP-610):	The power planner failed to find a matching VIARULE, so no via was created between layer: met4 & met5, size: 0.96 x 6.40 at (644.44, 182.36).
+Type 'man IMPPP-610' for more detail.
+**WARN: (IMPPP-610):	The power planner failed to find a matching VIARULE, so no via was created between layer: met4 & met5, size: 0.96 x 6.40 at (645.40, 182.36).
+Type 'man IMPPP-610' for more detail.
+**WARN: (IMPPP-612):	The intersection area is insufficient to satisfy MINIMUMCUT rule, so no via was created between layer: met4 & met5, size: 0.96 x 6.40 at (1032.31, 182.36).
+**WARN: (IMPPP-531):	ViaGen Warning: Due to invalid enclosure or via size after adjusting via metal, viaGen fail to generate via on layer via4 at (1053.26, 176.06) (1054.11, 182.46).
+**WARN: (IMPPP-531):	ViaGen Warning: Due to invalid enclosure or via size after adjusting via metal, viaGen fail to generate via on layer via4 at (1053.26, 176.06) (1054.11, 182.46).
+**WARN: (IMPPP-612):	The intersection area is insufficient to satisfy MINIMUMCUT rule, so no via was created between layer: met4 & met5, size: 0.96 x 6.40 at (257.53, 220.71).
+**WARN: (IMPPP-612):	The intersection area is insufficient to satisfy MINIMUMCUT rule, so no via was created between layer: met4 & met5, size: 0.96 x 6.40 at (1032.31, 220.71).
+addStripe created 30 wires.
+ViaGen created 1035 vias, deleted 3 vias to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+|  via2  |       16       |        1       |
+|  via3  |       16       |        2       |
+|  via4  |      1003      |        0       |
+|  met5  |       30       |       NA       |
++--------+----------------+----------------+
+innovus 2> To speed up, if you have to run multiple editPin commands then wrap all editPin commands within  'setPinAssignMode -pinEditInBatch true' (then editPin commands) and 'setPinAssignMode -pinEditInBatch false'
+Successfully spread [34] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 2547.5M).
+To speed up, if you have to run multiple editPin commands then wrap all editPin commands within  'setPinAssignMode -pinEditInBatch true' (then editPin commands) and 'setPinAssignMode -pinEditInBatch false'
+Successfully spread [52] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 2547.5M).

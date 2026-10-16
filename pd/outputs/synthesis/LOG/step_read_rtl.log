@@ -1,0 +1,173 @@
+Error: {'chip_top': '/nethome/sgupta943/physical-design-onboarding-F26/inputs/rtl/src/verilog/chip_top.sv', 'memory_controller': '/nethome/sgupta943/physical-design-onboarding-F26/inputs/rtl/src/verilog/memory_controller.sv', 'sram_wrapper': '/nethome/sgupta943/physical-design-onboarding-F26/inputs/rtl/src/verilog/sram_wrapper.sv', 'CF_SRAM_1024x32_macro': '/nethome/sgupta943/physical-design-onboarding-F26/inputs/rtl/src/verilog/CF_SRAM_1024x32.tt_180V_25C.v', 'CF_SRAM_1024x32_memory_mode': '/nethome/sgupta943/physical-design-onboarding-F26/inputs/rtl/src/verilog/CF_SRAM_1024x32.tt_180V_25C.v', 'CF_SRAM_1024x32.tt_180V_25C': '/nethome/sgupta943/physical-design-onboarding-F26/inputs/rtl/src/verilog/CF_SRAM_1024x32.tt_180V_25C.v', 'cpu_pkg': '/nethome/sgupta943/physical-design-onboarding-F26/inputs/rtl/src/verilog/cpu/cpu_pkg.sv', 'cpu_top': '/nethome/sgupta943/physical-design-onboarding-F26/inputs/rtl/src/verilog/cpu/cpu_top.sv', 'decode': '/nethome/sgupta943/physical-design-onboarding-F26/inputs/rtl/src/verilog/cpu/decode.sv', 'execute': '/nethome/sgupta943/physical-design-onboarding-F26/inputs/rtl/src/verilog/cpu/execute.sv', 'fetch': '/nethome/sgupta943/physical-design-onboarding-F26/inputs/rtl/src/verilog/cpu/fetch.sv', 'mem_access': '/nethome/sgupta943/physical-design-onboarding-F26/inputs/rtl/src/verilog/cpu/mem_access.sv', 'reg_file': '/nethome/sgupta943/physical-design-onboarding-F26/inputs/rtl/src/verilog/cpu/reg_file.sv', 'writeback': '/nethome/sgupta943/physical-design-onboarding-F26/inputs/rtl/src/verilog/cpu/writeback.sv'}
+ERROR: dependency 	 does not exist in search directories
+child process exited abnormally
+	Use error_info for more info. (CMD-013)
+Running PRESTO HDLC
+Compiling source file /nethome/sgupta943/physical-design-onboarding-F26/inputs/rtl/src/verilog/memory_controller.sv
+Compiling source file /nethome/sgupta943/physical-design-onboarding-F26/inputs/rtl/src/verilog/sram_wrapper.sv
+Compiling source file /nethome/sgupta943/physical-design-onboarding-F26/inputs/rtl/src/verilog/cpu/cpu_pkg.sv
+Compiling source file /nethome/sgupta943/physical-design-onboarding-F26/inputs/rtl/src/verilog/cpu/decode.sv
+Compiling source file /nethome/sgupta943/physical-design-onboarding-F26/inputs/rtl/src/verilog/cpu/execute.sv
+Compiling source file /nethome/sgupta943/physical-design-onboarding-F26/inputs/rtl/src/verilog/cpu/fetch.sv
+Compiling source file /nethome/sgupta943/physical-design-onboarding-F26/inputs/rtl/src/verilog/cpu/mem_access.sv
+Compiling source file /nethome/sgupta943/physical-design-onboarding-F26/inputs/rtl/src/verilog/cpu/reg_file.sv
+Compiling source file /nethome/sgupta943/physical-design-onboarding-F26/inputs/rtl/src/verilog/cpu/writeback.sv
+Compiling source file /nethome/sgupta943/physical-design-onboarding-F26/inputs/rtl/src/verilog/cpu/cpu_top.sv
+Compiling source file /nethome/sgupta943/physical-design-onboarding-F26/inputs/rtl/src/verilog/chip_top.sv
+Warning:  /nethome/sgupta943/physical-design-onboarding-F26/inputs/rtl/src/verilog/chip_top.sv:76: the undeclared symbol 'core_isram_rready' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /nethome/sgupta943/physical-design-onboarding-F26/inputs/rtl/src/verilog/chip_top.sv:82: the undeclared symbol 'core_dsram_rready' assumed to have the default net type, which is 'wire'. (VER-936)
+Presto compilation completed successfully.
+Loading db file '/nethome/sgupta943/physical-design-onboarding-F26/inputs/CF_SRAM_1024x32/db/CF_SRAM_1024x32_tt_180V_25C.db'
+Warning: Can't read link_library file '/nethome/sgupta943/physical-design-onboarding-F26/inputs/CF_SRAM_8192x32/CF_SRAM_8192x32__min_tt_025C_1v80.db'. (UID-3)
+Loading db file '/tools/software/synopsys/syn/latest/libraries/syn/gtech.db'
+Loading db file '/tools/software/synopsys/syn/latest/libraries/syn/standard.sldb'
+  Loading link library 'sky130_tt_1.8_25'
+  Loading link library 'sky130_ss_1.62_125'
+  Loading link library 'sky130_ff_1.98_0'
+  Loading link library 'sky130_tt_1.8_25'
+  Loading link library 'sky130_ss_1.62_125_HS'
+  Loading link library 'sky130_ff_1.98_0_HS'
+  Loading link library 'CF_SRAM_1024x32_tt_180V_25C'
+  Loading link library 'gtech'
+Warning: Can't read link_library file '/nethome/sgupta943/physical-design-onboarding-F26/inputs/CF_SRAM_8192x32/CF_SRAM_8192x32__min_tt_025C_1v80.db'. (UID-3)
+Running PRESTO HDLC
+
+Inferred memory devices in process in routine 'chip_top' in file
+	 /nethome/sgupta943/physical-design-onboarding-F26/inputs/rtl/src/verilog/chip_top.sv'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|   cpu_enable_reg    | Flip-flop |   1   |  N  | N  | None  | None  | N  |  59  |
+|  cpu_enable_q_reg   | Flip-flop |   1   |  N  | N  | None  | None  | N  |  63  |
+==================================================================================
+Presto compilation completed successfully. (chip_top)
+Module: chip_top, Ports: 86, Input: 52, Output: 34, Inout: 0
+Module: chip_top, Registers: 2, Async set/reset: 0, Sync set/reset: 0
+Information: Module chip_top report end. (ELAB-965)
+Elaborated 1 design.
+Current design is now 'chip_top'.
+Warning: Can't read link_library file '/nethome/sgupta943/physical-design-onboarding-F26/inputs/CF_SRAM_8192x32/CF_SRAM_8192x32__min_tt_025C_1v80.db'. (UID-3)
+Information: Building the design 'cpu_top'. (HDL-193)
+
+Inferred memory devices in process in routine 'cpu_top' in file
+	 /nethome/sgupta943/physical-design-onboarding-F26/inputs/rtl/src/verilog/cpu/cpu_top.sv'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|    halted_o_reg     | Flip-flop |   1   |  N  | N  | None  | None  | N  |  84  |
+==================================================================================
+Presto compilation completed successfully. (cpu_top)
+Module: cpu_top, Ports: 1149, Input: 69, Output: 1080, Inout: 0
+Module: cpu_top, Registers: 1, Async set/reset: 0, Sync set/reset: 0
+Information: Module cpu_top report end. (ELAB-965)
+Information: Building the design 'sram_wrapper'. (HDL-193)
+
+Inferred memory devices in process in routine 'sram_wrapper' in file
+	 /nethome/sgupta943/physical-design-onboarding-F26/inputs/rtl/src/verilog/sram_wrapper.sv'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|   rdata_valid_reg   | Flip-flop |   1   |  N  | N  | None  | None  | N  |  36  |
+==================================================================================
+Presto compilation completed successfully. (sram_wrapper)
+Module: sram_wrapper, Ports: 79, Input: 46, Output: 33, Inout: 0
+Module: sram_wrapper, Registers: 1, Async set/reset: 0, Sync set/reset: 0
+Information: Module sram_wrapper report end. (ELAB-965)
+Information: Building the design 'memory_controller'. (HDL-193)
+
+Statistics for case statements in always block in file
+	'/nethome/sgupta943/physical-design-onboarding-F26/inputs/rtl/src/verilog/memory_controller.sv'
+===========================================================
+|    Line    |  full/ parallel  |      block location     |
+===========================================================
+|     88     |     no/auto      | always block at line 45 |
+===========================================================
+Statistics for MUX_OPs
+===========================================================
+|   block name/line     | Inputs | Outputs | # sel inputs |
+===========================================================
+| memory_controller/109 |   32   |   32    |      5       |
+===========================================================
+Presto compilation completed successfully. (memory_controller)
+Module: memory_controller, Ports: 1382, Input: 1195, Output: 187, Inout: 0
+Module: memory_controller, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module memory_controller report end. (ELAB-965)
+Information: Building the design 'fetch'. (HDL-193)
+
+Inferred memory devices in process in routine 'fetch' in file
+	 /nethome/sgupta943/physical-design-onboarding-F26/inputs/rtl/src/verilog/cpu/fetch.sv'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|      pc_o_reg       | Flip-flop |  32   |  Y  | N  | None  | None  | N  |  30  |
+==================================================================================
+Presto compilation completed successfully. (fetch)
+Module: fetch, Ports: 125, Input: 49, Output: 76, Inout: 0
+Module: fetch, Registers: 32, Async set/reset: 0, Sync set/reset: 0
+Information: Module fetch report end. (ELAB-965)
+Information: Building the design 'reg_file'. (HDL-193)
+
+Inferred memory devices in process in routine 'reg_file' in file
+	 /nethome/sgupta943/physical-design-onboarding-F26/inputs/rtl/src/verilog/cpu/reg_file.sv'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|    registers_reg    | Flip-flop | 1024  |  Y  | N  | None  | None  | N  |  37  |
+==================================================================================
+Statistics for MUX_OPs
+======================================================
+| block name/line  | Inputs | Outputs | # sel inputs |
+======================================================
+|   reg_file/24    |   32   |   32    |      5       |
+|   reg_file/25    |   32   |   32    |      5       |
+======================================================
+Presto compilation completed successfully. (reg_file)
+Module: reg_file, Ports: 1138, Input: 50, Output: 1088, Inout: 0
+Module: reg_file, Registers: 1024, Async set/reset: 0, Sync set/reset: 0
+Information: Module reg_file report end. (ELAB-965)
+Information: Building the design 'decode'. (HDL-193)
+
+Statistics for case statements in always block in file
+	'/nethome/sgupta943/physical-design-onboarding-F26/inputs/rtl/src/verilog/cpu/decode.sv'
+===========================================================
+|    Line    |  full/ parallel  |      block location     |
+===========================================================
+|     44     |    auto/auto     | always block at line 24 |
+|     46     |    auto/auto     | always block at line 24 |
+===========================================================
+Presto compilation completed successfully. (decode)
+Module: decode, Ports: 84, Input: 32, Output: 52, Inout: 0
+Module: decode, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module decode report end. (ELAB-965)
+Information: Building the design 'execute'. (HDL-193)
+
+Statistics for case statements in always block in file
+	'/nethome/sgupta943/physical-design-onboarding-F26/inputs/rtl/src/verilog/cpu/execute.sv'
+===========================================================
+|    Line    |  full/ parallel  |      block location     |
+===========================================================
+|     26     |    auto/auto     | always block at line 19 |
+===========================================================
+Presto compilation completed successfully. (execute)
+Module: execute, Ports: 177, Input: 133, Output: 44, Inout: 0
+Module: execute, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module execute report end. (ELAB-965)
+Information: Building the design 'mem_access'. (HDL-193)
+
+Inferred memory devices in process in routine 'mem_access' in file
+	 /nethome/sgupta943/physical-design-onboarding-F26/inputs/rtl/src/verilog/cpu/mem_access.sv'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+| load_req_active_reg | Flip-flop |   1   |  N  | N  | None  | None  | N  |  23  |
+==================================================================================
+Presto compilation completed successfully. (mem_access)
+Module: mem_access, Ports: 118, Input: 73, Output: 45, Inout: 0
+Module: mem_access, Registers: 1, Async set/reset: 0, Sync set/reset: 0
+Information: Module mem_access report end. (ELAB-965)
+Information: Building the design 'writeback'. (HDL-193)
+Presto compilation completed successfully. (writeback)
+Module: writeback, Ports: 103, Input: 70, Output: 33, Inout: 0
+Module: writeback, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module writeback report end. (ELAB-965)
+Current design is 'chip_top'.

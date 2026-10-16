@@ -1,0 +1,125 @@
+Using operating conditions 'ss_1.62_125' found in library 'sky130_ss_1.62_125'.
+Using operating conditions 'ff_1.98_0' found in library 'sky130_ff_1.98_0'.
+Design contains the following inputs:
+**************************************************
+Report          : report_collection
+Product         : dc_shell
+Version         : X-2025.06-SP3
+Date            : Sun Oct 11 20:17:44 2026
+**************************************************
+
+Collection Size : port(52)
+
+name         object_class  
+---------------------------
+clk_i        port          
+rst_i        port          
+en_cpu_i     port          
+halt_cpu_i   port          
+addr_i[13]   port          
+addr_i[12]   port          
+addr_i[11]   port          
+addr_i[10]   port          
+addr_i[9]    port          
+addr_i[8]    port          
+addr_i[7]    port          
+addr_i[6]    port          
+addr_i[5]    port          
+addr_i[4]    port          
+addr_i[3]    port          
+addr_i[2]    port          
+addr_i[1]    port          
+addr_i[0]    port          
+wdata_i[31]  port          
+wdata_i[30]  port          
+wdata_i[29]  port          
+wdata_i[28]  port          
+wdata_i[27]  port          
+wdata_i[26]  port          
+wdata_i[25]  port          
+wdata_i[24]  port          
+wdata_i[23]  port          
+wdata_i[22]  port          
+wdata_i[21]  port          
+wdata_i[20]  port          
+wdata_i[19]  port          
+wdata_i[18]  port          
+wdata_i[17]  port          
+wdata_i[16]  port          
+wdata_i[15]  port          
+wdata_i[14]  port          
+wdata_i[13]  port          
+wdata_i[12]  port          
+wdata_i[11]  port          
+wdata_i[10]  port          
+wdata_i[9]   port          
+wdata_i[8]   port          
+wdata_i[7]   port          
+wdata_i[6]   port          
+wdata_i[5]   port          
+wdata_i[4]   port          
+wdata_i[3]   port          
+wdata_i[2]   port          
+wdata_i[1]   port          
+wdata_i[0]   port          
+w_en_i       port          
+r_en_i       port          
+Design contains the following outputs:
+**************************************************
+Report          : report_collection
+Product         : dc_shell
+Version         : X-2025.06-SP3
+Date            : Sun Oct 11 20:17:44 2026
+**************************************************
+
+Collection Size : port(34)
+
+name          object_class  
+----------------------------
+cpu_halted_o  port          
+rdata_o[31]   port          
+rdata_o[30]   port          
+rdata_o[29]   port          
+rdata_o[28]   port          
+rdata_o[27]   port          
+rdata_o[26]   port          
+rdata_o[25]   port          
+rdata_o[24]   port          
+rdata_o[23]   port          
+rdata_o[22]   port          
+rdata_o[21]   port          
+rdata_o[20]   port          
+rdata_o[19]   port          
+rdata_o[18]   port          
+rdata_o[17]   port          
+rdata_o[16]   port          
+rdata_o[15]   port          
+rdata_o[14]   port          
+rdata_o[13]   port          
+rdata_o[12]   port          
+rdata_o[11]   port          
+rdata_o[10]   port          
+rdata_o[9]    port          
+rdata_o[8]    port          
+rdata_o[7]    port          
+rdata_o[6]    port          
+rdata_o[5]    port          
+rdata_o[4]    port          
+rdata_o[3]    port          
+rdata_o[2]    port          
+rdata_o[1]    port          
+rdata_o[0]    port          
+rready_o      port          
+**************************************************
+Report          : report_collection
+Product         : dc_shell
+Version         : X-2025.06-SP3
+Date            : Sun Oct 11 20:17:44 2026
+**************************************************
+
+Collection Size : port(1)
+
+name   object_class  
+---------------------
+clk_i  port          
+1

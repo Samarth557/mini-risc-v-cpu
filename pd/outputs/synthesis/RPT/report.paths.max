@@ -1,0 +1,419 @@
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+        -nworst 2
+        -max_paths 200
+Design : chip_top
+Version: X-2025.06-SP3
+Date   : Sun Oct 11 20:19:31 2026
+****************************************
+
+Operating Conditions: ss_1.62_125   Library: sky130_ss_1.62_125
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+cpu/u_reg_file/clk_gate_registers_reg[3]/latch/E (ICGPRECX1)
+                                    5.91 r            4.89        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[8]/latch/E (ICGPRECX1)
+                                    5.75 f            4.74        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[9]/latch/E (ICGPRECX1)
+                                    5.75 f            4.74        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[10]/latch/E (ICGPRECX1)
+                                    5.75 f            4.74        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[11]/latch/E (ICGPRECX1)
+                                    5.75 f            4.74        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[12]/latch/E (ICGPRECX1)
+                                    5.75 f            4.74        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[13]/latch/E (ICGPRECX1)
+                                    5.75 f            4.74        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[14]/latch/E (ICGPRECX1)
+                                    5.75 f            4.74        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[15]/latch/E (ICGPRECX1)
+                                    5.75 f            4.74        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[16]/latch/E (ICGPRECX1)
+                                    5.75 f            4.74        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[17]/latch/E (ICGPRECX1)
+                                    5.75 f            4.74        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[18]/latch/E (ICGPRECX1)
+                                    5.75 f            4.74        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[19]/latch/E (ICGPRECX1)
+                                    5.75 f            4.74        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[20]/latch/E (ICGPRECX1)
+                                    5.75 f            4.74        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[21]/latch/E (ICGPRECX1)
+                                    5.75 f            4.74        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[22]/latch/E (ICGPRECX1)
+                                    5.75 f            4.74        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[23]/latch/E (ICGPRECX1)
+                                    5.75 f            4.74        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[13]/latch/E (ICGPRECX1)
+                                    5.91 r            4.89        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[21]/latch/E (ICGPRECX1)
+                                    5.91 r            4.89        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[11]/latch/E (ICGPRECX1)
+                                    5.91 r            4.89        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[19]/latch/E (ICGPRECX1)
+                                    5.91 r            4.89        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[4]/latch/E (ICGPRECX1)
+                                    5.76 f            4.74        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[5]/latch/E (ICGPRECX1)
+                                    5.76 f            4.74        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[6]/latch/E (ICGPRECX1)
+                                    5.76 f            4.74        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[7]/latch/E (ICGPRECX1)
+                                    5.76 f            4.74        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[3]/latch/E (ICGPRECX1)
+                                    5.90 r            4.89        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[8]/latch/E (ICGPRECX1)
+                                    5.75 f            4.74        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[9]/latch/E (ICGPRECX1)
+                                    5.75 f            4.74        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[10]/latch/E (ICGPRECX1)
+                                    5.75 f            4.74        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[12]/latch/E (ICGPRECX1)
+                                    5.75 f            4.74        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[14]/latch/E (ICGPRECX1)
+                                    5.75 f            4.74        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[15]/latch/E (ICGPRECX1)
+                                    5.75 f            4.74        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[16]/latch/E (ICGPRECX1)
+                                    5.75 f            4.74        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[17]/latch/E (ICGPRECX1)
+                                    5.75 f            4.74        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[18]/latch/E (ICGPRECX1)
+                                    5.75 f            4.74        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[20]/latch/E (ICGPRECX1)
+                                    5.75 f            4.74        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[22]/latch/E (ICGPRECX1)
+                                    5.75 f            4.74        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[23]/latch/E (ICGPRECX1)
+                                    5.75 f            4.74        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[4]/latch/E (ICGPRECX1)
+                                    5.75 f            4.74        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[5]/latch/E (ICGPRECX1)
+                                    5.75 f            4.74        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[6]/latch/E (ICGPRECX1)
+                                    5.75 f            4.74        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[7]/latch/E (ICGPRECX1)
+                                    5.75 f            4.74        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[1]/latch/E (ICGPRECX1)
+                                    5.75 f            4.74        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[2]/latch/E (ICGPRECX1)
+                                    5.75 f            4.74        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[1]/latch/E (ICGPRECX1)
+                                    5.91 r            4.89        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[2]/latch/E (ICGPRECX1)
+                                    5.75 f            4.74        -1.01
+cpu/u_reg_file/clk_gate_registers_reg[24]/latch/E (ICGPRECX1)
+                                    5.73 f            4.74        -0.99
+cpu/u_reg_file/clk_gate_registers_reg[25]/latch/E (ICGPRECX1)
+                                    5.73 f            4.74        -0.99
+cpu/u_reg_file/clk_gate_registers_reg[26]/latch/E (ICGPRECX1)
+                                    5.73 f            4.74        -0.99
+cpu/u_reg_file/clk_gate_registers_reg[27]/latch/E (ICGPRECX1)
+                                    5.73 f            4.74        -0.99
+cpu/u_reg_file/clk_gate_registers_reg[28]/latch/E (ICGPRECX1)
+                                    5.73 f            4.74        -0.99
+cpu/u_reg_file/clk_gate_registers_reg[29]/latch/E (ICGPRECX1)
+                                    5.73 f            4.74        -0.99
+cpu/u_reg_file/clk_gate_registers_reg[30]/latch/E (ICGPRECX1)
+                                    5.73 f            4.74        -0.99
+cpu/u_reg_file/clk_gate_registers_reg[31]/latch/E (ICGPRECX1)
+                                    5.73 f            4.74        -0.99
+cpu/u_reg_file/clk_gate_registers_reg[24]/latch/E (ICGPRECX1)
+                                    5.73 f            4.74        -0.98
+cpu/u_reg_file/clk_gate_registers_reg[25]/latch/E (ICGPRECX1)
+                                    5.73 f            4.74        -0.98
+cpu/u_reg_file/clk_gate_registers_reg[26]/latch/E (ICGPRECX1)
+                                    5.73 f            4.74        -0.98
+cpu/u_reg_file/clk_gate_registers_reg[27]/latch/E (ICGPRECX1)
+                                    5.73 f            4.74        -0.98
+cpu/u_reg_file/clk_gate_registers_reg[28]/latch/E (ICGPRECX1)
+                                    5.73 f            4.74        -0.98
+cpu/u_reg_file/clk_gate_registers_reg[29]/latch/E (ICGPRECX1)
+                                    5.73 f            4.74        -0.98
+cpu/u_reg_file/clk_gate_registers_reg[30]/latch/E (ICGPRECX1)
+                                    5.73 f            4.74        -0.98
+cpu/u_reg_file/clk_gate_registers_reg[31]/latch/E (ICGPRECX1)
+                                    5.73 f            4.74        -0.98
+cpu/u_fetch/clk_gate_pc_o_reg/latch/E (ICGPRECX1)
+                                    5.72 f            4.75        -0.97
+cpu/u_fetch/clk_gate_pc_o_reg/latch/E (ICGPRECX1)
+                                    5.72 f            4.75        -0.97
+data_memory/u_sram/AD[9] (CF_SRAM_1024x32)
+                                    7.52 r            6.97        -0.55
+data_memory/u_sram/AD[9] (CF_SRAM_1024x32)
+                                    7.52 r            6.97        -0.55
+data_memory/u_sram/AD[6] (CF_SRAM_1024x32)
+                                    7.52 r            6.97        -0.55
+data_memory/u_sram/AD[7] (CF_SRAM_1024x32)
+                                    7.52 r            6.97        -0.55
+data_memory/u_sram/AD[6] (CF_SRAM_1024x32)
+                                    7.52 r            6.97        -0.55
+data_memory/u_sram/AD[7] (CF_SRAM_1024x32)
+                                    7.52 r            6.97        -0.55
+data_memory/u_sram/AD[8] (CF_SRAM_1024x32)
+                                    7.49 r            6.97        -0.52
+data_memory/u_sram/AD[8] (CF_SRAM_1024x32)
+                                    7.49 r            6.97        -0.52
+data_memory/u_sram/AD[5] (CF_SRAM_1024x32)
+                                    7.44 r            6.97        -0.47
+data_memory/u_sram/AD[5] (CF_SRAM_1024x32)
+                                    7.44 r            6.97        -0.47
+instruction_memory/u_sram/AD[3] (CF_SRAM_1024x32)
+                                    7.42 r            6.99        -0.43
+instruction_memory/u_sram/AD[3] (CF_SRAM_1024x32)
+                                    7.42 r            6.99        -0.43
+instruction_memory/u_sram/AD[9] (CF_SRAM_1024x32)
+                                    7.42 r            7.00        -0.42
+instruction_memory/u_sram/AD[9] (CF_SRAM_1024x32)
+                                    7.42 r            7.00        -0.42
+instruction_memory/u_sram/AD[4] (CF_SRAM_1024x32)
+                                    7.40 r            6.99        -0.41
+instruction_memory/u_sram/AD[8] (CF_SRAM_1024x32)
+                                    7.40 r            6.99        -0.41
+instruction_memory/u_sram/AD[2] (CF_SRAM_1024x32)
+                                    7.40 r            6.99        -0.41
+instruction_memory/u_sram/AD[4] (CF_SRAM_1024x32)
+                                    7.40 r            6.99        -0.41
+instruction_memory/u_sram/AD[8] (CF_SRAM_1024x32)
+                                    7.40 r            6.99        -0.41
+instruction_memory/u_sram/AD[2] (CF_SRAM_1024x32)
+                                    7.40 r            6.99        -0.41
+instruction_memory/u_sram/AD[1] (CF_SRAM_1024x32)
+                                    7.40 r            6.99        -0.40
+instruction_memory/u_sram/AD[1] (CF_SRAM_1024x32)
+                                    7.40 r            6.99        -0.40
+instruction_memory/u_sram/AD[6] (CF_SRAM_1024x32)
+                                    7.49 f            7.09        -0.40
+cpu/u_reg_file/registers_reg[1][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[2][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[3][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[4][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[5][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[6][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[7][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[8][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[9][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[10][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[11][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[12][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[13][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[14][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[15][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[16][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[17][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[18][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[19][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[20][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[21][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[22][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[23][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[24][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[25][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[26][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[27][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[28][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[29][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[30][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[31][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+instruction_memory/u_sram/AD[5] (CF_SRAM_1024x32)
+                                    7.48 f            7.09        -0.40
+cpu/u_reg_file/registers_reg[1][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[2][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[3][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[4][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[5][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[6][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[7][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[8][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[9][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[10][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[11][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[12][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[13][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[14][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[15][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[16][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[17][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[18][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[19][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[20][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[21][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[22][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[23][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[24][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[25][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[26][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[27][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[28][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[29][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[30][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+cpu/u_reg_file/registers_reg[31][19]/D (DFFX1)
+                                    7.76 f            7.36        -0.40
+instruction_memory/u_sram/AD[0] (CF_SRAM_1024x32)
+                                    7.39 r            6.99        -0.39
+instruction_memory/u_sram/AD[0] (CF_SRAM_1024x32)
+                                    7.39 r            6.99        -0.39
+instruction_memory/u_sram/AD[6] (CF_SRAM_1024x32)
+                                    7.48 f            7.09        -0.39
+cpu/u_reg_file/registers_reg[1][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[2][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[3][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[4][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[5][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[6][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[7][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[8][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[9][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[10][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[11][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[12][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[13][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[14][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[15][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[16][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[17][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[18][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[19][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[20][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[21][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[22][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[23][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[24][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[25][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[26][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[27][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[28][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[29][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[30][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[31][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[1][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[2][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[3][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[4][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[5][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[6][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[7][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[8][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[9][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[10][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[11][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[12][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[13][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[14][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[15][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+cpu/u_reg_file/registers_reg[16][30]/D (DFFX1)
+                                    7.75 f            7.36        -0.39
+
+1

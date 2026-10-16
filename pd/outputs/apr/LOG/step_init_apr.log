@@ -1,0 +1,238 @@
+The timeout for a remote job to respond is 3600 seconds.
+Submit command for task runs will be: local
+setMultiCpuUsage -localCpu 8
+SCRIPT_START 20:20:31: /nethome/sgupta943/physical-design-onboarding-F26/scripts/apr/steps/step_init_design.tcl
+             log -> /nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/LOG/step_init_design.log
+SCRIPT_END   20:20:31 (0s): /nethome/sgupta943/physical-design-onboarding-F26/scripts/apr/steps/step_init_design.tcl
+#% Begin Load MMMC data ... (date=10/11 20:20:31, mem=1861.6M)
+#% End Load MMMC data ... (date=10/11 20:20:31, total cpu=0:00:00.1, real=0:00:00.0, peak res=1863.2M, current mem=1863.2M)
+
+Loading LEF file /nethome/sgupta943/physical-design-onboarding-F26/resources/cadence_sky130/sky130_scl_9T_0.1.2/sky130_scl_9T_tech/lef/sky130_scl_9T.tlef ...
+
+Loading LEF file /nethome/sgupta943/physical-design-onboarding-F26/resources/cadence_sky130/sky130_scl_9T_0.1.2/sky130_scl_9T/lef/sky130_scl_9T.lef ...
+Set DBUPerIGU to M2 pitch 460.
+
+Loading LEF file /nethome/sgupta943/physical-design-onboarding-F26/resources/cadence_sky130/sky130_scl_9T_0.1.2/sky130_scl_9T_tech/lef/sky130_scl_9T_phyCells.lef ...
+
+Loading LEF file /nethome/sgupta943/physical-design-onboarding-F26/resources/cadence_sky130/sky130_scl_9T_0.1.2/sky130_scl_9T_HS/lef/sky130_scl_9T_HS.lef ...
+
+Loading LEF file /nethome/sgupta943/physical-design-onboarding-F26/inputs/CF_SRAM_1024x32/lef/CF_SRAM_1024x32.lef ...
+WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /nethome/sgupta943/physical-design-onboarding-F26/inputs/CF_SRAM_1024x32/lef/CF_SRAM_1024x32.lef at line 26.
+**WARN: (IMPLF-201):	Pin 'DO[16]' in macro 'CF_SRAM_1024x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'BEN[16]' in macro 'CF_SRAM_1024x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO[17]' in macro 'CF_SRAM_1024x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'BEN[17]' in macro 'CF_SRAM_1024x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO[18]' in macro 'CF_SRAM_1024x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'BEN[18]' in macro 'CF_SRAM_1024x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO[19]' in macro 'CF_SRAM_1024x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'BEN[19]' in macro 'CF_SRAM_1024x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO[20]' in macro 'CF_SRAM_1024x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'BEN[20]' in macro 'CF_SRAM_1024x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO[21]' in macro 'CF_SRAM_1024x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'BEN[21]' in macro 'CF_SRAM_1024x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO[22]' in macro 'CF_SRAM_1024x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'BEN[22]' in macro 'CF_SRAM_1024x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO[23]' in macro 'CF_SRAM_1024x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'BEN[23]' in macro 'CF_SRAM_1024x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO[24]' in macro 'CF_SRAM_1024x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'BEN[24]' in macro 'CF_SRAM_1024x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO[25]' in macro 'CF_SRAM_1024x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'BEN[25]' in macro 'CF_SRAM_1024x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO[26]' in macro 'CF_SRAM_1024x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'BEN[26]' in macro 'CF_SRAM_1024x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO[27]' in macro 'CF_SRAM_1024x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'BEN[27]' in macro 'CF_SRAM_1024x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO[28]' in macro 'CF_SRAM_1024x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'BEN[28]' in macro 'CF_SRAM_1024x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO[29]' in macro 'CF_SRAM_1024x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'BEN[29]' in macro 'CF_SRAM_1024x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO[30]' in macro 'CF_SRAM_1024x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'BEN[30]' in macro 'CF_SRAM_1024x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO[31]' in macro 'CF_SRAM_1024x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'BEN[31]' in macro 'CF_SRAM_1024x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'AD[0]' in macro 'CF_SRAM_1024x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'AD[1]' in macro 'CF_SRAM_1024x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'AD[2]' in macro 'CF_SRAM_1024x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'WLBI' in macro 'CF_SRAM_1024x32' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPLF-201):	Pin 'ScanOutCC' in macro 'CF_SRAM_1024x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO[9]' in macro 'CF_SRAM_1024x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO[10]' in macro 'CF_SRAM_1024x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'DO[11]' in macro 'CF_SRAM_1024x32' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-201) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+Loading view definition file from /nethome/sgupta943/physical-design-onboarding-F26/scripts/apr/steps/step_corners.tcl
+Starting library reading in 'Multi-threaded flow' (with '8' threads)
+Reading typical_libs timing library /nethome/sgupta943/physical-design-onboarding-F26/resources/cadence_sky130/sky130_scl_9T_0.1.2/sky130_scl_9T/lib/sky130_tt_1.8_25_nldm.lib.
+Read 112 cells in library sky130_tt_1.8_25.
+Reading typical_libs timing library /nethome/sgupta943/physical-design-onboarding-F26/resources/cadence_sky130/sky130_scl_9T_0.1.2/sky130_scl_9T_tech/lib/sky130_scl_9T_phyCells.lib.
+Read 2 cells in library sky130_phyCells.
+Reading typical_libs timing library /nethome/sgupta943/physical-design-onboarding-F26/resources/cadence_sky130/sky130_scl_9T_0.1.2/sky130_scl_9T_HS/lib/sky130_tt_1.8_25_nldm.lib.
+Read 106 cells in library sky130_tt_1.8_25.
+Reading typical_libs timing library /nethome/sgupta943/physical-design-onboarding-F26/inputs/CF_SRAM_1024x32/lib/CF_SRAM_1024x32_tt_180V_100C.lib.
+**WARN: (TECHLIB-302):	No function defined for cell 'CF_SRAM_1024x32'. The cell will only be used for analysis. (File /nethome/sgupta943/physical-design-onboarding-F26/inputs/CF_SRAM_1024x32/lib/CF_SRAM_1024x32_tt_180V_100C.lib)
+Read 1 cells in library CF_SRAM_1024x32_tt_180V_100C.
+Library reading multithread flow ended.
+*** End library_loading (cpu=0.06min, real=0.02min, mem=17.2M, fe_cpu=0.73min, fe_real=0.73min, fe_mem=1889.8M) ***
+#% Begin Load netlist data ... (date=10/11 20:20:33, mem=1889.8M)
+*** Begin netlist parsing (mem=1889.8M) ***
+Created 221 new cells from 4 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist '/nethome/sgupta943/physical-design-onboarding-F26/outputs/synthesis/chip_top.gate.v'
+
+*** Memory Usage v#1 (Current mem = 1902.340M, initial mem = 915.879M) ***
+*** End netlist parsing (cpu=0:00:00.1, real=0:00:00.0, mem=1902.3M) ***
+#% End Load netlist data ... (date=10/11 20:20:33, total cpu=0:00:00.1, real=0:00:00.0, peak res=1902.4M, current mem=1902.4M)
+Set top cell to chip_top.
+Hooked 221 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell chip_top ...
+***** UseNewTieNetMode *****.
+*** Netlist is unique.
+** info: there are 274 modules.
+** info: there are 5217 stdCell insts.
+** info: there are 5217 stdCell insts with at least one signal pin.
+** info: there are 2 macros.
+
+*** Memory Usage v#1 (Current mem = 1934.969M, initial mem = 915.879M) ***
+**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Start create_tracks
+Generated pitch 3.66 in met5 is different from 3.22 defined in technology file in preferred direction.
+Generated pitch 0.615 in met4 is different from 0.69 defined in technology file in preferred direction.
+Generated pitch 0.61 in met3 is different from 0.69 defined in technology file in preferred direction.
+Extraction setup Started for TopCell chip_top 
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For postRoute extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
+Generating auto layer map file.
+Importing multi-corner technology file(s) for preRoute extraction...
+/nethome/sgupta943/physical-design-onboarding-F26/resources/cadence_sky130/sky130_release_0.1.0/quantus/extraction/typical/qrcTechFile
+Generating auto layer map file.
+Completed (cpu: 0:00:01.5 real: 0:00:04.0)
+Set Shrink Factor to 1.00000
+Summary of Active RC-Corners : 
+ 
+ Analysis View: typical_analysis_view
+    RC-Corner Name        : typical_rc
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/nethome/sgupta943/physical-design-onboarding-F26/resources/cadence_sky130/sky130_release_0.1.0/quantus/extraction/typical/qrcTechFile'
+Updating RC Grid density data for preRoute extraction ...
+Initializing multi-corner resistance tables ...
+Default value for postRoute extraction mode's effortLevel (-effortLevel option of setExtractRCMode) changed to 'medium'.
+*Info: initialize multi-corner CTS.
+Multithreaded Timing Analysis is initialized with 8 threads
+
+Reading timing constraints file '/nethome/sgupta943/physical-design-onboarding-F26/outputs/synthesis/chip_top.sdc' ...
+Current (total cpu=0:00:48.1, real=0:00:51.0, peak res=2436.1M, current mem=2436.1M)
+**WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File /nethome/sgupta943/physical-design-onboarding-F26/outputs/synthesis/chip_top.sdc, Line 8).
+
+**WARN: (TCLCMD-1013):	The SDC set_operating_conditions assertion is not supported. Please use the Innovus setOpCond command to specify library and operating condition information. Use the setAnalysisMode command to control single vs. bestCase/worstCase vs. on-chip variation timing analysis. (File /nethome/sgupta943/physical-design-onboarding-F26/outputs/synthesis/chip_top.sdc, Line 11).
+
+INFO (CTE): Reading of timing constraints file /nethome/sgupta943/physical-design-onboarding-F26/outputs/synthesis/chip_top.sdc completed, with 2 WARNING
+WARNING (CTE-25): Line: 13 of File /nethome/sgupta943/physical-design-onboarding-F26/outputs/synthesis/chip_top.sdc : Skipped unsupported command: set_max_area
+
+
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=2452.6M, current mem=2452.6M)
+Current (total cpu=0:00:48.3, real=0:00:51.0, peak res=2452.6M, current mem=2452.6M)
+Total number of combinational cells: 172
+Total number of sequential cells: 42
+Total number of tristate cells: 6
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 0
+List of usable buffers: CLKBUFX2 BUFX2 CLKBUFX4 BUFX4 BUFX2_HS CLKBUFX2_HS BUFX4_HS CLKBUFX8 BUFX8 CLKBUFX4_HS BUFX8_HS CLKBUFX8_HS BUFX16 BUFX16_HS
+Total number of usable buffers: 14
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INVX2 INVX1 CLKINVX2 CLKINVX1 INVX1_HS INVX4 CLKINVX4 INVX2_HS CLKINVX1_HS INVX4_HS CLKINVX2_HS INVX8 CLKINVX8 INVX8_HS CLKINVX4_HS INVX16 INVX16_HS CLKINVX8_HS
+Total number of usable inverters: 18
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY1X1 DLY1X4 DLY1X1_HS DLY1X4_HS DLY2X4 DLY2X4_HS DLY4X4 DLY4X4_HS
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+<CMD> checkTimingLibrary
+<CMD> all_setup_analysis_views
+<CMD> all_hold_analysis_views
+<CMD> getGenerateViaMode -auto -quiet
+<CMD> report_message -end_cmd
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-200           87  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   IMPLF-201           33  Pin '%s' in macro '%s' has no ANTENNADIF...
+WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
+WARNING   TCLCMD-1013          1  The SDC set_operating_conditions asserti...
+WARNING   TCLCMD-1461          1  Skipped unsupported command: %s          
+WARNING   TECHLIB-302          1  No function defined for cell '%s'. The c...
+*** Message Summary: 125 warning(s), 0 error(s)
+
+<CMD> setAnalysisMode -analysisType onChipVariation
