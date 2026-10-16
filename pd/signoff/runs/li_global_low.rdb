@@ -1,0 +1,12 @@
+chip_top 1000
+CDRW.li.global.min:L263152
+1 1 1 Oct 11 23:41:20 2026
+density {'chk_lyr_as_inside_lyr': False, 'file_name': '/nethome/sgupta943/physical-design-onboarding-F26/signoff/runs/li_global_low.rdb', 'is_window_density_check': False, 'layer_names': ['fill_extent_not_SEALID', 'li_layers']}
+p 1 4
+DV 0.072494251070
+DA 844959.725024999934
+DA li_layers 61254.722449999994
+-5 -5
+-5 655000
+1290000 655000
+1290000 -5

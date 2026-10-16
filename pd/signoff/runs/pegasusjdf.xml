@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF8'?>
+<jdf>
+  <initial_vars>
+  </initial_vars>
+  <job name="streamOut_/nethome/sgupta943/physical-design-onboarding-F26/signoff/runs/chip_top.gds.gz" rundir="." stdout="/nethome/sgupta943/physical-design-onboarding-F26/signoff/runs/runs_strmout.out" stderr="/nethome/sgupta943/physical-design-onboarding-F26/signoff/runs/runs_strmout.err" >
+    <task name="strmout" launcherName="OS" executable="strmout" stdout="/nethome/sgupta943/physical-design-onboarding-F26/signoff/runs/PIPO1.OUT" stderr="/nethome/sgupta943/physical-design-onboarding-F26/signoff/runs/PIPO1.OUT">
+      <args>
+        <arg value="-cdslib"/>
+        <arg value="/nethome/sgupta943/physical-design-onboarding-F26/signoff/cds.lib"/>
+        <arg value="-templateFile"/>
+        <arg value="/nethome/sgupta943/physical-design-onboarding-F26/signoff/runs/pipo1.setup"/>
+        <arg value="-userSkillFile"/>
+        <arg value="/nethome/sgupta943/physical-design-onboarding-F26/signoff/runs/strmout.il"/>
+      </args>
+    </task>
+  </job>
+  <job name="runs_Pegasus" rundir="runs" stdout="/nethome/sgupta943/physical-design-onboarding-F26/signoff/runs/runs_Pegasus.out" stderr="/nethome/sgupta943/physical-design-onboarding-F26/signoff/runs/runs_Pegasus.err" >
+      <wait_for>
+        <job name="streamOut_/nethome/sgupta943/physical-design-onboarding-F26/signoff/runs/chip_top.gds.gz" />
+      </wait_for>
+    <task name="pegasus" launcherName="OS" launcherTimeout="300" executable="/tools/software/cadence/pegasus/latest/bin/pegasus" stdout="/nethome/sgupta943/physical-design-onboarding-F26/signoff/runs/pegasusuilvs.log" stderr="/nethome/sgupta943/physical-design-onboarding-F26/signoff/runs/pegasusuilvs.log">
+      <args>
+        <arg value="-lvs"/>
+        <arg value="-top_cell"/>
+        <arg value="chip_top"/>
+        <arg value="-log_dir"/>
+        <arg value="LOGS"/>
+        <arg value="-source_top_cell"/>
+        <arg value="chip_top"/>
+        <arg value="-spice"/>
+        <arg value="/nethome/sgupta943/physical-design-onboarding-F26/signoff/runs/chip_top.spi"/>
+        <arg value="-control"/>
+        <arg value="/nethome/sgupta943/physical-design-onboarding-F26/signoff/runs/pegasuslvsctl"/>
+        <arg value="-ui_data"/>
+        <arg value="-gdb_data"/>
+        <arg value="-ai"/>
+        <arg value="/nethome/sgupta943/physical-design-onboarding-F26/resources/cadence_sky130/sky130_release_0.1.0/Sky130_LVS/sky130.lvs.v0.0_1.1.pvl"/>
+      </args>
+    </task>
+  </job>
+</jdf>

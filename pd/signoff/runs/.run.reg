@@ -1,0 +1,90 @@
+# This Pegasus GUI File Index Registry was created automatically
+# Do not attempt to modify this file as any change may lead
+# to Pegasus GUI Tools malfunction.
+# 
+"ERC Result" internal none EMPTY
+"ERC Summary" output text /nethome/sgupta943/physical-design-onboarding-F26/signoff/runs/chip_top.sum
+"Extracted Spice File" output text /nethome/sgupta943/physical-design-onboarding-F26/signoff/runs/chip_top.spi
+"Extraction Report" output erc /nethome/sgupta943/physical-design-onboarding-F26/signoff/runs/chip_top.rep
+"LVS Report Options" internal none none
+"Layout GDSII" input none /nethome/sgupta943/physical-design-onboarding-F26/signoff/runs/chip_top.gds.gz
+"Layout Top Cell" internal none chip_top
+"Report MaxResults" internal none 1000
+"Rule File" input text /nethome/sgupta943/physical-design-onboarding-F26/resources/cadence_sky130/sky130_release_0.1.0/Sky130_LVS/sky130.lvs.v0.0_1.1.pvl
+"Run Directory" internal none /nethome/sgupta943/physical-design-onboarding-F26/signoff/runs/
+"Extraction Result" internal none CLEAN
+"SCONNECT Info" output text /nethome/sgupta943/physical-design-onboarding-F26/signoff/runs/.chip_top.info.softchk
+"Schematic Top Cell" internal none chip_top
+"LVS Run Name" internal none chip_top.rep
+"Schematic Netlist" input text /nethome/sgupta943/physical-design-onboarding-F26/resources/cadence_sky130/sky130_scl_9T_0.1.2/sky130_scl_9T_LP/cdl/sky130_scl_9T_LP.cdl
+"Schematic Netlist" input text /nethome/sgupta943/physical-design-onboarding-F26/resources/cadence_sky130/sky130_scl_9T_0.1.2/sky130_scl_9T_HS/cdl/sky130_scl_9T_HS.cdl
+"Schematic Netlist" input text /nethome/sgupta943/physical-design-onboarding-F26/resources/cadence_sky130/sky130_scl_9T_0.1.2/sky130_scl_9T_tech/cdl/sky130_scl_9T_phyCells.cdl
+"Schematic Netlist" input text /nethome/sgupta943/physical-design-onboarding-F26/resources/cadence_sky130/sky130_scl_9T_0.1.2/sky130_scl_9T/cdl/sky130_scl_9T.cdl
+"Schematic Netlist" input text /nethome/sgupta943/physical-design-onboarding-F26/signoff/CF_SRAM_1024x32.cdl
+"Schematic Netlist" input text /nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/DBS/chip_top.phy.v
+"UI Data" internal none ENABLED
+"Comparison Report" output cls /nethome/sgupta943/physical-design-onboarding-F26/signoff/runs/chip_top.rep.cls
+"Pegasus Mode Info" internal none OHFLIJCKHGBCCCCAPNJCHAGAGPNNOCFC
+"Pegasus Version" internal none 25.13-s012
+"Binary Name" internal none pegasus
+"Pegasus Build Date" internal none "Thu Jun 04 20:14:27 EDT 2026"
+"Pegasus Job Time" internal none 1791777392
+"Run Directory" internal none /nethome/sgupta943/physical-design-onboarding-F26/signoff/runs
+"Current Directory" internal none /nethome/sgupta943/physical-design-onboarding-F26/signoff
+"Cadence Directory" internal none /nethome/sgupta943/physical-design-onboarding-F26/signoff/.cadence/
+"Job Signature" internal none IPVS_1791777315_2238469
+"Pegasus Job Mode" internal none lvs
+"GUI Flow" internal none virtuoso6
+"GUI Preset" internal none /nethome/sgupta943/physical-design-onboarding-F26/signoff/runs/.preset.autosave
+"Pegasus Version" internal none 25.13-s012
+"Binary Name" internal none pegasusgui
+"Pegasus Build Date" internal none "Wed Jun 3 17:39:46 PDT 2026"
+"Pegasus Job Time" internal none 1791777318
+"DFII version" internal none IC25.1.0
+"CDS Library" internal none /nethome/sgupta943/physical-design-onboarding-F26/signoff/cds.lib
+"Rule File" input text /nethome/sgupta943/physical-design-onboarding-F26/signoff/../resources/cadence_sky130/sky130_release_0.1.0/Sky130_LVS/sky130.lvs.v0.0_1.1.pvl
+"Layout Scale" internal none 0.001
+"Layout TechLib" internal none sky130_fd_pr_main
+"Layout Library Name" internal none check_drc_lib
+"Layout Cell Name" internal none chip_top
+"Layout View Name" internal none layout
+"Layout ConvertPin" internal text geometry
+"Layout HierDepth" internal none 32
+"Layout MaxVertices" internal none 2048
+"Layout Top Cell" internal none chip_top
+"Layout GDSII" input none /nethome/sgupta943/physical-design-onboarding-F26/signoff/runs/chip_top.gds.gz
+"Intermediate GDSII File" output none /nethome/sgupta943/physical-design-onboarding-F26/signoff/runs/chip_top.gds.gz
+"Intermediate GDSII File creation Errors" internal text /nethome/sgupta943/physical-design-onboarding-F26/signoff/runs/PIPO1.LOG
+"Intermediate OASIS File creation Errors" internal text /nethome/sgupta943/physical-design-onboarding-F26/signoff/runs/PIPO1.LOG
+"Enable Coloring" input none yes
+"Map All Colored To Locked" input none no
+"Layout ReplaceBusBitChar" input none nil
+"Layout NoConvertHalfWidthPath" input none nil
+"Layout FlattenPCells" input none nil
+"Schematic Data is in Control File" internal none ENABLED
+"Schematic Top Cell" internal none chip_top
+"Extracted Spice File" output text /nethome/sgupta943/physical-design-onboarding-F26/signoff/runs/chip_top.spi
+"Do not check rules files before run" internal none ENABLED
+"Control File" input text /nethome/sgupta943/physical-design-onboarding-F26/signoff/runs/pegasuslvsctl
+"Pegasus Job Log" log text /nethome/sgupta943/physical-design-onboarding-F26/signoff/runs/pegasusuilvs.log
+"It is Pegasus flow" internal none ENABLED
+"Pegasus Log Dir" internal none LOGS
+"PIPO Setup File I" internal text /nethome/sgupta943/physical-design-onboarding-F26/signoff/runs/pipo1.setup
+"PIPO Log I" log text /nethome/sgupta943/physical-design-onboarding-F26/signoff/runs/PIPO1.LOG
+"PIPO Output I" internal text /nethome/sgupta943/physical-design-onboarding-F26/signoff/runs/PIPO1.OUT
+"Input Layout" input none OA: check_drc_lib chip_top layout
+"Output Layout Cellmap I" internal text /nethome/sgupta943/physical-design-onboarding-F26/signoff/runs/lay_cellMap.txt
+"Binary Name" internal none pegasusvirt
+"Schematic Netlist" input text /nethome/sgupta943/physical-design-onboarding-F26/resources/cadence_sky130/sky130_scl_9T_0.1.2/sky130_scl_9T_LP/cdl/sky130_scl_9T_LP.cdl
+"Schematic Netlist" input text /nethome/sgupta943/physical-design-onboarding-F26/resources/cadence_sky130/sky130_scl_9T_0.1.2/sky130_scl_9T_HS/cdl/sky130_scl_9T_HS.cdl
+"Schematic Netlist" input text /nethome/sgupta943/physical-design-onboarding-F26/resources/cadence_sky130/sky130_scl_9T_0.1.2/sky130_scl_9T_tech/cdl/sky130_scl_9T_phyCells.cdl
+"Schematic Netlist" input text /nethome/sgupta943/physical-design-onboarding-F26/resources/cadence_sky130/sky130_scl_9T_0.1.2/sky130_scl_9T/cdl/sky130_scl_9T.cdl
+"Schematic Netlist" input text /nethome/sgupta943/physical-design-onboarding-F26/signoff/CF_SRAM_1024x32.cdl
+"Schematic Netlist" input text /nethome/sgupta943/physical-design-onboarding-F26/outputs/apr/DBS/chip_top.phy.v
+"Comparison Result" internal none MISMATCH
+"UI Data" internal none ENABLED
+"LVS Run Name" internal none chip_top.rep
+"Pegasus Version" internal none 25.13-s012
+"Binary Name" internal none pegasusnvn
+"Pegasus Build Date" internal none "Wed Jun 3 17:39:46 PDT 2026"
+"Pegasus Job Time" internal none 1791777373

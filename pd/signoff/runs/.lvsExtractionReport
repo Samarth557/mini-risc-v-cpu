@@ -1,0 +1,24 @@
+                     *****************************************************
+                     **                                                 **
+                     **                L V S  R E P O R T               **
+                     **                                                 **
+                     *****************************************************
+
+
+Report File Name         : /nethome/sgupta943/physical-design-onboarding-F26/signoff/runs/chip_top.rep
+ERC Summary File         : /nethome/sgupta943/physical-design-onboarding-F26/signoff/runs/chip_top.sum
+LVS Comparison Report    : /nethome/sgupta943/physical-design-onboarding-F26/signoff/runs/chip_top.rep.cls
+Layout Name              : /nethome/sgupta943/physical-design-onboarding-F26/signoff/runs/chip_top.gds.gz ("chip_top")
+User Name                : sgupta943
+Creation Time            : Sun Oct 11 23:55:33 2026
+Current directory        : /nethome/sgupta943/physical-design-onboarding-F26/signoff/runs
+Pegasus version          : 25.13-s012
+
+
+                     *****************************************************
+                     **                                                 **
+                     **            D E V E X T  R E P O R T             **
+                     **                                                 **
+                     *****************************************************
+
+

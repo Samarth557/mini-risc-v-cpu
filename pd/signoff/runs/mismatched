@@ -1,0 +1,37 @@
+##############################################################################################################
+#####  
+#####                                       Pegasus LVS COMPARISON
+#####  
+#####  Version                       :   25.13-s012
+#####  NVN Run Start                 :   Sun Oct 11 23:56:13 2026
+#####  Comparison Report File        :   chip_top.rep.cls
+#####  Top Cell                      :   chip_top  <vs>  chip_top
+#####  
+#####                                :      @     @
+#####                                :       @   @ 
+#####                                :        @ @  
+#####  Run Result                    :     MISMATCH
+#####                                :        @ @  
+#####                                :       @   @ 
+#####                                :      @     @
+#####  
+#####  Run Summary                   :   [ERROR] Connectivity Mismatches
+#####                                :   [INFO]  Some Sections Have Been Truncated
+#####                                :   [INFO]  Unconnected Corresponding Top Cell Pin(s) Exists
+#####  
+#####  Layout Design                 :   check_drc_lib chip_top layout
+#####  Schematic File                :   /nethome/sgupta943/physical-design-onboarding-F26/signoff/../resources/cadence_sky130/sky130_scl_9T_0.1.2/sky130_scl_9T_LP/cdl/sky130_scl_9T_LP.cdl (cdl)
+#####  Schematic File                :   /nethome/sgupta943/physical-design-onboarding-F26/signoff/../resources/cadence_sky130/sky130_scl_9T_0.1.2/sky130_scl_9T_HS/cdl/sky130_scl_9T_HS.cdl (cdl)
+#####  Schematic File                :   /nethome/sgupta943/physical-design-onboarding-F26/signoff/../resources/cadence_sky130/sky130_scl_9T_0.1.2/sky130_scl_9T_tech/cdl/sky130_scl_9T_phyCells.cdl (cdl)
+#####  Schematic File                :   /nethome/sgupta943/physical-design-onboarding-F26/signoff/../resources/cadence_sky130/sky130_scl_9T_0.1.2/sky130_scl_9T/cdl/sky130_scl_9T.cdl (cdl)
+#####  Schematic File                :   /nethome/sgupta943/physical-design-onboarding-F26/signoff/CF_SRAM_1024x32.cdl (cdl)
+#####  Schematic File                :   /nethome/sgupta943/physical-design-onboarding-F26/signoff/../outputs/apr/DBS/chip_top.phy.v (verilog)
+#####  Rules File                    :   /nethome/sgupta943/physical-design-onboarding-F26/signoff/../resources/cadence_sky130/sky130_release_0.1.0/Sky130_LVS/sky130.lvs.v0.0_1.1.pvl
+#####  
+#####  NVN CPU Time                  :   0h 0m 13s - (13s)               
+#####  NVN Exec Time                 :   0h 0m 14s - (14s)               
+#####  NVN Peak Memory Usage         :   0.00MB
+#####  
+##############################################################################################################
+
+

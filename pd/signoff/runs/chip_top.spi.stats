@@ -1,0 +1,719 @@
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* CDL Netlist:
+*
+* Cell Name: chip_top
+* Netlisted: 2026-10-11 23:56:05
+* Pegasus 25.13-s012
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+*.DEVTMPLT 0 MN(nfet_01v8) nfet_01v8_rec nSourceDrain(D) nfet(G) nSourceDrain(S) pwell_all(B)
+*.DEVTMPLT 1 MP(pfet_01v8) pfet_01v8_rec pSourceDrain(D) pfet(G) pSourceDrain(S) nwell(B)
+*.DEVTMPLT 2 MP(pfet_01v8_lvt) lvtpfet_01v8_rec pSourceDrain(D) lvtpfet(G) pSourceDrain(S) nwell(B)
+*.DEVTMPLT 3 MN(nfet_01v8_lvt) lvtnfet_01v8_rec nSourceDrain(D) lvtnfet(G) nSourceDrain(S) pwell_all(B)
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt NAND2X2_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=54 EP=7 NDC=8 FDC=8 HDC=8
+* MP(pfet_01v8) $dt=1 element=M NDC=4 FDC=4 HDC=4
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=4 FDC=4 HDC=4
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt INVX2_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=34 EP=6 NDC=4 FDC=4 HDC=4
+* MP(pfet_01v8) $dt=1 element=M NDC=2 FDC=2 HDC=2
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=2 FDC=2 HDC=2
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt AOI21X1
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=41 EP=8 NDC=6 FDC=6 HDC=6
+* MN(nfet_01v8) $dt=0 element=M NDC=3 FDC=3 HDC=3
+* MP(pfet_01v8) $dt=1 element=M NDC=3 FDC=3 HDC=3
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt NAND3X4_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=131 EP=8 NDC=24 FDC=24 HDC=24
+* MP(pfet_01v8) $dt=1 element=M NDC=12 FDC=12 HDC=12
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=12 FDC=12 HDC=12
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt AOI21X1_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=47 EP=8 NDC=6 FDC=6 HDC=6
+* MP(pfet_01v8) $dt=1 element=M NDC=3 FDC=3 HDC=3
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=3 FDC=3 HDC=3
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt OAI21X2
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=70 EP=8 NDC=12 FDC=12 HDC=12
+* MN(nfet_01v8) $dt=0 element=M NDC=6 FDC=6 HDC=6
+* MP(pfet_01v8) $dt=1 element=M NDC=6 FDC=6 HDC=6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt OAI22X1_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=56 EP=9 NDC=8 FDC=8 HDC=8
+* MP(pfet_01v8) $dt=1 element=M NDC=4 FDC=4 HDC=4
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=4 FDC=4 HDC=4
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt INVX4
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=43 EP=6 NDC=8 FDC=8 HDC=8
+* MN(nfet_01v8) $dt=0 element=M NDC=4 FDC=4 HDC=4
+* MP(pfet_01v8) $dt=1 element=M NDC=4 FDC=4 HDC=4
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt CLKINVX4_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=93 EP=6 NDC=16 FDC=16 HDC=16
+* MP(pfet_01v8) $dt=1 element=M NDC=12 FDC=12 HDC=12
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=4 FDC=4 HDC=4
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt AOI22X1
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=51 EP=9 NDC=8 FDC=8 HDC=8
+* MN(nfet_01v8) $dt=0 element=M NDC=4 FDC=4 HDC=4
+* MP(pfet_01v8) $dt=1 element=M NDC=4 FDC=4 HDC=4
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt NOR3X1
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=37 EP=8 NDC=6 FDC=6 HDC=6
+* MN(nfet_01v8) $dt=0 element=M NDC=3 FDC=3 HDC=3
+* MP(pfet_01v8) $dt=1 element=M NDC=3 FDC=3 HDC=3
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt NAND2X2
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=45 EP=7 NDC=8 FDC=8 HDC=8
+* MN(nfet_01v8) $dt=0 element=M NDC=4 FDC=4 HDC=4
+* MP(pfet_01v8) $dt=1 element=M NDC=4 FDC=4 HDC=4
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt NOR4X1
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=45 EP=9 NDC=8 FDC=8 HDC=8
+* MN(nfet_01v8) $dt=0 element=M NDC=4 FDC=4 HDC=4
+* MP(pfet_01v8) $dt=1 element=M NDC=4 FDC=4 HDC=4
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt INVX4_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=52 EP=6 NDC=8 FDC=8 HDC=8
+* MP(pfet_01v8) $dt=1 element=M NDC=4 FDC=4 HDC=4
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=4 FDC=4 HDC=4
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt NOR2X1
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=31 EP=7 NDC=4 FDC=4 HDC=4
+* MN(nfet_01v8) $dt=0 element=M NDC=2 FDC=2 HDC=2
+* MP(pfet_01v8) $dt=1 element=M NDC=2 FDC=2 HDC=2
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt NAND4X2_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=101 EP=9 NDC=16 FDC=16 HDC=16
+* MP(pfet_01v8) $dt=1 element=M NDC=8 FDC=8 HDC=8
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=8 FDC=8 HDC=8
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt OAI211X2_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=102 EP=9 NDC=16 FDC=16 HDC=16
+* MP(pfet_01v8) $dt=1 element=M NDC=8 FDC=8 HDC=8
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=8 FDC=8 HDC=8
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt CLKINVX1_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=35 EP=6 NDC=4 FDC=4 HDC=4
+* MP(pfet_01v8) $dt=1 element=M NDC=3 FDC=3 HDC=3
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=1 FDC=1 HDC=1
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt OAI21X1
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=41 EP=8 NDC=6 FDC=6 HDC=6
+* MN(nfet_01v8) $dt=0 element=M NDC=3 FDC=3 HDC=3
+* MP(pfet_01v8) $dt=1 element=M NDC=3 FDC=3 HDC=3
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt TIELO
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=21 EP=5 NDC=2 FDC=2 HDC=2
+* MN(nfet_01v8) $dt=0 element=M NDC=1 FDC=1 HDC=1
+* MP(pfet_01v8) $dt=1 element=M NDC=1 FDC=1 HDC=1
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt INVX16
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=139 EP=6 NDC=32 FDC=32 HDC=32
+* MN(nfet_01v8) $dt=0 element=M NDC=16 FDC=16 HDC=16
+* MP(pfet_01v8) $dt=1 element=M NDC=16 FDC=16 HDC=16
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt BUFX2
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=35 EP=6 NDC=6 FDC=6 HDC=6
+* MN(nfet_01v8) $dt=0 element=M NDC=3 FDC=3 HDC=3
+* MP(pfet_01v8) $dt=1 element=M NDC=3 FDC=3 HDC=3
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt INVX1_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=25 EP=6 NDC=2 FDC=2 HDC=2
+* MP(pfet_01v8) $dt=1 element=M NDC=1 FDC=1 HDC=1
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=1 FDC=1 HDC=1
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt BUFX2_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=41 EP=6 NDC=6 FDC=6 HDC=6
+* MP(pfet_01v8) $dt=1 element=M NDC=3 FDC=3 HDC=3
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=3 FDC=3 HDC=3
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt CLKBUFX2_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=50 EP=6 NDC=8 FDC=8 HDC=8
+* MP(pfet_01v8) $dt=1 element=M NDC=5 FDC=5 HDC=5
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=3 FDC=3 HDC=3
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt AND4X2_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=65 EP=9 NDC=12 FDC=12 HDC=12
+* MP(pfet_01v8) $dt=1 element=M NDC=6 FDC=6 HDC=6
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=6 FDC=6 HDC=6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt NAND4X4
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=148 EP=9 NDC=32 FDC=32 HDC=32
+* MN(nfet_01v8) $dt=0 element=M NDC=16 FDC=16 HDC=16
+* MP(pfet_01v8) $dt=1 element=M NDC=16 FDC=16 HDC=16
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt CLKAND2X2
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=42 EP=7 NDC=8 FDC=8 HDC=8
+* MN(nfet_01v8) $dt=0 element=M NDC=4 FDC=4 HDC=4
+* MP(pfet_01v8) $dt=1 element=M NDC=4 FDC=4 HDC=4
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt ICGPRECX1
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=112 EP=8 NDC=26 FDC=26 HDC=26
+* MN(nfet_01v8) $dt=0 element=M NDC=13 FDC=13 HDC=13
+* MP(pfet_01v8) $dt=1 element=M NDC=13 FDC=13 HDC=13
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt CLKINVX2_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=53 EP=6 NDC=8 FDC=8 HDC=8
+* MP(pfet_01v8) $dt=1 element=M NDC=6 FDC=6 HDC=6
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=2 FDC=2 HDC=2
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt NAND2X1
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=31 EP=7 NDC=4 FDC=4 HDC=4
+* MN(nfet_01v8) $dt=0 element=M NDC=2 FDC=2 HDC=2
+* MP(pfet_01v8) $dt=1 element=M NDC=2 FDC=2 HDC=2
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt CLKINVX1
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=21 EP=6 NDC=2 FDC=2 HDC=2
+* MN(nfet_01v8) $dt=0 element=M NDC=1 FDC=1 HDC=1
+* MP(pfet_01v8) $dt=1 element=M NDC=1 FDC=1 HDC=1
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt XNOR2X1
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=53 EP=7 NDC=12 FDC=12 HDC=12
+* MN(nfet_01v8) $dt=0 element=M NDC=6 FDC=6 HDC=6
+* MP(pfet_01v8) $dt=1 element=M NDC=6 FDC=6 HDC=6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt NOR2X4_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=90 EP=7 NDC=16 FDC=16 HDC=16
+* MP(pfet_01v8) $dt=1 element=M NDC=8 FDC=8 HDC=8
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=8 FDC=8 HDC=8
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt NAND4X1
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=51 EP=9 NDC=8 FDC=8 HDC=8
+* MN(nfet_01v8) $dt=0 element=M NDC=4 FDC=4 HDC=4
+* MP(pfet_01v8) $dt=1 element=M NDC=4 FDC=4 HDC=4
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt OR2X1_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=39 EP=7 NDC=6 FDC=6 HDC=6
+* MP(pfet_01v8) $dt=1 element=M NDC=3 FDC=3 HDC=3
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=3 FDC=3 HDC=3
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt INVX2
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=27 EP=6 NDC=4 FDC=4 HDC=4
+* MN(nfet_01v8) $dt=0 element=M NDC=2 FDC=2 HDC=2
+* MP(pfet_01v8) $dt=1 element=M NDC=2 FDC=2 HDC=2
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt AOI211X1_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=57 EP=9 NDC=8 FDC=8 HDC=8
+* MP(pfet_01v8) $dt=1 element=M NDC=4 FDC=4 HDC=4
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=4 FDC=4 HDC=4
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt BUFX8
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=91 EP=6 NDC=20 FDC=20 HDC=20
+* MN(nfet_01v8) $dt=0 element=M NDC=10 FDC=10 HDC=10
+* MP(pfet_01v8) $dt=1 element=M NDC=10 FDC=10 HDC=10
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt NOR3X1_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=41 EP=8 NDC=6 FDC=6 HDC=6
+* MP(pfet_01v8) $dt=1 element=M NDC=3 FDC=3 HDC=3
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=3 FDC=3 HDC=3
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt CLKINVX8
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=74 EP=6 NDC=16 FDC=16 HDC=16
+* MN(nfet_01v8) $dt=0 element=M NDC=8 FDC=8 HDC=8
+* MP(pfet_01v8) $dt=1 element=M NDC=8 FDC=8 HDC=8
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt CLKBUFX8
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=92 EP=6 NDC=20 FDC=20 HDC=20
+* MN(nfet_01v8) $dt=0 element=M NDC=10 FDC=10 HDC=10
+* MP(pfet_01v8) $dt=1 element=M NDC=10 FDC=10 HDC=10
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt AND2X1_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=40 EP=7 NDC=6 FDC=6 HDC=6
+* MP(pfet_01v8) $dt=1 element=M NDC=3 FDC=3 HDC=3
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=3 FDC=3 HDC=3
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt OAI22X2_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=102 EP=9 NDC=16 FDC=16 HDC=16
+* MP(pfet_01v8) $dt=1 element=M NDC=8 FDC=8 HDC=8
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=8 FDC=8 HDC=8
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt NAND2X1_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=36 EP=7 NDC=4 FDC=4 HDC=4
+* MP(pfet_01v8) $dt=1 element=M NDC=2 FDC=2 HDC=2
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=2 FDC=2 HDC=2
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt CLKBUFX4
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=51 EP=6 NDC=10 FDC=10 HDC=10
+* MN(nfet_01v8) $dt=0 element=M NDC=5 FDC=5 HDC=5
+* MP(pfet_01v8) $dt=1 element=M NDC=5 FDC=5 HDC=5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt INVX16_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=158 EP=6 NDC=32 FDC=32 HDC=32
+* MP(pfet_01v8) $dt=1 element=M NDC=16 FDC=16 HDC=16
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=16 FDC=16 HDC=16
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt AND2X2_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=49 EP=7 NDC=8 FDC=8 HDC=8
+* MP(pfet_01v8) $dt=1 element=M NDC=4 FDC=4 HDC=4
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=4 FDC=4 HDC=4
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt AOI21X2_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=82 EP=8 NDC=12 FDC=12 HDC=12
+* MP(pfet_01v8) $dt=1 element=M NDC=6 FDC=6 HDC=6
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=6 FDC=6 HDC=6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt CLKINVX4
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=40 EP=6 NDC=8 FDC=8 HDC=8
+* MN(nfet_01v8) $dt=0 element=M NDC=4 FDC=4 HDC=4
+* MP(pfet_01v8) $dt=1 element=M NDC=4 FDC=4 HDC=4
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt NOR3X2_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=82 EP=8 NDC=12 FDC=12 HDC=12
+* MP(pfet_01v8) $dt=1 element=M NDC=6 FDC=6 HDC=6
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=6 FDC=6 HDC=6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt OR2X2_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=48 EP=7 NDC=8 FDC=8 HDC=8
+* MP(pfet_01v8) $dt=1 element=M NDC=4 FDC=4 HDC=4
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=4 FDC=4 HDC=4
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt NAND4X2
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=87 EP=9 NDC=16 FDC=16 HDC=16
+* MN(nfet_01v8) $dt=0 element=M NDC=8 FDC=8 HDC=8
+* MP(pfet_01v8) $dt=1 element=M NDC=8 FDC=8 HDC=8
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt DFFX1
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=116 EP=8 NDC=28 FDC=28 HDC=28
+* MN(nfet_01v8) $dt=0 element=M NDC=14 FDC=14 HDC=14
+* MP(pfet_01v8) $dt=1 element=M NDC=14 FDC=14 HDC=14
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt BUFX4
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=52 EP=6 NDC=10 FDC=10 HDC=10
+* MN(nfet_01v8) $dt=0 element=M NDC=5 FDC=5 HDC=5
+* MP(pfet_01v8) $dt=1 element=M NDC=5 FDC=5 HDC=5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt CLKXOR2X1
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=52 EP=7 NDC=12 FDC=12 HDC=12
+* MN(nfet_01v8) $dt=0 element=M NDC=6 FDC=6 HDC=6
+* MP(pfet_01v8) $dt=1 element=M NDC=6 FDC=6 HDC=6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt NOR2X2_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=54 EP=7 NDC=8 FDC=8 HDC=8
+* MP(pfet_01v8) $dt=1 element=M NDC=4 FDC=4 HDC=4
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=4 FDC=4 HDC=4
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt OR2X1
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=34 EP=7 NDC=6 FDC=6 HDC=6
+* MN(nfet_01v8) $dt=0 element=M NDC=3 FDC=3 HDC=3
+* MP(pfet_01v8) $dt=1 element=M NDC=3 FDC=3 HDC=3
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt NAND2X4_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=88 EP=7 NDC=16 FDC=16 HDC=16
+* MP(pfet_01v8) $dt=1 element=M NDC=8 FDC=8 HDC=8
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=8 FDC=8 HDC=8
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt OR3X1
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=41 EP=8 NDC=8 FDC=8 HDC=8
+* MN(nfet_01v8) $dt=0 element=M NDC=4 FDC=4 HDC=4
+* MP(pfet_01v8) $dt=1 element=M NDC=4 FDC=4 HDC=4
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt CLKBUFX8_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=139 EP=6 NDC=28 FDC=28 HDC=28
+* MP(pfet_01v8) $dt=1 element=M NDC=18 FDC=18 HDC=18
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=10 FDC=10 HDC=10
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt CLKINVX2
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=27 EP=6 NDC=4 FDC=4 HDC=4
+* MN(nfet_01v8) $dt=0 element=M NDC=2 FDC=2 HDC=2
+* MP(pfet_01v8) $dt=1 element=M NDC=2 FDC=2 HDC=2
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt MX2X1_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=62 EP=8 NDC=12 FDC=12 HDC=12
+* MP(pfet_01v8) $dt=1 element=M NDC=6 FDC=6 HDC=6
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=6 FDC=6 HDC=6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt NAND4X4_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=168 EP=9 NDC=32 FDC=32 HDC=32
+* MP(pfet_01v8) $dt=1 element=M NDC=16 FDC=16 HDC=16
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=16 FDC=16 HDC=16
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt OAI211X1
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=51 EP=9 NDC=8 FDC=8 HDC=8
+* MN(nfet_01v8) $dt=0 element=M NDC=4 FDC=4 HDC=4
+* MP(pfet_01v8) $dt=1 element=M NDC=4 FDC=4 HDC=4
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt AOI211X2_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=102 EP=9 NDC=16 FDC=16 HDC=16
+* MP(pfet_01v8) $dt=1 element=M NDC=8 FDC=8 HDC=8
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=8 FDC=8 HDC=8
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt AND2X1
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=34 EP=7 NDC=6 FDC=6 HDC=6
+* MN(nfet_01v8) $dt=0 element=M NDC=3 FDC=3 HDC=3
+* MP(pfet_01v8) $dt=1 element=M NDC=3 FDC=3 HDC=3
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt XNOR2X1_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=61 EP=7 NDC=12 FDC=12 HDC=12
+* MP(pfet_01v8) $dt=1 element=M NDC=6 FDC=6 HDC=6
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=6 FDC=6 HDC=6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt TIEHI
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=21 EP=5 NDC=2 FDC=2 HDC=2
+* MN(nfet_01v8) $dt=0 element=M NDC=1 FDC=1 HDC=1
+* MP(pfet_01v8) $dt=1 element=M NDC=1 FDC=1 HDC=1
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt NAND3X1_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=47 EP=8 NDC=6 FDC=6 HDC=6
+* MP(pfet_01v8) $dt=1 element=M NDC=3 FDC=3 HDC=3
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=3 FDC=3 HDC=3
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt NOR2X4
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=77 EP=7 NDC=16 FDC=16 HDC=16
+* MN(nfet_01v8) $dt=0 element=M NDC=8 FDC=8 HDC=8
+* MP(pfet_01v8) $dt=1 element=M NDC=8 FDC=8 HDC=8
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt BUFX4_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=62 EP=6 NDC=10 FDC=10 HDC=10
+* MP(pfet_01v8) $dt=1 element=M NDC=5 FDC=5 HDC=5
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=5 FDC=5 HDC=5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt AOI211X1
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=51 EP=9 NDC=8 FDC=8 HDC=8
+* MN(nfet_01v8) $dt=0 element=M NDC=4 FDC=4 HDC=4
+* MP(pfet_01v8) $dt=1 element=M NDC=4 FDC=4 HDC=4
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt AOI22X2
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=88 EP=9 NDC=16 FDC=16 HDC=16
+* MN(nfet_01v8) $dt=0 element=M NDC=8 FDC=8 HDC=8
+* MP(pfet_01v8) $dt=1 element=M NDC=8 FDC=8 HDC=8
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt INVX1
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=21 EP=6 NDC=2 FDC=2 HDC=2
+* MN(nfet_01v8) $dt=0 element=M NDC=1 FDC=1 HDC=1
+* MP(pfet_01v8) $dt=1 element=M NDC=1 FDC=1 HDC=1
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt AOI21X2
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=70 EP=8 NDC=12 FDC=12 HDC=12
+* MN(nfet_01v8) $dt=0 element=M NDC=6 FDC=6 HDC=6
+* MP(pfet_01v8) $dt=1 element=M NDC=6 FDC=6 HDC=6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt NOR2X1_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=35 EP=7 NDC=4 FDC=4 HDC=4
+* MP(pfet_01v8) $dt=1 element=M NDC=2 FDC=2 HDC=2
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=2 FDC=2 HDC=2
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt NOR2X2
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=47 EP=7 NDC=8 FDC=8 HDC=8
+* MN(nfet_01v8) $dt=0 element=M NDC=4 FDC=4 HDC=4
+* MP(pfet_01v8) $dt=1 element=M NDC=4 FDC=4 HDC=4
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt CLKINVX8_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=171 EP=6 NDC=32 FDC=32 HDC=32
+* MP(pfet_01v8) $dt=1 element=M NDC=24 FDC=24 HDC=24
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=8 FDC=8 HDC=8
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt NAND3X2_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=82 EP=8 NDC=12 FDC=12 HDC=12
+* MP(pfet_01v8) $dt=1 element=M NDC=6 FDC=6 HDC=6
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=6 FDC=6 HDC=6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt OAI21X1_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=46 EP=8 NDC=6 FDC=6 HDC=6
+* MP(pfet_01v8) $dt=1 element=M NDC=3 FDC=3 HDC=3
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=3 FDC=3 HDC=3
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt AOI22X1_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=58 EP=9 NDC=8 FDC=8 HDC=8
+* MP(pfet_01v8) $dt=1 element=M NDC=4 FDC=4 HDC=4
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=4 FDC=4 HDC=4
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt BUFX16_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=193 EP=6 NDC=40 FDC=40 HDC=40
+* MP(pfet_01v8) $dt=1 element=M NDC=20 FDC=20 HDC=20
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=20 FDC=20 HDC=20
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt XOR2X1_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=62 EP=7 NDC=12 FDC=12 HDC=12
+* MP(pfet_01v8) $dt=1 element=M NDC=6 FDC=6 HDC=6
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=6 FDC=6 HDC=6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt DFFRX1_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=149 EP=9 NDC=32 FDC=32 HDC=32
+* MP(pfet_01v8) $dt=1 element=M NDC=16 FDC=16 HDC=16
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=16 FDC=16 HDC=16
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt AOI22X2_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=102 EP=9 NDC=16 FDC=16 HDC=16
+* MP(pfet_01v8) $dt=1 element=M NDC=8 FDC=8 HDC=8
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=8 FDC=8 HDC=8
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt NAND3X1
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=41 EP=8 NDC=6 FDC=6 HDC=6
+* MN(nfet_01v8) $dt=0 element=M NDC=3 FDC=3 HDC=3
+* MP(pfet_01v8) $dt=1 element=M NDC=3 FDC=3 HDC=3
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt CLKBUFX2
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=35 EP=6 NDC=6 FDC=6 HDC=6
+* MN(nfet_01v8) $dt=0 element=M NDC=3 FDC=3 HDC=3
+* MP(pfet_01v8) $dt=1 element=M NDC=3 FDC=3 HDC=3
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt INVX8_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=88 EP=6 NDC=16 FDC=16 HDC=16
+* MP(pfet_01v8) $dt=1 element=M NDC=8 FDC=8 HDC=8
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=8 FDC=8 HDC=8
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt DFFX1_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=135 EP=8 NDC=28 FDC=28 HDC=28
+* MP(pfet_01v8) $dt=1 element=M NDC=14 FDC=14 HDC=14
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=14 FDC=14 HDC=14
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt NAND4X1_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=58 EP=9 NDC=8 FDC=8 HDC=8
+* MP(pfet_01v8) $dt=1 element=M NDC=4 FDC=4 HDC=4
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=4 FDC=4 HDC=4
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt NAND2X4
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=75 EP=7 NDC=16 FDC=16 HDC=16
+* MN(nfet_01v8) $dt=0 element=M NDC=8 FDC=8 HDC=8
+* MP(pfet_01v8) $dt=1 element=M NDC=8 FDC=8 HDC=8
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt OR2X2
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=40 EP=7 NDC=8 FDC=8 HDC=8
+* MN(nfet_01v8) $dt=0 element=M NDC=4 FDC=4 HDC=4
+* MP(pfet_01v8) $dt=1 element=M NDC=4 FDC=4 HDC=4
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt MX2X1
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=55 EP=8 NDC=12 FDC=12 HDC=12
+* MN(nfet_01v8) $dt=0 element=M NDC=6 FDC=6 HDC=6
+* MP(pfet_01v8) $dt=1 element=M NDC=6 FDC=6 HDC=6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt OAI22X1
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=51 EP=9 NDC=8 FDC=8 HDC=8
+* MN(nfet_01v8) $dt=0 element=M NDC=4 FDC=4 HDC=4
+* MP(pfet_01v8) $dt=1 element=M NDC=4 FDC=4 HDC=4
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt OAI211X1_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=57 EP=9 NDC=8 FDC=8 HDC=8
+* MP(pfet_01v8) $dt=1 element=M NDC=4 FDC=4 HDC=4
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=4 FDC=4 HDC=4
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt OAI21X2_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=82 EP=8 NDC=12 FDC=12 HDC=12
+* MP(pfet_01v8) $dt=1 element=M NDC=6 FDC=6 HDC=6
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=6 FDC=6 HDC=6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt AND2X2
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=40 EP=7 NDC=8 FDC=8 HDC=8
+* MN(nfet_01v8) $dt=0 element=M NDC=4 FDC=4 HDC=4
+* MP(pfet_01v8) $dt=1 element=M NDC=4 FDC=4 HDC=4
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt BUFX8_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=104 EP=6 NDC=20 FDC=20 HDC=20
+* MP(pfet_01v8) $dt=1 element=M NDC=10 FDC=10 HDC=10
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=10 FDC=10 HDC=10
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt DFFX4_HS
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=192 EP=8 NDC=42 FDC=42 HDC=42
+* MP(pfet_01v8) $dt=1 element=M NDC=21 FDC=21 HDC=21
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=21 FDC=21 HDC=21
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* subckt chip_top
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++
+* N=276680 EP=87 NDC=334 FDC=103890 HDC=1552
+* MN(nfet_01v8) $dt=0 element=M NDC=77 FDC=12317 HDC=328
+* MP(pfet_01v8) $dt=1 element=M NDC=169 FDC=52115 HDC=798
+* MN(nfet_01v8_lvt) $dt=3 element=M NDC=88 FDC=39458 HDC=426
