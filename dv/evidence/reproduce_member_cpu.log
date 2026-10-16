@@ -1,0 +1,3847 @@
+xrun(64): 25.03-s003: (c) Copyright 1995-2025 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	25.03-s003: Started on Oct 05, 2026 at 16:32:12 EDT
+xrun
+	-64bit
+	-sv
+	-linedebug
+	-access +rwc
+	-timescale 1ns/10ps
+	+define+SIM=1
+	+incdir+sym_links
+	-coverage all
+	-licqueue
+	-covoverwrite
+	-svseed 1
+	-f sym_links/sim_no_path.include
+		sym_links/CF_SRAM_1024x32.tt_180V_25C.v
+		sym_links/sram_wrapper.sv
+		sym_links/memory_controller.sv
+		sym_links/chip_top.sv
+		sym_links/cpu_pkg.sv
+		sym_links/reg_file.sv
+		sym_links/fetch.sv
+		sym_links/cpu_top.sv
+		sym_links/decode.sv
+		sym_links/execute.sv
+		sym_links/mem_access.sv
+		sym_links/writeback.sv
+		sym_links/cpu_if.sv
+		sym_links/cpu_tb_pkg.sv
+		sym_links/cpu_tb_top.sv
+	-top cpu_tb_top
+	-covtest member
+	-logfile simulation.log
+	+SEED_LABEL=1
+	+REPRODUCE_BUGS
+
+   User defined plus("+") options:
+	+SEED_LABEL=1
+	+REPRODUCE_BUGS
+
+xrun: *W,BADPRF: The -linedebug option may have an adverse performance impact.
+Loading snapshot worklib.cpu_tb_top:sv .................... Done
+SVSEED set from command line: 1
+xcelium> source <xcelium install>/xmsimrc
+xcelium> run
+xmsim: *W,SHMPOPT: Some objects excluded from $shm_probe due to optimizations.
+            File: ./sym_links/cpu_tb_top.sv, line = 787, pos = 17
+           Scope: cpu_tb_top
+            Time: 0 FS + 0
+
+         5 Mon: Reset asserted
+
+        75 TB: Initializing instruction and data memories
+
+     41035 TB: Memory initialization complete
+
+
+=================================================================
+ TEST: smoke_ebreak
+=================================================================
+     41035 SB: External write dmem[0x3ff] <- 0xc724a47e
+
+     41065 Mon: Reset asserted
+
+     41145 Mon: External write Addr: 0x0000, Data: 0x00100073
+
+     41145 SB: External write imem[0x000] <- 0x00100073
+
+     41185 Mon: CPU started executing
+
+     41185 SB: cpu started, reference model ran 0 instruction(s), predicted 0 store(s)
+
+     41195 Mon: cpu_halted_o asserted
+
+     41195 DEBUG xbar_read: starting read of addr 0x2000
+     41215 Mon: External read Addr: 0x2000, Data: 0x00000000
+
+     41215 DEBUG xbar_read: starting read of addr 0x2004
+     41215 SB: External read register x0, Expected 0x00000000, Matches Actual 0x00000000
+
+     41235 Mon: External read Addr: 0x2004, Data: 0x00000000
+
+     41235 DEBUG xbar_read: starting read of addr 0x2008
+     41235 SB: External read register x1, Expected 0x00000000, Matches Actual 0x00000000
+
+     41255 Mon: External read Addr: 0x2008, Data: 0x00000000
+
+     41255 DEBUG xbar_read: starting read of addr 0x200c
+     41255 SB: External read register x2, Expected 0x00000000, Matches Actual 0x00000000
+
+     41275 Mon: External read Addr: 0x200c, Data: 0x00000000
+
+     41275 DEBUG xbar_read: starting read of addr 0x2010
+     41275 SB: External read register x3, Expected 0x00000000, Matches Actual 0x00000000
+
+     41295 Mon: External read Addr: 0x2010, Data: 0x00000000
+
+     41295 DEBUG xbar_read: starting read of addr 0x2014
+     41295 SB: External read register x4, Expected 0x00000000, Matches Actual 0x00000000
+
+     41315 Mon: External read Addr: 0x2014, Data: 0x00000000
+
+     41315 DEBUG xbar_read: starting read of addr 0x2018
+     41315 SB: External read register x5, Expected 0x00000000, Matches Actual 0x00000000
+
+     41335 Mon: External read Addr: 0x2018, Data: 0x00000000
+
+     41335 DEBUG xbar_read: starting read of addr 0x201c
+     41335 SB: External read register x6, Expected 0x00000000, Matches Actual 0x00000000
+
+     41355 Mon: External read Addr: 0x201c, Data: 0x00000000
+
+     41355 DEBUG xbar_read: starting read of addr 0x2020
+     41355 SB: External read register x7, Expected 0x00000000, Matches Actual 0x00000000
+
+     41375 Mon: External read Addr: 0x2020, Data: 0x00000000
+
+     41375 DEBUG xbar_read: starting read of addr 0x2024
+     41375 SB: External read register x8, Expected 0x00000000, Matches Actual 0x00000000
+
+     41395 Mon: External read Addr: 0x2024, Data: 0x00000000
+
+     41395 DEBUG xbar_read: starting read of addr 0x2028
+     41395 SB: External read register x9, Expected 0x00000000, Matches Actual 0x00000000
+
+     41415 Mon: External read Addr: 0x2028, Data: 0x00000000
+
+     41415 DEBUG xbar_read: starting read of addr 0x202c
+     41415 SB: External read register x10, Expected 0x00000000, Matches Actual 0x00000000
+
+     41435 Mon: External read Addr: 0x202c, Data: 0x00000000
+
+     41435 DEBUG xbar_read: starting read of addr 0x2030
+     41435 SB: External read register x11, Expected 0x00000000, Matches Actual 0x00000000
+
+     41455 Mon: External read Addr: 0x2030, Data: 0x00000000
+
+     41455 DEBUG xbar_read: starting read of addr 0x2034
+     41455 SB: External read register x12, Expected 0x00000000, Matches Actual 0x00000000
+
+     41475 Mon: External read Addr: 0x2034, Data: 0x00000000
+
+     41475 DEBUG xbar_read: starting read of addr 0x2038
+     41475 SB: External read register x13, Expected 0x00000000, Matches Actual 0x00000000
+
+     41495 Mon: External read Addr: 0x2038, Data: 0x00000000
+
+     41495 DEBUG xbar_read: starting read of addr 0x203c
+     41495 SB: External read register x14, Expected 0x00000000, Matches Actual 0x00000000
+
+     41515 Mon: External read Addr: 0x203c, Data: 0x00000000
+
+     41515 DEBUG xbar_read: starting read of addr 0x2040
+     41515 SB: External read register x15, Expected 0x00000000, Matches Actual 0x00000000
+
+     41535 Mon: External read Addr: 0x2040, Data: 0x00000000
+
+     41535 DEBUG xbar_read: starting read of addr 0x2044
+     41535 SB: External read register x16, Expected 0x00000000, Matches Actual 0x00000000
+
+     41555 Mon: External read Addr: 0x2044, Data: 0x00000000
+
+     41555 DEBUG xbar_read: starting read of addr 0x2048
+     41555 SB: External read register x17, Expected 0x00000000, Matches Actual 0x00000000
+
+     41575 Mon: External read Addr: 0x2048, Data: 0x00000000
+
+     41575 DEBUG xbar_read: starting read of addr 0x204c
+     41575 SB: External read register x18, Expected 0x00000000, Matches Actual 0x00000000
+
+     41595 Mon: External read Addr: 0x204c, Data: 0x00000000
+
+     41595 DEBUG xbar_read: starting read of addr 0x2050
+     41595 SB: External read register x19, Expected 0x00000000, Matches Actual 0x00000000
+
+     41615 Mon: External read Addr: 0x2050, Data: 0x00000000
+
+     41615 DEBUG xbar_read: starting read of addr 0x2054
+     41615 SB: External read register x20, Expected 0x00000000, Matches Actual 0x00000000
+
+     41635 Mon: External read Addr: 0x2054, Data: 0x00000000
+
+     41635 DEBUG xbar_read: starting read of addr 0x2058
+     41635 SB: External read register x21, Expected 0x00000000, Matches Actual 0x00000000
+
+     41655 Mon: External read Addr: 0x2058, Data: 0x00000000
+
+     41655 DEBUG xbar_read: starting read of addr 0x205c
+     41655 SB: External read register x22, Expected 0x00000000, Matches Actual 0x00000000
+
+     41675 Mon: External read Addr: 0x205c, Data: 0x00000000
+
+     41675 DEBUG xbar_read: starting read of addr 0x2060
+     41675 SB: External read register x23, Expected 0x00000000, Matches Actual 0x00000000
+
+     41695 Mon: External read Addr: 0x2060, Data: 0x00000000
+
+     41695 DEBUG xbar_read: starting read of addr 0x2064
+     41695 SB: External read register x24, Expected 0x00000000, Matches Actual 0x00000000
+
+     41715 Mon: External read Addr: 0x2064, Data: 0x00000000
+
+     41715 DEBUG xbar_read: starting read of addr 0x2068
+     41715 SB: External read register x25, Expected 0x00000000, Matches Actual 0x00000000
+
+     41735 Mon: External read Addr: 0x2068, Data: 0x00000000
+
+     41735 DEBUG xbar_read: starting read of addr 0x206c
+     41735 SB: External read register x26, Expected 0x00000000, Matches Actual 0x00000000
+
+     41755 Mon: External read Addr: 0x206c, Data: 0x00000000
+
+     41755 DEBUG xbar_read: starting read of addr 0x2070
+     41755 SB: External read register x27, Expected 0x00000000, Matches Actual 0x00000000
+
+     41775 Mon: External read Addr: 0x2070, Data: 0x00000000
+
+     41775 DEBUG xbar_read: starting read of addr 0x2074
+     41775 SB: External read register x28, Expected 0x00000000, Matches Actual 0x00000000
+
+     41795 Mon: External read Addr: 0x2074, Data: 0x00000000
+
+     41795 DEBUG xbar_read: starting read of addr 0x2078
+     41795 SB: External read register x29, Expected 0x00000000, Matches Actual 0x00000000
+
+     41815 Mon: External read Addr: 0x2078, Data: 0x00000000
+
+     41815 DEBUG xbar_read: starting read of addr 0x207c
+     41815 SB: External read register x30, Expected 0x00000000, Matches Actual 0x00000000
+
+     41835 Mon: External read Addr: 0x207c, Data: 0x00000000
+
+     41835 SB: External read register x31, Expected 0x00000000, Matches Actual 0x00000000
+
+     41855 DEBUG xbar_read: starting read of addr 0x1000
+     41885 Mon: External read Addr: 0x1000, Data: 0xa2a8c90b
+
+     41885 SB: External read dmem[0x000], Expected 0xa2a8c90b, Matches Actual 0xa2a8c90b
+
+
+=================================================================
+ TEST: smoke_external_halt
+=================================================================
+     41915 Mon: Reset asserted
+
+     41995 Mon: External write Addr: 0x0000, Data: 0x00108093
+
+     41995 SB: External write imem[0x000] <- 0x00108093
+
+     42015 Mon: External write Addr: 0x0004, Data: 0x00108093
+
+     42015 SB: External write imem[0x001] <- 0x00108093
+
+     42035 Mon: External write Addr: 0x0008, Data: 0x00108093
+
+     42035 SB: External write imem[0x002] <- 0x00108093
+
+     42055 Mon: External write Addr: 0x000c, Data: 0x00108093
+
+     42055 SB: External write imem[0x003] <- 0x00108093
+
+     42075 Mon: External write Addr: 0x0010, Data: 0x00108093
+
+     42075 SB: External write imem[0x004] <- 0x00108093
+
+     42095 Mon: External write Addr: 0x0014, Data: 0x00108093
+
+     42095 SB: External write imem[0x005] <- 0x00108093
+
+     42115 Mon: External write Addr: 0x0018, Data: 0x00108093
+
+     42115 SB: External write imem[0x006] <- 0x00108093
+
+     42135 Mon: External write Addr: 0x001c, Data: 0x00108093
+
+     42135 SB: External write imem[0x007] <- 0x00108093
+
+     42155 Mon: External write Addr: 0x0020, Data: 0x00108093
+
+     42155 SB: External write imem[0x008] <- 0x00108093
+
+     42175 Mon: External write Addr: 0x0024, Data: 0x00108093
+
+     42175 SB: External write imem[0x009] <- 0x00108093
+
+     42195 Mon: External write Addr: 0x0028, Data: 0x00108093
+
+     42195 SB: External write imem[0x00a] <- 0x00108093
+
+     42215 Mon: External write Addr: 0x002c, Data: 0x00108093
+
+     42215 SB: External write imem[0x00b] <- 0x00108093
+
+     42235 Mon: External write Addr: 0x0030, Data: 0x00108093
+
+     42235 SB: External write imem[0x00c] <- 0x00108093
+
+     42255 Mon: External write Addr: 0x0034, Data: 0x00108093
+
+     42255 SB: External write imem[0x00d] <- 0x00108093
+
+     42275 Mon: External write Addr: 0x0038, Data: 0x00108093
+
+     42275 SB: External write imem[0x00e] <- 0x00108093
+
+     42295 Mon: External write Addr: 0x003c, Data: 0x00108093
+
+     42295 SB: External write imem[0x00f] <- 0x00108093
+
+     42315 Mon: External write Addr: 0x0040, Data: 0x00108093
+
+     42315 SB: External write imem[0x010] <- 0x00108093
+
+     42335 Mon: External write Addr: 0x0044, Data: 0x00108093
+
+     42335 SB: External write imem[0x011] <- 0x00108093
+
+     42355 Mon: External write Addr: 0x0048, Data: 0x00108093
+
+     42355 SB: External write imem[0x012] <- 0x00108093
+
+     42375 Mon: External write Addr: 0x004c, Data: 0x00108093
+
+     42375 SB: External write imem[0x013] <- 0x00108093
+
+     42395 Mon: External write Addr: 0x0050, Data: 0x00108093
+
+     42395 SB: External write imem[0x014] <- 0x00108093
+
+     42415 Mon: External write Addr: 0x0054, Data: 0x00108093
+
+     42415 SB: External write imem[0x015] <- 0x00108093
+
+     42435 Mon: External write Addr: 0x0058, Data: 0x00108093
+
+     42435 SB: External write imem[0x016] <- 0x00108093
+
+     42455 Mon: External write Addr: 0x005c, Data: 0x00108093
+
+     42455 SB: External write imem[0x017] <- 0x00108093
+
+     42475 Mon: External write Addr: 0x0060, Data: 0x00108093
+
+     42475 SB: External write imem[0x018] <- 0x00108093
+
+     42495 Mon: External write Addr: 0x0064, Data: 0x00108093
+
+     42495 SB: External write imem[0x019] <- 0x00108093
+
+     42515 Mon: External write Addr: 0x0068, Data: 0x00108093
+
+     42515 SB: External write imem[0x01a] <- 0x00108093
+
+     42535 Mon: External write Addr: 0x006c, Data: 0x00108093
+
+     42535 SB: External write imem[0x01b] <- 0x00108093
+
+     42555 Mon: External write Addr: 0x0070, Data: 0x00108093
+
+     42555 SB: External write imem[0x01c] <- 0x00108093
+
+     42575 Mon: External write Addr: 0x0074, Data: 0x00108093
+
+     42575 SB: External write imem[0x01d] <- 0x00108093
+
+     42595 Mon: External write Addr: 0x0078, Data: 0x00108093
+
+     42595 SB: External write imem[0x01e] <- 0x00108093
+
+     42615 Mon: External write Addr: 0x007c, Data: 0x00108093
+
+     42615 SB: External write imem[0x01f] <- 0x00108093
+
+     42635 Mon: External write Addr: 0x0080, Data: 0x00100073
+
+     42635 SB: External write imem[0x020] <- 0x00100073
+
+     42675 Mon: CPU started executing
+
+     42675 SB: cpu started, reference model ran 32 instruction(s), predicted 0 store(s)
+
+     42835 Mon: Reset asserted
+
+     42915 Mon: Reset asserted
+
+     42975 TB: Initializing instruction and data memories
+
+     83935 TB: Memory initialization complete
+
+     83935 SB: External write dmem[0x3ff] <- 0xa4ddca38
+
+     83955 Mon: External write Addr: 0x11f0, Data: 0xd2e92947
+
+     83955 SB: External write dmem[0x07c] <- 0xd2e92947
+
+     83975 Mon: External write Addr: 0x14c8, Data: 0xcd4c9d4d
+
+
+=================================================================
+ TEST: mr_srl_random3
+=================================================================
+     83975 SB: External write dmem[0x132] <- 0xcd4c9d4d
+
+     84005 Mon: Reset asserted
+
+     84085 Mon: External write Addr: 0x0000, Data: 0x1f062083
+
+     84085 SB: External write imem[0x000] <- 0x1f062083
+
+     84105 Mon: External write Addr: 0x0004, Data: 0x0060d133
+
+     84105 SB: External write imem[0x001] <- 0x0060d133
+
+     84125 Mon: External write Addr: 0x0008, Data: 0xd1c10113
+
+     84125 SB: External write imem[0x002] <- 0xd1c10113
+
+     84145 Mon: External write Addr: 0x000c, Data: 0x4c842083
+
+     84145 SB: External write imem[0x003] <- 0x4c842083
+
+     84165 Mon: External write Addr: 0x0010, Data: 0x43108193
+
+     84165 SB: External write imem[0x004] <- 0x43108193
+
+     84185 Mon: External write Addr: 0x0014, Data: 0x00f1d0b3
+
+     84185 SB: External write imem[0x005] <- 0x00f1d0b3
+
+     84205 Mon: External write Addr: 0x0018, Data: 0x0020d3b3
+
+     84205 SB: External write imem[0x006] <- 0x0020d3b3
+
+     84225 Mon: External write Addr: 0x001c, Data: 0x00100073
+
+     84225 SB: External write imem[0x007] <- 0x00100073
+
+     84265 Mon: CPU started executing
+
+     84265 SB: cpu started, reference model ran 7 instruction(s), predicted 0 store(s)
+
+     84275 Mon: CPU load dmem[7c] -> d2e92947
+
+     84275 SB: CPU load dmem[7c] -> d2e92947 matches expected
+
+     84315 Mon: CPU load dmem[132] -> cd4c9d4d
+
+     84315 SB: CPU load dmem[132] -> cd4c9d4d matches expected
+
+     84365 Mon: cpu_halted_o asserted
+
+     84365 DEBUG xbar_read: starting read of addr 0x2000
+     84385 Mon: External read Addr: 0x2000, Data: 0x00000000
+
+     84385 DEBUG xbar_read: starting read of addr 0x2004
+     84385 SB: External read register x0, Expected 0x00000000, Matches Actual 0x00000000
+
+     84405 Mon: External read Addr: 0x2004, Data: 0xcd4ca17e
+
+     84405 DEBUG xbar_read: starting read of addr 0x2008
+     84405 SB: External read register x1, Expected 0xcd4ca17e, Matches Actual 0xcd4ca17e
+
+     84425 Mon: External read Addr: 0x2008, Data: 0xd2e92663
+
+     84425 DEBUG xbar_read: starting read of addr 0x200c
+     84425 SB: External read register x2, Expected 0xd2e92663, Matches Actual 0xd2e92663
+
+     84445 Mon: External read Addr: 0x200c, Data: 0xcd4ca17e
+
+     84445 DEBUG xbar_read: starting read of addr 0x2010
+     84445 SB: External read register x3, Expected 0xcd4ca17e, Matches Actual 0xcd4ca17e
+
+     84465 Mon: External read Addr: 0x2010, Data: 0x00000000
+
+     84465 DEBUG xbar_read: starting read of addr 0x2014
+     84465 SB: External read register x4, Expected 0x00000000, Matches Actual 0x00000000
+
+     84485 Mon: External read Addr: 0x2014, Data: 0x00000000
+
+     84485 DEBUG xbar_read: starting read of addr 0x2018
+     84485 SB: External read register x5, Expected 0x00000000, Matches Actual 0x00000000
+
+     84505 Mon: External read Addr: 0x2018, Data: 0x00000000
+
+     84505 DEBUG xbar_read: starting read of addr 0x201c
+     84505 SB: External read register x6, Expected 0x00000000, Matches Actual 0x00000000
+
+     84525 Mon: External read Addr: 0x201c, Data: 0x19a9942f
+
+     84525 DEBUG xbar_read: starting read of addr 0x2020
+     84525 SB: External read register x7, Expected 0x19a9942f, Matches Actual 0x19a9942f
+
+     84545 Mon: External read Addr: 0x2020, Data: 0x00000000
+
+     84545 DEBUG xbar_read: starting read of addr 0x2024
+     84545 SB: External read register x8, Expected 0x00000000, Matches Actual 0x00000000
+
+     84565 Mon: External read Addr: 0x2024, Data: 0x00000000
+
+     84565 DEBUG xbar_read: starting read of addr 0x2028
+     84565 SB: External read register x9, Expected 0x00000000, Matches Actual 0x00000000
+
+     84585 Mon: External read Addr: 0x2028, Data: 0x00000000
+
+     84585 DEBUG xbar_read: starting read of addr 0x202c
+     84585 SB: External read register x10, Expected 0x00000000, Matches Actual 0x00000000
+
+     84605 Mon: External read Addr: 0x202c, Data: 0x00000000
+
+     84605 DEBUG xbar_read: starting read of addr 0x2030
+     84605 SB: External read register x11, Expected 0x00000000, Matches Actual 0x00000000
+
+     84625 Mon: External read Addr: 0x2030, Data: 0x00000000
+
+     84625 DEBUG xbar_read: starting read of addr 0x2034
+     84625 SB: External read register x12, Expected 0x00000000, Matches Actual 0x00000000
+
+     84645 Mon: External read Addr: 0x2034, Data: 0x00000000
+
+     84645 DEBUG xbar_read: starting read of addr 0x2038
+     84645 SB: External read register x13, Expected 0x00000000, Matches Actual 0x00000000
+
+     84665 Mon: External read Addr: 0x2038, Data: 0x00000000
+
+     84665 DEBUG xbar_read: starting read of addr 0x203c
+     84665 SB: External read register x14, Expected 0x00000000, Matches Actual 0x00000000
+
+     84685 Mon: External read Addr: 0x203c, Data: 0x00000000
+
+     84685 DEBUG xbar_read: starting read of addr 0x2040
+     84685 SB: External read register x15, Expected 0x00000000, Matches Actual 0x00000000
+
+     84705 Mon: External read Addr: 0x2040, Data: 0x00000000
+
+     84705 DEBUG xbar_read: starting read of addr 0x2044
+     84705 SB: External read register x16, Expected 0x00000000, Matches Actual 0x00000000
+
+     84725 Mon: External read Addr: 0x2044, Data: 0x00000000
+
+     84725 DEBUG xbar_read: starting read of addr 0x2048
+     84725 SB: External read register x17, Expected 0x00000000, Matches Actual 0x00000000
+
+     84745 Mon: External read Addr: 0x2048, Data: 0x00000000
+
+     84745 DEBUG xbar_read: starting read of addr 0x204c
+     84745 SB: External read register x18, Expected 0x00000000, Matches Actual 0x00000000
+
+     84765 Mon: External read Addr: 0x204c, Data: 0x00000000
+
+     84765 DEBUG xbar_read: starting read of addr 0x2050
+     84765 SB: External read register x19, Expected 0x00000000, Matches Actual 0x00000000
+
+     84785 Mon: External read Addr: 0x2050, Data: 0x00000000
+
+     84785 DEBUG xbar_read: starting read of addr 0x2054
+     84785 SB: External read register x20, Expected 0x00000000, Matches Actual 0x00000000
+
+     84805 Mon: External read Addr: 0x2054, Data: 0x00000000
+
+     84805 DEBUG xbar_read: starting read of addr 0x2058
+     84805 SB: External read register x21, Expected 0x00000000, Matches Actual 0x00000000
+
+     84825 Mon: External read Addr: 0x2058, Data: 0x00000000
+
+     84825 DEBUG xbar_read: starting read of addr 0x205c
+     84825 SB: External read register x22, Expected 0x00000000, Matches Actual 0x00000000
+
+     84845 Mon: External read Addr: 0x205c, Data: 0x00000000
+
+     84845 DEBUG xbar_read: starting read of addr 0x2060
+     84845 SB: External read register x23, Expected 0x00000000, Matches Actual 0x00000000
+
+     84865 Mon: External read Addr: 0x2060, Data: 0x00000000
+
+     84865 DEBUG xbar_read: starting read of addr 0x2064
+     84865 SB: External read register x24, Expected 0x00000000, Matches Actual 0x00000000
+
+     84885 Mon: External read Addr: 0x2064, Data: 0x00000000
+
+     84885 DEBUG xbar_read: starting read of addr 0x2068
+     84885 SB: External read register x25, Expected 0x00000000, Matches Actual 0x00000000
+
+     84905 Mon: External read Addr: 0x2068, Data: 0x00000000
+
+     84905 DEBUG xbar_read: starting read of addr 0x206c
+     84905 SB: External read register x26, Expected 0x00000000, Matches Actual 0x00000000
+
+     84925 Mon: External read Addr: 0x206c, Data: 0x00000000
+
+     84925 DEBUG xbar_read: starting read of addr 0x2070
+     84925 SB: External read register x27, Expected 0x00000000, Matches Actual 0x00000000
+
+     84945 Mon: External read Addr: 0x2070, Data: 0x00000000
+
+     84945 DEBUG xbar_read: starting read of addr 0x2074
+     84945 SB: External read register x28, Expected 0x00000000, Matches Actual 0x00000000
+
+     84965 Mon: External read Addr: 0x2074, Data: 0x00000000
+
+     84965 DEBUG xbar_read: starting read of addr 0x2078
+     84965 SB: External read register x29, Expected 0x00000000, Matches Actual 0x00000000
+
+     84985 Mon: External read Addr: 0x2078, Data: 0x00000000
+
+     84985 DEBUG xbar_read: starting read of addr 0x207c
+     84985 SB: External read register x30, Expected 0x00000000, Matches Actual 0x00000000
+
+     85005 Mon: External read Addr: 0x207c, Data: 0x00000000
+
+     85005 SB: External read register x31, Expected 0x00000000, Matches Actual 0x00000000
+
+     85025 DEBUG xbar_read: starting read of addr 0x1000
+     85055 Mon: External read Addr: 0x1000, Data: 0x3c00d3c7
+
+     85055 DEBUG xbar_read: starting read of addr 0x1004
+     85055 SB: External read dmem[0x000], Expected 0x3c00d3c7, Matches Actual 0x3c00d3c7
+
+     85085 Mon: External read Addr: 0x1004, Data: 0x8d9a2664
+
+     85085 DEBUG xbar_read: starting read of addr 0x1008
+     85085 SB: External read dmem[0x001], Expected 0x8d9a2664, Matches Actual 0x8d9a2664
+
+     85115 Mon: External read Addr: 0x1008, Data: 0xb2a321db
+
+     85115 DEBUG xbar_read: starting read of addr 0x100c
+     85115 SB: External read dmem[0x002], Expected 0xb2a321db, Matches Actual 0xb2a321db
+
+     85145 Mon: External read Addr: 0x100c, Data: 0x2983433d
+
+     85145 DEBUG xbar_read: starting read of addr 0x1010
+     85145 SB: External read dmem[0x003], Expected 0x2983433d, Matches Actual 0x2983433d
+
+     85175 Mon: External read Addr: 0x1010, Data: 0xf3d79464
+
+     85175 DEBUG xbar_read: starting read of addr 0x1014
+     85175 SB: External read dmem[0x004], Expected 0xf3d79464, Matches Actual 0xf3d79464
+
+     85205 Mon: External read Addr: 0x1014, Data: 0x3c2fef84
+
+     85205 DEBUG xbar_read: starting read of addr 0x1018
+     85205 SB: External read dmem[0x005], Expected 0x3c2fef84, Matches Actual 0x3c2fef84
+
+     85235 Mon: External read Addr: 0x1018, Data: 0x6d881970
+
+     85235 DEBUG xbar_read: starting read of addr 0x101c
+     85235 SB: External read dmem[0x006], Expected 0x6d881970, Matches Actual 0x6d881970
+
+     85265 Mon: External read Addr: 0x101c, Data: 0x3889feae
+
+     85265 SB: External read dmem[0x007], Expected 0x3889feae, Matches Actual 0x3889feae
+
+     85295 Mon: External write Addr: 0x11f0, Data: 0xd2e92947
+
+     85295 SB: External write dmem[0x07c] <- 0xd2e92947
+
+     85315 Mon: External write Addr: 0x14c8, Data: 0xcd4c9d4d
+
+
+=================================================================
+ TEST: test_bit5_clear
+=================================================================
+     85315 SB: External write dmem[0x132] <- 0xcd4c9d4d
+
+     85345 Mon: Reset asserted
+
+     85425 Mon: External write Addr: 0x0000, Data: 0x1f062083
+
+     85425 SB: External write imem[0x000] <- 0x1f062083
+
+     85445 Mon: External write Addr: 0x0004, Data: 0x0060d133
+
+     85445 SB: External write imem[0x001] <- 0x0060d133
+
+     85465 Mon: External write Addr: 0x0008, Data: 0xcfc10113
+
+     85465 SB: External write imem[0x002] <- 0xcfc10113
+
+     85485 Mon: External write Addr: 0x000c, Data: 0x4c842083
+
+     85485 SB: External write imem[0x003] <- 0x4c842083
+
+     85505 Mon: External write Addr: 0x0010, Data: 0x43108193
+
+     85505 SB: External write imem[0x004] <- 0x43108193
+
+     85525 Mon: External write Addr: 0x0014, Data: 0x00f1d0b3
+
+     85525 SB: External write imem[0x005] <- 0x00f1d0b3
+
+     85545 Mon: External write Addr: 0x0018, Data: 0x0020d3b3
+
+     85545 SB: External write imem[0x006] <- 0x0020d3b3
+
+     85565 Mon: External write Addr: 0x001c, Data: 0x00100073
+
+     85565 SB: External write imem[0x007] <- 0x00100073
+
+     85605 Mon: CPU started executing
+
+     85605 SB: cpu started, reference model ran 7 instruction(s), predicted 0 store(s)
+
+     85615 Mon: CPU load dmem[7c] -> d2e92947
+
+     85615 SB: CPU load dmem[7c] -> d2e92947 matches expected
+
+     85655 Mon: CPU load dmem[132] -> cd4c9d4d
+
+     85655 SB: CPU load dmem[132] -> cd4c9d4d matches expected
+
+     85705 Mon: cpu_halted_o asserted
+
+     85705 DEBUG xbar_read: starting read of addr 0x2000
+     85725 Mon: External read Addr: 0x2000, Data: 0x00000000
+
+     85725 DEBUG xbar_read: starting read of addr 0x2004
+     85725 SB: External read register x0, Expected 0x00000000, Matches Actual 0x00000000
+
+     85745 Mon: External read Addr: 0x2004, Data: 0xcd4ca17e
+
+     85745 DEBUG xbar_read: starting read of addr 0x2008
+     85745 SB: External read register x1, Expected 0xcd4ca17e, Matches Actual 0xcd4ca17e
+
+     85765 Mon: External read Addr: 0x2008, Data: 0xd2e92643
+
+     85765 DEBUG xbar_read: starting read of addr 0x200c
+     85765 SB: External read register x2, Expected 0xd2e92643, Matches Actual 0xd2e92643
+
+     85785 Mon: External read Addr: 0x200c, Data: 0xcd4ca17e
+
+     85785 DEBUG xbar_read: starting read of addr 0x2010
+     85785 SB: External read register x3, Expected 0xcd4ca17e, Matches Actual 0xcd4ca17e
+
+     85805 Mon: External read Addr: 0x2010, Data: 0x00000000
+
+     85805 DEBUG xbar_read: starting read of addr 0x2014
+     85805 SB: External read register x4, Expected 0x00000000, Matches Actual 0x00000000
+
+     85825 Mon: External read Addr: 0x2014, Data: 0x00000000
+
+     85825 DEBUG xbar_read: starting read of addr 0x2018
+     85825 SB: External read register x5, Expected 0x00000000, Matches Actual 0x00000000
+
+     85845 Mon: External read Addr: 0x2018, Data: 0x00000000
+
+     85845 DEBUG xbar_read: starting read of addr 0x201c
+     85845 SB: External read register x6, Expected 0x00000000, Matches Actual 0x00000000
+
+     85865 Mon: External read Addr: 0x201c, Data: 0x19a9942f
+
+     85865 DEBUG xbar_read: starting read of addr 0x2020
+     85865 SB: External read register x7, Expected 0x19a9942f, Matches Actual 0x19a9942f
+
+     85885 Mon: External read Addr: 0x2020, Data: 0x00000000
+
+     85885 DEBUG xbar_read: starting read of addr 0x2024
+     85885 SB: External read register x8, Expected 0x00000000, Matches Actual 0x00000000
+
+     85905 Mon: External read Addr: 0x2024, Data: 0x00000000
+
+     85905 DEBUG xbar_read: starting read of addr 0x2028
+     85905 SB: External read register x9, Expected 0x00000000, Matches Actual 0x00000000
+
+     85925 Mon: External read Addr: 0x2028, Data: 0x00000000
+
+     85925 DEBUG xbar_read: starting read of addr 0x202c
+     85925 SB: External read register x10, Expected 0x00000000, Matches Actual 0x00000000
+
+     85945 Mon: External read Addr: 0x202c, Data: 0x00000000
+
+     85945 DEBUG xbar_read: starting read of addr 0x2030
+     85945 SB: External read register x11, Expected 0x00000000, Matches Actual 0x00000000
+
+     85965 Mon: External read Addr: 0x2030, Data: 0x00000000
+
+     85965 DEBUG xbar_read: starting read of addr 0x2034
+     85965 SB: External read register x12, Expected 0x00000000, Matches Actual 0x00000000
+
+     85985 Mon: External read Addr: 0x2034, Data: 0x00000000
+
+     85985 DEBUG xbar_read: starting read of addr 0x2038
+     85985 SB: External read register x13, Expected 0x00000000, Matches Actual 0x00000000
+
+     86005 Mon: External read Addr: 0x2038, Data: 0x00000000
+
+     86005 DEBUG xbar_read: starting read of addr 0x203c
+     86005 SB: External read register x14, Expected 0x00000000, Matches Actual 0x00000000
+
+     86025 Mon: External read Addr: 0x203c, Data: 0x00000000
+
+     86025 DEBUG xbar_read: starting read of addr 0x2040
+     86025 SB: External read register x15, Expected 0x00000000, Matches Actual 0x00000000
+
+     86045 Mon: External read Addr: 0x2040, Data: 0x00000000
+
+     86045 DEBUG xbar_read: starting read of addr 0x2044
+     86045 SB: External read register x16, Expected 0x00000000, Matches Actual 0x00000000
+
+     86065 Mon: External read Addr: 0x2044, Data: 0x00000000
+
+     86065 DEBUG xbar_read: starting read of addr 0x2048
+     86065 SB: External read register x17, Expected 0x00000000, Matches Actual 0x00000000
+
+     86085 Mon: External read Addr: 0x2048, Data: 0x00000000
+
+     86085 DEBUG xbar_read: starting read of addr 0x204c
+     86085 SB: External read register x18, Expected 0x00000000, Matches Actual 0x00000000
+
+     86105 Mon: External read Addr: 0x204c, Data: 0x00000000
+
+     86105 DEBUG xbar_read: starting read of addr 0x2050
+     86105 SB: External read register x19, Expected 0x00000000, Matches Actual 0x00000000
+
+     86125 Mon: External read Addr: 0x2050, Data: 0x00000000
+
+     86125 DEBUG xbar_read: starting read of addr 0x2054
+     86125 SB: External read register x20, Expected 0x00000000, Matches Actual 0x00000000
+
+     86145 Mon: External read Addr: 0x2054, Data: 0x00000000
+
+     86145 DEBUG xbar_read: starting read of addr 0x2058
+     86145 SB: External read register x21, Expected 0x00000000, Matches Actual 0x00000000
+
+     86165 Mon: External read Addr: 0x2058, Data: 0x00000000
+
+     86165 DEBUG xbar_read: starting read of addr 0x205c
+     86165 SB: External read register x22, Expected 0x00000000, Matches Actual 0x00000000
+
+     86185 Mon: External read Addr: 0x205c, Data: 0x00000000
+
+     86185 DEBUG xbar_read: starting read of addr 0x2060
+     86185 SB: External read register x23, Expected 0x00000000, Matches Actual 0x00000000
+
+     86205 Mon: External read Addr: 0x2060, Data: 0x00000000
+
+     86205 DEBUG xbar_read: starting read of addr 0x2064
+     86205 SB: External read register x24, Expected 0x00000000, Matches Actual 0x00000000
+
+     86225 Mon: External read Addr: 0x2064, Data: 0x00000000
+
+     86225 DEBUG xbar_read: starting read of addr 0x2068
+     86225 SB: External read register x25, Expected 0x00000000, Matches Actual 0x00000000
+
+     86245 Mon: External read Addr: 0x2068, Data: 0x00000000
+
+     86245 DEBUG xbar_read: starting read of addr 0x206c
+     86245 SB: External read register x26, Expected 0x00000000, Matches Actual 0x00000000
+
+     86265 Mon: External read Addr: 0x206c, Data: 0x00000000
+
+     86265 DEBUG xbar_read: starting read of addr 0x2070
+     86265 SB: External read register x27, Expected 0x00000000, Matches Actual 0x00000000
+
+     86285 Mon: External read Addr: 0x2070, Data: 0x00000000
+
+     86285 DEBUG xbar_read: starting read of addr 0x2074
+     86285 SB: External read register x28, Expected 0x00000000, Matches Actual 0x00000000
+
+     86305 Mon: External read Addr: 0x2074, Data: 0x00000000
+
+     86305 DEBUG xbar_read: starting read of addr 0x2078
+     86305 SB: External read register x29, Expected 0x00000000, Matches Actual 0x00000000
+
+     86325 Mon: External read Addr: 0x2078, Data: 0x00000000
+
+     86325 DEBUG xbar_read: starting read of addr 0x207c
+     86325 SB: External read register x30, Expected 0x00000000, Matches Actual 0x00000000
+
+     86345 Mon: External read Addr: 0x207c, Data: 0x00000000
+
+     86345 SB: External read register x31, Expected 0x00000000, Matches Actual 0x00000000
+
+     86365 DEBUG xbar_read: starting read of addr 0x1000
+     86395 Mon: External read Addr: 0x1000, Data: 0x3c00d3c7
+
+     86395 DEBUG xbar_read: starting read of addr 0x1004
+     86395 SB: External read dmem[0x000], Expected 0x3c00d3c7, Matches Actual 0x3c00d3c7
+
+     86425 Mon: External read Addr: 0x1004, Data: 0x8d9a2664
+
+     86425 DEBUG xbar_read: starting read of addr 0x1008
+     86425 SB: External read dmem[0x001], Expected 0x8d9a2664, Matches Actual 0x8d9a2664
+
+     86455 Mon: External read Addr: 0x1008, Data: 0xb2a321db
+
+     86455 DEBUG xbar_read: starting read of addr 0x100c
+     86455 SB: External read dmem[0x002], Expected 0xb2a321db, Matches Actual 0xb2a321db
+
+     86485 Mon: External read Addr: 0x100c, Data: 0x2983433d
+
+     86485 DEBUG xbar_read: starting read of addr 0x1010
+     86485 SB: External read dmem[0x003], Expected 0x2983433d, Matches Actual 0x2983433d
+
+     86515 Mon: External read Addr: 0x1010, Data: 0xf3d79464
+
+     86515 DEBUG xbar_read: starting read of addr 0x1014
+     86515 SB: External read dmem[0x004], Expected 0xf3d79464, Matches Actual 0xf3d79464
+
+     86545 Mon: External read Addr: 0x1014, Data: 0x3c2fef84
+
+     86545 DEBUG xbar_read: starting read of addr 0x1018
+     86545 SB: External read dmem[0x005], Expected 0x3c2fef84, Matches Actual 0x3c2fef84
+
+     86575 Mon: External read Addr: 0x1018, Data: 0x6d881970
+
+     86575 DEBUG xbar_read: starting read of addr 0x101c
+     86575 SB: External read dmem[0x006], Expected 0x6d881970, Matches Actual 0x6d881970
+
+     86605 Mon: External read Addr: 0x101c, Data: 0x3889feae
+
+     86605 SB: External read dmem[0x007], Expected 0x3889feae, Matches Actual 0x3889feae
+
+
+=================================================================
+ TEST: test_shift_mask
+=================================================================
+     86635 Mon: Reset asserted
+
+     86715 Mon: External write Addr: 0x0000, Data: 0x00100093
+
+     86715 SB: External write imem[0x000] <- 0x00100093
+
+     86735 Mon: External write Addr: 0x0004, Data: 0x02000113
+
+     86735 SB: External write imem[0x001] <- 0x02000113
+
+     86755 Mon: External write Addr: 0x0008, Data: 0x002091b3
+
+     86755 SB: External write imem[0x002] <- 0x002091b3
+
+     86775 Mon: External write Addr: 0x000c, Data: 0x00100073
+
+     86775 SB: External write imem[0x003] <- 0x00100073
+
+     86815 Mon: CPU started executing
+
+     86815 SB: cpu started, reference model ran 3 instruction(s), predicted 0 store(s)
+
+     86855 Mon: cpu_halted_o asserted
+
+     86855 DEBUG xbar_read: starting read of addr 0x2000
+     86875 Mon: External read Addr: 0x2000, Data: 0x00000000
+
+     86875 DEBUG xbar_read: starting read of addr 0x2004
+     86875 SB: External read register x0, Expected 0x00000000, Matches Actual 0x00000000
+
+     86895 Mon: External read Addr: 0x2004, Data: 0x00000001
+
+     86895 DEBUG xbar_read: starting read of addr 0x2008
+     86895 SB: External read register x1, Expected 0x00000001, Matches Actual 0x00000001
+
+     86915 Mon: External read Addr: 0x2008, Data: 0x00000020
+
+     86915 DEBUG xbar_read: starting read of addr 0x200c
+     86915 SB: External read register x2, Expected 0x00000020, Matches Actual 0x00000020
+
+     86935 Mon: External read Addr: 0x200c, Data: 0x00000001
+
+     86935 DEBUG xbar_read: starting read of addr 0x2010
+     86935 SB: External read register x3, Expected 0x00000001, Matches Actual 0x00000001
+
+     86955 Mon: External read Addr: 0x2010, Data: 0x00000000
+
+     86955 DEBUG xbar_read: starting read of addr 0x2014
+     86955 SB: External read register x4, Expected 0x00000000, Matches Actual 0x00000000
+
+     86975 Mon: External read Addr: 0x2014, Data: 0x00000000
+
+     86975 DEBUG xbar_read: starting read of addr 0x2018
+     86975 SB: External read register x5, Expected 0x00000000, Matches Actual 0x00000000
+
+     86995 Mon: External read Addr: 0x2018, Data: 0x00000000
+
+     86995 DEBUG xbar_read: starting read of addr 0x201c
+     86995 SB: External read register x6, Expected 0x00000000, Matches Actual 0x00000000
+
+     87015 Mon: External read Addr: 0x201c, Data: 0x00000000
+
+     87015 DEBUG xbar_read: starting read of addr 0x2020
+     87015 SB: External read register x7, Expected 0x00000000, Matches Actual 0x00000000
+
+     87035 Mon: External read Addr: 0x2020, Data: 0x00000000
+
+     87035 DEBUG xbar_read: starting read of addr 0x2024
+     87035 SB: External read register x8, Expected 0x00000000, Matches Actual 0x00000000
+
+     87055 Mon: External read Addr: 0x2024, Data: 0x00000000
+
+     87055 DEBUG xbar_read: starting read of addr 0x2028
+     87055 SB: External read register x9, Expected 0x00000000, Matches Actual 0x00000000
+
+     87075 Mon: External read Addr: 0x2028, Data: 0x00000000
+
+     87075 DEBUG xbar_read: starting read of addr 0x202c
+     87075 SB: External read register x10, Expected 0x00000000, Matches Actual 0x00000000
+
+     87095 Mon: External read Addr: 0x202c, Data: 0x00000000
+
+     87095 DEBUG xbar_read: starting read of addr 0x2030
+     87095 SB: External read register x11, Expected 0x00000000, Matches Actual 0x00000000
+
+     87115 Mon: External read Addr: 0x2030, Data: 0x00000000
+
+     87115 DEBUG xbar_read: starting read of addr 0x2034
+     87115 SB: External read register x12, Expected 0x00000000, Matches Actual 0x00000000
+
+     87135 Mon: External read Addr: 0x2034, Data: 0x00000000
+
+     87135 DEBUG xbar_read: starting read of addr 0x2038
+     87135 SB: External read register x13, Expected 0x00000000, Matches Actual 0x00000000
+
+     87155 Mon: External read Addr: 0x2038, Data: 0x00000000
+
+     87155 DEBUG xbar_read: starting read of addr 0x203c
+     87155 SB: External read register x14, Expected 0x00000000, Matches Actual 0x00000000
+
+     87175 Mon: External read Addr: 0x203c, Data: 0x00000000
+
+     87175 DEBUG xbar_read: starting read of addr 0x2040
+     87175 SB: External read register x15, Expected 0x00000000, Matches Actual 0x00000000
+
+     87195 Mon: External read Addr: 0x2040, Data: 0x00000000
+
+     87195 DEBUG xbar_read: starting read of addr 0x2044
+     87195 SB: External read register x16, Expected 0x00000000, Matches Actual 0x00000000
+
+     87215 Mon: External read Addr: 0x2044, Data: 0x00000000
+
+     87215 DEBUG xbar_read: starting read of addr 0x2048
+     87215 SB: External read register x17, Expected 0x00000000, Matches Actual 0x00000000
+
+     87235 Mon: External read Addr: 0x2048, Data: 0x00000000
+
+     87235 DEBUG xbar_read: starting read of addr 0x204c
+     87235 SB: External read register x18, Expected 0x00000000, Matches Actual 0x00000000
+
+     87255 Mon: External read Addr: 0x204c, Data: 0x00000000
+
+     87255 DEBUG xbar_read: starting read of addr 0x2050
+     87255 SB: External read register x19, Expected 0x00000000, Matches Actual 0x00000000
+
+     87275 Mon: External read Addr: 0x2050, Data: 0x00000000
+
+     87275 DEBUG xbar_read: starting read of addr 0x2054
+     87275 SB: External read register x20, Expected 0x00000000, Matches Actual 0x00000000
+
+     87295 Mon: External read Addr: 0x2054, Data: 0x00000000
+
+     87295 DEBUG xbar_read: starting read of addr 0x2058
+     87295 SB: External read register x21, Expected 0x00000000, Matches Actual 0x00000000
+
+     87315 Mon: External read Addr: 0x2058, Data: 0x00000000
+
+     87315 DEBUG xbar_read: starting read of addr 0x205c
+     87315 SB: External read register x22, Expected 0x00000000, Matches Actual 0x00000000
+
+     87335 Mon: External read Addr: 0x205c, Data: 0x00000000
+
+     87335 DEBUG xbar_read: starting read of addr 0x2060
+     87335 SB: External read register x23, Expected 0x00000000, Matches Actual 0x00000000
+
+     87355 Mon: External read Addr: 0x2060, Data: 0x00000000
+
+     87355 DEBUG xbar_read: starting read of addr 0x2064
+     87355 SB: External read register x24, Expected 0x00000000, Matches Actual 0x00000000
+
+     87375 Mon: External read Addr: 0x2064, Data: 0x00000000
+
+     87375 DEBUG xbar_read: starting read of addr 0x2068
+     87375 SB: External read register x25, Expected 0x00000000, Matches Actual 0x00000000
+
+     87395 Mon: External read Addr: 0x2068, Data: 0x00000000
+
+     87395 DEBUG xbar_read: starting read of addr 0x206c
+     87395 SB: External read register x26, Expected 0x00000000, Matches Actual 0x00000000
+
+     87415 Mon: External read Addr: 0x206c, Data: 0x00000000
+
+     87415 DEBUG xbar_read: starting read of addr 0x2070
+     87415 SB: External read register x27, Expected 0x00000000, Matches Actual 0x00000000
+
+     87435 Mon: External read Addr: 0x2070, Data: 0x00000000
+
+     87435 DEBUG xbar_read: starting read of addr 0x2074
+     87435 SB: External read register x28, Expected 0x00000000, Matches Actual 0x00000000
+
+     87455 Mon: External read Addr: 0x2074, Data: 0x00000000
+
+     87455 DEBUG xbar_read: starting read of addr 0x2078
+     87455 SB: External read register x29, Expected 0x00000000, Matches Actual 0x00000000
+
+     87475 Mon: External read Addr: 0x2078, Data: 0x00000000
+
+     87475 DEBUG xbar_read: starting read of addr 0x207c
+     87475 SB: External read register x30, Expected 0x00000000, Matches Actual 0x00000000
+
+     87495 Mon: External read Addr: 0x207c, Data: 0x00000000
+
+     87495 SB: External read register x31, Expected 0x00000000, Matches Actual 0x00000000
+
+     87515 DEBUG xbar_read: starting read of addr 0x1000
+     87545 Mon: External read Addr: 0x1000, Data: 0x3c00d3c7
+
+     87545 DEBUG xbar_read: starting read of addr 0x1004
+     87545 SB: External read dmem[0x000], Expected 0x3c00d3c7, Matches Actual 0x3c00d3c7
+
+     87575 Mon: External read Addr: 0x1004, Data: 0x8d9a2664
+
+     87575 DEBUG xbar_read: starting read of addr 0x1008
+     87575 SB: External read dmem[0x001], Expected 0x8d9a2664, Matches Actual 0x8d9a2664
+
+     87605 Mon: External read Addr: 0x1008, Data: 0xb2a321db
+
+     87605 DEBUG xbar_read: starting read of addr 0x100c
+     87605 SB: External read dmem[0x002], Expected 0xb2a321db, Matches Actual 0xb2a321db
+
+     87635 Mon: External read Addr: 0x100c, Data: 0x2983433d
+
+     87635 DEBUG xbar_read: starting read of addr 0x1010
+     87635 SB: External read dmem[0x003], Expected 0x2983433d, Matches Actual 0x2983433d
+
+     87665 Mon: External read Addr: 0x1010, Data: 0xf3d79464
+
+     87665 DEBUG xbar_read: starting read of addr 0x1014
+     87665 SB: External read dmem[0x004], Expected 0xf3d79464, Matches Actual 0xf3d79464
+
+     87695 Mon: External read Addr: 0x1014, Data: 0x3c2fef84
+
+     87695 DEBUG xbar_read: starting read of addr 0x1018
+     87695 SB: External read dmem[0x005], Expected 0x3c2fef84, Matches Actual 0x3c2fef84
+
+     87725 Mon: External read Addr: 0x1018, Data: 0x6d881970
+
+     87725 DEBUG xbar_read: starting read of addr 0x101c
+     87725 SB: External read dmem[0x006], Expected 0x6d881970, Matches Actual 0x6d881970
+
+     87755 Mon: External read Addr: 0x101c, Data: 0x3889feae
+
+     87755 SB: External read dmem[0x007], Expected 0x3889feae, Matches Actual 0x3889feae
+
+
+=================================================================
+ TEST: test_shift_5th_bit
+=================================================================
+     87785 Mon: Reset asserted
+
+     87865 Mon: External write Addr: 0x0000, Data: 0x00100a13
+
+     87865 SB: External write imem[0x000] <- 0x00100a13
+
+     87885 Mon: External write Addr: 0x0004, Data: 0x04000a93
+
+     87885 SB: External write imem[0x001] <- 0x04000a93
+
+     87905 Mon: External write Addr: 0x0008, Data: 0x015a1b33
+
+     87905 SB: External write imem[0x002] <- 0x015a1b33
+
+     87925 Mon: External write Addr: 0x000c, Data: 0x00100073
+
+     87925 SB: External write imem[0x003] <- 0x00100073
+
+     87965 Mon: CPU started executing
+
+     87965 SB: cpu started, reference model ran 3 instruction(s), predicted 0 store(s)
+
+     88005 Mon: cpu_halted_o asserted
+
+     88005 DEBUG xbar_read: starting read of addr 0x2000
+     88025 Mon: External read Addr: 0x2000, Data: 0x00000000
+
+     88025 DEBUG xbar_read: starting read of addr 0x2004
+     88025 SB: External read register x0, Expected 0x00000000, Matches Actual 0x00000000
+
+     88045 Mon: External read Addr: 0x2004, Data: 0x00000000
+
+     88045 DEBUG xbar_read: starting read of addr 0x2008
+     88045 SB: External read register x1, Expected 0x00000000, Matches Actual 0x00000000
+
+     88065 Mon: External read Addr: 0x2008, Data: 0x00000000
+
+     88065 DEBUG xbar_read: starting read of addr 0x200c
+     88065 SB: External read register x2, Expected 0x00000000, Matches Actual 0x00000000
+
+     88085 Mon: External read Addr: 0x200c, Data: 0x00000000
+
+     88085 DEBUG xbar_read: starting read of addr 0x2010
+     88085 SB: External read register x3, Expected 0x00000000, Matches Actual 0x00000000
+
+     88105 Mon: External read Addr: 0x2010, Data: 0x00000000
+
+     88105 DEBUG xbar_read: starting read of addr 0x2014
+     88105 SB: External read register x4, Expected 0x00000000, Matches Actual 0x00000000
+
+     88125 Mon: External read Addr: 0x2014, Data: 0x00000000
+
+     88125 DEBUG xbar_read: starting read of addr 0x2018
+     88125 SB: External read register x5, Expected 0x00000000, Matches Actual 0x00000000
+
+     88145 Mon: External read Addr: 0x2018, Data: 0x00000000
+
+     88145 DEBUG xbar_read: starting read of addr 0x201c
+     88145 SB: External read register x6, Expected 0x00000000, Matches Actual 0x00000000
+
+     88165 Mon: External read Addr: 0x201c, Data: 0x00000000
+
+     88165 DEBUG xbar_read: starting read of addr 0x2020
+     88165 SB: External read register x7, Expected 0x00000000, Matches Actual 0x00000000
+
+     88185 Mon: External read Addr: 0x2020, Data: 0x00000000
+
+     88185 DEBUG xbar_read: starting read of addr 0x2024
+     88185 SB: External read register x8, Expected 0x00000000, Matches Actual 0x00000000
+
+     88205 Mon: External read Addr: 0x2024, Data: 0x00000000
+
+     88205 DEBUG xbar_read: starting read of addr 0x2028
+     88205 SB: External read register x9, Expected 0x00000000, Matches Actual 0x00000000
+
+     88225 Mon: External read Addr: 0x2028, Data: 0x00000000
+
+     88225 DEBUG xbar_read: starting read of addr 0x202c
+     88225 SB: External read register x10, Expected 0x00000000, Matches Actual 0x00000000
+
+     88245 Mon: External read Addr: 0x202c, Data: 0x00000000
+
+     88245 DEBUG xbar_read: starting read of addr 0x2030
+     88245 SB: External read register x11, Expected 0x00000000, Matches Actual 0x00000000
+
+     88265 Mon: External read Addr: 0x2030, Data: 0x00000000
+
+     88265 DEBUG xbar_read: starting read of addr 0x2034
+     88265 SB: External read register x12, Expected 0x00000000, Matches Actual 0x00000000
+
+     88285 Mon: External read Addr: 0x2034, Data: 0x00000000
+
+     88285 DEBUG xbar_read: starting read of addr 0x2038
+     88285 SB: External read register x13, Expected 0x00000000, Matches Actual 0x00000000
+
+     88305 Mon: External read Addr: 0x2038, Data: 0x00000000
+
+     88305 DEBUG xbar_read: starting read of addr 0x203c
+     88305 SB: External read register x14, Expected 0x00000000, Matches Actual 0x00000000
+
+     88325 Mon: External read Addr: 0x203c, Data: 0x00000000
+
+     88325 DEBUG xbar_read: starting read of addr 0x2040
+     88325 SB: External read register x15, Expected 0x00000000, Matches Actual 0x00000000
+
+     88345 Mon: External read Addr: 0x2040, Data: 0x00000000
+
+     88345 DEBUG xbar_read: starting read of addr 0x2044
+     88345 SB: External read register x16, Expected 0x00000000, Matches Actual 0x00000000
+
+     88365 Mon: External read Addr: 0x2044, Data: 0x00000000
+
+     88365 DEBUG xbar_read: starting read of addr 0x2048
+     88365 SB: External read register x17, Expected 0x00000000, Matches Actual 0x00000000
+
+     88385 Mon: External read Addr: 0x2048, Data: 0x00000000
+
+     88385 DEBUG xbar_read: starting read of addr 0x204c
+     88385 SB: External read register x18, Expected 0x00000000, Matches Actual 0x00000000
+
+     88405 Mon: External read Addr: 0x204c, Data: 0x00000000
+
+     88405 DEBUG xbar_read: starting read of addr 0x2050
+     88405 SB: External read register x19, Expected 0x00000000, Matches Actual 0x00000000
+
+     88425 Mon: External read Addr: 0x2050, Data: 0x00000001
+
+     88425 DEBUG xbar_read: starting read of addr 0x2054
+     88425 SB: External read register x20, Expected 0x00000001, Matches Actual 0x00000001
+
+     88445 Mon: External read Addr: 0x2054, Data: 0x00000040
+
+     88445 DEBUG xbar_read: starting read of addr 0x2058
+     88445 SB: External read register x21, Expected 0x00000040, Matches Actual 0x00000040
+
+     88465 Mon: External read Addr: 0x2058, Data: 0x00000001
+
+     88465 DEBUG xbar_read: starting read of addr 0x205c
+     88465 SB: External read register x22, Expected 0x00000001, Matches Actual 0x00000001
+
+     88485 Mon: External read Addr: 0x205c, Data: 0x00000000
+
+     88485 DEBUG xbar_read: starting read of addr 0x2060
+     88485 SB: External read register x23, Expected 0x00000000, Matches Actual 0x00000000
+
+     88505 Mon: External read Addr: 0x2060, Data: 0x00000000
+
+     88505 DEBUG xbar_read: starting read of addr 0x2064
+     88505 SB: External read register x24, Expected 0x00000000, Matches Actual 0x00000000
+
+     88525 Mon: External read Addr: 0x2064, Data: 0x00000000
+
+     88525 DEBUG xbar_read: starting read of addr 0x2068
+     88525 SB: External read register x25, Expected 0x00000000, Matches Actual 0x00000000
+
+     88545 Mon: External read Addr: 0x2068, Data: 0x00000000
+
+     88545 DEBUG xbar_read: starting read of addr 0x206c
+     88545 SB: External read register x26, Expected 0x00000000, Matches Actual 0x00000000
+
+     88565 Mon: External read Addr: 0x206c, Data: 0x00000000
+
+     88565 DEBUG xbar_read: starting read of addr 0x2070
+     88565 SB: External read register x27, Expected 0x00000000, Matches Actual 0x00000000
+
+     88585 Mon: External read Addr: 0x2070, Data: 0x00000000
+
+     88585 DEBUG xbar_read: starting read of addr 0x2074
+     88585 SB: External read register x28, Expected 0x00000000, Matches Actual 0x00000000
+
+     88605 Mon: External read Addr: 0x2074, Data: 0x00000000
+
+     88605 DEBUG xbar_read: starting read of addr 0x2078
+     88605 SB: External read register x29, Expected 0x00000000, Matches Actual 0x00000000
+
+     88625 Mon: External read Addr: 0x2078, Data: 0x00000000
+
+     88625 DEBUG xbar_read: starting read of addr 0x207c
+     88625 SB: External read register x30, Expected 0x00000000, Matches Actual 0x00000000
+
+     88645 Mon: External read Addr: 0x207c, Data: 0x00000000
+
+     88645 SB: External read register x31, Expected 0x00000000, Matches Actual 0x00000000
+
+     88665 DEBUG xbar_read: starting read of addr 0x1000
+     88695 Mon: External read Addr: 0x1000, Data: 0x3c00d3c7
+
+     88695 DEBUG xbar_read: starting read of addr 0x1004
+     88695 SB: External read dmem[0x000], Expected 0x3c00d3c7, Matches Actual 0x3c00d3c7
+
+     88725 Mon: External read Addr: 0x1004, Data: 0x8d9a2664
+
+     88725 DEBUG xbar_read: starting read of addr 0x1008
+     88725 SB: External read dmem[0x001], Expected 0x8d9a2664, Matches Actual 0x8d9a2664
+
+     88755 Mon: External read Addr: 0x1008, Data: 0xb2a321db
+
+     88755 DEBUG xbar_read: starting read of addr 0x100c
+     88755 SB: External read dmem[0x002], Expected 0xb2a321db, Matches Actual 0xb2a321db
+
+     88785 Mon: External read Addr: 0x100c, Data: 0x2983433d
+
+     88785 DEBUG xbar_read: starting read of addr 0x1010
+     88785 SB: External read dmem[0x003], Expected 0x2983433d, Matches Actual 0x2983433d
+
+     88815 Mon: External read Addr: 0x1010, Data: 0xf3d79464
+
+     88815 DEBUG xbar_read: starting read of addr 0x1014
+     88815 SB: External read dmem[0x004], Expected 0xf3d79464, Matches Actual 0xf3d79464
+
+     88845 Mon: External read Addr: 0x1014, Data: 0x3c2fef84
+
+     88845 DEBUG xbar_read: starting read of addr 0x1018
+     88845 SB: External read dmem[0x005], Expected 0x3c2fef84, Matches Actual 0x3c2fef84
+
+     88875 Mon: External read Addr: 0x1018, Data: 0x6d881970
+
+     88875 DEBUG xbar_read: starting read of addr 0x101c
+     88875 SB: External read dmem[0x006], Expected 0x6d881970, Matches Actual 0x6d881970
+
+     88905 Mon: External read Addr: 0x101c, Data: 0x3889feae
+
+     88905 SB: External read dmem[0x007], Expected 0x3889feae, Matches Actual 0x3889feae
+
+     88935 Mon: External write Addr: 0x17c8, Data: 0x92ed1f2d
+
+
+=================================================================
+ TEST: mr_lw_beq_random8
+=================================================================
+     88935 SB: External write dmem[0x1f2] <- 0x92ed1f2d
+
+     88965 Mon: Reset asserted
+
+     89045 Mon: External write Addr: 0x0000, Data: 0x7c802083
+
+     89045 SB: External write imem[0x000] <- 0x7c802083
+
+     89065 Mon: External write Addr: 0x0004, Data: 0x01e08463
+
+     89065 SB: External write imem[0x001] <- 0x01e08463
+
+     89085 Mon: External write Addr: 0x0008, Data: 0x009390b3
+
+     89085 SB: External write imem[0x002] <- 0x009390b3
+
+     89105 Mon: External write Addr: 0x000c, Data: 0x00100073
+
+     89105 SB: External write imem[0x003] <- 0x00100073
+
+     89145 Mon: CPU started executing
+
+     89145 SB: cpu started, reference model ran 3 instruction(s), predicted 0 store(s)
+
+     89155 Mon: CPU load dmem[1f2] -> 92ed1f2d
+
+     89155 SB: CPU load dmem[1f2] -> 92ed1f2d matches expected
+
+     89195 Mon: cpu_halted_o asserted
+
+     89195 DEBUG xbar_read: starting read of addr 0x2000
+     89215 Mon: External read Addr: 0x2000, Data: 0x00000000
+
+     89215 DEBUG xbar_read: starting read of addr 0x2004
+     89215 SB: External read register x0, Expected 0x00000000, Matches Actual 0x00000000
+
+     89235 Mon: External read Addr: 0x2004, Data: 0x00000000
+
+     89235 DEBUG xbar_read: starting read of addr 0x2008
+     89235 SB: External read register x1, Expected 0x00000000, Matches Actual 0x00000000
+
+     89255 Mon: External read Addr: 0x2008, Data: 0x00000000
+
+     89255 DEBUG xbar_read: starting read of addr 0x200c
+     89255 SB: External read register x2, Expected 0x00000000, Matches Actual 0x00000000
+
+     89275 Mon: External read Addr: 0x200c, Data: 0x00000000
+
+     89275 DEBUG xbar_read: starting read of addr 0x2010
+     89275 SB: External read register x3, Expected 0x00000000, Matches Actual 0x00000000
+
+     89295 Mon: External read Addr: 0x2010, Data: 0x00000000
+
+     89295 DEBUG xbar_read: starting read of addr 0x2014
+     89295 SB: External read register x4, Expected 0x00000000, Matches Actual 0x00000000
+
+     89315 Mon: External read Addr: 0x2014, Data: 0x00000000
+
+     89315 DEBUG xbar_read: starting read of addr 0x2018
+     89315 SB: External read register x5, Expected 0x00000000, Matches Actual 0x00000000
+
+     89335 Mon: External read Addr: 0x2018, Data: 0x00000000
+
+     89335 DEBUG xbar_read: starting read of addr 0x201c
+     89335 SB: External read register x6, Expected 0x00000000, Matches Actual 0x00000000
+
+     89355 Mon: External read Addr: 0x201c, Data: 0x00000000
+
+     89355 DEBUG xbar_read: starting read of addr 0x2020
+     89355 SB: External read register x7, Expected 0x00000000, Matches Actual 0x00000000
+
+     89375 Mon: External read Addr: 0x2020, Data: 0x00000000
+
+     89375 DEBUG xbar_read: starting read of addr 0x2024
+     89375 SB: External read register x8, Expected 0x00000000, Matches Actual 0x00000000
+
+     89395 Mon: External read Addr: 0x2024, Data: 0x00000000
+
+     89395 DEBUG xbar_read: starting read of addr 0x2028
+     89395 SB: External read register x9, Expected 0x00000000, Matches Actual 0x00000000
+
+     89415 Mon: External read Addr: 0x2028, Data: 0x00000000
+
+     89415 DEBUG xbar_read: starting read of addr 0x202c
+     89415 SB: External read register x10, Expected 0x00000000, Matches Actual 0x00000000
+
+     89435 Mon: External read Addr: 0x202c, Data: 0x00000000
+
+     89435 DEBUG xbar_read: starting read of addr 0x2030
+     89435 SB: External read register x11, Expected 0x00000000, Matches Actual 0x00000000
+
+     89455 Mon: External read Addr: 0x2030, Data: 0x00000000
+
+     89455 DEBUG xbar_read: starting read of addr 0x2034
+     89455 SB: External read register x12, Expected 0x00000000, Matches Actual 0x00000000
+
+     89475 Mon: External read Addr: 0x2034, Data: 0x00000000
+
+     89475 DEBUG xbar_read: starting read of addr 0x2038
+     89475 SB: External read register x13, Expected 0x00000000, Matches Actual 0x00000000
+
+     89495 Mon: External read Addr: 0x2038, Data: 0x00000000
+
+     89495 DEBUG xbar_read: starting read of addr 0x203c
+     89495 SB: External read register x14, Expected 0x00000000, Matches Actual 0x00000000
+
+     89515 Mon: External read Addr: 0x203c, Data: 0x00000000
+
+     89515 DEBUG xbar_read: starting read of addr 0x2040
+     89515 SB: External read register x15, Expected 0x00000000, Matches Actual 0x00000000
+
+     89535 Mon: External read Addr: 0x2040, Data: 0x00000000
+
+     89535 DEBUG xbar_read: starting read of addr 0x2044
+     89535 SB: External read register x16, Expected 0x00000000, Matches Actual 0x00000000
+
+     89555 Mon: External read Addr: 0x2044, Data: 0x00000000
+
+     89555 DEBUG xbar_read: starting read of addr 0x2048
+     89555 SB: External read register x17, Expected 0x00000000, Matches Actual 0x00000000
+
+     89575 Mon: External read Addr: 0x2048, Data: 0x00000000
+
+     89575 DEBUG xbar_read: starting read of addr 0x204c
+     89575 SB: External read register x18, Expected 0x00000000, Matches Actual 0x00000000
+
+     89595 Mon: External read Addr: 0x204c, Data: 0x00000000
+
+     89595 DEBUG xbar_read: starting read of addr 0x2050
+     89595 SB: External read register x19, Expected 0x00000000, Matches Actual 0x00000000
+
+     89615 Mon: External read Addr: 0x2050, Data: 0x00000000
+
+     89615 DEBUG xbar_read: starting read of addr 0x2054
+     89615 SB: External read register x20, Expected 0x00000000, Matches Actual 0x00000000
+
+     89635 Mon: External read Addr: 0x2054, Data: 0x00000000
+
+     89635 DEBUG xbar_read: starting read of addr 0x2058
+     89635 SB: External read register x21, Expected 0x00000000, Matches Actual 0x00000000
+
+     89655 Mon: External read Addr: 0x2058, Data: 0x00000000
+
+     89655 DEBUG xbar_read: starting read of addr 0x205c
+     89655 SB: External read register x22, Expected 0x00000000, Matches Actual 0x00000000
+
+     89675 Mon: External read Addr: 0x205c, Data: 0x00000000
+
+     89675 DEBUG xbar_read: starting read of addr 0x2060
+     89675 SB: External read register x23, Expected 0x00000000, Matches Actual 0x00000000
+
+     89695 Mon: External read Addr: 0x2060, Data: 0x00000000
+
+     89695 DEBUG xbar_read: starting read of addr 0x2064
+     89695 SB: External read register x24, Expected 0x00000000, Matches Actual 0x00000000
+
+     89715 Mon: External read Addr: 0x2064, Data: 0x00000000
+
+     89715 DEBUG xbar_read: starting read of addr 0x2068
+     89715 SB: External read register x25, Expected 0x00000000, Matches Actual 0x00000000
+
+     89735 Mon: External read Addr: 0x2068, Data: 0x00000000
+
+     89735 DEBUG xbar_read: starting read of addr 0x206c
+     89735 SB: External read register x26, Expected 0x00000000, Matches Actual 0x00000000
+
+     89755 Mon: External read Addr: 0x206c, Data: 0x00000000
+
+     89755 DEBUG xbar_read: starting read of addr 0x2070
+     89755 SB: External read register x27, Expected 0x00000000, Matches Actual 0x00000000
+
+     89775 Mon: External read Addr: 0x2070, Data: 0x00000000
+
+     89775 DEBUG xbar_read: starting read of addr 0x2074
+     89775 SB: External read register x28, Expected 0x00000000, Matches Actual 0x00000000
+
+     89795 Mon: External read Addr: 0x2074, Data: 0x00000000
+
+     89795 DEBUG xbar_read: starting read of addr 0x2078
+     89795 SB: External read register x29, Expected 0x00000000, Matches Actual 0x00000000
+
+     89815 Mon: External read Addr: 0x2078, Data: 0x00000000
+
+     89815 DEBUG xbar_read: starting read of addr 0x207c
+     89815 SB: External read register x30, Expected 0x00000000, Matches Actual 0x00000000
+
+     89835 Mon: External read Addr: 0x207c, Data: 0x00000000
+
+     89835 SB: External read register x31, Expected 0x00000000, Matches Actual 0x00000000
+
+     89855 DEBUG xbar_read: starting read of addr 0x1000
+     89885 Mon: External read Addr: 0x1000, Data: 0x3c00d3c7
+
+     89885 DEBUG xbar_read: starting read of addr 0x1004
+     89885 SB: External read dmem[0x000], Expected 0x3c00d3c7, Matches Actual 0x3c00d3c7
+
+     89915 Mon: External read Addr: 0x1004, Data: 0x8d9a2664
+
+     89915 DEBUG xbar_read: starting read of addr 0x1008
+     89915 SB: External read dmem[0x001], Expected 0x8d9a2664, Matches Actual 0x8d9a2664
+
+     89945 Mon: External read Addr: 0x1008, Data: 0xb2a321db
+
+     89945 DEBUG xbar_read: starting read of addr 0x100c
+     89945 SB: External read dmem[0x002], Expected 0xb2a321db, Matches Actual 0xb2a321db
+
+     89975 Mon: External read Addr: 0x100c, Data: 0x2983433d
+
+     89975 DEBUG xbar_read: starting read of addr 0x1010
+     89975 SB: External read dmem[0x003], Expected 0x2983433d, Matches Actual 0x2983433d
+
+     90005 Mon: External read Addr: 0x1010, Data: 0xf3d79464
+
+     90005 DEBUG xbar_read: starting read of addr 0x1014
+     90005 SB: External read dmem[0x004], Expected 0xf3d79464, Matches Actual 0xf3d79464
+
+     90035 Mon: External read Addr: 0x1014, Data: 0x3c2fef84
+
+     90035 DEBUG xbar_read: starting read of addr 0x1018
+     90035 SB: External read dmem[0x005], Expected 0x3c2fef84, Matches Actual 0x3c2fef84
+
+     90065 Mon: External read Addr: 0x1018, Data: 0x6d881970
+
+     90065 DEBUG xbar_read: starting read of addr 0x101c
+     90065 SB: External read dmem[0x006], Expected 0x6d881970, Matches Actual 0x6d881970
+
+     90095 Mon: External read Addr: 0x101c, Data: 0x3889feae
+
+     90095 SB: External read dmem[0x007], Expected 0x3889feae, Matches Actual 0x3889feae
+
+     90125 Mon: External write Addr: 0x17c8, Data: 0x00000000
+
+
+=================================================================
+ TEST: test_lw_beq_stale
+=================================================================
+     90125 SB: External write dmem[0x1f2] <- 0x00000000
+
+     90155 Mon: Reset asserted
+
+     90235 Mon: External write Addr: 0x0000, Data: 0x00100093
+
+     90235 SB: External write imem[0x000] <- 0x00100093
+
+     90255 Mon: External write Addr: 0x0004, Data: 0x7c802083
+
+     90255 SB: External write imem[0x001] <- 0x7c802083
+
+     90275 Mon: External write Addr: 0x0008, Data: 0x01e08463
+
+     90275 SB: External write imem[0x002] <- 0x01e08463
+
+     90295 Mon: External write Addr: 0x000c, Data: 0x7ff00413
+
+     90295 SB: External write imem[0x003] <- 0x7ff00413
+
+     90315 Mon: External write Addr: 0x0010, Data: 0x00100073
+
+     90315 SB: External write imem[0x004] <- 0x00100073
+
+     90355 Mon: CPU started executing
+
+     90355 SB: cpu started, reference model ran 3 instruction(s), predicted 0 store(s)
+
+     90375 Mon: CPU load dmem[1f2] -> 0
+
+     90375 SB: CPU load dmem[1f2] -> 0 matches expected
+
+     90405 Mon: cpu_halted_o asserted
+
+     90405 DEBUG xbar_read: starting read of addr 0x2000
+     90425 Mon: External read Addr: 0x2000, Data: 0x00000000
+
+     90425 DEBUG xbar_read: starting read of addr 0x2004
+     90425 SB: External read register x0, Expected 0x00000000, Matches Actual 0x00000000
+
+     90445 Mon: External read Addr: 0x2004, Data: 0x00000000
+
+     90445 DEBUG xbar_read: starting read of addr 0x2008
+     90445 SB: External read register x1, Expected 0x00000000, Matches Actual 0x00000000
+
+     90465 Mon: External read Addr: 0x2008, Data: 0x00000000
+
+     90465 DEBUG xbar_read: starting read of addr 0x200c
+     90465 SB: External read register x2, Expected 0x00000000, Matches Actual 0x00000000
+
+     90485 Mon: External read Addr: 0x200c, Data: 0x00000000
+
+     90485 DEBUG xbar_read: starting read of addr 0x2010
+     90485 SB: External read register x3, Expected 0x00000000, Matches Actual 0x00000000
+
+     90505 Mon: External read Addr: 0x2010, Data: 0x00000000
+
+     90505 DEBUG xbar_read: starting read of addr 0x2014
+     90505 SB: External read register x4, Expected 0x00000000, Matches Actual 0x00000000
+
+     90525 Mon: External read Addr: 0x2014, Data: 0x00000000
+
+     90525 DEBUG xbar_read: starting read of addr 0x2018
+     90525 SB: External read register x5, Expected 0x00000000, Matches Actual 0x00000000
+
+     90545 Mon: External read Addr: 0x2018, Data: 0x00000000
+
+     90545 DEBUG xbar_read: starting read of addr 0x201c
+     90545 SB: External read register x6, Expected 0x00000000, Matches Actual 0x00000000
+
+     90565 Mon: External read Addr: 0x201c, Data: 0x00000000
+
+     90565 DEBUG xbar_read: starting read of addr 0x2020
+     90565 SB: External read register x7, Expected 0x00000000, Matches Actual 0x00000000
+
+     90585 Mon: External read Addr: 0x2020, Data: 0x00000000
+
+     90585 DEBUG xbar_read: starting read of addr 0x2024
+     90585 SB: External read register x8, Expected 0x00000000, Matches Actual 0x00000000
+
+     90605 Mon: External read Addr: 0x2024, Data: 0x00000000
+
+     90605 DEBUG xbar_read: starting read of addr 0x2028
+     90605 SB: External read register x9, Expected 0x00000000, Matches Actual 0x00000000
+
+     90625 Mon: External read Addr: 0x2028, Data: 0x00000000
+
+     90625 DEBUG xbar_read: starting read of addr 0x202c
+     90625 SB: External read register x10, Expected 0x00000000, Matches Actual 0x00000000
+
+     90645 Mon: External read Addr: 0x202c, Data: 0x00000000
+
+     90645 DEBUG xbar_read: starting read of addr 0x2030
+     90645 SB: External read register x11, Expected 0x00000000, Matches Actual 0x00000000
+
+     90665 Mon: External read Addr: 0x2030, Data: 0x00000000
+
+     90665 DEBUG xbar_read: starting read of addr 0x2034
+     90665 SB: External read register x12, Expected 0x00000000, Matches Actual 0x00000000
+
+     90685 Mon: External read Addr: 0x2034, Data: 0x00000000
+
+     90685 DEBUG xbar_read: starting read of addr 0x2038
+     90685 SB: External read register x13, Expected 0x00000000, Matches Actual 0x00000000
+
+     90705 Mon: External read Addr: 0x2038, Data: 0x00000000
+
+     90705 DEBUG xbar_read: starting read of addr 0x203c
+     90705 SB: External read register x14, Expected 0x00000000, Matches Actual 0x00000000
+
+     90725 Mon: External read Addr: 0x203c, Data: 0x00000000
+
+     90725 DEBUG xbar_read: starting read of addr 0x2040
+     90725 SB: External read register x15, Expected 0x00000000, Matches Actual 0x00000000
+
+     90745 Mon: External read Addr: 0x2040, Data: 0x00000000
+
+     90745 DEBUG xbar_read: starting read of addr 0x2044
+     90745 SB: External read register x16, Expected 0x00000000, Matches Actual 0x00000000
+
+     90765 Mon: External read Addr: 0x2044, Data: 0x00000000
+
+     90765 DEBUG xbar_read: starting read of addr 0x2048
+     90765 SB: External read register x17, Expected 0x00000000, Matches Actual 0x00000000
+
+     90785 Mon: External read Addr: 0x2048, Data: 0x00000000
+
+     90785 DEBUG xbar_read: starting read of addr 0x204c
+     90785 SB: External read register x18, Expected 0x00000000, Matches Actual 0x00000000
+
+     90805 Mon: External read Addr: 0x204c, Data: 0x00000000
+
+     90805 DEBUG xbar_read: starting read of addr 0x2050
+     90805 SB: External read register x19, Expected 0x00000000, Matches Actual 0x00000000
+
+     90825 Mon: External read Addr: 0x2050, Data: 0x00000000
+
+     90825 DEBUG xbar_read: starting read of addr 0x2054
+     90825 SB: External read register x20, Expected 0x00000000, Matches Actual 0x00000000
+
+     90845 Mon: External read Addr: 0x2054, Data: 0x00000000
+
+     90845 DEBUG xbar_read: starting read of addr 0x2058
+     90845 SB: External read register x21, Expected 0x00000000, Matches Actual 0x00000000
+
+     90865 Mon: External read Addr: 0x2058, Data: 0x00000000
+
+     90865 DEBUG xbar_read: starting read of addr 0x205c
+     90865 SB: External read register x22, Expected 0x00000000, Matches Actual 0x00000000
+
+     90885 Mon: External read Addr: 0x205c, Data: 0x00000000
+
+     90885 DEBUG xbar_read: starting read of addr 0x2060
+     90885 SB: External read register x23, Expected 0x00000000, Matches Actual 0x00000000
+
+     90905 Mon: External read Addr: 0x2060, Data: 0x00000000
+
+     90905 DEBUG xbar_read: starting read of addr 0x2064
+     90905 SB: External read register x24, Expected 0x00000000, Matches Actual 0x00000000
+
+     90925 Mon: External read Addr: 0x2064, Data: 0x00000000
+
+     90925 DEBUG xbar_read: starting read of addr 0x2068
+     90925 SB: External read register x25, Expected 0x00000000, Matches Actual 0x00000000
+
+     90945 Mon: External read Addr: 0x2068, Data: 0x00000000
+
+     90945 DEBUG xbar_read: starting read of addr 0x206c
+     90945 SB: External read register x26, Expected 0x00000000, Matches Actual 0x00000000
+
+     90965 Mon: External read Addr: 0x206c, Data: 0x00000000
+
+     90965 DEBUG xbar_read: starting read of addr 0x2070
+     90965 SB: External read register x27, Expected 0x00000000, Matches Actual 0x00000000
+
+     90985 Mon: External read Addr: 0x2070, Data: 0x00000000
+
+     90985 DEBUG xbar_read: starting read of addr 0x2074
+     90985 SB: External read register x28, Expected 0x00000000, Matches Actual 0x00000000
+
+     91005 Mon: External read Addr: 0x2074, Data: 0x00000000
+
+     91005 DEBUG xbar_read: starting read of addr 0x2078
+     91005 SB: External read register x29, Expected 0x00000000, Matches Actual 0x00000000
+
+     91025 Mon: External read Addr: 0x2078, Data: 0x00000000
+
+     91025 DEBUG xbar_read: starting read of addr 0x207c
+     91025 SB: External read register x30, Expected 0x00000000, Matches Actual 0x00000000
+
+     91045 Mon: External read Addr: 0x207c, Data: 0x00000000
+
+     91045 SB: External read register x31, Expected 0x00000000, Matches Actual 0x00000000
+
+     91065 DEBUG xbar_read: starting read of addr 0x1000
+     91095 Mon: External read Addr: 0x1000, Data: 0x3c00d3c7
+
+     91095 DEBUG xbar_read: starting read of addr 0x1004
+     91095 SB: External read dmem[0x000], Expected 0x3c00d3c7, Matches Actual 0x3c00d3c7
+
+     91125 Mon: External read Addr: 0x1004, Data: 0x8d9a2664
+
+     91125 DEBUG xbar_read: starting read of addr 0x1008
+     91125 SB: External read dmem[0x001], Expected 0x8d9a2664, Matches Actual 0x8d9a2664
+
+     91155 Mon: External read Addr: 0x1008, Data: 0xb2a321db
+
+     91155 DEBUG xbar_read: starting read of addr 0x100c
+     91155 SB: External read dmem[0x002], Expected 0xb2a321db, Matches Actual 0xb2a321db
+
+     91185 Mon: External read Addr: 0x100c, Data: 0x2983433d
+
+     91185 DEBUG xbar_read: starting read of addr 0x1010
+     91185 SB: External read dmem[0x003], Expected 0x2983433d, Matches Actual 0x2983433d
+
+     91215 Mon: External read Addr: 0x1010, Data: 0xf3d79464
+
+     91215 DEBUG xbar_read: starting read of addr 0x1014
+     91215 SB: External read dmem[0x004], Expected 0xf3d79464, Matches Actual 0xf3d79464
+
+     91245 Mon: External read Addr: 0x1014, Data: 0x3c2fef84
+
+     91245 DEBUG xbar_read: starting read of addr 0x1018
+     91245 SB: External read dmem[0x005], Expected 0x3c2fef84, Matches Actual 0x3c2fef84
+
+     91275 Mon: External read Addr: 0x1018, Data: 0x6d881970
+
+     91275 DEBUG xbar_read: starting read of addr 0x101c
+     91275 SB: External read dmem[0x006], Expected 0x6d881970, Matches Actual 0x6d881970
+
+     91305 Mon: External read Addr: 0x101c, Data: 0x3889feae
+
+     91305 SB: External read dmem[0x007], Expected 0x3889feae, Matches Actual 0x3889feae
+
+     91335 Mon: External write Addr: 0x17c8, Data: 0x92ed1f2d
+
+
+=================================================================
+ TEST: test_lw_nop_beq
+=================================================================
+     91335 SB: External write dmem[0x1f2] <- 0x92ed1f2d
+
+     91365 Mon: Reset asserted
+
+     91445 Mon: External write Addr: 0x0000, Data: 0x7c802083
+
+     91445 SB: External write imem[0x000] <- 0x7c802083
+
+     91465 Mon: External write Addr: 0x0004, Data: 0x00000013
+
+     91465 SB: External write imem[0x001] <- 0x00000013
+
+     91485 Mon: External write Addr: 0x0008, Data: 0x01e08463
+
+     91485 SB: External write imem[0x002] <- 0x01e08463
+
+     91505 Mon: External write Addr: 0x000c, Data: 0x009390b3
+
+     91505 SB: External write imem[0x003] <- 0x009390b3
+
+     91525 Mon: External write Addr: 0x0010, Data: 0x00100073
+
+     91525 SB: External write imem[0x004] <- 0x00100073
+
+     91565 Mon: CPU started executing
+
+     91565 SB: cpu started, reference model ran 4 instruction(s), predicted 0 store(s)
+
+     91575 Mon: CPU load dmem[1f2] -> 92ed1f2d
+
+     91575 SB: CPU load dmem[1f2] -> 92ed1f2d matches expected
+
+     91625 Mon: cpu_halted_o asserted
+
+     91625 DEBUG xbar_read: starting read of addr 0x2000
+     91645 Mon: External read Addr: 0x2000, Data: 0x00000000
+
+     91645 DEBUG xbar_read: starting read of addr 0x2004
+     91645 SB: External read register x0, Expected 0x00000000, Matches Actual 0x00000000
+
+     91665 Mon: External read Addr: 0x2004, Data: 0x00000000
+
+     91665 DEBUG xbar_read: starting read of addr 0x2008
+     91665 SB: External read register x1, Expected 0x00000000, Matches Actual 0x00000000
+
+     91685 Mon: External read Addr: 0x2008, Data: 0x00000000
+
+     91685 DEBUG xbar_read: starting read of addr 0x200c
+     91685 SB: External read register x2, Expected 0x00000000, Matches Actual 0x00000000
+
+     91705 Mon: External read Addr: 0x200c, Data: 0x00000000
+
+     91705 DEBUG xbar_read: starting read of addr 0x2010
+     91705 SB: External read register x3, Expected 0x00000000, Matches Actual 0x00000000
+
+     91725 Mon: External read Addr: 0x2010, Data: 0x00000000
+
+     91725 DEBUG xbar_read: starting read of addr 0x2014
+     91725 SB: External read register x4, Expected 0x00000000, Matches Actual 0x00000000
+
+     91745 Mon: External read Addr: 0x2014, Data: 0x00000000
+
+     91745 DEBUG xbar_read: starting read of addr 0x2018
+     91745 SB: External read register x5, Expected 0x00000000, Matches Actual 0x00000000
+
+     91765 Mon: External read Addr: 0x2018, Data: 0x00000000
+
+     91765 DEBUG xbar_read: starting read of addr 0x201c
+     91765 SB: External read register x6, Expected 0x00000000, Matches Actual 0x00000000
+
+     91785 Mon: External read Addr: 0x201c, Data: 0x00000000
+
+     91785 DEBUG xbar_read: starting read of addr 0x2020
+     91785 SB: External read register x7, Expected 0x00000000, Matches Actual 0x00000000
+
+     91805 Mon: External read Addr: 0x2020, Data: 0x00000000
+
+     91805 DEBUG xbar_read: starting read of addr 0x2024
+     91805 SB: External read register x8, Expected 0x00000000, Matches Actual 0x00000000
+
+     91825 Mon: External read Addr: 0x2024, Data: 0x00000000
+
+     91825 DEBUG xbar_read: starting read of addr 0x2028
+     91825 SB: External read register x9, Expected 0x00000000, Matches Actual 0x00000000
+
+     91845 Mon: External read Addr: 0x2028, Data: 0x00000000
+
+     91845 DEBUG xbar_read: starting read of addr 0x202c
+     91845 SB: External read register x10, Expected 0x00000000, Matches Actual 0x00000000
+
+     91865 Mon: External read Addr: 0x202c, Data: 0x00000000
+
+     91865 DEBUG xbar_read: starting read of addr 0x2030
+     91865 SB: External read register x11, Expected 0x00000000, Matches Actual 0x00000000
+
+     91885 Mon: External read Addr: 0x2030, Data: 0x00000000
+
+     91885 DEBUG xbar_read: starting read of addr 0x2034
+     91885 SB: External read register x12, Expected 0x00000000, Matches Actual 0x00000000
+
+     91905 Mon: External read Addr: 0x2034, Data: 0x00000000
+
+     91905 DEBUG xbar_read: starting read of addr 0x2038
+     91905 SB: External read register x13, Expected 0x00000000, Matches Actual 0x00000000
+
+     91925 Mon: External read Addr: 0x2038, Data: 0x00000000
+
+     91925 DEBUG xbar_read: starting read of addr 0x203c
+     91925 SB: External read register x14, Expected 0x00000000, Matches Actual 0x00000000
+
+     91945 Mon: External read Addr: 0x203c, Data: 0x00000000
+
+     91945 DEBUG xbar_read: starting read of addr 0x2040
+     91945 SB: External read register x15, Expected 0x00000000, Matches Actual 0x00000000
+
+     91965 Mon: External read Addr: 0x2040, Data: 0x00000000
+
+     91965 DEBUG xbar_read: starting read of addr 0x2044
+     91965 SB: External read register x16, Expected 0x00000000, Matches Actual 0x00000000
+
+     91985 Mon: External read Addr: 0x2044, Data: 0x00000000
+
+     91985 DEBUG xbar_read: starting read of addr 0x2048
+     91985 SB: External read register x17, Expected 0x00000000, Matches Actual 0x00000000
+
+     92005 Mon: External read Addr: 0x2048, Data: 0x00000000
+
+     92005 DEBUG xbar_read: starting read of addr 0x204c
+     92005 SB: External read register x18, Expected 0x00000000, Matches Actual 0x00000000
+
+     92025 Mon: External read Addr: 0x204c, Data: 0x00000000
+
+     92025 DEBUG xbar_read: starting read of addr 0x2050
+     92025 SB: External read register x19, Expected 0x00000000, Matches Actual 0x00000000
+
+     92045 Mon: External read Addr: 0x2050, Data: 0x00000000
+
+     92045 DEBUG xbar_read: starting read of addr 0x2054
+     92045 SB: External read register x20, Expected 0x00000000, Matches Actual 0x00000000
+
+     92065 Mon: External read Addr: 0x2054, Data: 0x00000000
+
+     92065 DEBUG xbar_read: starting read of addr 0x2058
+     92065 SB: External read register x21, Expected 0x00000000, Matches Actual 0x00000000
+
+     92085 Mon: External read Addr: 0x2058, Data: 0x00000000
+
+     92085 DEBUG xbar_read: starting read of addr 0x205c
+     92085 SB: External read register x22, Expected 0x00000000, Matches Actual 0x00000000
+
+     92105 Mon: External read Addr: 0x205c, Data: 0x00000000
+
+     92105 DEBUG xbar_read: starting read of addr 0x2060
+     92105 SB: External read register x23, Expected 0x00000000, Matches Actual 0x00000000
+
+     92125 Mon: External read Addr: 0x2060, Data: 0x00000000
+
+     92125 DEBUG xbar_read: starting read of addr 0x2064
+     92125 SB: External read register x24, Expected 0x00000000, Matches Actual 0x00000000
+
+     92145 Mon: External read Addr: 0x2064, Data: 0x00000000
+
+     92145 DEBUG xbar_read: starting read of addr 0x2068
+     92145 SB: External read register x25, Expected 0x00000000, Matches Actual 0x00000000
+
+     92165 Mon: External read Addr: 0x2068, Data: 0x00000000
+
+     92165 DEBUG xbar_read: starting read of addr 0x206c
+     92165 SB: External read register x26, Expected 0x00000000, Matches Actual 0x00000000
+
+     92185 Mon: External read Addr: 0x206c, Data: 0x00000000
+
+     92185 DEBUG xbar_read: starting read of addr 0x2070
+     92185 SB: External read register x27, Expected 0x00000000, Matches Actual 0x00000000
+
+     92205 Mon: External read Addr: 0x2070, Data: 0x00000000
+
+     92205 DEBUG xbar_read: starting read of addr 0x2074
+     92205 SB: External read register x28, Expected 0x00000000, Matches Actual 0x00000000
+
+     92225 Mon: External read Addr: 0x2074, Data: 0x00000000
+
+     92225 DEBUG xbar_read: starting read of addr 0x2078
+     92225 SB: External read register x29, Expected 0x00000000, Matches Actual 0x00000000
+
+     92245 Mon: External read Addr: 0x2078, Data: 0x00000000
+
+     92245 DEBUG xbar_read: starting read of addr 0x207c
+     92245 SB: External read register x30, Expected 0x00000000, Matches Actual 0x00000000
+
+     92265 Mon: External read Addr: 0x207c, Data: 0x00000000
+
+     92265 SB: External read register x31, Expected 0x00000000, Matches Actual 0x00000000
+
+     92285 DEBUG xbar_read: starting read of addr 0x1000
+     92315 Mon: External read Addr: 0x1000, Data: 0x3c00d3c7
+
+     92315 DEBUG xbar_read: starting read of addr 0x1004
+     92315 SB: External read dmem[0x000], Expected 0x3c00d3c7, Matches Actual 0x3c00d3c7
+
+     92345 Mon: External read Addr: 0x1004, Data: 0x8d9a2664
+
+     92345 DEBUG xbar_read: starting read of addr 0x1008
+     92345 SB: External read dmem[0x001], Expected 0x8d9a2664, Matches Actual 0x8d9a2664
+
+     92375 Mon: External read Addr: 0x1008, Data: 0xb2a321db
+
+     92375 DEBUG xbar_read: starting read of addr 0x100c
+     92375 SB: External read dmem[0x002], Expected 0xb2a321db, Matches Actual 0xb2a321db
+
+     92405 Mon: External read Addr: 0x100c, Data: 0x2983433d
+
+     92405 DEBUG xbar_read: starting read of addr 0x1010
+     92405 SB: External read dmem[0x003], Expected 0x2983433d, Matches Actual 0x2983433d
+
+     92435 Mon: External read Addr: 0x1010, Data: 0xf3d79464
+
+     92435 DEBUG xbar_read: starting read of addr 0x1014
+     92435 SB: External read dmem[0x004], Expected 0xf3d79464, Matches Actual 0xf3d79464
+
+     92465 Mon: External read Addr: 0x1014, Data: 0x3c2fef84
+
+     92465 DEBUG xbar_read: starting read of addr 0x1018
+     92465 SB: External read dmem[0x005], Expected 0x3c2fef84, Matches Actual 0x3c2fef84
+
+     92495 Mon: External read Addr: 0x1018, Data: 0x6d881970
+
+     92495 DEBUG xbar_read: starting read of addr 0x101c
+     92495 SB: External read dmem[0x006], Expected 0x6d881970, Matches Actual 0x6d881970
+
+     92525 Mon: External read Addr: 0x101c, Data: 0x3889feae
+
+     92525 SB: External read dmem[0x007], Expected 0x3889feae, Matches Actual 0x3889feae
+
+
+=================================================================
+ TEST: test_beq_after_addi
+=================================================================
+     92555 Mon: Reset asserted
+
+     92635 Mon: External write Addr: 0x0000, Data: 0x00700213
+
+     92635 SB: External write imem[0x000] <- 0x00700213
+
+     92655 Mon: External write Addr: 0x0004, Data: 0x00408463
+
+     92655 SB: External write imem[0x001] <- 0x00408463
+
+     92675 Mon: External write Addr: 0x0008, Data: 0x7ff00413
+
+     92675 SB: External write imem[0x002] <- 0x7ff00413
+
+     92695 Mon: External write Addr: 0x000c, Data: 0x00100073
+
+     92695 SB: External write imem[0x003] <- 0x00100073
+
+     92735 Mon: CPU started executing
+
+     92735 SB: cpu started, reference model ran 3 instruction(s), predicted 0 store(s)
+
+     92775 Mon: cpu_halted_o asserted
+
+     92775 DEBUG xbar_read: starting read of addr 0x2000
+     92795 Mon: External read Addr: 0x2000, Data: 0x00000000
+
+     92795 DEBUG xbar_read: starting read of addr 0x2004
+     92795 SB: External read register x0, Expected 0x00000000, Matches Actual 0x00000000
+
+     92815 Mon: External read Addr: 0x2004, Data: 0x00000000
+
+     92815 DEBUG xbar_read: starting read of addr 0x2008
+     92815 SB: External read register x1, Expected 0x00000000, Matches Actual 0x00000000
+
+     92835 Mon: External read Addr: 0x2008, Data: 0x00000000
+
+     92835 DEBUG xbar_read: starting read of addr 0x200c
+     92835 SB: External read register x2, Expected 0x00000000, Matches Actual 0x00000000
+
+     92855 Mon: External read Addr: 0x200c, Data: 0x00000000
+
+     92855 DEBUG xbar_read: starting read of addr 0x2010
+     92855 SB: External read register x3, Expected 0x00000000, Matches Actual 0x00000000
+
+     92875 Mon: External read Addr: 0x2010, Data: 0x00000007
+
+     92875 DEBUG xbar_read: starting read of addr 0x2014
+     92875 SB: External read register x4, Expected 0x00000007, Matches Actual 0x00000007
+
+     92895 Mon: External read Addr: 0x2014, Data: 0x00000000
+
+     92895 DEBUG xbar_read: starting read of addr 0x2018
+     92895 SB: External read register x5, Expected 0x00000000, Matches Actual 0x00000000
+
+     92915 Mon: External read Addr: 0x2018, Data: 0x00000000
+
+     92915 DEBUG xbar_read: starting read of addr 0x201c
+     92915 SB: External read register x6, Expected 0x00000000, Matches Actual 0x00000000
+
+     92935 Mon: External read Addr: 0x201c, Data: 0x00000000
+
+     92935 DEBUG xbar_read: starting read of addr 0x2020
+     92935 SB: External read register x7, Expected 0x00000000, Matches Actual 0x00000000
+
+     92955 Mon: External read Addr: 0x2020, Data: 0x000007ff
+
+     92955 DEBUG xbar_read: starting read of addr 0x2024
+     92955 SB: External read register x8, Expected 0x000007ff, Matches Actual 0x000007ff
+
+     92975 Mon: External read Addr: 0x2024, Data: 0x00000000
+
+     92975 DEBUG xbar_read: starting read of addr 0x2028
+     92975 SB: External read register x9, Expected 0x00000000, Matches Actual 0x00000000
+
+     92995 Mon: External read Addr: 0x2028, Data: 0x00000000
+
+     92995 DEBUG xbar_read: starting read of addr 0x202c
+     92995 SB: External read register x10, Expected 0x00000000, Matches Actual 0x00000000
+
+     93015 Mon: External read Addr: 0x202c, Data: 0x00000000
+
+     93015 DEBUG xbar_read: starting read of addr 0x2030
+     93015 SB: External read register x11, Expected 0x00000000, Matches Actual 0x00000000
+
+     93035 Mon: External read Addr: 0x2030, Data: 0x00000000
+
+     93035 DEBUG xbar_read: starting read of addr 0x2034
+     93035 SB: External read register x12, Expected 0x00000000, Matches Actual 0x00000000
+
+     93055 Mon: External read Addr: 0x2034, Data: 0x00000000
+
+     93055 DEBUG xbar_read: starting read of addr 0x2038
+     93055 SB: External read register x13, Expected 0x00000000, Matches Actual 0x00000000
+
+     93075 Mon: External read Addr: 0x2038, Data: 0x00000000
+
+     93075 DEBUG xbar_read: starting read of addr 0x203c
+     93075 SB: External read register x14, Expected 0x00000000, Matches Actual 0x00000000
+
+     93095 Mon: External read Addr: 0x203c, Data: 0x00000000
+
+     93095 DEBUG xbar_read: starting read of addr 0x2040
+     93095 SB: External read register x15, Expected 0x00000000, Matches Actual 0x00000000
+
+     93115 Mon: External read Addr: 0x2040, Data: 0x00000000
+
+     93115 DEBUG xbar_read: starting read of addr 0x2044
+     93115 SB: External read register x16, Expected 0x00000000, Matches Actual 0x00000000
+
+     93135 Mon: External read Addr: 0x2044, Data: 0x00000000
+
+     93135 DEBUG xbar_read: starting read of addr 0x2048
+     93135 SB: External read register x17, Expected 0x00000000, Matches Actual 0x00000000
+
+     93155 Mon: External read Addr: 0x2048, Data: 0x00000000
+
+     93155 DEBUG xbar_read: starting read of addr 0x204c
+     93155 SB: External read register x18, Expected 0x00000000, Matches Actual 0x00000000
+
+     93175 Mon: External read Addr: 0x204c, Data: 0x00000000
+
+     93175 DEBUG xbar_read: starting read of addr 0x2050
+     93175 SB: External read register x19, Expected 0x00000000, Matches Actual 0x00000000
+
+     93195 Mon: External read Addr: 0x2050, Data: 0x00000000
+
+     93195 DEBUG xbar_read: starting read of addr 0x2054
+     93195 SB: External read register x20, Expected 0x00000000, Matches Actual 0x00000000
+
+     93215 Mon: External read Addr: 0x2054, Data: 0x00000000
+
+     93215 DEBUG xbar_read: starting read of addr 0x2058
+     93215 SB: External read register x21, Expected 0x00000000, Matches Actual 0x00000000
+
+     93235 Mon: External read Addr: 0x2058, Data: 0x00000000
+
+     93235 DEBUG xbar_read: starting read of addr 0x205c
+     93235 SB: External read register x22, Expected 0x00000000, Matches Actual 0x00000000
+
+     93255 Mon: External read Addr: 0x205c, Data: 0x00000000
+
+     93255 DEBUG xbar_read: starting read of addr 0x2060
+     93255 SB: External read register x23, Expected 0x00000000, Matches Actual 0x00000000
+
+     93275 Mon: External read Addr: 0x2060, Data: 0x00000000
+
+     93275 DEBUG xbar_read: starting read of addr 0x2064
+     93275 SB: External read register x24, Expected 0x00000000, Matches Actual 0x00000000
+
+     93295 Mon: External read Addr: 0x2064, Data: 0x00000000
+
+     93295 DEBUG xbar_read: starting read of addr 0x2068
+     93295 SB: External read register x25, Expected 0x00000000, Matches Actual 0x00000000
+
+     93315 Mon: External read Addr: 0x2068, Data: 0x00000000
+
+     93315 DEBUG xbar_read: starting read of addr 0x206c
+     93315 SB: External read register x26, Expected 0x00000000, Matches Actual 0x00000000
+
+     93335 Mon: External read Addr: 0x206c, Data: 0x00000000
+
+     93335 DEBUG xbar_read: starting read of addr 0x2070
+     93335 SB: External read register x27, Expected 0x00000000, Matches Actual 0x00000000
+
+     93355 Mon: External read Addr: 0x2070, Data: 0x00000000
+
+     93355 DEBUG xbar_read: starting read of addr 0x2074
+     93355 SB: External read register x28, Expected 0x00000000, Matches Actual 0x00000000
+
+     93375 Mon: External read Addr: 0x2074, Data: 0x00000000
+
+     93375 DEBUG xbar_read: starting read of addr 0x2078
+     93375 SB: External read register x29, Expected 0x00000000, Matches Actual 0x00000000
+
+     93395 Mon: External read Addr: 0x2078, Data: 0x00000000
+
+     93395 DEBUG xbar_read: starting read of addr 0x207c
+     93395 SB: External read register x30, Expected 0x00000000, Matches Actual 0x00000000
+
+     93415 Mon: External read Addr: 0x207c, Data: 0x00000000
+
+     93415 SB: External read register x31, Expected 0x00000000, Matches Actual 0x00000000
+
+     93435 DEBUG xbar_read: starting read of addr 0x1000
+     93465 Mon: External read Addr: 0x1000, Data: 0x3c00d3c7
+
+     93465 DEBUG xbar_read: starting read of addr 0x1004
+     93465 SB: External read dmem[0x000], Expected 0x3c00d3c7, Matches Actual 0x3c00d3c7
+
+     93495 Mon: External read Addr: 0x1004, Data: 0x8d9a2664
+
+     93495 DEBUG xbar_read: starting read of addr 0x1008
+     93495 SB: External read dmem[0x001], Expected 0x8d9a2664, Matches Actual 0x8d9a2664
+
+     93525 Mon: External read Addr: 0x1008, Data: 0xb2a321db
+
+     93525 DEBUG xbar_read: starting read of addr 0x100c
+     93525 SB: External read dmem[0x002], Expected 0xb2a321db, Matches Actual 0xb2a321db
+
+     93555 Mon: External read Addr: 0x100c, Data: 0x2983433d
+
+     93555 DEBUG xbar_read: starting read of addr 0x1010
+     93555 SB: External read dmem[0x003], Expected 0x2983433d, Matches Actual 0x2983433d
+
+     93585 Mon: External read Addr: 0x1010, Data: 0xf3d79464
+
+     93585 DEBUG xbar_read: starting read of addr 0x1014
+     93585 SB: External read dmem[0x004], Expected 0xf3d79464, Matches Actual 0xf3d79464
+
+     93615 Mon: External read Addr: 0x1014, Data: 0x3c2fef84
+
+     93615 DEBUG xbar_read: starting read of addr 0x1018
+     93615 SB: External read dmem[0x005], Expected 0x3c2fef84, Matches Actual 0x3c2fef84
+
+     93645 Mon: External read Addr: 0x1018, Data: 0x6d881970
+
+     93645 DEBUG xbar_read: starting read of addr 0x101c
+     93645 SB: External read dmem[0x006], Expected 0x6d881970, Matches Actual 0x6d881970
+
+     93675 Mon: External read Addr: 0x101c, Data: 0x3889feae
+
+     93675 SB: External read dmem[0x007], Expected 0x3889feae, Matches Actual 0x3889feae
+
+
+=================================================================
+ TEST: test_beq_after_lw
+=================================================================
+     93705 Mon: Reset asserted
+
+     93785 Mon: External write Addr: 0x0000, Data: 0x06400293
+
+     93785 SB: External write imem[0x000] <- 0x06400293
+
+     93805 Mon: External write Addr: 0x0004, Data: 0x00700493
+
+     93805 SB: External write imem[0x001] <- 0x00700493
+
+     93825 Mon: External write Addr: 0x0008, Data: 0x0092a023
+
+     93825 SB: External write imem[0x002] <- 0x0092a023
+
+     93845 Mon: External write Addr: 0x000c, Data: 0x0002a203
+
+     93845 SB: External write imem[0x003] <- 0x0002a203
+
+     93865 Mon: External write Addr: 0x0010, Data: 0x00408463
+
+     93865 SB: External write imem[0x004] <- 0x00408463
+
+     93885 Mon: External write Addr: 0x0014, Data: 0x7ff00413
+
+     93885 SB: External write imem[0x005] <- 0x7ff00413
+
+     93905 Mon: External write Addr: 0x0018, Data: 0x00100073
+
+     93905 SB: External write imem[0x006] <- 0x00100073
+
+     93945 Mon: CPU started executing
+
+     93945 SB: cpu started, reference model ran 6 instruction(s), predicted 1 store(s)
+
+     93965 Mon: CPU store dmem[19] <- 7
+
+     93965 SB: CPU store dmem[19] <- 7 matches prediction
+
+     93985 Mon: CPU load dmem[19] -> 7
+
+     93985 SB: CPU load dmem[19] -> 7 matches expected
+
+     94025 Mon: cpu_halted_o asserted
+
+     94025 DEBUG xbar_read: starting read of addr 0x2000
+     94045 Mon: External read Addr: 0x2000, Data: 0x00000000
+
+     94045 DEBUG xbar_read: starting read of addr 0x2004
+     94045 SB: External read register x0, Expected 0x00000000, Matches Actual 0x00000000
+
+     94065 Mon: External read Addr: 0x2004, Data: 0x00000000
+
+     94065 DEBUG xbar_read: starting read of addr 0x2008
+     94065 SB: External read register x1, Expected 0x00000000, Matches Actual 0x00000000
+
+     94085 Mon: External read Addr: 0x2008, Data: 0x00000000
+
+     94085 DEBUG xbar_read: starting read of addr 0x200c
+     94085 SB: External read register x2, Expected 0x00000000, Matches Actual 0x00000000
+
+     94105 Mon: External read Addr: 0x200c, Data: 0x00000000
+
+     94105 DEBUG xbar_read: starting read of addr 0x2010
+     94105 SB: External read register x3, Expected 0x00000000, Matches Actual 0x00000000
+
+     94125 Mon: External read Addr: 0x2010, Data: 0x00000007
+
+     94125 DEBUG xbar_read: starting read of addr 0x2014
+     94125 SB: External read register x4, Expected 0x00000007, Matches Actual 0x00000007
+
+     94145 Mon: External read Addr: 0x2014, Data: 0x00000064
+
+     94145 DEBUG xbar_read: starting read of addr 0x2018
+     94145 SB: External read register x5, Expected 0x00000064, Matches Actual 0x00000064
+
+     94165 Mon: External read Addr: 0x2018, Data: 0x00000000
+
+     94165 DEBUG xbar_read: starting read of addr 0x201c
+     94165 SB: External read register x6, Expected 0x00000000, Matches Actual 0x00000000
+
+     94185 Mon: External read Addr: 0x201c, Data: 0x00000000
+
+     94185 DEBUG xbar_read: starting read of addr 0x2020
+     94185 SB: External read register x7, Expected 0x00000000, Matches Actual 0x00000000
+
+     94205 Mon: External read Addr: 0x2020, Data: 0x000007ff
+
+     94205 DEBUG xbar_read: starting read of addr 0x2024
+     94205 SB: External read register x8, Expected 0x000007ff, Matches Actual 0x000007ff
+
+     94225 Mon: External read Addr: 0x2024, Data: 0x00000007
+
+     94225 DEBUG xbar_read: starting read of addr 0x2028
+     94225 SB: External read register x9, Expected 0x00000007, Matches Actual 0x00000007
+
+     94245 Mon: External read Addr: 0x2028, Data: 0x00000000
+
+     94245 DEBUG xbar_read: starting read of addr 0x202c
+     94245 SB: External read register x10, Expected 0x00000000, Matches Actual 0x00000000
+
+     94265 Mon: External read Addr: 0x202c, Data: 0x00000000
+
+     94265 DEBUG xbar_read: starting read of addr 0x2030
+     94265 SB: External read register x11, Expected 0x00000000, Matches Actual 0x00000000
+
+     94285 Mon: External read Addr: 0x2030, Data: 0x00000000
+
+     94285 DEBUG xbar_read: starting read of addr 0x2034
+     94285 SB: External read register x12, Expected 0x00000000, Matches Actual 0x00000000
+
+     94305 Mon: External read Addr: 0x2034, Data: 0x00000000
+
+     94305 DEBUG xbar_read: starting read of addr 0x2038
+     94305 SB: External read register x13, Expected 0x00000000, Matches Actual 0x00000000
+
+     94325 Mon: External read Addr: 0x2038, Data: 0x00000000
+
+     94325 DEBUG xbar_read: starting read of addr 0x203c
+     94325 SB: External read register x14, Expected 0x00000000, Matches Actual 0x00000000
+
+     94345 Mon: External read Addr: 0x203c, Data: 0x00000000
+
+     94345 DEBUG xbar_read: starting read of addr 0x2040
+     94345 SB: External read register x15, Expected 0x00000000, Matches Actual 0x00000000
+
+     94365 Mon: External read Addr: 0x2040, Data: 0x00000000
+
+     94365 DEBUG xbar_read: starting read of addr 0x2044
+     94365 SB: External read register x16, Expected 0x00000000, Matches Actual 0x00000000
+
+     94385 Mon: External read Addr: 0x2044, Data: 0x00000000
+
+     94385 DEBUG xbar_read: starting read of addr 0x2048
+     94385 SB: External read register x17, Expected 0x00000000, Matches Actual 0x00000000
+
+     94405 Mon: External read Addr: 0x2048, Data: 0x00000000
+
+     94405 DEBUG xbar_read: starting read of addr 0x204c
+     94405 SB: External read register x18, Expected 0x00000000, Matches Actual 0x00000000
+
+     94425 Mon: External read Addr: 0x204c, Data: 0x00000000
+
+     94425 DEBUG xbar_read: starting read of addr 0x2050
+     94425 SB: External read register x19, Expected 0x00000000, Matches Actual 0x00000000
+
+     94445 Mon: External read Addr: 0x2050, Data: 0x00000000
+
+     94445 DEBUG xbar_read: starting read of addr 0x2054
+     94445 SB: External read register x20, Expected 0x00000000, Matches Actual 0x00000000
+
+     94465 Mon: External read Addr: 0x2054, Data: 0x00000000
+
+     94465 DEBUG xbar_read: starting read of addr 0x2058
+     94465 SB: External read register x21, Expected 0x00000000, Matches Actual 0x00000000
+
+     94485 Mon: External read Addr: 0x2058, Data: 0x00000000
+
+     94485 DEBUG xbar_read: starting read of addr 0x205c
+     94485 SB: External read register x22, Expected 0x00000000, Matches Actual 0x00000000
+
+     94505 Mon: External read Addr: 0x205c, Data: 0x00000000
+
+     94505 DEBUG xbar_read: starting read of addr 0x2060
+     94505 SB: External read register x23, Expected 0x00000000, Matches Actual 0x00000000
+
+     94525 Mon: External read Addr: 0x2060, Data: 0x00000000
+
+     94525 DEBUG xbar_read: starting read of addr 0x2064
+     94525 SB: External read register x24, Expected 0x00000000, Matches Actual 0x00000000
+
+     94545 Mon: External read Addr: 0x2064, Data: 0x00000000
+
+     94545 DEBUG xbar_read: starting read of addr 0x2068
+     94545 SB: External read register x25, Expected 0x00000000, Matches Actual 0x00000000
+
+     94565 Mon: External read Addr: 0x2068, Data: 0x00000000
+
+     94565 DEBUG xbar_read: starting read of addr 0x206c
+     94565 SB: External read register x26, Expected 0x00000000, Matches Actual 0x00000000
+
+     94585 Mon: External read Addr: 0x206c, Data: 0x00000000
+
+     94585 DEBUG xbar_read: starting read of addr 0x2070
+     94585 SB: External read register x27, Expected 0x00000000, Matches Actual 0x00000000
+
+     94605 Mon: External read Addr: 0x2070, Data: 0x00000000
+
+     94605 DEBUG xbar_read: starting read of addr 0x2074
+     94605 SB: External read register x28, Expected 0x00000000, Matches Actual 0x00000000
+
+     94625 Mon: External read Addr: 0x2074, Data: 0x00000000
+
+     94625 DEBUG xbar_read: starting read of addr 0x2078
+     94625 SB: External read register x29, Expected 0x00000000, Matches Actual 0x00000000
+
+     94645 Mon: External read Addr: 0x2078, Data: 0x00000000
+
+     94645 DEBUG xbar_read: starting read of addr 0x207c
+     94645 SB: External read register x30, Expected 0x00000000, Matches Actual 0x00000000
+
+     94665 Mon: External read Addr: 0x207c, Data: 0x00000000
+
+     94665 SB: External read register x31, Expected 0x00000000, Matches Actual 0x00000000
+
+     94685 DEBUG xbar_read: starting read of addr 0x1000
+     94715 Mon: External read Addr: 0x1000, Data: 0x3c00d3c7
+
+     94715 DEBUG xbar_read: starting read of addr 0x1004
+     94715 SB: External read dmem[0x000], Expected 0x3c00d3c7, Matches Actual 0x3c00d3c7
+
+     94745 Mon: External read Addr: 0x1004, Data: 0x8d9a2664
+
+     94745 DEBUG xbar_read: starting read of addr 0x1008
+     94745 SB: External read dmem[0x001], Expected 0x8d9a2664, Matches Actual 0x8d9a2664
+
+     94775 Mon: External read Addr: 0x1008, Data: 0xb2a321db
+
+     94775 DEBUG xbar_read: starting read of addr 0x100c
+     94775 SB: External read dmem[0x002], Expected 0xb2a321db, Matches Actual 0xb2a321db
+
+     94805 Mon: External read Addr: 0x100c, Data: 0x2983433d
+
+     94805 DEBUG xbar_read: starting read of addr 0x1010
+     94805 SB: External read dmem[0x003], Expected 0x2983433d, Matches Actual 0x2983433d
+
+     94835 Mon: External read Addr: 0x1010, Data: 0xf3d79464
+
+     94835 DEBUG xbar_read: starting read of addr 0x1014
+     94835 SB: External read dmem[0x004], Expected 0xf3d79464, Matches Actual 0xf3d79464
+
+     94865 Mon: External read Addr: 0x1014, Data: 0x3c2fef84
+
+     94865 DEBUG xbar_read: starting read of addr 0x1018
+     94865 SB: External read dmem[0x005], Expected 0x3c2fef84, Matches Actual 0x3c2fef84
+
+     94895 Mon: External read Addr: 0x1018, Data: 0x6d881970
+
+     94895 DEBUG xbar_read: starting read of addr 0x101c
+     94895 SB: External read dmem[0x006], Expected 0x6d881970, Matches Actual 0x6d881970
+
+     94925 Mon: External read Addr: 0x101c, Data: 0x3889feae
+
+     94925 DEBUG xbar_read: starting read of addr 0x1020
+     94925 SB: External read dmem[0x007], Expected 0x3889feae, Matches Actual 0x3889feae
+
+     94955 Mon: External read Addr: 0x1020, Data: 0xc27f1f3b
+
+     94955 DEBUG xbar_read: starting read of addr 0x1024
+     94955 SB: External read dmem[0x008], Expected 0xc27f1f3b, Matches Actual 0xc27f1f3b
+
+     94985 Mon: External read Addr: 0x1024, Data: 0xfa19f51d
+
+     94985 DEBUG xbar_read: starting read of addr 0x1028
+     94985 SB: External read dmem[0x009], Expected 0xfa19f51d, Matches Actual 0xfa19f51d
+
+     95015 Mon: External read Addr: 0x1028, Data: 0xcde2e1ac
+
+     95015 DEBUG xbar_read: starting read of addr 0x102c
+     95015 SB: External read dmem[0x00a], Expected 0xcde2e1ac, Matches Actual 0xcde2e1ac
+
+     95045 Mon: External read Addr: 0x102c, Data: 0xc081ed9e
+
+     95045 DEBUG xbar_read: starting read of addr 0x1030
+     95045 SB: External read dmem[0x00b], Expected 0xc081ed9e, Matches Actual 0xc081ed9e
+
+     95075 Mon: External read Addr: 0x1030, Data: 0x16b167d6
+
+     95075 DEBUG xbar_read: starting read of addr 0x1034
+     95075 SB: External read dmem[0x00c], Expected 0x16b167d6, Matches Actual 0x16b167d6
+
+     95105 Mon: External read Addr: 0x1034, Data: 0x9b002eeb
+
+     95105 DEBUG xbar_read: starting read of addr 0x1038
+     95105 SB: External read dmem[0x00d], Expected 0x9b002eeb, Matches Actual 0x9b002eeb
+
+     95135 Mon: External read Addr: 0x1038, Data: 0xb3483179
+
+     95135 DEBUG xbar_read: starting read of addr 0x103c
+     95135 SB: External read dmem[0x00e], Expected 0xb3483179, Matches Actual 0xb3483179
+
+     95165 Mon: External read Addr: 0x103c, Data: 0x43f07129
+
+     95165 DEBUG xbar_read: starting read of addr 0x1040
+     95165 SB: External read dmem[0x00f], Expected 0x43f07129, Matches Actual 0x43f07129
+
+     95195 Mon: External read Addr: 0x1040, Data: 0x9ce29480
+
+     95195 DEBUG xbar_read: starting read of addr 0x1044
+     95195 SB: External read dmem[0x010], Expected 0x9ce29480, Matches Actual 0x9ce29480
+
+     95225 Mon: External read Addr: 0x1044, Data: 0x6c4ad369
+
+     95225 DEBUG xbar_read: starting read of addr 0x1048
+     95225 SB: External read dmem[0x011], Expected 0x6c4ad369, Matches Actual 0x6c4ad369
+
+     95255 Mon: External read Addr: 0x1048, Data: 0x7312ca83
+
+     95255 DEBUG xbar_read: starting read of addr 0x104c
+     95255 SB: External read dmem[0x012], Expected 0x7312ca83, Matches Actual 0x7312ca83
+
+     95285 Mon: External read Addr: 0x104c, Data: 0x771f8129
+
+     95285 DEBUG xbar_read: starting read of addr 0x1050
+     95285 SB: External read dmem[0x013], Expected 0x771f8129, Matches Actual 0x771f8129
+
+     95315 Mon: External read Addr: 0x1050, Data: 0xaf4aae44
+
+     95315 DEBUG xbar_read: starting read of addr 0x1054
+     95315 SB: External read dmem[0x014], Expected 0xaf4aae44, Matches Actual 0xaf4aae44
+
+     95345 Mon: External read Addr: 0x1054, Data: 0xa51f07d2
+
+     95345 DEBUG xbar_read: starting read of addr 0x1058
+     95345 SB: External read dmem[0x015], Expected 0xa51f07d2, Matches Actual 0xa51f07d2
+
+     95375 Mon: External read Addr: 0x1058, Data: 0x48562934
+
+     95375 DEBUG xbar_read: starting read of addr 0x105c
+     95375 SB: External read dmem[0x016], Expected 0x48562934, Matches Actual 0x48562934
+
+     95405 Mon: External read Addr: 0x105c, Data: 0xb0145c3a
+
+     95405 DEBUG xbar_read: starting read of addr 0x1060
+     95405 SB: External read dmem[0x017], Expected 0xb0145c3a, Matches Actual 0xb0145c3a
+
+     95435 Mon: External read Addr: 0x1060, Data: 0xc5e050ee
+
+     95435 DEBUG xbar_read: starting read of addr 0x1064
+     95435 SB: External read dmem[0x018], Expected 0xc5e050ee, Matches Actual 0xc5e050ee
+
+     95465 Mon: External read Addr: 0x1064, Data: 0x00000007
+
+     95465 DEBUG xbar_read: starting read of addr 0x1068
+     95465 SB: External read dmem[0x019], Expected 0x00000007, Matches Actual 0x00000007
+
+     95495 Mon: External read Addr: 0x1068, Data: 0xc3ec34b8
+
+     95495 DEBUG xbar_read: starting read of addr 0x106c
+     95495 SB: External read dmem[0x01a], Expected 0xc3ec34b8, Matches Actual 0xc3ec34b8
+
+     95525 Mon: External read Addr: 0x106c, Data: 0x569637b6
+
+     95525 DEBUG xbar_read: starting read of addr 0x1070
+     95525 SB: External read dmem[0x01b], Expected 0x569637b6, Matches Actual 0x569637b6
+
+     95555 Mon: External read Addr: 0x1070, Data: 0xe65b5b07
+
+     95555 DEBUG xbar_read: starting read of addr 0x1074
+     95555 SB: External read dmem[0x01c], Expected 0xe65b5b07, Matches Actual 0xe65b5b07
+
+     95585 Mon: External read Addr: 0x1074, Data: 0x5ac47f11
+
+     95585 DEBUG xbar_read: starting read of addr 0x1078
+     95585 SB: External read dmem[0x01d], Expected 0x5ac47f11, Matches Actual 0x5ac47f11
+
+     95615 Mon: External read Addr: 0x1078, Data: 0x3c6aeefa
+
+     95615 DEBUG xbar_read: starting read of addr 0x107c
+     95615 SB: External read dmem[0x01e], Expected 0x3c6aeefa, Matches Actual 0x3c6aeefa
+
+     95645 Mon: External read Addr: 0x107c, Data: 0x542cefb8
+
+     95645 SB: External read dmem[0x01f], Expected 0x542cefb8, Matches Actual 0x542cefb8
+
+     95675 Mon: External write Addr: 0x1118, Data: 0xb99891d9
+
+
+=================================================================
+ TEST: mr_sw_lw_random0
+=================================================================
+     95675 SB: External write dmem[0x046] <- 0xb99891d9
+
+     95705 Mon: Reset asserted
+
+     95785 Mon: External write Addr: 0x0000, Data: 0xe8a18313
+
+     95785 SB: External write imem[0x000] <- 0xe8a18313
+
+     95805 Mon: External write Addr: 0x0004, Data: 0x35dbac23
+
+     95805 SB: External write imem[0x001] <- 0x35dbac23
+
+     95825 Mon: External write Addr: 0x0008, Data: 0x28e32103
+
+     95825 SB: External write imem[0x002] <- 0x28e32103
+
+     95845 Mon: External write Addr: 0x000c, Data: 0x404703b3
+
+     95845 SB: External write imem[0x003] <- 0x404703b3
+
+     95865 Mon: External write Addr: 0x0010, Data: 0x6c21a623
+
+     95865 SB: External write imem[0x004] <- 0x6c21a623
+
+     95885 Mon: External write Addr: 0x0014, Data: 0x00100073
+
+     95885 SB: External write imem[0x005] <- 0x00100073
+
+     95925 Mon: CPU started executing
+
+     95925 SB: cpu started, reference model ran 5 instruction(s), predicted 2 store(s)
+
+     95935 Mon: CPU store dmem[d6] <- 0
+
+     95935 SB: CPU store dmem[d6] <- 0 matches prediction
+
+     95955 Mon: CPU load dmem[46] -> b99891d9
+
+     95955 SB: CPU load dmem[46] -> b99891d9 matches expected
+
+     95975 Mon: CPU store dmem[1b3] <- b99891d9
+
+     95975 SB: CPU store dmem[1b3] <- b99891d9 matches prediction
+
+     95995 Mon: cpu_halted_o asserted
+
+     95995 DEBUG xbar_read: starting read of addr 0x2000
+     96015 Mon: External read Addr: 0x2000, Data: 0x00000000
+
+     96015 DEBUG xbar_read: starting read of addr 0x2004
+     96015 SB: External read register x0, Expected 0x00000000, Matches Actual 0x00000000
+
+     96035 Mon: External read Addr: 0x2004, Data: 0x00000000
+
+     96035 DEBUG xbar_read: starting read of addr 0x2008
+     96035 SB: External read register x1, Expected 0x00000000, Matches Actual 0x00000000
+
+     96055 Mon: External read Addr: 0x2008, Data: 0xb99891d9
+
+     96055 DEBUG xbar_read: starting read of addr 0x200c
+     96055 SB: External read register x2, Expected 0xb99891d9, Matches Actual 0xb99891d9
+
+     96075 Mon: External read Addr: 0x200c, Data: 0x00000000
+
+     96075 DEBUG xbar_read: starting read of addr 0x2010
+     96075 SB: External read register x3, Expected 0x00000000, Matches Actual 0x00000000
+
+     96095 Mon: External read Addr: 0x2010, Data: 0x00000000
+
+     96095 DEBUG xbar_read: starting read of addr 0x2014
+     96095 SB: External read register x4, Expected 0x00000000, Matches Actual 0x00000000
+
+     96115 Mon: External read Addr: 0x2014, Data: 0x00000000
+
+     96115 DEBUG xbar_read: starting read of addr 0x2018
+     96115 SB: External read register x5, Expected 0x00000000, Matches Actual 0x00000000
+
+     96135 Mon: External read Addr: 0x2018, Data: 0xfffffe8a
+
+     96135 DEBUG xbar_read: starting read of addr 0x201c
+     96135 SB: External read register x6, Expected 0xfffffe8a, Matches Actual 0xfffffe8a
+
+     96155 Mon: External read Addr: 0x201c, Data: 0x00000000
+
+     96155 DEBUG xbar_read: starting read of addr 0x2020
+     96155 SB: External read register x7, Expected 0x00000000, Matches Actual 0x00000000
+
+     96175 Mon: External read Addr: 0x2020, Data: 0x00000000
+
+     96175 DEBUG xbar_read: starting read of addr 0x2024
+     96175 SB: External read register x8, Expected 0x00000000, Matches Actual 0x00000000
+
+     96195 Mon: External read Addr: 0x2024, Data: 0x00000000
+
+     96195 DEBUG xbar_read: starting read of addr 0x2028
+     96195 SB: External read register x9, Expected 0x00000000, Matches Actual 0x00000000
+
+     96215 Mon: External read Addr: 0x2028, Data: 0x00000000
+
+     96215 DEBUG xbar_read: starting read of addr 0x202c
+     96215 SB: External read register x10, Expected 0x00000000, Matches Actual 0x00000000
+
+     96235 Mon: External read Addr: 0x202c, Data: 0x00000000
+
+     96235 DEBUG xbar_read: starting read of addr 0x2030
+     96235 SB: External read register x11, Expected 0x00000000, Matches Actual 0x00000000
+
+     96255 Mon: External read Addr: 0x2030, Data: 0x00000000
+
+     96255 DEBUG xbar_read: starting read of addr 0x2034
+     96255 SB: External read register x12, Expected 0x00000000, Matches Actual 0x00000000
+
+     96275 Mon: External read Addr: 0x2034, Data: 0x00000000
+
+     96275 DEBUG xbar_read: starting read of addr 0x2038
+     96275 SB: External read register x13, Expected 0x00000000, Matches Actual 0x00000000
+
+     96295 Mon: External read Addr: 0x2038, Data: 0x00000000
+
+     96295 DEBUG xbar_read: starting read of addr 0x203c
+     96295 SB: External read register x14, Expected 0x00000000, Matches Actual 0x00000000
+
+     96315 Mon: External read Addr: 0x203c, Data: 0x00000000
+
+     96315 DEBUG xbar_read: starting read of addr 0x2040
+     96315 SB: External read register x15, Expected 0x00000000, Matches Actual 0x00000000
+
+     96335 Mon: External read Addr: 0x2040, Data: 0x00000000
+
+     96335 DEBUG xbar_read: starting read of addr 0x2044
+     96335 SB: External read register x16, Expected 0x00000000, Matches Actual 0x00000000
+
+     96355 Mon: External read Addr: 0x2044, Data: 0x00000000
+
+     96355 DEBUG xbar_read: starting read of addr 0x2048
+     96355 SB: External read register x17, Expected 0x00000000, Matches Actual 0x00000000
+
+     96375 Mon: External read Addr: 0x2048, Data: 0x00000000
+
+     96375 DEBUG xbar_read: starting read of addr 0x204c
+     96375 SB: External read register x18, Expected 0x00000000, Matches Actual 0x00000000
+
+     96395 Mon: External read Addr: 0x204c, Data: 0x00000000
+
+     96395 DEBUG xbar_read: starting read of addr 0x2050
+     96395 SB: External read register x19, Expected 0x00000000, Matches Actual 0x00000000
+
+     96415 Mon: External read Addr: 0x2050, Data: 0x00000000
+
+     96415 DEBUG xbar_read: starting read of addr 0x2054
+     96415 SB: External read register x20, Expected 0x00000000, Matches Actual 0x00000000
+
+     96435 Mon: External read Addr: 0x2054, Data: 0x00000000
+
+     96435 DEBUG xbar_read: starting read of addr 0x2058
+     96435 SB: External read register x21, Expected 0x00000000, Matches Actual 0x00000000
+
+     96455 Mon: External read Addr: 0x2058, Data: 0x00000000
+
+     96455 DEBUG xbar_read: starting read of addr 0x205c
+     96455 SB: External read register x22, Expected 0x00000000, Matches Actual 0x00000000
+
+     96475 Mon: External read Addr: 0x205c, Data: 0x00000000
+
+     96475 DEBUG xbar_read: starting read of addr 0x2060
+     96475 SB: External read register x23, Expected 0x00000000, Matches Actual 0x00000000
+
+     96495 Mon: External read Addr: 0x2060, Data: 0x00000000
+
+     96495 DEBUG xbar_read: starting read of addr 0x2064
+     96495 SB: External read register x24, Expected 0x00000000, Matches Actual 0x00000000
+
+     96515 Mon: External read Addr: 0x2064, Data: 0x00000000
+
+     96515 DEBUG xbar_read: starting read of addr 0x2068
+     96515 SB: External read register x25, Expected 0x00000000, Matches Actual 0x00000000
+
+     96535 Mon: External read Addr: 0x2068, Data: 0x00000000
+
+     96535 DEBUG xbar_read: starting read of addr 0x206c
+     96535 SB: External read register x26, Expected 0x00000000, Matches Actual 0x00000000
+
+     96555 Mon: External read Addr: 0x206c, Data: 0x00000000
+
+     96555 DEBUG xbar_read: starting read of addr 0x2070
+     96555 SB: External read register x27, Expected 0x00000000, Matches Actual 0x00000000
+
+     96575 Mon: External read Addr: 0x2070, Data: 0x00000000
+
+     96575 DEBUG xbar_read: starting read of addr 0x2074
+     96575 SB: External read register x28, Expected 0x00000000, Matches Actual 0x00000000
+
+     96595 Mon: External read Addr: 0x2074, Data: 0x00000000
+
+     96595 DEBUG xbar_read: starting read of addr 0x2078
+     96595 SB: External read register x29, Expected 0x00000000, Matches Actual 0x00000000
+
+     96615 Mon: External read Addr: 0x2078, Data: 0x00000000
+
+     96615 DEBUG xbar_read: starting read of addr 0x207c
+     96615 SB: External read register x30, Expected 0x00000000, Matches Actual 0x00000000
+
+     96635 Mon: External read Addr: 0x207c, Data: 0x00000000
+
+     96635 SB: External read register x31, Expected 0x00000000, Matches Actual 0x00000000
+
+     96655 DEBUG xbar_read: starting read of addr 0x1000
+     96685 Mon: External read Addr: 0x1000, Data: 0x3c00d3c7
+
+     96685 DEBUG xbar_read: starting read of addr 0x1004
+     96685 SB: External read dmem[0x000], Expected 0x3c00d3c7, Matches Actual 0x3c00d3c7
+
+     96715 Mon: External read Addr: 0x1004, Data: 0x8d9a2664
+
+     96715 DEBUG xbar_read: starting read of addr 0x1008
+     96715 SB: External read dmem[0x001], Expected 0x8d9a2664, Matches Actual 0x8d9a2664
+
+     96745 Mon: External read Addr: 0x1008, Data: 0xb2a321db
+
+     96745 DEBUG xbar_read: starting read of addr 0x100c
+     96745 SB: External read dmem[0x002], Expected 0xb2a321db, Matches Actual 0xb2a321db
+
+     96775 Mon: External read Addr: 0x100c, Data: 0x2983433d
+
+     96775 DEBUG xbar_read: starting read of addr 0x1010
+     96775 SB: External read dmem[0x003], Expected 0x2983433d, Matches Actual 0x2983433d
+
+     96805 Mon: External read Addr: 0x1010, Data: 0xf3d79464
+
+     96805 DEBUG xbar_read: starting read of addr 0x1014
+     96805 SB: External read dmem[0x004], Expected 0xf3d79464, Matches Actual 0xf3d79464
+
+     96835 Mon: External read Addr: 0x1014, Data: 0x3c2fef84
+
+     96835 DEBUG xbar_read: starting read of addr 0x1018
+     96835 SB: External read dmem[0x005], Expected 0x3c2fef84, Matches Actual 0x3c2fef84
+
+     96865 Mon: External read Addr: 0x1018, Data: 0x6d881970
+
+     96865 DEBUG xbar_read: starting read of addr 0x101c
+     96865 SB: External read dmem[0x006], Expected 0x6d881970, Matches Actual 0x6d881970
+
+     96895 Mon: External read Addr: 0x101c, Data: 0x3889feae
+
+     96895 SB: External read dmem[0x007], Expected 0x3889feae, Matches Actual 0x3889feae
+
+     96925 Mon: External write Addr: 0x1248, Data: 0x832b50c7
+
+     96925 SB: External write dmem[0x092] <- 0x832b50c7
+
+     96945 Mon: External write Addr: 0x1414, Data: 0x1cc26a38
+
+
+=================================================================
+ TEST: test_4bits_match
+=================================================================
+     96945 SB: External write dmem[0x105] <- 0x1cc26a38
+
+     96975 Mon: Reset asserted
+
+     97055 Mon: External write Addr: 0x0000, Data: 0x248aa283
+
+     97055 SB: External write imem[0x000] <- 0x248aa283
+
+     97075 Mon: External write Addr: 0x0004, Data: 0x2050aa23
+
+     97075 SB: External write imem[0x001] <- 0x2050aa23
+
+     97095 Mon: External write Addr: 0x0008, Data: 0x4143a083
+
+     97095 SB: External write imem[0x002] <- 0x4143a083
+
+     97115 Mon: External write Addr: 0x000c, Data: 0x007091b3
+
+     97115 SB: External write imem[0x003] <- 0x007091b3
+
+     97135 Mon: External write Addr: 0x0010, Data: 0x00100073
+
+     97135 SB: External write imem[0x004] <- 0x00100073
+
+     97175 Mon: CPU started executing
+
+     97175 SB: cpu started, reference model ran 4 instruction(s), predicted 1 store(s)
+
+     97185 Mon: CPU load dmem[92] -> 832b50c7
+
+     97185 SB: CPU load dmem[92] -> 832b50c7 matches expected
+
+     97195 Mon: CPU store dmem[85] <- 832b50c7
+
+     97195 SB: CPU store dmem[85] <- 832b50c7 matches prediction
+
+     97215 Mon: CPU load dmem[105] -> 1cc26a38
+
+     97215 SB: CPU load dmem[105] -> 1cc26a38 matches expected
+
+     97245 Mon: cpu_halted_o asserted
+
+     97245 DEBUG xbar_read: starting read of addr 0x2000
+     97265 Mon: External read Addr: 0x2000, Data: 0x00000000
+
+     97265 DEBUG xbar_read: starting read of addr 0x2004
+     97265 SB: External read register x0, Expected 0x00000000, Matches Actual 0x00000000
+
+     97285 Mon: External read Addr: 0x2004, Data: 0x1cc26a38
+
+     97285 DEBUG xbar_read: starting read of addr 0x2008
+     97285 SB: External read register x1, Expected 0x1cc26a38, Matches Actual 0x1cc26a38
+
+     97305 Mon: External read Addr: 0x2008, Data: 0x00000000
+
+     97305 DEBUG xbar_read: starting read of addr 0x200c
+     97305 SB: External read register x2, Expected 0x00000000, Matches Actual 0x00000000
+
+     97325 Mon: External read Addr: 0x200c, Data: 0x1cc26a38
+
+     97325 DEBUG xbar_read: starting read of addr 0x2010
+     97325 SB: External read register x3, Expected 0x1cc26a38, Matches Actual 0x1cc26a38
+
+     97345 Mon: External read Addr: 0x2010, Data: 0x00000000
+
+     97345 DEBUG xbar_read: starting read of addr 0x2014
+     97345 SB: External read register x4, Expected 0x00000000, Matches Actual 0x00000000
+
+     97365 Mon: External read Addr: 0x2014, Data: 0x832b50c7
+
+     97365 DEBUG xbar_read: starting read of addr 0x2018
+     97365 SB: External read register x5, Expected 0x832b50c7, Matches Actual 0x832b50c7
+
+     97385 Mon: External read Addr: 0x2018, Data: 0x00000000
+
+     97385 DEBUG xbar_read: starting read of addr 0x201c
+     97385 SB: External read register x6, Expected 0x00000000, Matches Actual 0x00000000
+
+     97405 Mon: External read Addr: 0x201c, Data: 0x00000000
+
+     97405 DEBUG xbar_read: starting read of addr 0x2020
+     97405 SB: External read register x7, Expected 0x00000000, Matches Actual 0x00000000
+
+     97425 Mon: External read Addr: 0x2020, Data: 0x00000000
+
+     97425 DEBUG xbar_read: starting read of addr 0x2024
+     97425 SB: External read register x8, Expected 0x00000000, Matches Actual 0x00000000
+
+     97445 Mon: External read Addr: 0x2024, Data: 0x00000000
+
+     97445 DEBUG xbar_read: starting read of addr 0x2028
+     97445 SB: External read register x9, Expected 0x00000000, Matches Actual 0x00000000
+
+     97465 Mon: External read Addr: 0x2028, Data: 0x00000000
+
+     97465 DEBUG xbar_read: starting read of addr 0x202c
+     97465 SB: External read register x10, Expected 0x00000000, Matches Actual 0x00000000
+
+     97485 Mon: External read Addr: 0x202c, Data: 0x00000000
+
+     97485 DEBUG xbar_read: starting read of addr 0x2030
+     97485 SB: External read register x11, Expected 0x00000000, Matches Actual 0x00000000
+
+     97505 Mon: External read Addr: 0x2030, Data: 0x00000000
+
+     97505 DEBUG xbar_read: starting read of addr 0x2034
+     97505 SB: External read register x12, Expected 0x00000000, Matches Actual 0x00000000
+
+     97525 Mon: External read Addr: 0x2034, Data: 0x00000000
+
+     97525 DEBUG xbar_read: starting read of addr 0x2038
+     97525 SB: External read register x13, Expected 0x00000000, Matches Actual 0x00000000
+
+     97545 Mon: External read Addr: 0x2038, Data: 0x00000000
+
+     97545 DEBUG xbar_read: starting read of addr 0x203c
+     97545 SB: External read register x14, Expected 0x00000000, Matches Actual 0x00000000
+
+     97565 Mon: External read Addr: 0x203c, Data: 0x00000000
+
+     97565 DEBUG xbar_read: starting read of addr 0x2040
+     97565 SB: External read register x15, Expected 0x00000000, Matches Actual 0x00000000
+
+     97585 Mon: External read Addr: 0x2040, Data: 0x00000000
+
+     97585 DEBUG xbar_read: starting read of addr 0x2044
+     97585 SB: External read register x16, Expected 0x00000000, Matches Actual 0x00000000
+
+     97605 Mon: External read Addr: 0x2044, Data: 0x00000000
+
+     97605 DEBUG xbar_read: starting read of addr 0x2048
+     97605 SB: External read register x17, Expected 0x00000000, Matches Actual 0x00000000
+
+     97625 Mon: External read Addr: 0x2048, Data: 0x00000000
+
+     97625 DEBUG xbar_read: starting read of addr 0x204c
+     97625 SB: External read register x18, Expected 0x00000000, Matches Actual 0x00000000
+
+     97645 Mon: External read Addr: 0x204c, Data: 0x00000000
+
+     97645 DEBUG xbar_read: starting read of addr 0x2050
+     97645 SB: External read register x19, Expected 0x00000000, Matches Actual 0x00000000
+
+     97665 Mon: External read Addr: 0x2050, Data: 0x00000000
+
+     97665 DEBUG xbar_read: starting read of addr 0x2054
+     97665 SB: External read register x20, Expected 0x00000000, Matches Actual 0x00000000
+
+     97685 Mon: External read Addr: 0x2054, Data: 0x00000000
+
+     97685 DEBUG xbar_read: starting read of addr 0x2058
+     97685 SB: External read register x21, Expected 0x00000000, Matches Actual 0x00000000
+
+     97705 Mon: External read Addr: 0x2058, Data: 0x00000000
+
+     97705 DEBUG xbar_read: starting read of addr 0x205c
+     97705 SB: External read register x22, Expected 0x00000000, Matches Actual 0x00000000
+
+     97725 Mon: External read Addr: 0x205c, Data: 0x00000000
+
+     97725 DEBUG xbar_read: starting read of addr 0x2060
+     97725 SB: External read register x23, Expected 0x00000000, Matches Actual 0x00000000
+
+     97745 Mon: External read Addr: 0x2060, Data: 0x00000000
+
+     97745 DEBUG xbar_read: starting read of addr 0x2064
+     97745 SB: External read register x24, Expected 0x00000000, Matches Actual 0x00000000
+
+     97765 Mon: External read Addr: 0x2064, Data: 0x00000000
+
+     97765 DEBUG xbar_read: starting read of addr 0x2068
+     97765 SB: External read register x25, Expected 0x00000000, Matches Actual 0x00000000
+
+     97785 Mon: External read Addr: 0x2068, Data: 0x00000000
+
+     97785 DEBUG xbar_read: starting read of addr 0x206c
+     97785 SB: External read register x26, Expected 0x00000000, Matches Actual 0x00000000
+
+     97805 Mon: External read Addr: 0x206c, Data: 0x00000000
+
+     97805 DEBUG xbar_read: starting read of addr 0x2070
+     97805 SB: External read register x27, Expected 0x00000000, Matches Actual 0x00000000
+
+     97825 Mon: External read Addr: 0x2070, Data: 0x00000000
+
+     97825 DEBUG xbar_read: starting read of addr 0x2074
+     97825 SB: External read register x28, Expected 0x00000000, Matches Actual 0x00000000
+
+     97845 Mon: External read Addr: 0x2074, Data: 0x00000000
+
+     97845 DEBUG xbar_read: starting read of addr 0x2078
+     97845 SB: External read register x29, Expected 0x00000000, Matches Actual 0x00000000
+
+     97865 Mon: External read Addr: 0x2078, Data: 0x00000000
+
+     97865 DEBUG xbar_read: starting read of addr 0x207c
+     97865 SB: External read register x30, Expected 0x00000000, Matches Actual 0x00000000
+
+     97885 Mon: External read Addr: 0x207c, Data: 0x00000000
+
+     97885 SB: External read register x31, Expected 0x00000000, Matches Actual 0x00000000
+
+     97905 DEBUG xbar_read: starting read of addr 0x1000
+     97935 Mon: External read Addr: 0x1000, Data: 0x3c00d3c7
+
+     97935 DEBUG xbar_read: starting read of addr 0x1004
+     97935 SB: External read dmem[0x000], Expected 0x3c00d3c7, Matches Actual 0x3c00d3c7
+
+     97965 Mon: External read Addr: 0x1004, Data: 0x8d9a2664
+
+     97965 DEBUG xbar_read: starting read of addr 0x1008
+     97965 SB: External read dmem[0x001], Expected 0x8d9a2664, Matches Actual 0x8d9a2664
+
+     97995 Mon: External read Addr: 0x1008, Data: 0xb2a321db
+
+     97995 DEBUG xbar_read: starting read of addr 0x100c
+     97995 SB: External read dmem[0x002], Expected 0xb2a321db, Matches Actual 0xb2a321db
+
+     98025 Mon: External read Addr: 0x100c, Data: 0x2983433d
+
+     98025 DEBUG xbar_read: starting read of addr 0x1010
+     98025 SB: External read dmem[0x003], Expected 0x2983433d, Matches Actual 0x2983433d
+
+     98055 Mon: External read Addr: 0x1010, Data: 0xf3d79464
+
+     98055 DEBUG xbar_read: starting read of addr 0x1014
+     98055 SB: External read dmem[0x004], Expected 0xf3d79464, Matches Actual 0xf3d79464
+
+     98085 Mon: External read Addr: 0x1014, Data: 0x3c2fef84
+
+     98085 DEBUG xbar_read: starting read of addr 0x1018
+     98085 SB: External read dmem[0x005], Expected 0x3c2fef84, Matches Actual 0x3c2fef84
+
+     98115 Mon: External read Addr: 0x1018, Data: 0x6d881970
+
+     98115 DEBUG xbar_read: starting read of addr 0x101c
+     98115 SB: External read dmem[0x006], Expected 0x6d881970, Matches Actual 0x6d881970
+
+     98145 Mon: External read Addr: 0x101c, Data: 0x3889feae
+
+     98145 SB: External read dmem[0x007], Expected 0x3889feae, Matches Actual 0x3889feae
+
+     98175 Mon: External write Addr: 0x1118, Data: 0xb99891d9
+
+
+=================================================================
+ TEST: test_sw_lw_nop
+=================================================================
+     98175 SB: External write dmem[0x046] <- 0xb99891d9
+
+     98205 Mon: Reset asserted
+
+     98285 Mon: External write Addr: 0x0000, Data: 0xe8a18313
+
+     98285 SB: External write imem[0x000] <- 0xe8a18313
+
+     98305 Mon: External write Addr: 0x0004, Data: 0x35dbac23
+
+     98305 SB: External write imem[0x001] <- 0x35dbac23
+
+     98325 Mon: External write Addr: 0x0008, Data: 0x00000013
+
+     98325 SB: External write imem[0x002] <- 0x00000013
+
+     98345 Mon: External write Addr: 0x000c, Data: 0x28e32103
+
+     98345 SB: External write imem[0x003] <- 0x28e32103
+
+     98365 Mon: External write Addr: 0x0010, Data: 0x404703b3
+
+     98365 SB: External write imem[0x004] <- 0x404703b3
+
+     98385 Mon: External write Addr: 0x0014, Data: 0x6c21a623
+
+     98385 SB: External write imem[0x005] <- 0x6c21a623
+
+     98405 Mon: External write Addr: 0x0018, Data: 0x00100073
+
+     98405 SB: External write imem[0x006] <- 0x00100073
+
+     98445 Mon: CPU started executing
+
+     98445 SB: cpu started, reference model ran 6 instruction(s), predicted 2 store(s)
+
+     98455 Mon: CPU store dmem[d6] <- 0
+
+     98455 SB: CPU store dmem[d6] <- 0 matches prediction
+
+     98485 Mon: CPU load dmem[46] -> b99891d9
+
+     98485 SB: CPU load dmem[46] -> b99891d9 matches expected
+
+     98505 Mon: CPU store dmem[1b3] <- b99891d9
+
+     98505 SB: CPU store dmem[1b3] <- b99891d9 matches prediction
+
+     98525 Mon: cpu_halted_o asserted
+
+     98525 DEBUG xbar_read: starting read of addr 0x2000
+     98545 Mon: External read Addr: 0x2000, Data: 0x00000000
+
+     98545 DEBUG xbar_read: starting read of addr 0x2004
+     98545 SB: External read register x0, Expected 0x00000000, Matches Actual 0x00000000
+
+     98565 Mon: External read Addr: 0x2004, Data: 0x00000000
+
+     98565 DEBUG xbar_read: starting read of addr 0x2008
+     98565 SB: External read register x1, Expected 0x00000000, Matches Actual 0x00000000
+
+     98585 Mon: External read Addr: 0x2008, Data: 0xb99891d9
+
+     98585 DEBUG xbar_read: starting read of addr 0x200c
+     98585 SB: External read register x2, Expected 0xb99891d9, Matches Actual 0xb99891d9
+
+     98605 Mon: External read Addr: 0x200c, Data: 0x00000000
+
+     98605 DEBUG xbar_read: starting read of addr 0x2010
+     98605 SB: External read register x3, Expected 0x00000000, Matches Actual 0x00000000
+
+     98625 Mon: External read Addr: 0x2010, Data: 0x00000000
+
+     98625 DEBUG xbar_read: starting read of addr 0x2014
+     98625 SB: External read register x4, Expected 0x00000000, Matches Actual 0x00000000
+
+     98645 Mon: External read Addr: 0x2014, Data: 0x00000000
+
+     98645 DEBUG xbar_read: starting read of addr 0x2018
+     98645 SB: External read register x5, Expected 0x00000000, Matches Actual 0x00000000
+
+     98665 Mon: External read Addr: 0x2018, Data: 0xfffffe8a
+
+     98665 DEBUG xbar_read: starting read of addr 0x201c
+     98665 SB: External read register x6, Expected 0xfffffe8a, Matches Actual 0xfffffe8a
+
+     98685 Mon: External read Addr: 0x201c, Data: 0x00000000
+
+     98685 DEBUG xbar_read: starting read of addr 0x2020
+     98685 SB: External read register x7, Expected 0x00000000, Matches Actual 0x00000000
+
+     98705 Mon: External read Addr: 0x2020, Data: 0x00000000
+
+     98705 DEBUG xbar_read: starting read of addr 0x2024
+     98705 SB: External read register x8, Expected 0x00000000, Matches Actual 0x00000000
+
+     98725 Mon: External read Addr: 0x2024, Data: 0x00000000
+
+     98725 DEBUG xbar_read: starting read of addr 0x2028
+     98725 SB: External read register x9, Expected 0x00000000, Matches Actual 0x00000000
+
+     98745 Mon: External read Addr: 0x2028, Data: 0x00000000
+
+     98745 DEBUG xbar_read: starting read of addr 0x202c
+     98745 SB: External read register x10, Expected 0x00000000, Matches Actual 0x00000000
+
+     98765 Mon: External read Addr: 0x202c, Data: 0x00000000
+
+     98765 DEBUG xbar_read: starting read of addr 0x2030
+     98765 SB: External read register x11, Expected 0x00000000, Matches Actual 0x00000000
+
+     98785 Mon: External read Addr: 0x2030, Data: 0x00000000
+
+     98785 DEBUG xbar_read: starting read of addr 0x2034
+     98785 SB: External read register x12, Expected 0x00000000, Matches Actual 0x00000000
+
+     98805 Mon: External read Addr: 0x2034, Data: 0x00000000
+
+     98805 DEBUG xbar_read: starting read of addr 0x2038
+     98805 SB: External read register x13, Expected 0x00000000, Matches Actual 0x00000000
+
+     98825 Mon: External read Addr: 0x2038, Data: 0x00000000
+
+     98825 DEBUG xbar_read: starting read of addr 0x203c
+     98825 SB: External read register x14, Expected 0x00000000, Matches Actual 0x00000000
+
+     98845 Mon: External read Addr: 0x203c, Data: 0x00000000
+
+     98845 DEBUG xbar_read: starting read of addr 0x2040
+     98845 SB: External read register x15, Expected 0x00000000, Matches Actual 0x00000000
+
+     98865 Mon: External read Addr: 0x2040, Data: 0x00000000
+
+     98865 DEBUG xbar_read: starting read of addr 0x2044
+     98865 SB: External read register x16, Expected 0x00000000, Matches Actual 0x00000000
+
+     98885 Mon: External read Addr: 0x2044, Data: 0x00000000
+
+     98885 DEBUG xbar_read: starting read of addr 0x2048
+     98885 SB: External read register x17, Expected 0x00000000, Matches Actual 0x00000000
+
+     98905 Mon: External read Addr: 0x2048, Data: 0x00000000
+
+     98905 DEBUG xbar_read: starting read of addr 0x204c
+     98905 SB: External read register x18, Expected 0x00000000, Matches Actual 0x00000000
+
+     98925 Mon: External read Addr: 0x204c, Data: 0x00000000
+
+     98925 DEBUG xbar_read: starting read of addr 0x2050
+     98925 SB: External read register x19, Expected 0x00000000, Matches Actual 0x00000000
+
+     98945 Mon: External read Addr: 0x2050, Data: 0x00000000
+
+     98945 DEBUG xbar_read: starting read of addr 0x2054
+     98945 SB: External read register x20, Expected 0x00000000, Matches Actual 0x00000000
+
+     98965 Mon: External read Addr: 0x2054, Data: 0x00000000
+
+     98965 DEBUG xbar_read: starting read of addr 0x2058
+     98965 SB: External read register x21, Expected 0x00000000, Matches Actual 0x00000000
+
+     98985 Mon: External read Addr: 0x2058, Data: 0x00000000
+
+     98985 DEBUG xbar_read: starting read of addr 0x205c
+     98985 SB: External read register x22, Expected 0x00000000, Matches Actual 0x00000000
+
+     99005 Mon: External read Addr: 0x205c, Data: 0x00000000
+
+     99005 DEBUG xbar_read: starting read of addr 0x2060
+     99005 SB: External read register x23, Expected 0x00000000, Matches Actual 0x00000000
+
+     99025 Mon: External read Addr: 0x2060, Data: 0x00000000
+
+     99025 DEBUG xbar_read: starting read of addr 0x2064
+     99025 SB: External read register x24, Expected 0x00000000, Matches Actual 0x00000000
+
+     99045 Mon: External read Addr: 0x2064, Data: 0x00000000
+
+     99045 DEBUG xbar_read: starting read of addr 0x2068
+     99045 SB: External read register x25, Expected 0x00000000, Matches Actual 0x00000000
+
+     99065 Mon: External read Addr: 0x2068, Data: 0x00000000
+
+     99065 DEBUG xbar_read: starting read of addr 0x206c
+     99065 SB: External read register x26, Expected 0x00000000, Matches Actual 0x00000000
+
+     99085 Mon: External read Addr: 0x206c, Data: 0x00000000
+
+     99085 DEBUG xbar_read: starting read of addr 0x2070
+     99085 SB: External read register x27, Expected 0x00000000, Matches Actual 0x00000000
+
+     99105 Mon: External read Addr: 0x2070, Data: 0x00000000
+
+     99105 DEBUG xbar_read: starting read of addr 0x2074
+     99105 SB: External read register x28, Expected 0x00000000, Matches Actual 0x00000000
+
+     99125 Mon: External read Addr: 0x2074, Data: 0x00000000
+
+     99125 DEBUG xbar_read: starting read of addr 0x2078
+     99125 SB: External read register x29, Expected 0x00000000, Matches Actual 0x00000000
+
+     99145 Mon: External read Addr: 0x2078, Data: 0x00000000
+
+     99145 DEBUG xbar_read: starting read of addr 0x207c
+     99145 SB: External read register x30, Expected 0x00000000, Matches Actual 0x00000000
+
+     99165 Mon: External read Addr: 0x207c, Data: 0x00000000
+
+     99165 SB: External read register x31, Expected 0x00000000, Matches Actual 0x00000000
+
+     99185 DEBUG xbar_read: starting read of addr 0x1000
+     99215 Mon: External read Addr: 0x1000, Data: 0x3c00d3c7
+
+     99215 DEBUG xbar_read: starting read of addr 0x1004
+     99215 SB: External read dmem[0x000], Expected 0x3c00d3c7, Matches Actual 0x3c00d3c7
+
+     99245 Mon: External read Addr: 0x1004, Data: 0x8d9a2664
+
+     99245 DEBUG xbar_read: starting read of addr 0x1008
+     99245 SB: External read dmem[0x001], Expected 0x8d9a2664, Matches Actual 0x8d9a2664
+
+     99275 Mon: External read Addr: 0x1008, Data: 0xb2a321db
+
+     99275 DEBUG xbar_read: starting read of addr 0x100c
+     99275 SB: External read dmem[0x002], Expected 0xb2a321db, Matches Actual 0xb2a321db
+
+     99305 Mon: External read Addr: 0x100c, Data: 0x2983433d
+
+     99305 DEBUG xbar_read: starting read of addr 0x1010
+     99305 SB: External read dmem[0x003], Expected 0x2983433d, Matches Actual 0x2983433d
+
+     99335 Mon: External read Addr: 0x1010, Data: 0xf3d79464
+
+     99335 DEBUG xbar_read: starting read of addr 0x1014
+     99335 SB: External read dmem[0x004], Expected 0xf3d79464, Matches Actual 0xf3d79464
+
+     99365 Mon: External read Addr: 0x1014, Data: 0x3c2fef84
+
+     99365 DEBUG xbar_read: starting read of addr 0x1018
+     99365 SB: External read dmem[0x005], Expected 0x3c2fef84, Matches Actual 0x3c2fef84
+
+     99395 Mon: External read Addr: 0x1018, Data: 0x6d881970
+
+     99395 DEBUG xbar_read: starting read of addr 0x101c
+     99395 SB: External read dmem[0x006], Expected 0x6d881970, Matches Actual 0x6d881970
+
+     99425 Mon: External read Addr: 0x101c, Data: 0x3889feae
+
+     99425 SB: External read dmem[0x007], Expected 0x3889feae, Matches Actual 0x3889feae
+
+     99455 Mon: External write Addr: 0x1118, Data: 0xb99891d9
+
+
+=================================================================
+ TEST: test_sw_lw_addr_bits
+=================================================================
+     99455 SB: External write dmem[0x046] <- 0xb99891d9
+
+     99485 Mon: Reset asserted
+
+     99565 Mon: External write Addr: 0x0000, Data: 0xe8a18313
+
+     99565 SB: External write imem[0x000] <- 0xe8a18313
+
+     99585 Mon: External write Addr: 0x0004, Data: 0x11dbae23
+
+     99585 SB: External write imem[0x001] <- 0x11dbae23
+
+     99605 Mon: External write Addr: 0x0008, Data: 0x28e32503
+
+     99605 SB: External write imem[0x002] <- 0x28e32503
+
+     99625 Mon: External write Addr: 0x000c, Data: 0x11dba823
+
+     99625 SB: External write imem[0x003] <- 0x11dba823
+
+     99645 Mon: External write Addr: 0x0010, Data: 0x28e32583
+
+     99645 SB: External write imem[0x004] <- 0x28e32583
+
+     99665 Mon: External write Addr: 0x0014, Data: 0x11dba423
+
+     99665 SB: External write imem[0x005] <- 0x11dba423
+
+     99685 Mon: External write Addr: 0x0018, Data: 0x28e32603
+
+     99685 SB: External write imem[0x006] <- 0x28e32603
+
+     99705 Mon: External write Addr: 0x001c, Data: 0x13dbac23
+
+     99705 SB: External write imem[0x007] <- 0x13dbac23
+
+     99725 Mon: External write Addr: 0x0020, Data: 0x28e32683
+
+     99725 SB: External write imem[0x008] <- 0x28e32683
+
+     99745 Mon: External write Addr: 0x0024, Data: 0x15dbac23
+
+     99745 SB: External write imem[0x009] <- 0x15dbac23
+
+     99765 Mon: External write Addr: 0x0028, Data: 0x28e32703
+
+     99765 SB: External write imem[0x00a] <- 0x28e32703
+
+     99785 Mon: External write Addr: 0x002c, Data: 0x19dbac23
+
+     99785 SB: External write imem[0x00b] <- 0x19dbac23
+
+     99805 Mon: External write Addr: 0x0030, Data: 0x28e32783
+
+     99805 SB: External write imem[0x00c] <- 0x28e32783
+
+     99825 Mon: External write Addr: 0x0034, Data: 0x01dbac23
+
+     99825 SB: External write imem[0x00d] <- 0x01dbac23
+
+     99845 Mon: External write Addr: 0x0038, Data: 0x28e32803
+
+     99845 SB: External write imem[0x00e] <- 0x28e32803
+
+     99865 Mon: External write Addr: 0x003c, Data: 0x31dbac23
+
+     99865 SB: External write imem[0x00f] <- 0x31dbac23
+
+     99885 Mon: External write Addr: 0x0040, Data: 0x28e32883
+
+     99885 SB: External write imem[0x010] <- 0x28e32883
+
+     99905 Mon: External write Addr: 0x0044, Data: 0x51dbac23
+
+     99905 SB: External write imem[0x011] <- 0x51dbac23
+
+     99925 Mon: External write Addr: 0x0048, Data: 0x28e32903
+
+     99925 SB: External write imem[0x012] <- 0x28e32903
+
+     99945 Mon: External write Addr: 0x004c, Data: 0x91dbac23
+
+     99945 SB: External write imem[0x013] <- 0x91dbac23
+
+     99965 Mon: External write Addr: 0x0050, Data: 0x28e32983
+
+     99965 SB: External write imem[0x014] <- 0x28e32983
+
+     99985 Mon: External write Addr: 0x0054, Data: 0x00100073
+
+     99985 SB: External write imem[0x015] <- 0x00100073
+
+    100025 Mon: CPU started executing
+
+    100025 SB: cpu started, reference model ran 21 instruction(s), predicted 10 store(s)
+
+    100035 Mon: CPU store dmem[47] <- 0
+
+    100035 SB: CPU store dmem[47] <- 0 matches prediction
+
+    100055 Mon: CPU load dmem[46] -> b99891d9
+
+    100055 SB: CPU load dmem[46] -> b99891d9 matches expected
+
+    100065 Mon: CPU store dmem[44] <- 0
+
+    100065 SB: CPU store dmem[44] <- 0 matches prediction
+
+    100085 Mon: CPU load dmem[46] -> b99891d9
+
+    100085 SB: CPU load dmem[46] -> b99891d9 matches expected
+
+    100095 Mon: CPU store dmem[42] <- 0
+
+    100095 SB: CPU store dmem[42] <- 0 matches prediction
+
+    100115 Mon: CPU load dmem[46] -> b99891d9
+
+    100115 SB: CPU load dmem[46] -> b99891d9 matches expected
+
+    100125 Mon: CPU store dmem[4e] <- 0
+
+    100125 SB: CPU store dmem[4e] <- 0 matches prediction
+
+    100145 Mon: CPU load dmem[46] -> b99891d9
+
+    100145 SB: CPU load dmem[46] -> b99891d9 matches expected
+
+    100155 Mon: CPU store dmem[56] <- 0
+
+    100155 SB: CPU store dmem[56] <- 0 matches prediction
+
+    100175 Mon: CPU load dmem[46] -> b99891d9
+
+    100175 SB: CPU load dmem[46] -> b99891d9 matches expected
+
+    100185 Mon: CPU store dmem[66] <- 0
+
+    100185 SB: CPU store dmem[66] <- 0 matches prediction
+
+    100205 Mon: CPU load dmem[46] -> b99891d9
+
+    100205 SB: CPU load dmem[46] -> b99891d9 matches expected
+
+    100215 Mon: CPU store dmem[6] <- 0
+
+    100215 SB: CPU store dmem[6] <- 0 matches prediction
+
+    100235 Mon: CPU load dmem[46] -> b99891d9
+
+    100235 SB: CPU load dmem[46] -> b99891d9 matches expected
+
+    100245 Mon: CPU store dmem[c6] <- 0
+
+    100245 SB: CPU store dmem[c6] <- 0 matches prediction
+
+    100265 Mon: CPU load dmem[46] -> b99891d9
+
+    100265 SB: CPU load dmem[46] -> b99891d9 matches expected
+
+    100275 Mon: CPU store dmem[146] <- 0
+
+    100275 SB: CPU store dmem[146] <- 0 matches prediction
+
+    100295 Mon: CPU load dmem[46] -> b99891d9
+
+    100295 SB: CPU load dmem[46] -> b99891d9 matches expected
+
+    100305 Mon: CPU store dmem[246] <- 0
+
+    100305 SB: CPU store dmem[246] <- 0 matches prediction
+
+    100325 Mon: CPU load dmem[46] -> b99891d9
+
+    100325 SB: CPU load dmem[46] -> b99891d9 matches expected
+
+    100345 Mon: cpu_halted_o asserted
+
+    100345 DEBUG xbar_read: starting read of addr 0x2000
+    100365 Mon: External read Addr: 0x2000, Data: 0x00000000
+
+    100365 DEBUG xbar_read: starting read of addr 0x2004
+    100365 SB: External read register x0, Expected 0x00000000, Matches Actual 0x00000000
+
+    100385 Mon: External read Addr: 0x2004, Data: 0x00000000
+
+    100385 DEBUG xbar_read: starting read of addr 0x2008
+    100385 SB: External read register x1, Expected 0x00000000, Matches Actual 0x00000000
+
+    100405 Mon: External read Addr: 0x2008, Data: 0x00000000
+
+    100405 DEBUG xbar_read: starting read of addr 0x200c
+    100405 SB: External read register x2, Expected 0x00000000, Matches Actual 0x00000000
+
+    100425 Mon: External read Addr: 0x200c, Data: 0x00000000
+
+    100425 DEBUG xbar_read: starting read of addr 0x2010
+    100425 SB: External read register x3, Expected 0x00000000, Matches Actual 0x00000000
+
+    100445 Mon: External read Addr: 0x2010, Data: 0x00000000
+
+    100445 DEBUG xbar_read: starting read of addr 0x2014
+    100445 SB: External read register x4, Expected 0x00000000, Matches Actual 0x00000000
+
+    100465 Mon: External read Addr: 0x2014, Data: 0x00000000
+
+    100465 DEBUG xbar_read: starting read of addr 0x2018
+    100465 SB: External read register x5, Expected 0x00000000, Matches Actual 0x00000000
+
+    100485 Mon: External read Addr: 0x2018, Data: 0xfffffe8a
+
+    100485 DEBUG xbar_read: starting read of addr 0x201c
+    100485 SB: External read register x6, Expected 0xfffffe8a, Matches Actual 0xfffffe8a
+
+    100505 Mon: External read Addr: 0x201c, Data: 0x00000000
+
+    100505 DEBUG xbar_read: starting read of addr 0x2020
+    100505 SB: External read register x7, Expected 0x00000000, Matches Actual 0x00000000
+
+    100525 Mon: External read Addr: 0x2020, Data: 0x00000000
+
+    100525 DEBUG xbar_read: starting read of addr 0x2024
+    100525 SB: External read register x8, Expected 0x00000000, Matches Actual 0x00000000
+
+    100545 Mon: External read Addr: 0x2024, Data: 0x00000000
+
+    100545 DEBUG xbar_read: starting read of addr 0x2028
+    100545 SB: External read register x9, Expected 0x00000000, Matches Actual 0x00000000
+
+    100565 Mon: External read Addr: 0x2028, Data: 0xb99891d9
+
+    100565 DEBUG xbar_read: starting read of addr 0x202c
+    100565 SB: External read register x10, Expected 0xb99891d9, Matches Actual 0xb99891d9
+
+    100585 Mon: External read Addr: 0x202c, Data: 0xb99891d9
+
+    100585 DEBUG xbar_read: starting read of addr 0x2030
+    100585 SB: External read register x11, Expected 0xb99891d9, Matches Actual 0xb99891d9
+
+    100605 Mon: External read Addr: 0x2030, Data: 0xb99891d9
+
+    100605 DEBUG xbar_read: starting read of addr 0x2034
+    100605 SB: External read register x12, Expected 0xb99891d9, Matches Actual 0xb99891d9
+
+    100625 Mon: External read Addr: 0x2034, Data: 0xb99891d9
+
+    100625 DEBUG xbar_read: starting read of addr 0x2038
+    100625 SB: External read register x13, Expected 0xb99891d9, Matches Actual 0xb99891d9
+
+    100645 Mon: External read Addr: 0x2038, Data: 0xb99891d9
+
+    100645 DEBUG xbar_read: starting read of addr 0x203c
+    100645 SB: External read register x14, Expected 0xb99891d9, Matches Actual 0xb99891d9
+
+    100665 Mon: External read Addr: 0x203c, Data: 0xb99891d9
+
+    100665 DEBUG xbar_read: starting read of addr 0x2040
+    100665 SB: External read register x15, Expected 0xb99891d9, Matches Actual 0xb99891d9
+
+    100685 Mon: External read Addr: 0x2040, Data: 0xb99891d9
+
+    100685 DEBUG xbar_read: starting read of addr 0x2044
+    100685 SB: External read register x16, Expected 0xb99891d9, Matches Actual 0xb99891d9
+
+    100705 Mon: External read Addr: 0x2044, Data: 0xb99891d9
+
+    100705 DEBUG xbar_read: starting read of addr 0x2048
+    100705 SB: External read register x17, Expected 0xb99891d9, Matches Actual 0xb99891d9
+
+    100725 Mon: External read Addr: 0x2048, Data: 0xb99891d9
+
+    100725 DEBUG xbar_read: starting read of addr 0x204c
+    100725 SB: External read register x18, Expected 0xb99891d9, Matches Actual 0xb99891d9
+
+    100745 Mon: External read Addr: 0x204c, Data: 0xb99891d9
+
+    100745 DEBUG xbar_read: starting read of addr 0x2050
+    100745 SB: External read register x19, Expected 0xb99891d9, Matches Actual 0xb99891d9
+
+    100765 Mon: External read Addr: 0x2050, Data: 0x00000000
+
+    100765 DEBUG xbar_read: starting read of addr 0x2054
+    100765 SB: External read register x20, Expected 0x00000000, Matches Actual 0x00000000
+
+    100785 Mon: External read Addr: 0x2054, Data: 0x00000000
+
+    100785 DEBUG xbar_read: starting read of addr 0x2058
+    100785 SB: External read register x21, Expected 0x00000000, Matches Actual 0x00000000
+
+    100805 Mon: External read Addr: 0x2058, Data: 0x00000000
+
+    100805 DEBUG xbar_read: starting read of addr 0x205c
+    100805 SB: External read register x22, Expected 0x00000000, Matches Actual 0x00000000
+
+    100825 Mon: External read Addr: 0x205c, Data: 0x00000000
+
+    100825 DEBUG xbar_read: starting read of addr 0x2060
+    100825 SB: External read register x23, Expected 0x00000000, Matches Actual 0x00000000
+
+    100845 Mon: External read Addr: 0x2060, Data: 0x00000000
+
+    100845 DEBUG xbar_read: starting read of addr 0x2064
+    100845 SB: External read register x24, Expected 0x00000000, Matches Actual 0x00000000
+
+    100865 Mon: External read Addr: 0x2064, Data: 0x00000000
+
+    100865 DEBUG xbar_read: starting read of addr 0x2068
+    100865 SB: External read register x25, Expected 0x00000000, Matches Actual 0x00000000
+
+    100885 Mon: External read Addr: 0x2068, Data: 0x00000000
+
+    100885 DEBUG xbar_read: starting read of addr 0x206c
+    100885 SB: External read register x26, Expected 0x00000000, Matches Actual 0x00000000
+
+    100905 Mon: External read Addr: 0x206c, Data: 0x00000000
+
+    100905 DEBUG xbar_read: starting read of addr 0x2070
+    100905 SB: External read register x27, Expected 0x00000000, Matches Actual 0x00000000
+
+    100925 Mon: External read Addr: 0x2070, Data: 0x00000000
+
+    100925 DEBUG xbar_read: starting read of addr 0x2074
+    100925 SB: External read register x28, Expected 0x00000000, Matches Actual 0x00000000
+
+    100945 Mon: External read Addr: 0x2074, Data: 0x00000000
+
+    100945 DEBUG xbar_read: starting read of addr 0x2078
+    100945 SB: External read register x29, Expected 0x00000000, Matches Actual 0x00000000
+
+    100965 Mon: External read Addr: 0x2078, Data: 0x00000000
+
+    100965 DEBUG xbar_read: starting read of addr 0x207c
+    100965 SB: External read register x30, Expected 0x00000000, Matches Actual 0x00000000
+
+    100985 Mon: External read Addr: 0x207c, Data: 0x00000000
+
+    100985 SB: External read register x31, Expected 0x00000000, Matches Actual 0x00000000
+
+    101005 DEBUG xbar_read: starting read of addr 0x1000
+    101035 Mon: External read Addr: 0x1000, Data: 0x3c00d3c7
+
+    101035 DEBUG xbar_read: starting read of addr 0x1004
+    101035 SB: External read dmem[0x000], Expected 0x3c00d3c7, Matches Actual 0x3c00d3c7
+
+    101065 Mon: External read Addr: 0x1004, Data: 0x8d9a2664
+
+    101065 DEBUG xbar_read: starting read of addr 0x1008
+    101065 SB: External read dmem[0x001], Expected 0x8d9a2664, Matches Actual 0x8d9a2664
+
+    101095 Mon: External read Addr: 0x1008, Data: 0xb2a321db
+
+    101095 DEBUG xbar_read: starting read of addr 0x100c
+    101095 SB: External read dmem[0x002], Expected 0xb2a321db, Matches Actual 0xb2a321db
+
+    101125 Mon: External read Addr: 0x100c, Data: 0x2983433d
+
+    101125 DEBUG xbar_read: starting read of addr 0x1010
+    101125 SB: External read dmem[0x003], Expected 0x2983433d, Matches Actual 0x2983433d
+
+    101155 Mon: External read Addr: 0x1010, Data: 0xf3d79464
+
+    101155 DEBUG xbar_read: starting read of addr 0x1014
+    101155 SB: External read dmem[0x004], Expected 0xf3d79464, Matches Actual 0xf3d79464
+
+    101185 Mon: External read Addr: 0x1014, Data: 0x3c2fef84
+
+    101185 DEBUG xbar_read: starting read of addr 0x1018
+    101185 SB: External read dmem[0x005], Expected 0x3c2fef84, Matches Actual 0x3c2fef84
+
+    101215 Mon: External read Addr: 0x1018, Data: 0x00000000
+
+    101215 DEBUG xbar_read: starting read of addr 0x101c
+    101215 SB: External read dmem[0x006], Expected 0x00000000, Matches Actual 0x00000000
+
+    101245 Mon: External read Addr: 0x101c, Data: 0x3889feae
+
+    101245 SB: External read dmem[0x007], Expected 0x3889feae, Matches Actual 0x3889feae
+
+=================================================================
+  Scoreboard mismatches : 0
+  Driver timeouts       : 0
+  Monitor protocol errs : 0
+  Assertion failures    : 0
+=================================================================
+ 
+=================================================================
+ TEST PASSED!
+=================================================================
+Simulation complete via $finish(1) at time 101455 NS + 4
+./sym_links/cpu_tb_top.sv:770         $finish;
+xcelium> exit
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  cpu_tb_top(cpu_tb_top)
+  scope    :  scope
+  testname :  member
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_6504032f_5569a156.ucm
+  data               :  ./cov_work/scope/member/icc_6504032f_5569a156.ucd
+TOOL:	xrun(64)	25.03-s003: Exiting on Oct 05, 2026 at 16:32:13 EDT  (total: 00:00:01)

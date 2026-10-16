@@ -1,0 +1,66 @@
+# Excerpt from assert_halt_pulse_check.log: assertion failures, then the end of the run
+xmsim: *E,ASRTST (./sym_links/cpu_tb_top.sv,556): (time 41215 NS) Assertion cpu_tb_top.CPU_HALT_PULSE_CHECK has failed 
+xmsim: *E,ERRSEV (./sym_links/cpu_tb_top.sv,52): (time 41215 NS).
+cpu_tb_top.assertion_fail
+     41215 ASSERT: cpu_halted_o rose when CPU was not active
+--
+xmsim: *E,ASRTST (./sym_links/cpu_tb_top.sv,556): (time 125225 NS) Assertion cpu_tb_top.CPU_HALT_PULSE_CHECK has failed 
+xmsim: *E,ERRSEV (./sym_links/cpu_tb_top.sv,52): (time 125225 NS).
+cpu_tb_top.assertion_fail
+    125225 ASSERT: cpu_halted_o rose when CPU was not active
+--
+xmsim: *E,ASRTST (./sym_links/cpu_tb_top.sv,556): (time 126775 NS) Assertion cpu_tb_top.CPU_HALT_PULSE_CHECK has failed 
+xmsim: *E,ERRSEV (./sym_links/cpu_tb_top.sv,52): (time 126775 NS).
+cpu_tb_top.assertion_fail
+    126775 ASSERT: cpu_halted_o rose when CPU was not active
+--
+xmsim: *E,ASRTST (./sym_links/cpu_tb_top.sv,556): (time 128275 NS) Assertion cpu_tb_top.CPU_HALT_PULSE_CHECK has failed 
+xmsim: *E,ERRSEV (./sym_links/cpu_tb_top.sv,52): (time 128275 NS).
+cpu_tb_top.assertion_fail
+    128275 ASSERT: cpu_halted_o rose when CPU was not active
+--
+xmsim: *E,ASRTST (./sym_links/cpu_tb_top.sv,556): (time 170685 NS) Assertion cpu_tb_top.CPU_HALT_PULSE_CHECK has failed 
+xmsim: *E,ERRSEV (./sym_links/cpu_tb_top.sv,52): (time 170685 NS).
+cpu_tb_top.assertion_fail
+    170685 ASSERT: cpu_halted_o rose when CPU was not active
+--
+xmsim: *E,ASRTST (./sym_links/cpu_tb_top.sv,556): (time 172245 NS) Assertion cpu_tb_top.CPU_HALT_PULSE_CHECK has failed 
+xmsim: *E,ERRSEV (./sym_links/cpu_tb_top.sv,52): (time 172245 NS).
+cpu_tb_top.assertion_fail
+    172245 ASSERT: cpu_halted_o rose when CPU was not active
+--
+xmsim: *E,ASRTST (./sym_links/cpu_tb_top.sv,556): (time 173885 NS) Assertion cpu_tb_top.CPU_HALT_PULSE_CHECK has failed 
+xmsim: *E,ERRSEV (./sym_links/cpu_tb_top.sv,52): (time 173885 NS).
+cpu_tb_top.assertion_fail
+    173885 ASSERT: cpu_halted_o rose when CPU was not active
+--
+xmsim: *E,ASRTST (./sym_links/cpu_tb_top.sv,556): (time 217255 NS) Assertion cpu_tb_top.CPU_HALT_PULSE_CHECK has failed 
+xmsim: *E,ERRSEV (./sym_links/cpu_tb_top.sv,52): (time 217255 NS).
+cpu_tb_top.assertion_fail
+    217255 ASSERT: cpu_halted_o rose when CPU was not active
+--
+xmsim: *E,ASRTST (./sym_links/cpu_tb_top.sv,556): (time 259725 NS) Assertion cpu_tb_top.CPU_HALT_PULSE_CHECK has failed 
+xmsim: *E,ERRSEV (./sym_links/cpu_tb_top.sv,52): (time 259725 NS).
+cpu_tb_top.assertion_fail
+    259725 ASSERT: cpu_halted_o rose when CPU was not active
+--
+xmsim: *E,ASRTST (./sym_links/cpu_tb_top.sv,556): (time 302305 NS) Assertion cpu_tb_top.CPU_HALT_PULSE_CHECK has failed 
+xmsim: *E,ERRSEV (./sym_links/cpu_tb_top.sv,52): (time 302305 NS).
+cpu_tb_top.assertion_fail
+    302305 ASSERT: cpu_halted_o rose when CPU was not active
+...
+=================================================================
+Simulation complete via $finish(1) at time 2197695 NS + 4
+./sym_links/cpu_tb_top.sv:514         $finish;
+xcelium> exit
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  cpu_tb_top(cpu_tb_top)
+  scope    :  scope
+  testname :  member
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_04c52f8a_63986e95.ucm
+  data               :  ./cov_work/scope/member/icc_04c52f8a_63986e95.ucd
+TOOL:	xrun(64)	25.03-s003: Exiting on Oct 01, 2026 at 21:24:24 EDT  (total: 00:00:57)

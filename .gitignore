@@ -1,0 +1,7 @@
+# Simulator output
+WORKSPACE/
+*.shm/
+cov_work/
+xcelium.d/
+*.log.bak
+.DS_Store

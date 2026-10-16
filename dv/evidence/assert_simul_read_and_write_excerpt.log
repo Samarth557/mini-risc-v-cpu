@@ -1,0 +1,21 @@
+# Excerpt from assert_simul_read_and_write.log: assertion failures, then the end of the run
+xmsim: *E,ASRTST (./sym_links/cpu_tb_top.sv,564): (time 125005 NS) Assertion cpu_tb_top.NO_SIMULTANEOUS_READ_WRITE has failed 
+xmsim: *E,ERRSEV (./sym_links/cpu_tb_top.sv,52): (time 125005 NS).
+cpu_tb_top.assertion_fail
+    125005 ASSERT: w_en_i and r_en_i were asserted together
+...
+
+Simulation interrupted at 3774155 NS + 4
+./sym_links/cpu_sb.svh:257                 default: ;
+xcelium> exit
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  cpu_tb_top(cpu_tb_top)
+  scope    :  scope
+  testname :  member
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_7e90764f_63986e95.ucm (reused)
+  data               :  ./cov_work/scope/member/icc_7e90764f_63986e95.ucd
+TOOL:	xrun(64)	25.03-s003: Exiting on Oct 01, 2026 at 21:50:53 EDT  (total: 00:02:18)
