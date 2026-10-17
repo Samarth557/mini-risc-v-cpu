@@ -7,7 +7,8 @@ reference model, package) with parts left open. I wrote the test plan, filled in
 constraints, driver, monitor and scoreboard paths, added the directed tests and assertions, and then
 ran the finished bench against an encrypted CPU with three injected bugs.
 
-Tools: Cadence Xcelium (`xrun`), SimVision for waveforms, IMC for code coverage.
+Tools: Cadence Xcelium (`xrun`), SimVision for waveforms, IMC for code coverage. Everything was run on Georgia Tech's ECE servers, so without these tools, their licenses and the
+club's setup the bench can be read but not rerun. The run commands are in [rtl/](../rtl/README.md#running-it).
 
 ## Testbench
 
@@ -67,7 +68,8 @@ through each one cursor by cursor.
 | Path | Contents |
 | --- | --- |
 | `testplan/` | Initial and final test plans |
-| `tb/` | Testbench sources (pending club permission) |
+| `../rtl/src/verilog/tb/` | Testbench sources |
+| `../rtl/sim/behav/` | Simulation Makefile and coverage exclusions |
 | `evidence/` | Assertion-failure excerpts and the reproducer runs on both CPUs |
 | `screenshots/` | Waveforms, coverage, testbench diagram |
 | `coverage/coverage_summary.txt` | IMC text summary |
